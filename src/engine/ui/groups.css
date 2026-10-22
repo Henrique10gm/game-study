@@ -9,11 +9,11 @@
   margin: 0 var(--px);
   font-size: var(--type-label-size);
   line-height: 1.4;
-  color: #ff9c9c;
+  color: var(--color-danger);
 }
 
 .grp-message.is-ok {
-  color: var(--color-accent);
+  color: var(--color-success);
 }
 
 .grp-list {

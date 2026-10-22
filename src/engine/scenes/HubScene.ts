@@ -9,6 +9,7 @@ import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH } from '../confi
 import { CREDITS } from '../credits';
 import { Secrets } from '../secrets';
 import { BankMenu } from '../ui/BankMenu';
+import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import type { HeroView } from './BootScene';
 
@@ -199,7 +200,7 @@ export class HubScene extends Phaser.Scene {
       color: MUTED,
     }).setLetterSpacing(2);
     this.addText(64, 54, 'Escolha sua sala', { fontFamily: FONT_SERIF, fontSize: '34px', color: WHITE });
-    this.addText(48, 616, '← →  andar     ↑ ou Enter  entrar na sala     ou clique na porta', {
+    this.addText(48, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar na sala     ou clique na porta' : 'Toque na porta da sala', {
       fontFamily: FONT_SANS,
       fontSize: '14px',
       fontStyle: '300',

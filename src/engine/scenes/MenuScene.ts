@@ -18,6 +18,7 @@ import { GAME_STYLES } from '../styles';
 import type { GameStyle } from '../styles';
 import { BankMenu } from '../ui/BankMenu';
 import type { HallView, HomeData, SizeData } from '../ui/BankMenu';
+import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import { spawnCameo } from './cameoActor';
 import type { HeroView } from './BootScene';
@@ -330,7 +331,7 @@ export class MenuScene extends Phaser.Scene {
     g.fillStyle(COLORS.paper, 0.14).fillCircle(321, 326, 42);
 
     this.titleBlock();
-    const hint = this.text(64, 616, '← →  andar     ↑ ou Enter  entrar no salão     Espaço  pular', {
+    const hint = this.text(64, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar no salão     Espaço  pular' : '', {
       fontFamily: FONT_SANS,
       fontSize: '15px',
       fontStyle: '300',
@@ -556,11 +557,11 @@ export class MenuScene extends Phaser.Scene {
     this.showCameo(pickCameo('konami'));
   }
 
-  // The sign briefly shows the brand sign-off.
+  // The sign briefly shows a sign-off.
   private signEgg(): void {
     const cover = this.add.rectangle(640, 234, 164, 36, COLORS.black).setDepth(31);
     const label = this.add
-      .text(640, 234, 'Faça Simples.', { fontFamily: FONT_SERIF, fontSize: '18px', color: '#DBFFA5' })
+      .text(640, 234, 'Estude. Jogue. Repita.', { fontFamily: FONT_SERIF, fontSize: '18px', color: '#DBFFA5' })
       .setOrigin(0.5)
       .setDepth(32);
     this.time.delayedCall(2200, () => {

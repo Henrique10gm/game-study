@@ -73,6 +73,8 @@ describe('RankingScreen', () => {
 
     expect(onSaveNickname).toHaveBeenCalledWith('Ana');
     expect(root.querySelector('[data-testid="nickname-message"]')?.textContent).toBe('Esse apelido já está em uso. Escolha outro.');
+    // A refusal must never look like a success: it gets the error color, not the accent.
+    expect(root.querySelector('[data-testid="nickname-message"]')?.classList.contains('is-error')).toBe(true);
     expect((root.querySelector('[data-testid="nickname-save"]') as HTMLButtonElement).disabled).toBe(false);
   });
 

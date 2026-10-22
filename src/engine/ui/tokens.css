@@ -38,6 +38,14 @@
 }
 
 :root {
+  /* Semantic colors: feedback never borrows the accent (see docs/UI-REVIEW.md). */
+  --color-danger: #FF8F80;
+  --color-success: #7FD8A6;
+  --color-warning: #F2C25B;
+  --color-accent-hover: #E6FFB4;
+  --color-accent-ink: var(--color-bg);
+  --color-surface-raised: #2B2522;
+
   /* Color */
   --color-bg: #1A1615; /* Preto quente */
   --color-surface: #26211F;
@@ -122,4 +130,10 @@ body {
 
 #ui-root > * {
   pointer-events: auto;
+}
+
+/* Keyboard focus: one visible ring for every control (zero specificity, so a component can refine it). */
+:where(button, a, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }

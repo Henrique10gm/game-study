@@ -50,7 +50,15 @@
   margin: 0;
   font-size: var(--type-label-size);
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.rank-form-message.is-error {
+  color: var(--color-danger);
+}
+
+.rank-form-message.is-ok {
+  color: var(--color-success);
 }
 
 .rank-table {

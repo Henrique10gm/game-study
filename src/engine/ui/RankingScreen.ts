@@ -142,16 +142,19 @@ export class RankingScreen {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       submit.disabled = true;
+      message.classList.remove('is-error');
       message.textContent = 'Salvando…';
       void handlers
         .onSaveNickname(input.value)
         .then((problem) => {
           if (problem) {
+            message.classList.add('is-error');
             message.textContent = problem;
             submit.disabled = false;
           }
         })
         .catch(() => {
+          message.classList.add('is-error');
           message.textContent = 'Não foi possível salvar agora. Tente de novo.';
           submit.disabled = false;
         });

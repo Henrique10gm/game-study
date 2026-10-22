@@ -84,11 +84,11 @@
   margin: 0;
   font-size: var(--type-label-size);
   line-height: 1.4;
-  color: #ff9c9c;
+  color: var(--color-danger);
 }
 
 .auth-message.is-ok {
-  color: var(--color-accent);
+  color: var(--color-success);
 }
 
 .auth-submit:disabled {

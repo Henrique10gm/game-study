@@ -117,10 +117,9 @@ export class App {
     startScreenTimer((report) => this.store.recordScreenTime(report), () => this.room?.def.id ?? null);
     this.showEntrance();
     hideLoader();
-    this.announceUpdate();
   }
 
-  // The news card goes over whatever is on screen, once per update.
+  // The news card goes over the hall (not the first thing a player sees), once per update.
   private announceUpdate(): void {
     const update = pendingUpdate(this.storage);
     if (!update) return;
@@ -186,6 +185,7 @@ export class App {
   private showHub(from?: string): void {
     this.room = null;
     this.stopSceneBeforeNext();
+    this.announceUpdate();
     const rooms: HubRoomView[] = this.rooms.map(({ def, content }) => {
       const count = content.listQuestions().length;
       return {
