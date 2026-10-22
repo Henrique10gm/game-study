@@ -10,6 +10,7 @@ import Phaser from 'phaser';
 import { pickCameo } from '../cast';
 import type { Cameo } from '../cast';
 import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH } from '../config';
+import { scene } from '../palette';
 import { ClickCounter, KONAMI, SequenceMatcher, BOSS_WORD } from '../easterEggs';
 import { Secrets } from '../secrets';
 import type { SecretId } from '../secrets';
@@ -21,6 +22,7 @@ import type { HallView, HomeData, SizeData } from '../ui/BankMenu';
 import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import { spawnCameo } from './cameoActor';
+import { drawStreet, seededRandom, STREET_SEED } from './street';
 import type { HeroView } from './BootScene';
 
 export interface MenuSceneData {
@@ -202,7 +204,7 @@ export class MenuScene extends Phaser.Scene {
 
   private floatLabel(value: string, x: number, y: number): void {
     const label = this.add
-      .text(x, y, value, { fontFamily: FONT_SERIF, fontSize: '22px', color: '#DBFFA5' })
+      .text(x, y, value, { fontFamily: FONT_SERIF, fontSize: '22px', color: scene().accentText })
       .setOrigin(0.5)
       .setDepth(55);
     this.tweens.add({ targets: label, y: y - 36, alpha: 0, duration: 900, onComplete: () => label.destroy() });
@@ -255,12 +257,12 @@ export class MenuScene extends Phaser.Scene {
       fontFamily: FONT_SANS,
       fontSize: '12px',
       fontStyle: '800',
-      color: MUTED,
+      color: scene().inkMuted,
     }).setLetterSpacing(2);
     this.text(64, 62, 'Salão de Jogos', {
       fontFamily: FONT_SERIF,
       fontSize: '38px',
-      color: WHITE,
+      color: scene().ink,
     });
   }
 
@@ -270,65 +272,10 @@ export class MenuScene extends Phaser.Scene {
     this.phase = 'outside';
     const g = this.track(this.add.graphics().setDepth(0));
 
-    // Night sky: warm black fading into petrol green, stars, skyline.
-    const bands = 16;
-    const bandHeight = Math.ceil(510 / bands);
-    const top = Phaser.Display.Color.ValueToColor(COLORS.black);
-    const bottom = Phaser.Display.Color.ValueToColor(COLORS.petrol);
-    for (let i = 0; i < bands; i++) {
-      const c = Phaser.Display.Color.Interpolate.ColorWithColor(top, bottom, bands - 1, i);
-      g.fillStyle(Phaser.Display.Color.GetColor(c.r, c.g, c.b)).fillRect(0, i * bandHeight, GAME_WIDTH, bandHeight);
-    }
-    g.fillStyle(COLORS.paper, 0.6);
-    for (let i = 0; i < 40; i++) {
-      g.fillRect(Phaser.Math.Between(0, GAME_WIDTH), Phaser.Math.Between(0, 230), 2, 2);
-    }
-    let sx = 0;
-    while (sx < GAME_WIDTH) {
-      const w = Phaser.Math.Between(46, 90);
-      const h = Phaser.Math.Between(80, 200);
-      g.fillStyle(COLORS.forest).fillRect(sx, 500 - h, w - 4, h);
-      g.fillStyle(COLORS.paper, 0.45);
-      for (let wy = 500 - h + 12; wy < 480; wy += 22) {
-        for (let wx = sx + 8; wx < sx + w - 14; wx += 16) {
-          if (Math.random() > 0.6) g.fillRect(wx, wy, 5, 7);
-        }
-      }
-      sx += w;
-    }
-
-    // Bank facade in off-white stone: pediment, entablature, columns, door, steps.
-    g.fillStyle(COLORS.grayNeutral).fillTriangle(390, 172, 890, 172, 640, 92);
-    g.fillStyle(COLORS.paper).fillTriangle(420, 168, 860, 168, 640, 112);
-    g.fillStyle(COLORS.paper).fillRect(390, 172, 500, 30);
-    g.fillStyle(COLORS.grayNeutral).fillRect(390, 196, 500, 6);
-    g.fillStyle(COLORS.paper).fillRect(410, 202, 460, 270);
-    for (let cx = 430; cx <= 830; cx += 80) {
-      if (cx === 590 || cx === 670) continue; // leave room for the door
-      g.fillStyle(COLORS.white).fillRect(cx, 202, 28, 268);
-      g.fillStyle(COLORS.grayNeutral).fillRect(cx + 18, 202, 10, 268);
-      g.fillStyle(COLORS.paper).fillRect(cx - 4, 202, 36, 8).fillRect(cx - 4, 462, 36, 8);
-    }
-    g.fillStyle(COLORS.grayNeutral).fillRect(594, 364, 92, 110);
-    g.fillStyle(COLORS.black).fillRect(600, 370, 80, 104);
-    g.fillStyle(COLORS.forest).fillRect(606, 376, 32, 60).fillRect(642, 376, 32, 60);
-    g.fillStyle(COLORS.paper, 0.4).fillRect(610, 380, 6, 52).fillRect(646, 380, 6, 52);
-    g.fillStyle(COLORS.lime).fillCircle(634, 450, 3).fillCircle(646, 450, 3);
-    g.fillStyle(COLORS.grayNeutral).fillRect(390, 472, 500, 14);
-    g.fillStyle(COLORS.grayMid).fillRect(378, 486, 524, 14);
-    g.fillStyle(COLORS.black).fillRect(556, 214, 168, 40);
-    g.lineStyle(2, COLORS.grayMid).strokeRect(556, 214, 168, 40);
+    // The whole street comes from drawStreet (fixed seed, palette of the theme), so the
+    // landing page can show the very same picture.
+    drawStreet(g, scene(), seededRandom(STREET_SEED));
     this.addWordmark(640, 234, 20, 2);
-
-    // Sidewalk, road, lamp post.
-    g.fillStyle(COLORS.grayDark).fillRect(0, 500, GAME_WIDTH, 46);
-    g.fillStyle(COLORS.grayMid).fillRect(0, 542, GAME_WIDTH, 5);
-    g.fillStyle(0x100d0c).fillRect(0, 547, GAME_WIDTH, 93);
-    g.fillStyle(COLORS.grayLight, 0.5);
-    for (let dx = 20; dx < GAME_WIDTH; dx += 90) g.fillRect(dx, 580, 50, 5);
-    g.fillStyle(COLORS.grayDark).fillRect(318, 330, 6, 170);
-    g.fillStyle(COLORS.paper).fillCircle(321, 326, 11);
-    g.fillStyle(COLORS.paper, 0.14).fillCircle(321, 326, 42);
 
     this.titleBlock();
     const hint = this.text(64, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar no salão     Espaço  pular' : '', {
@@ -427,16 +374,17 @@ export class MenuScene extends Phaser.Scene {
   private buildInside(): void {
     this.phase = 'menu';
     const g = this.track(this.add.graphics().setDepth(0));
+    const P = scene();
 
     // Wall with wainscot, windows, vault door, floor, counter and plants.
-    g.fillStyle(COLORS.black).fillRect(0, 0, GAME_WIDTH, 430);
-    g.fillStyle(COLORS.petrol).fillRect(0, 300, GAME_WIDTH, 130);
-    g.fillStyle(COLORS.forest).fillRect(0, 296, GAME_WIDTH, 6);
+    g.fillStyle(P.wall).fillRect(0, 0, GAME_WIDTH, 430);
+    g.fillStyle(P.wainscot).fillRect(0, 300, GAME_WIDTH, 130);
+    g.fillStyle(P.trim).fillRect(0, 296, GAME_WIDTH, 6);
     for (const wx of [86, 754]) {
-      g.fillStyle(COLORS.paper).fillRect(wx, 70, 120, 150);
-      g.fillStyle(COLORS.forest).fillRect(wx + 8, 78, 104, 134);
-      g.fillStyle(COLORS.paper, 0.18).fillRect(wx + 14, 84, 14, 120);
-      g.fillStyle(COLORS.paper).fillRect(wx + 56, 78, 8, 134);
+      g.fillStyle(P.frame).fillRect(wx, 70, 120, 150);
+      g.fillStyle(P.pane).fillRect(wx + 8, 78, 104, 134);
+      g.fillStyle(P.frame, 0.18).fillRect(wx + 14, 84, 14, 120);
+      g.fillStyle(P.frame).fillRect(wx + 56, 78, 8, 134);
     }
     g.fillStyle(COLORS.grayDark).fillCircle(850, 360, 74);
     g.fillStyle(COLORS.grayMid).fillCircle(850, 360, 64);
@@ -447,13 +395,13 @@ export class MenuScene extends Phaser.Scene {
     for (let ty = 430; ty < GAME_HEIGHT; ty += 48) {
       for (let tx = 0; tx < GAME_WIDTH; tx += 48) {
         const light = ((tx / 48 + (ty - 430) / 48) | 0) % 2 === 0;
-        g.fillStyle(light ? COLORS.paper : COLORS.grayNeutral).fillRect(tx, ty, 48, 48);
+        g.fillStyle(light ? P.floorLight : P.floorDark).fillRect(tx, ty, 48, 48);
       }
     }
-    g.fillStyle(COLORS.forest).fillRect(0, 424, GAME_WIDTH, 12);
-    g.fillStyle(COLORS.forest).fillRect(700, 366, 250, 74);
-    g.fillStyle(COLORS.paper).fillRect(692, 356, 266, 14);
-    g.fillStyle(COLORS.paper, 0.14).fillRect(716, 296, 220, 60);
+    g.fillStyle(P.trim).fillRect(0, 424, GAME_WIDTH, 12);
+    g.fillStyle(P.trim).fillRect(700, 366, 250, 74);
+    g.fillStyle(P.frame).fillRect(692, 356, 266, 14);
+    g.fillStyle(P.frame, 0.14).fillRect(716, 296, 220, 60);
     for (const px of [40, 650]) {
       g.fillStyle(COLORS.grayDark).fillRect(px - 16, 392, 32, 36);
       g.fillStyle(COLORS.moss).fillCircle(px, 372, 24).fillCircle(px - 14, 386, 16).fillCircle(px + 14, 386, 16);

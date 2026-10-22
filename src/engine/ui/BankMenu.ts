@@ -306,6 +306,7 @@ export class BankMenu {
   /** Shows only the corner pieces (logo, fullscreen, secrets) over a scene that has no menu list, like the hall. */
   showChrome(): void {
     this.clear();
+    this.stage.classList.add('bank-stage--chrome');
     this.stage.hidden = false;
     this.layout();
   }
@@ -497,6 +498,7 @@ export class BankMenu {
   };
 
   private clear(): void {
+    this.stage.classList.remove('bank-stage--chrome');
     this.panel?.remove();
     this.card?.remove();
     this.hallCard?.remove();

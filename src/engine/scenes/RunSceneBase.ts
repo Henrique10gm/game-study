@@ -7,12 +7,12 @@ import Phaser from 'phaser';
 import { pickCameo } from '../cast';
 import type { CameoTrigger } from '../cast';
 import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH, GROUND_HEIGHT } from '../config';
+import { INK_ON_DARK, scene } from '../palette';
+import { currentTheme } from '../theme';
 import type { LevelTuning } from '../run/levelTuning';
 import { MAX_SPEED } from '../run/levelTuning';
 import type { RunFlow } from '../run/RunFlow';
 import { spawnCameo } from './cameoActor';
-
-const SKY_COLOR = '#1A1615';
 
 export abstract class RunSceneBase extends Phaser.Scene {
   protected flow!: RunFlow;
@@ -28,6 +28,9 @@ export abstract class RunSceneBase extends Phaser.Scene {
   protected resumeHint!: Phaser.GameObjects.Text;
   protected banner!: Phaser.GameObjects.Text;
   protected groundTop = GAME_HEIGHT - GROUND_HEIGHT;
+  // Text colors for this run: the theme's ink over a sky, light over a dark board (the maze).
+  protected inkColor = INK_ON_DARK;
+  protected accentColor = '#D2F58C';
 
   /** Where the player is: confetti and the heart pickup use it. */
   protected abstract playerPosition(): { x: number; y: number };
@@ -44,18 +47,24 @@ export abstract class RunSceneBase extends Phaser.Scene {
     this.flow = this.registry.get('runFlow') as RunFlow;
     this.tuning = this.flow.getTuning();
 
-    this.cameras.main.setBackgroundColor(SKY_COLOR);
+    const P = scene();
+    this.cameras.main.setBackgroundColor(P.skyRun);
+    this.inkColor = backdrop ? P.ink : INK_ON_DARK;
+    this.accentColor = backdrop ? P.accentText : '#D2F58C';
     if (backdrop) {
-      this.makeStars();
-      this.makeMoon();
+      if (P.isDay) this.makeSunAndClouds();
+      else {
+        this.makeStars();
+        this.makeMoon();
+      }
 
       // Far city drifting slower than the foreground (parallax).
       this.skyline = this.add
-        .tileSprite(0, this.groundTop - 220, GAME_WIDTH, 220, 'skyline')
+        .tileSprite(0, this.groundTop - 220, GAME_WIDTH, 220, `skyline-${currentTheme()}`)
         .setOrigin(0, 0)
         .setDepth(1);
       this.ground = this.add
-        .tileSprite(0, this.groundTop, GAME_WIDTH, GROUND_HEIGHT, 'ground')
+        .tileSprite(0, this.groundTop, GAME_WIDTH, GROUND_HEIGHT, `ground-${currentTheme()}`)
         .setOrigin(0, 0)
         .setDepth(5);
     }
@@ -65,7 +74,7 @@ export abstract class RunSceneBase extends Phaser.Scene {
       fontSize: '24px',
       wordWrap: { width: GAME_WIDTH - 120 },
       fontStyle: '600',
-      color: '#FFFFFF',
+      color: this.inkColor,
       align: 'center',
     };
     this.hint = this.add
@@ -139,7 +148,7 @@ export abstract class RunSceneBase extends Phaser.Scene {
 
   protected floatText(text: string, x: number, y: number): void {
     const label = this.add
-      .text(x, y, text, { fontFamily: FONT_SERIF, fontSize: '28px', color: '#DBFFA5' })
+      .text(x, y, text, { fontFamily: FONT_SERIF, fontSize: '28px', color: this.accentColor })
       .setOrigin(0.5)
       .setDepth(40);
     this.tweens.add({
@@ -203,7 +212,7 @@ export abstract class RunSceneBase extends Phaser.Scene {
       .text(GAME_WIDTH / 2, GAME_HEIGHT / 2 - 120, text, {
         fontFamily: FONT_SERIF,
         fontSize: '36px',
-        color: '#DBFFA5',
+        color: this.accentColor,
       })
       .setOrigin(0.5)
       .setDepth(40);
@@ -293,6 +302,28 @@ export abstract class RunSceneBase extends Phaser.Scene {
         });
       }
     }
+  }
+
+  // By day: the sun in the upper right and a few clouds drifting slowly.
+  protected makeSunAndClouds(): void {
+    const P = scene();
+    const g = this.add.graphics().setDepth(0);
+    const cx = GAME_WIDTH - 130;
+    const cy = 110;
+    g.fillStyle(P.sun, 0.25).fillCircle(cx, cy, 70).fillStyle(P.sun, 0.35).fillCircle(cx, cy, 54);
+    const r = 4;
+    for (let y = -r; y <= r; y++) {
+      for (let x = -r; x <= r; x++) {
+        if (x * x + y * y <= r * r + 1) g.fillStyle(P.sun).fillRect(cx + x * 8 - 4, cy + y * 8 - 4, 8, 8);
+      }
+    }
+    [[120, 70, 1], [420, 130, 0.8], [640, 60, 1.1]].forEach(([x, y, size], i) => {
+      const u = Math.round(8 * size);
+      const cloud = this.add.graphics().setDepth(0).setPosition(x, y);
+      cloud.fillStyle(P.cloud, 0.92);
+      cloud.fillRect(0, u * 2, u * 9, u).fillRect(u, u, u * 7, u).fillRect(u * 3, 0, u * 3, u).fillRect(u * 6, u, u * 2, u);
+      this.tweens.add({ targets: cloud, x: x + 60 + i * 20, duration: 24000 + i * 6000, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+    });
   }
 
   // A pixel-art moon (stepped disc) in the upper right.

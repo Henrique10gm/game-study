@@ -4,6 +4,8 @@
 // No content strings live here.
 import Phaser from 'phaser';
 import { COLORS } from '../config';
+import { SCENE, THEME_IDS } from '../palette';
+import type { ScenePalette, ThemeId } from '../palette';
 import charactersUrl from '../../assets/characters.png';
 import heroUrl from '../../assets/hero.png';
 
@@ -84,6 +86,10 @@ export class BootScene extends Phaser.Scene {
   // Far-away city for the parallax: dark green blocks with a few lit windows.
   // 512 px wide and every building stays inside the tile, so it repeats cleanly.
   private makeSkyline(): void {
+    for (const theme of THEME_IDS) this.makeSkylineFor(theme, SCENE[theme]);
+  }
+
+  private makeSkylineFor(theme: ThemeId, P: ScenePalette): void {
     const width = 512;
     const height = 220;
     const g = this.add.graphics();
@@ -99,16 +105,16 @@ export class BootScene extends Phaser.Scene {
     ];
     buildings.forEach((b, index) => {
       const top = height - b.h;
-      g.fillStyle(index % 2 === 0 ? COLORS.forest : COLORS.petrol).fillRect(b.x, top, b.w, b.h);
-      g.fillStyle(COLORS.black, 0.35).fillRect(b.x + b.w - 8, top, 8, b.h);
+      g.fillStyle(index % 2 === 0 ? P.cityA : P.cityB).fillRect(b.x, top, b.w, b.h);
+      g.fillStyle(P.cityShade, 0.3).fillRect(b.x + b.w - 8, top, 8, b.h);
       for (let wy = top + 12; wy < height - 8; wy += 18) {
         for (let wx = b.x + 8; wx < b.x + b.w - 14; wx += 14) {
           const lit = (wx * 7 + wy * 13 + index * 5) % 5 === 0;
-          if (lit) g.fillStyle(COLORS.lime, 0.55).fillRect(wx, wy, 6, 8);
+          if (lit) g.fillStyle(P.windowLit, P.windowAlpha).fillRect(wx, wy, 6, 8);
         }
       }
     });
-    g.generateTexture('skyline', width, height);
+    g.generateTexture(`skyline-${theme}`, width, height);
     g.destroy();
   }
 
@@ -254,13 +260,16 @@ export class BootScene extends Phaser.Scene {
   }
 
   private makeGroundTexture(): void {
-    const g = this.add.graphics();
-    g.fillStyle(COLORS.petrol).fillRect(0, 0, 32, 32);
-    g.fillStyle(COLORS.grayNeutral).fillRect(0, 0, 32, 8);
-    g.fillStyle(COLORS.grayMid).fillRect(0, 8, 32, 3);
-    g.fillStyle(COLORS.forest).fillRect(6, 16, 4, 4).fillRect(20, 22, 4, 4).fillRect(26, 14, 3, 3);
-    g.generateTexture('ground', 32, 32);
-    g.destroy();
+    for (const theme of THEME_IDS) {
+      const P = SCENE[theme];
+      const g = this.add.graphics();
+      g.fillStyle(P.groundBase).fillRect(0, 0, 32, 32);
+      g.fillStyle(P.groundTop).fillRect(0, 0, 32, 8);
+      g.fillStyle(P.groundLine).fillRect(0, 8, 32, 3);
+      g.fillStyle(P.groundSpeck).fillRect(6, 16, 4, 4).fillRect(20, 22, 4, 4).fillRect(26, 14, 3, 3);
+      g.generateTexture(`ground-${theme}`, 32, 32);
+      g.destroy();
+    }
   }
 
   // The coin (lime, the brand accent), 4 frames of a spin (24x24 each). It is

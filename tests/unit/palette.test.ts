@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { cssVarName, THEME_IDS, UI } from '../../src/engine/palette';
+import { cssVarName, SCENE, THEME_IDS, UI } from '../../src/engine/palette';
+import { seededRandom } from '../../src/engine/seed';
 import type { ThemeId, UiPalette } from '../../src/engine/palette';
 import {
   applyTheme,
@@ -146,5 +147,37 @@ describe('theme', () => {
     expect(toggleTheme(storage)).toBe('day');
     expect(toggleTheme(storage)).toBe('night');
     expect(storage.getItem(THEME_KEY)).toBe('night');
+  });
+});
+
+describe.each(THEME_IDS)('%s scenery', (theme) => {
+  const S = SCENE[theme];
+  const hex = (n: number): string => `#${n.toString(16).padStart(6, '0')}`;
+
+  it('title text stays readable over the sky, the wall and the floor it is drawn on', () => {
+    for (const back of [S.skyTop, S.skyBottom, S.wall]) {
+      expect(contrast(S.ink, hex(back)), `ink on ${hex(back)}`).toBeGreaterThanOrEqual(4.5);
+      expect(contrast(S.inkMuted, hex(back)), `muted on ${hex(back)}`).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
+  it('floating labels (the accent text) read over the run sky', () => {
+    expect(contrast(S.accentText, S.skyRun)).toBeGreaterThanOrEqual(4.5);
+  });
+
+  it('only the day has a sun and a lamp that is off', () => {
+    expect(S.isDay).toBe(theme === 'day');
+    expect(S.lampGlowAlpha > 0).toBe(theme === 'night');
+  });
+});
+
+describe('seededRandom', () => {
+  it('gives the same street numbers every time, for the same seed', () => {
+    const a = seededRandom(20261022);
+    const b = seededRandom(20261022);
+    const first = Array.from({ length: 8 }, () => a());
+    expect(Array.from({ length: 8 }, () => b())).toEqual(first);
+    expect(first.every((n) => n >= 0 && n < 1)).toBe(true);
+    expect(Array.from({ length: 8 }, () => seededRandom(1)())).not.toEqual(first);
   });
 });

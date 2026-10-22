@@ -26,6 +26,7 @@ import { hideLoader, showLoader } from '../engine/ui/bootLoader';
 import { UpdateNotice } from '../engine/ui/UpdateNotice';
 import { markUpdateSeen, pendingUpdate } from '../engine/updates';
 import { startScreenTimer } from '../engine/screenTime';
+import { THEME_EVENT } from '../engine/theme';
 import type { GameStore } from '../state/GameStore';
 import type { GroupsApi } from '../state/GroupService';
 import { LocalGameStore } from '../state/LocalGameStore';
@@ -95,6 +96,7 @@ export class App {
     this.ranking = new RankingScreen(this.uiRoot);
     this.groupsScreen = new GroupsScreen(this.uiRoot);
     this.groups = opts.groups ?? null;
+    window.addEventListener(THEME_EVENT, () => this.redrawForTheme());
     this.notice = opts.initialNotice;
     this.updateNotice = new UpdateNotice(this.uiRoot);
   }
@@ -117,6 +119,14 @@ export class App {
     startScreenTimer((report) => this.store.recordScreenTime(report), () => this.room?.def.id ?? null);
     this.showEntrance();
     hideLoader();
+  }
+
+  // The street, the hall and the bank inside are drawn with the theme's colors: when it
+  // changes, draw the one on screen again. A run in progress keeps its look until the next one.
+  private redrawForTheme(): void {
+    for (const key of ['MenuScene', 'HubScene']) {
+      if (this.game.scene.isActive(key)) this.game.scene.getScene(key).scene.restart();
+    }
   }
 
   // The news card goes over the hall (not the first thing a player sees), once per update.

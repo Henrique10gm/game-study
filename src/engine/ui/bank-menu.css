@@ -408,6 +408,13 @@
   transform-origin: top left;
 }
 
+/* Only the corner pieces (the hall): nothing to scroll, so no veil over the scene. */
+.bank-stage--compact.bank-stage--chrome {
+  background: none;
+  pointer-events: none;
+  overflow: visible;
+}
+
 .bank-stage--compact .bank-panel,
 .bank-stage--compact .bank-card,
 .bank-stage--compact .bank-hall {

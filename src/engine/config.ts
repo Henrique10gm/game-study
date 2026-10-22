@@ -20,11 +20,11 @@ export const FONT_SERIF = "'Merriweather Variable', Georgia, serif";
 export const FONT_SANS = "'Merriweather Sans Variable', sans-serif";
 // neutral palette (hex numbers for Phaser, strings for text).
 export const COLORS = {
-  black: 0x1a1615,
+  black: 0x151211,
   forest: 0x0f352b,
   petrol: 0x243833,
   moss: 0x274e13,
-  lime: 0xdbffa5,
+  lime: 0xd2f58c,
   paper: 0xfcf8ec,
   white: 0xffffff,
   grayMid: 0x9e9e9e,

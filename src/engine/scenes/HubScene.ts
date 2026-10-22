@@ -9,6 +9,7 @@ import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH } from '../confi
 import { CREDITS } from '../credits';
 import { Secrets } from '../secrets';
 import { BankMenu } from '../ui/BankMenu';
+import { scene } from '../palette';
 import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import type { HeroView } from './BootScene';
@@ -174,32 +175,33 @@ export class HubScene extends Phaser.Scene {
 
   private buildHall(): void {
     const g = this.add.graphics().setDepth(0);
+    const P = scene();
 
     // Wall with wainscot, then the checkered floor (same language as the bank inside).
-    g.fillStyle(COLORS.black).fillRect(0, 0, GAME_WIDTH, WALL_BOTTOM);
-    g.fillStyle(COLORS.petrol).fillRect(0, 320, GAME_WIDTH, WALL_BOTTOM - 320);
-    g.fillStyle(COLORS.forest).fillRect(0, 316, GAME_WIDTH, 6);
+    g.fillStyle(P.wall).fillRect(0, 0, GAME_WIDTH, WALL_BOTTOM);
+    g.fillStyle(P.wainscot).fillRect(0, 320, GAME_WIDTH, WALL_BOTTOM - 320);
+    g.fillStyle(P.trim).fillRect(0, 316, GAME_WIDTH, 6);
     for (let ty = WALL_BOTTOM; ty < GAME_HEIGHT; ty += 48) {
       for (let tx = 0; tx < GAME_WIDTH; tx += 48) {
         const light = ((tx / 48 + (ty - WALL_BOTTOM) / 48) | 0) % 2 === 0;
-        g.fillStyle(light ? COLORS.paper : COLORS.grayNeutral).fillRect(tx, ty, 48, 48);
+        g.fillStyle(light ? P.floorLight : P.floorDark).fillRect(tx, ty, 48, 48);
       }
     }
-    g.fillStyle(COLORS.forest).fillRect(0, WALL_BOTTOM - 6, GAME_WIDTH, 12);
+    g.fillStyle(P.trim).fillRect(0, WALL_BOTTOM - 6, GAME_WIDTH, 12);
 
     // Ceiling lights.
     for (const lx of [150, 480, 810]) {
-      g.fillStyle(COLORS.paper, 0.9).fillRect(lx - 36, 0, 72, 8);
-      g.fillStyle(COLORS.paper, 0.06).fillTriangle(lx - 36, 8, lx + 36, 8, lx, 140);
+      g.fillStyle(P.ceilingLight, 0.9).fillRect(lx - 36, 0, 72, 8);
+      g.fillStyle(P.ceilingLight, 0.06).fillTriangle(lx - 36, 8, lx + 36, 8, lx, 140);
     }
 
     this.addText(64, 36, 'QUEST HALL · SALÃO DE JOGOS', {
       fontFamily: FONT_SANS,
       fontSize: '12px',
       fontStyle: '800',
-      color: MUTED,
+      color: P.inkMuted,
     }).setLetterSpacing(2);
-    this.addText(64, 54, 'Escolha sua sala', { fontFamily: FONT_SERIF, fontSize: '34px', color: WHITE });
+    this.addText(64, 54, 'Escolha sua sala', { fontFamily: FONT_SERIF, fontSize: '34px', color: P.ink });
     this.addText(48, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar na sala     ou clique na porta' : 'Toque na porta da sala', {
       fontFamily: FONT_SANS,
       fontSize: '14px',
