@@ -1,0 +1,12 @@
+# Cloudflare Pages: headers aplicados a todas as respostas (arquivo copiado para dist/ no build).
+# A CSP aqui é a que vale em produção. Se o projeto Supabase mudar, troque o host em connect-src.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' data: blob:; worker-src 'self' blob:; connect-src 'self' https://hglvemkclpwpenhxzfdg.supabase.co; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Arquivos com hash no nome nunca mudam: cache longo.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
