@@ -34,7 +34,7 @@
   padding: var(--space-sm) var(--space-md);
   background: var(--color-bg);
   color: var(--color-text);
-  border: 2px solid var(--color-line);
+  border: 2px solid var(--color-line-strong);
   border-radius: 0;
   font-family: var(--font-family);
   font-size: var(--type-body-size);
@@ -105,12 +105,12 @@
 /* Your own row: solid lime block. */
 .rank-row--me {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   border-bottom-color: transparent;
 }
 
 .rank-row--me .rank-cell:first-child {
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
 }
 
 .rank-empty,

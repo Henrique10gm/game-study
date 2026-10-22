@@ -1,0 +1,29 @@
+/* Bottom-right controls: above the sign-in screen so the theme can be changed there too. */
+.app-corner {
+  position: absolute;
+  right: var(--space-sm);
+  bottom: var(--space-sm);
+  z-index: 60;
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.app-corner-btn {
+  min-height: 32px;
+  min-width: 32px;
+  padding: 0 var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  border: 2px solid var(--color-line-strong);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.app-corner-btn:hover,
+.app-corner-btn:focus-visible {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}

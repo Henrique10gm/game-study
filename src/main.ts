@@ -11,6 +11,8 @@ import { ROOMS } from './engine/content/rooms';
 import { createLiveContent } from './engine/content/remoteContent';
 import { mountSignOut, requireSession } from './auth/AuthGate';
 import { createSupabase } from './auth/supabaseClient';
+import { applyTheme, initialTheme } from './engine/theme';
+import { mountThemeToggle } from './engine/ui/ThemeToggle';
 import { consoleGreeting } from './engine/easterEggs';
 import { bindFullscreenKey } from './engine/ui/fullscreen';
 import { watchOrientation } from './engine/ui/orientationHint';
@@ -47,6 +49,8 @@ captureInviteFromUrl(storage);
 // With Supabase settings the player signs in first (the game only loads after that);
 // without them the game runs offline on this device.
 async function boot(root: HTMLElement): Promise<void> {
+  applyTheme(initialTheme()); // already set by public/theme-init.js; this covers a blocked script
+  mountThemeToggle(root);
   const client = createSupabase();
   let userId: string | null = null;
   if (client) {

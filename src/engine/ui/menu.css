@@ -64,7 +64,7 @@
 
 .menu-btn {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   border: none;
   border-radius: 0;
   min-height: var(--touch-min);

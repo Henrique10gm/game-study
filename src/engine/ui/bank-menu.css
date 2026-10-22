@@ -20,11 +20,11 @@
   right: 32px;
   display: flex;
   align-items: baseline;
-  color: #fff;
+  color: var(--color-text);
   font-family: var(--font-family);
   font-size: 18px;
   letter-spacing: -0.01em;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 6px color-mix(in srgb, var(--color-bg) 60%, transparent);
 }
 
 .bank-logo-light {
@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: rgba(26, 22, 21, 0.97);
+  background: color-mix(in srgb, var(--color-bg) 97%, transparent);
   color: var(--color-text);
   font-family: var(--font-family);
   pointer-events: auto;
@@ -67,7 +67,7 @@
   font-size: 26px;
   font-weight: 400;
   line-height: 1.25;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .bank-note {
@@ -93,7 +93,7 @@
   padding: 10px 14px;
   margin: 0;
   background: transparent;
-  color: #fff;
+  color: var(--color-text);
   border: 0;
   border-bottom: 1px solid var(--color-line);
   border-radius: 0;
@@ -128,7 +128,7 @@
 /* Active row: solid lime block with squared corners. */
 .bank-item.is-active {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   font-weight: 600;
   border-bottom-color: transparent;
   outline: none;
@@ -140,11 +140,11 @@
 }
 
 .bank-item.is-active .bank-item-meta {
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
 }
 
 .bank-item.is-active .px-bar > span {
-  background: rgba(26, 22, 21, 0.2);
+  background: color-mix(in srgb, var(--color-bg) 20%, transparent);
 }
 
 .bank-item.is-active .px-bar > span.on {
@@ -162,7 +162,7 @@
   font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  color: color-mix(in srgb, var(--color-text) 80%, transparent);
 }
 
 .bank-hint {
@@ -184,7 +184,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  background: rgba(26, 22, 21, 0.97);
+  background: color-mix(in srgb, var(--color-bg) 97%, transparent);
   color: var(--color-text);
   font-family: var(--font-family);
   pointer-events: none;
@@ -195,7 +195,7 @@
   font-family: var(--font-serif);
   font-size: 44px;
   line-height: 1;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .bank-card .px-bar {
@@ -206,7 +206,7 @@
   margin: 0;
   font-size: 12px;
   line-height: 1.4;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .bank-card-sub {
@@ -221,7 +221,7 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  color: color-mix(in srgb, var(--color-text) 80%, transparent);
 }
 
 .bank-level {
@@ -252,7 +252,7 @@
 }
 
 .bank-streak.is-risk {
-  color: #fff;
+  color: var(--color-text);
 }
 
 /* "Tela cheia": left of the wordmark. */
@@ -298,7 +298,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-muted);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 6px color-mix(in srgb, var(--color-bg) 60%, transparent);
 }
 
 .bank-secrets[hidden] {
@@ -316,7 +316,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: rgba(26, 22, 21, 0.97);
+  background: color-mix(in srgb, var(--color-bg) 97%, transparent);
   color: var(--color-text);
   font-family: var(--font-family);
   pointer-events: auto;
@@ -364,13 +364,13 @@
 
 .bank-hall-row.is-me {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   border-bottom-color: transparent;
 }
 
 .bank-hall-row.is-me .bank-hall-pos,
 .bank-hall-row.is-me .bank-hall-score {
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
 }
 
 .bank-hall-open {
@@ -391,7 +391,7 @@
 .bank-hall-open:hover,
 .bank-hall-open:focus-visible {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   outline: none;
 }
 
@@ -403,7 +403,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: rgba(26, 22, 21, 0.9);
+  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
   pointer-events: auto;
   transform-origin: top left;
 }

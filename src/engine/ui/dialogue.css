@@ -84,7 +84,7 @@
 .choice-button--correct {
   border-color: var(--color-accent);
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
 }
 
 .choice-button--correct::before {
@@ -133,7 +133,7 @@
 
 .btn-continue {
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   border: none;
   border-radius: 0;
   min-height: var(--touch-min);
@@ -234,7 +234,7 @@
 .dialogue-timer-bar {
   flex: 1;
   height: 10px;
-  background: rgba(255, 255, 255, 0.14);
+  background: color-mix(in srgb, var(--color-text) 14%, transparent);
 }
 
 .dialogue-timer-fill {
@@ -266,7 +266,7 @@
 
 .dialogue-line {
   max-width: 68ch;
-  color: rgba(255, 255, 255, 0.82);
+  color: color-mix(in srgb, var(--color-text) 82%, transparent);
   line-height: 1.6;
 }
 
@@ -310,7 +310,7 @@
 
 /* Keyboard selection: the highlighted answer is unmistakable (arrows move it, Enter confirms). */
 .choice-button:not(:disabled):focus-visible {
-  background: #36302d;
+  background: var(--color-surface-raised);
   box-shadow: inset 6px 0 0 var(--color-accent);
 }
 

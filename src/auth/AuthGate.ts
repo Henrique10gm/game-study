@@ -5,6 +5,7 @@
 import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { mountCaptcha } from './turnstile';
 import type { CaptchaHandle } from './turnstile';
+import { appCorner } from '../engine/ui/corner';
 import './auth.css';
 
 export type AuthMode = 'signin' | 'signup' | 'forgot' | 'recovery';
@@ -260,11 +261,11 @@ export class AuthGate {
 
 /** Small "Sair" control kept over the game; signing out reloads so nothing of the old account stays in memory. */
 export function mountSignOut(client: SupabaseClient, uiRoot: HTMLElement): void {
-  const button = el('button', 'auth-signout', 'Sair');
+  const button = el('button', 'app-corner-btn', 'Sair');
   button.type = 'button';
   button.dataset.testid = 'auth-signout';
   button.addEventListener('click', () => {
     void client.auth.signOut().finally(() => window.location.reload());
   });
-  uiRoot.appendChild(button);
+  appCorner(uiRoot).appendChild(button);
 }

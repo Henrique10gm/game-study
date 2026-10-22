@@ -8,7 +8,7 @@
   justify-content: center;
   padding: var(--space-md);
   box-sizing: border-box;
-  background: rgba(26, 22, 21, 0.82);
+  background: color-mix(in srgb, var(--color-bg) 82%, transparent);
   overflow-y: auto;
   z-index: 40;
 }
@@ -101,7 +101,7 @@
   border: 0;
   border-radius: 0;
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   font-family: var(--font-family);
   font-size: var(--type-label-size);
   font-weight: 800;

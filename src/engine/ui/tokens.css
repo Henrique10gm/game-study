@@ -37,24 +37,50 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-:root {
-  /* Semantic colors: feedback never borrows the accent (see docs/UI-REVIEW.md). */
+/* Colors. Night is the default; <html data-theme="day"> swaps the whole set.
+   The same hex values live in src/engine/palette.ts (a test keeps both in sync). */
+:root,
+:root[data-theme='night'] {
+  color-scheme: dark;
+  --color-bg: #151211;
+  --color-surface: #201B19;
+  --color-surface-raised: #2B2522;
+  --color-line: #3A332F;
+  --color-line-strong: #8B8178;
+  --color-text: #F6F1E4;
+  --color-muted: #B3ABA0;
+  --color-accent: #D2F58C;
+  --color-accent-hover: #E6FFB4;
+  --color-accent-ink: #151211;
   --color-danger: #FF8F80;
   --color-success: #7FD8A6;
   --color-warning: #F2C25B;
-  --color-accent-hover: #E6FFB4;
-  --color-accent-ink: var(--color-bg);
-  --color-surface-raised: #2B2522;
-
-  /* Color */
-  --color-bg: #1A1615; /* Preto quente */
-  --color-surface: #26211F;
-  --color-accent: #DBFFA5; /* Verde limão */
-  --color-text: #FFFFFF;
-  --color-muted: #9E9E9E;
-  --color-line: rgba(255, 255, 255, 0.16);
   --color-paper: #FCF8EC;
+  --color-forest: #0F352B;
+  --color-wrong: #D4CFC8;
+}
 
+:root[data-theme='day'] {
+  color-scheme: light;
+  --color-bg: #F6F1E4;
+  --color-surface: #FFFCF4;
+  --color-surface-raised: #EDE5D2;
+  --color-line: #D9D0BC;
+  --color-line-strong: #7B7064;
+  --color-text: #1B1714;
+  --color-muted: #5C5348;
+  --color-accent: #2E6B1E;
+  --color-accent-hover: #245A17;
+  --color-accent-ink: #FFFFFF;
+  --color-danger: #B3261E;
+  --color-success: #1D7447;
+  --color-warning: #8A5A00;
+  --color-paper: #2A241E;
+  --color-forest: #C9D3B8;
+  --color-wrong: #6B6258;
+}
+
+:root {
   /* Spacing scale (multiples of 4) */
   --space-xs: 4px;
   --space-sm: 8px;

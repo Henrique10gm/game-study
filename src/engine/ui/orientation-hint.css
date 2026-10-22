@@ -22,7 +22,7 @@
   border: 0;
   border-radius: 0;
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-accent-ink);
   font-family: var(--font-family);
   font-weight: 800;
   cursor: pointer;
