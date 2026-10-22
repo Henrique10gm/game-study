@@ -1,0 +1,132 @@
+/* "Reportar um problema": link-style button under the feedback + the report form. */
+
+.btn-report {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: var(--space-xs) 0;
+  margin-top: var(--space-xs);
+  color: var(--color-muted);
+  font-family: var(--font-family);
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-report:hover,
+.btn-report:focus-visible {
+  color: var(--color-text);
+  outline: none;
+}
+
+.btn-report:disabled {
+  text-decoration: none;
+  cursor: default;
+  color: var(--color-accent);
+}
+
+.report-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border: 2px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.report-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: var(--type-label-size);
+}
+
+.report-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.report-reason {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-line);
+  border-radius: 0;
+  min-height: 40px;
+  padding: var(--space-xs) var(--space-md);
+  font-family: var(--font-family);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.report-reason:hover,
+.report-reason:focus-visible {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.report-reason.is-selected {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.report-comment {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-line);
+  border-radius: 0;
+  padding: var(--space-sm);
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.report-comment:focus-visible {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.report-status {
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
+
+.report-cancel,
+.report-send {
+  min-height: 40px;
+  padding: var(--space-xs) var(--space-lg);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.report-cancel {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-line);
+}
+
+.report-send {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+}
+
+.report-send:disabled,
+.report-cancel:disabled {
+  opacity: 0.45;
+  cursor: default;
+}

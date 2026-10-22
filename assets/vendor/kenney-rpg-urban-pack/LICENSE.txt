@@ -1,0 +1,46 @@
+Compliance Quest ABT1 — vendored third-party art provenance record
+====================================================================
+
+Pack name:      RPG Urban Pack 1.0
+Author:         Kenney (www.kenney.nl)
+Source page:    https://kenney.nl/assets/rpg-urban-pack
+Direct download URL:
+  https://kenney.nl/media/pages/assets/rpg-urban-pack/0a097d1dc7-1677578575/kenney_rpg-urban-pack.zip
+
+License:        Creative Commons Zero 1.0 Universal (CC0 1.0) — public domain
+                dedication. No attribution is legally required; this record is
+                kept anyway for provenance and audit purposes.
+                https://creativecommons.org/publicdomain/zero/1.0/
+
+Download date:  2026-09-28
+Zip SHA-256:    4541d89d639fc7d1e905dd925e55b1c4977a41d983516228db1d57173bb9afaf
+
+This content is free to use in personal, educational and commercial projects,
+per the pack's own License.txt (copied verbatim alongside this file as
+KENNEY-License.txt).
+
+Vendored files (unmodified, copied byte-for-byte from the zip; original path
+inside the zip -> vendored path -> SHA-256 of the vendored file):
+
+  Tilemap/tilemap_packed.png -> assets/vendor/kenney-rpg-urban-pack/tilemap_packed.png
+    SHA-256: 305e71fa778444a0858c33988d45a6b79ea923f500f96079f4378347cf6ad389
+
+  License.txt -> assets/vendor/kenney-rpg-urban-pack/KENNEY-License.txt
+    (pack's own license file, copied verbatim, not hash-pinned by the build
+    script since it is not decoded/composed — only tilemap_packed.png is)
+
+Only tilemap_packed.png is used by scripts/compose-assets.mjs. It is a single
+432x288 sprite sheet: 27 columns x 18 rows of 16x16 cells, no margin, no
+spacing (per the pack's own Tilemap/tilemap.txt, which documents the *spaced*
+tilemap.png variant at 1px spacing — the "_packed" variant used here has 0
+margin / 0 spacing, confirmed by its pixel dimensions 432x288 = 27*16 x
+18*16).
+
+All cropping, compositing (layering furniture/window icons over floor/wall
+base tiles) and 2x nearest-neighbor upscaling to the engine's 32x32 tile
+contract happens in scripts/compose-assets.mjs — the file above is never
+modified in place, only read.
+
+Font (Inter) is a separate, unrelated asset vendored from the npm package
+@fontsource-variable/inter under the SIL Open Font License 1.1 — see
+assets/fonts/OFL.txt.

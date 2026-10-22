@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "pun-01",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "cmn-competencia-normativa-sem-poder-punitivo",
+      "dialogue": [
+        {
+          "speaker": "Marcos Tavares — Analista de Compliance",
+          "text": "Estou montando o mapa de quem pode punir dentro do Sistema Financeiro Nacional e fiquei em dúvida sobre o papel do Conselho Monetário Nacional."
+        }
+      ],
+      "question": "O Conselho Monetário Nacional (CMN) é o órgão normativo máximo do SFN. Sobre o seu poder de punir e aplicar sanções a instituições financeiras e correntistas, qual alternativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O CMN tem poder sancionador direto: pode instaurar Processo Administrativo Sancionador (PAS) e cassar a autorização de funcionamento de bancos.",
+          "correct": false,
+          "feedback": "Instruir PAS e cassar autorizações é atribuição do Banco Central, não do CMN. O CMN apenas edita normas e diretrizes."
+        },
+        {
+          "id": "b",
+          "text": "O CMN julga em última instância os crimes de lavagem de dinheiro e aplica penas de reclusão.",
+          "correct": false,
+          "feedback": "Crimes são julgados exclusivamente pelo Poder Judiciário. O CMN não exerce função jurisdicional nem aplica penas criminais."
+        },
+        {
+          "id": "c",
+          "text": "O CMN é um órgão estritamente normativo e fixador de diretrizes: não fiscaliza diretamente nem aplica punições ou sanções administrativas a entidades do SFN.",
+          "correct": true,
+          "feedback": "Correto. O CMN define as diretrizes de política monetária, crédito e câmbio, mas não executa, não fiscaliza e não tem poder sancionador administrativo nem penal direto."
+        },
+        {
+          "id": "d",
+          "text": "O CMN aplica advertências e multas apenas aos correspondentes cambiais que descumprirem o limite de US$ 3.000,00.",
+          "correct": false,
+          "feedback": "O CMN fixa o limite, mas não fiscaliza nem pune correspondentes diretamente. A punição administrativa cabe ao supervisor, o Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-02",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "bcb-poder-sancionador-administrativo",
+      "dialogue": [
+        {
+          "speaker": "Juliana Ribeiro — Analista de PLD",
+          "text": "Estou preparando o treinamento de PLD do time e preciso explicar até onde vai o poder de punição do Banco Central."
+        }
+      ],
+      "question": "O Banco Central do Brasil (BCB) é o órgão supervisor e executor do SFN. Em suas atribuições regulatórias e de compliance, qual é a extensão exata do seu poder de punição?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O BCB tem poder sancionador administrativo sobre as instituições autorizadas e pode aplicar advertência, multa, inabilitação temporária e cassação de licença, mas não pode aplicar penas de prisão.",
+          "correct": true,
+          "feedback": "Correto. O BCB pune apenas na esfera administrativa, por meio do Processo Administrativo Sancionador (PAS): advertência, multa, inabilitação temporária e cassação da autorização. Penas de prisão são do Judiciário."
+        },
+        {
+          "id": "b",
+          "text": "O BCB tem poder sancionador administrativo sobre as instituições autorizadas e pode aplicar advertência, multa, inabilitação temporária e cassação de licença, e também pode determinar a prisão preventiva de administradores.",
+          "correct": false,
+          "feedback": "Incorreta. O BCB não decreta prisão, que é atribuição do Judiciário; o trecho que muda a resposta é \"e também pode determinar a prisão preventiva\"."
+        },
+        {
+          "id": "c",
+          "text": "O BCB tem poder sancionador administrativo sobre as instituições autorizadas, mas só pode aplicar advertência e multa, sem inabilitação temporária nem cassação de licença.",
+          "correct": false,
+          "feedback": "Incorreta. O BCB também pode inabilitar e cassar a autorização; o trecho que muda a resposta é \"mas só pode aplicar advertência e multa\"."
+        },
+        {
+          "id": "d",
+          "text": "O BCB tem poder sancionador administrativo sobre os bancos e pode aplicar advertência, multa, inabilitação temporária e cassação de licença, mas não sobre as corretoras de câmbio.",
+          "correct": false,
+          "feedback": "Incorreta. O poder sancionador alcança as instituições autorizadas em geral, inclusive corretoras de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-03",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "coaf-uif-sem-poder-sancionador-sobre-bancos",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lima — Analista de Compliance",
+          "text": "Um analista de compliance do mercado imobiliário me perguntou se o COAF pode punir os bancos regulados pelo Banco Central. Quero responder com segurança."
+        }
+      ],
+      "question": "Sobre a capacidade punitiva do COAF em relação aos bancos regulados pelo Banco Central, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O COAF pode cassar a licença de funcionamento de um banco comercial que deixar de comunicar uma operação suspeita de R$ 500.000,00.",
+          "correct": false,
+          "feedback": "O COAF não cassa autorizações bancárias. Quem pode cassar a licença de um banco, em processo administrativo, é o Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "O COAF é a Unidade de Inteligência Financeira (UIF) do Brasil e não tem poder sancionador nem fiscaliza diretamente as instituições financeiras reguladas pelo Banco Central.",
+          "correct": true,
+          "feedback": "Correto. O COAF é a UIF nacional: recebe e analisa comunicações de operações atípicas e produz Relatórios de Inteligência Financeira (RIFs). Para o setor bancário e cambial, quem fiscaliza e pune administrativamente é o BCB."
+        },
+        {
+          "id": "c",
+          "text": "O COAF aplica penas de detenção de 1 a 4 anos aos diretores de compliance que se omitirem na comunicação de operações suspeitas.",
+          "correct": false,
+          "feedback": "Detenção é pena criminal, aplicada somente pelo Poder Judiciário. O COAF não aplica penas privativas de liberdade."
+        },
+        {
+          "id": "d",
+          "text": "O COAF atua como tribunal de exceção e pode julgar crimes financeiros em concorrência com a Justiça Federal.",
+          "correct": false,
+          "feedback": "O COAF não julga crimes. É um órgão de inteligência financeira, sem função jurisdicional."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-04",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "judiciario-penas-privativas-de-liberdade",
+      "dialogue": [
+        {
+          "speaker": "Paulo Andrade — Coordenador de Compliance",
+          "text": "Estou organizando um quadro que separa a esfera administrativa da esfera criminal, e falta preencher a coluna das penas de prisão por crimes financeiros."
+        }
+      ],
+      "question": "Na divisão entre a esfera administrativa do SFN e a esfera criminal do Estado, qual autoridade é constitucionalmente competente para aplicar penas privativas de liberdade (reclusão e detenção) por crimes financeiros?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Diretoria Colegiada do Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "O Banco Central integra o Poder Executivo e atua apenas na esfera administrativa. Não aplica penas privativas de liberdade."
+        },
+        {
+          "id": "b",
+          "text": "O Plenário do Conselho de Controle de Atividades Financeiras (COAF).",
+          "correct": false,
+          "feedback": "O COAF também integra o Poder Executivo e só atua na esfera administrativa. Não tem competência para prender nem condenar."
+        },
+        {
+          "id": "c",
+          "text": "O Poder Judiciário (Justiça Federal ou Estadual, conforme o caso).",
+          "correct": true,
+          "feedback": "Correto. Aplicar reclusão ou detenção é competência exclusiva do Poder Judiciário, que deve respeitar o devido processo legal e a ampla defesa."
+        },
+        {
+          "id": "d",
+          "text": "A Polícia Federal, mediante portaria sancionadora no inquérito.",
+          "correct": false,
+          "feedback": "A Polícia Federal é órgão de segurança pública e de investigação (inquérito policial). Não tem poder de julgar nem de aplicar pena."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-05",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "coaf-sancao-setores-sem-regulador-proprio",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Nogueira — Analista de Risco",
+          "text": "Recebi uma lista de empresas obrigadas pela lei de lavagem de dinheiro e preciso separar quais delas o COAF supervisiona e pune diretamente."
+        }
+      ],
+      "question": "O Plenário do COAF tem competência administrativa sancionadora apenas para setores específicos. Qual destas entidades está sujeita ao poder punitivo direto do COAF por descumprimento dos deveres da Lei nº 9.613/1998?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Um Banco Múltiplo com carteira de investimento, regulado pelo Banco Central.",
+          "correct": false,
+          "feedback": "Entidades reguladas pelo BCB são fiscalizadas e punidas administrativamente pelo próprio Banco Central, não diretamente pelo COAF."
+        },
+        {
+          "id": "b",
+          "text": "Uma Sociedade Corretora de Títulos e Valores Mobiliários (SCTVM) regulada pela CVM.",
+          "correct": false,
+          "feedback": "Entidades que têm supervisor setorial, como a CVM, são punidas por ele. O COAF só pune quem não tem órgão regulador próprio."
+        },
+        {
+          "id": "c",
+          "text": "Uma empresa de fomento mercantil (factoring) ou de comércio de joias que não tenha órgão regulador próprio.",
+          "correct": true,
+          "feedback": "Correto. O COAF é regulador, fiscalizador e sancionador apenas das pessoas jurídicas obrigadas do Art. 9º da Lei nº 9.613/1998 que não têm órgão regulador próprio, como factorings e joalherias."
+        },
+        {
+          "id": "d",
+          "text": "Uma sociedade seguradora autorizada a funcionar pela SUSEP.",
+          "correct": false,
+          "feedback": "Seguradoras são supervisionadas e punidas administrativamente pela SUSEP, seu supervisor setorial."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-06",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "bcb-pas-sancoes-vedadas-prisao",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Campos — Analista de Supervisão Cambial",
+          "text": "O Banco Central achou falhas graves de KYC numa corretora de câmbio parceira e abriu um PAS. Estou listando as consequências possíveis para o relatório."
+        }
+      ],
+      "question": "Nesse PAS contra a corretora de câmbio, qual das alternativas indica uma sanção que o BCB NÃO PODE aplicar?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Multa pecuniária punitiva aos diretores responsáveis.",
+          "correct": false,
+          "feedback": "A multa é sanção administrativa legítima, prevista no arcabouço regulatório do BCB e no Art. 12 da Lei nº 9.613/1998. O BCB pode aplicá-la."
+        },
+        {
+          "id": "b",
+          "text": "Inabilitação temporária para o exercício de cargos de administração.",
+          "correct": false,
+          "feedback": "A inabilitação temporária é sanção administrativa prevista no Art. 12 da Lei nº 9.613/1998. O BCB pode aplicá-la."
+        },
+        {
+          "id": "c",
+          "text": "Decretação de prisão temporária dos operadores de mesa por 30 dias.",
+          "correct": true,
+          "feedback": "Correto, é a sanção que o BCB não pode aplicar. Prisão (temporária, preventiva ou definitiva) é medida penal, de competência exclusiva de um juiz do Poder Judiciário."
+        },
+        {
+          "id": "d",
+          "text": "Cassação da autorização para funcionamento da instituição.",
+          "correct": false,
+          "feedback": "A cassação da autorização é a sanção administrativa mais grave e o BCB pode aplicá-la, nos termos do Art. 12 da Lei nº 9.613/1998."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-07",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "cvm-sancoes-administrativas-mercado-de-capitais",
+      "dialogue": [
+        {
+          "speaker": "Camila Duarte — Analista de Compliance",
+          "text": "Uma parceira nossa é corretora de títulos e valores mobiliários e também opera câmbio. Quero entender o que a CVM pode fazer em relação a ela."
+        }
+      ],
+      "question": "A Comissão de Valores Mobiliários (CVM) é a autarquia que regula e fiscaliza o mercado de valores mobiliários. Em relação às corretoras de títulos e valores mobiliários que operam em câmbio e valores mobiliários, qual é a atribuição sancionadora da CVM?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aplicar sanções administrativas no âmbito do mercado de capitais pelo descumprimento das regras de PLD/FTP sob sua jurisdição.",
+          "correct": true,
+          "feedback": "Correto. A CVM tem poder administrativo sancionador sobre os participantes do mercado de valores mobiliários sob sua supervisão, inclusive quanto às regras de PLD/FTP."
+        },
+        {
+          "id": "b",
+          "text": "Julgar em definitivo os crimes de evasão de divisas praticados por fundos de investimento.",
+          "correct": false,
+          "feedback": "Crimes de evasão de divisas são julgados pela Justiça Federal. A CVM não tem função jurisdicional."
+        },
+        {
+          "id": "c",
+          "text": "Executar mandados de busca e apreensão expedidos pelo Ministério Público, sem ordem judicial.",
+          "correct": false,
+          "feedback": "Busca e apreensão exige ordem do Poder Judiciário. Nem o Ministério Público nem a CVM podem dispensá-la."
+        },
+        {
+          "id": "d",
+          "text": "Cassar o registro civil das pessoas físicas envolvidas em fraudes bancárias.",
+          "correct": false,
+          "feedback": "A CVM não tem poder algum sobre o registro civil de pessoas físicas. Sua atuação é administrativa e restrita ao mercado de valores mobiliários."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-08",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "pf-mpf-persecucao-penal-sem-poder-de-punir",
+      "dialogue": [
+        {
+          "speaker": "Thiago Barbosa — Analista de Investigações",
+          "text": "Saiu uma notícia sobre PF e MPF apurando um esquema de lavagem de dinheiro em operações de câmbio, e o pessoal da área está perguntando o que cada um deles pode punir."
+        }
+      ],
+      "question": "Em um caso de repercussão nacional, a Polícia Federal e o Ministério Público Federal (MPF) apuraram um esquema de lavagem de dinheiro em operações de câmbio. Sobre a capacidade punitiva da PF e do MPF, qual afirmativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O MPF pode aplicar multas administrativas diretamente sobre as contas bancárias dos réus, sem necessidade de ação judicial.",
+          "correct": false,
+          "feedback": "O MPF não aplica multas administrativas nem atinge contas por conta própria. Atribui funções sancionadoras que ele não tem."
+        },
+        {
+          "id": "b",
+          "text": "A Polícia Federal tem competência para aplicar a pena de inabilitação de diretores por até 10 anos.",
+          "correct": false,
+          "feedback": "A inabilitação é sanção administrativa do regulador (BCB), não da Polícia Federal, que só investiga."
+        },
+        {
+          "id": "c",
+          "text": "Tanto a PF quanto o MPF atuam nas fases de investigação e acusação, sem poder para julgar nem aplicar penas por conta própria.",
+          "correct": true,
+          "feedback": "Correto. A Polícia Federal investiga e o Ministério Público é o titular da ação penal. Ambos promovem a persecução penal, mas julgar e aplicar a pena depende do Poder Judiciário."
+        },
+        {
+          "id": "d",
+          "text": "O MPF pode julgar Processos Administrativos Sancionadores no âmbito do Banco Central.",
+          "correct": false,
+          "feedback": "Os PAS são instruídos e julgados pelo próprio Banco Central. O MPF não tem função julgadora."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-09",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "susep-previc-sancoes-setoriais-pld",
+      "dialogue": [
+        {
+          "speaker": "Larissa Pacheco — Analista de PLD",
+          "text": "Estamos mapeando os supervisores setoriais e fiquei na dúvida sobre até onde SUSEP e PREVIC podem punir em matéria de PLD."
+        }
+      ],
+      "question": "A Superintendência de Seguros Privados (SUSEP) e a Superintendência Nacional de Previdência Complementar (PREVIC) são órgãos supervisores integrantes do SFN. Na prevenção à lavagem de dinheiro (PLD/FTP), qual é a extensão do poder punitivo dessas entidades?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sanções administrativas sobre as entidades dos mercados de seguros, capitalização e previdência aberta e fechada que cada uma supervisiona.",
+          "correct": true,
+          "feedback": "Correto. SUSEP e PREVIC são supervisores setoriais e aplicam penalidades administrativas às entidades de seguros e previdência sob sua jurisdição."
+        },
+        {
+          "id": "b",
+          "text": "Sanções penais de reclusão aplicáveis a corretores de seguros que não comunicarem operações ao COAF.",
+          "correct": false,
+          "feedback": "Reclusão é pena criminal e só o Poder Judiciário a aplica. Supervisores administrativos não aplicam penas privativas de liberdade."
+        },
+        {
+          "id": "c",
+          "text": "Poder de cancelar autorizações de bancos comerciais e cooperativas de crédito.",
+          "correct": false,
+          "feedback": "A supervisão de bancos e cooperativas de crédito cabe ao Banco Central, não à SUSEP nem à PREVIC."
+        },
+        {
+          "id": "d",
+          "text": "Isenção total de fiscalização de PLD/FTP, que fica centralizada no Banco Central.",
+          "correct": false,
+          "feedback": "Cada supervisor cuida do seu setor. A fiscalização de PLD/FTP não é centralizada no Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-10",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-art12-sancao-menos-grave",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Salles — Analista de Compliance",
+          "text": "Preciso montar a escada de sanções do Art. 12 da lei de lavagem para o treinamento, do degrau mais leve ao mais pesado."
+        }
+      ],
+      "question": "O Art. 12 da Lei nº 9.613/1998 estabelece sanções administrativas para quem descumprir as obrigações de identificação de clientes, manutenção de cadastro e comunicação de operações atípicas. Qual alternativa apresenta a penalidade de menor gravidade prevista na lei?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Multa pecuniária de até R$ 20.000.000,00.",
+          "correct": false,
+          "feedback": "A multa de até R$ 20 milhões é uma sanção financeira severa, mais pesada que a advertência."
+        },
+        {
+          "id": "b",
+          "text": "Advertência.",
+          "correct": true,
+          "feedback": "Correto. A advertência é a sanção administrativa mais branda do Art. 12 da Lei nº 9.613/1998, aplicada em geral a falhas formais ou de menor gravidade que possam ser sanadas."
+        },
+        {
+          "id": "c",
+          "text": "Inabilitação temporária por 10 anos.",
+          "correct": false,
+          "feedback": "A inabilitação temporária afasta administradores dos cargos por um longo período e é bem mais grave que a advertência."
+        },
+        {
+          "id": "d",
+          "text": "Cassação da autorização para funcionamento.",
+          "correct": false,
+          "feedback": "A cassação é a sanção administrativa mais severa do artigo, pois encerra a atividade da instituição."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-11",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-art12-teto-multa-administrativa",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Moura — Gerente de Compliance",
+          "text": "Estamos revisando a matriz de risco de PLD e preciso registrar o valor máximo da multa administrativa por descumprimento das regras."
+        }
+      ],
+      "question": "Sobre a multa pecuniária administrativa prevista no Art. 12, inciso II, da Lei nº 9.613/1998, aplicada por reguladores como o BCB por descumprimento das regras de PLD/FTP, qual é o valor máximo fixado pela legislação vigente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "R$ 2.000.000,00 (dois milhões de reais).",
+          "correct": false,
+          "feedback": "Valor incorreto. O teto fixado na lei é bem superior a R$ 2 milhões."
+        },
+        {
+          "id": "b",
+          "text": "R$ 5.000.000,00 (cinco milhões de reais).",
+          "correct": false,
+          "feedback": "Valor incorreto. O teto legal da multa administrativa não é de R$ 5 milhões."
+        },
+        {
+          "id": "c",
+          "text": "R$ 20.000.000,00 (vinte milhões de reais).",
+          "correct": true,
+          "feedback": "Correto. O Art. 12, § 1º, da Lei nº 9.613/1998, com a redação da Lei nº 12.683/2012, determina que a multa não será superior a R$ 20.000.000,00."
+        },
+        {
+          "id": "d",
+          "text": "R$ 50.000.000,00 (cinquenta milhões de reais).",
+          "correct": false,
+          "feedback": "Valor incorreto. A lei não prevê teto de R$ 50 milhões para essa multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-12",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-art12-criterios-dosimetria-multa",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Pereira — Analista de Monitoramento",
+          "text": "Uma instituição de pagamento deixou de comunicar ao COAF, no prazo, uma série de operações em espécie atípicas que somavam R$ 10.000.000,00. Estamos estimando a multa possível."
+        }
+      ],
+      "question": "Na dosimetria da multa administrativa do Art. 12 da Lei nº 9.613/1998, quais são os critérios alternativos que servem de teto de cálculo, antes de atingir o limite absoluto em valor?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O dobro do valor da operação, o dobro do lucro real obtido (ou que presumivelmente seria obtido) com a operação, ou o valor de R$ 20 milhões.",
+          "correct": true,
+          "feedback": "Correto. Conforme o Art. 12, § 1º, a multa é variável e não superior ao dobro do valor da operação, ao dobro do lucro real obtido ou presumido, ou a R$ 20.000.000,00."
+        },
+        {
+          "id": "b",
+          "text": "Exatamente 10% do patrimônio líquido da instituição, em todos os casos.",
+          "correct": false,
+          "feedback": "Critério inventado. A lei não vincula a multa a um percentual fixo do patrimônio líquido."
+        },
+        {
+          "id": "c",
+          "text": "A metade do faturamento bruto anual da empresa, sem limite máximo.",
+          "correct": false,
+          "feedback": "Critério sem respaldo na lei. Além disso, a multa tem sim um limite absoluto em valor."
+        },
+        {
+          "id": "d",
+          "text": "O triplo da taxa PTAX do dia da infração multiplicada pelo montante da operação.",
+          "correct": false,
+          "feedback": "Critério inventado. A lei não usa a PTAX nem múltiplos dela para calcular a multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-13",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-art12-prazo-inabilitacao-administrador",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Rocha — Analista de Compliance",
+          "text": "Estou escrevendo a política interna de PLD e quero citar o prazo máximo de inabilitação de administradores previsto na lei."
+        }
+      ],
+      "question": "Entre as sanções administrativas do Art. 12 da Lei nº 9.613/1998, qual é o prazo máximo previsto para a inabilitação temporária para o exercício do cargo de administrador nas pessoas jurídicas sujeitas à lei?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até 2 (dois) anos.",
+          "correct": false,
+          "feedback": "Prazo incorreto. O limite previsto na lei é maior que 2 anos."
+        },
+        {
+          "id": "b",
+          "text": "Até 5 (cinco) anos.",
+          "correct": false,
+          "feedback": "Prazo incorreto. O limite previsto na lei é maior que 5 anos."
+        },
+        {
+          "id": "c",
+          "text": "Até 10 (dez) anos.",
+          "correct": true,
+          "feedback": "Correto. O Art. 12, inciso III, da Lei nº 9.613/1998 prevê a inabilitação temporária para cargo de conselho de administração ou diretoria das pessoas jurídicas do Art. 9º pelo prazo de até 10 anos."
+        },
+        {
+          "id": "d",
+          "text": "Até 20 (vinte) anos.",
+          "correct": false,
+          "feedback": "Prazo incorreto. A lei não prevê inabilitação de até 20 anos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-14",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-art12-cassacao-autorizacao",
+      "dialogue": [
+        {
+          "speaker": "Leonardo Siqueira — Analista de Supervisão",
+          "text": "Pediram um resumo da sanção mais dura do Art. 12, a cassação ou suspensão da autorização de funcionamento, e eu preciso deixar claro o critério para ela ser aplicada."
+        }
+      ],
+      "question": "A cassação ou suspensão da autorização para o exercício de atividade, operação ou funcionamento (Art. 12, IV, da Lei nº 9.613/1998) é a penalidade mais severa da esfera administrativa. Em qual situação ela é aplicável?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Automaticamente, na primeira falta cadastral simples cometida pela instituição.",
+          "correct": false,
+          "feedback": "Aplicar a pena máxima por uma falta simples fere o princípio da proporcionalidade e a gradação das sanções."
+        },
+        {
+          "id": "b",
+          "text": "Nos casos de graves descumprimentos das obrigações ou quando houver reincidência específica após a aplicação de sanções anteriores.",
+          "correct": true,
+          "feedback": "Correto. A cassação da licença é reservada às faltas gravíssimas ou à reincidência em que as sanções anteriores (advertência, multa, inabilitação) se mostraram ineficazes, respeitando a proporcionalidade."
+        },
+        {
+          "id": "c",
+          "text": "Exclusivamente quando o cliente da instituição for classificado como Pessoa Exposta Politicamente (PEP).",
+          "correct": false,
+          "feedback": "A condição de PEP do cliente não é, por si só, critério para cassar a autorização da instituição."
+        },
+        {
+          "id": "d",
+          "text": "Apenas quando a multa de R$ 20 milhões não for paga em até 24 horas.",
+          "correct": false,
+          "feedback": "A lei não condiciona a cassação ao pagamento da multa em 24 horas. Esse critério é inventado e viola a gradação das sanções."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-15",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "independencia-instancias-administrativa-penal",
+      "dialogue": [
+        {
+          "speaker": "Alessandra Ferraz — Advogada Interna",
+          "text": "Uma diretora de compliance de uma corretora de câmbio foi punida pelo Banco Central com inabilitação temporária de 3 anos por descumprimento grave de PLD, e agora o MPF decidiu denunciá-la por lavagem de dinheiro."
+        }
+      ],
+      "question": "O julgamento penal impede a aplicação da sanção administrativa anterior aplicada pelo Banco Central?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Não, pois as esferas administrativa e penal são autônomas e independentes, mas a punição administrativa só pode ser aplicada depois da condenação criminal.",
+          "correct": false,
+          "feedback": "Incorreta. A sanção administrativa não depende da condenação penal; o trecho que muda a resposta é \"só pode ser aplicada depois da condenação criminal\"."
+        },
+        {
+          "id": "b",
+          "text": "Não, pois as esferas administrativa e penal são autônomas e independentes: pode haver punição administrativa pelo regulador (BCB) e punição criminal pelo Poder Judiciário.",
+          "correct": true,
+          "feedback": "Correto. Vigora no Brasil o princípio da independência das instâncias (administrativa, civil e penal). O descumprimento de deveres regulatórios gera sanção administrativa do BCB, sem prejuízo da responsabilidade penal julgada pela Justiça."
+        },
+        {
+          "id": "c",
+          "text": "Não, pois as esferas administrativa e penal são autônomas e independentes, mas a absolvição por falta de provas na esfera penal anula automaticamente a sanção administrativa.",
+          "correct": false,
+          "feedback": "Incorreta. A absolvição por falta de provas não anula automaticamente a sanção administrativa; o trecho que muda a resposta é \"anula automaticamente\"."
+        },
+        {
+          "id": "d",
+          "text": "Não, pois as esferas administrativa e penal são autônomas e independentes, mas a sanção administrativa do BCB precisa ser ratificada previamente pelo COAF para ter validade.",
+          "correct": false,
+          "feedback": "Incorreta. A sanção do BCB não depende de ratificação do COAF; o trecho que muda a resposta é \"ratificada previamente pelo COAF\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

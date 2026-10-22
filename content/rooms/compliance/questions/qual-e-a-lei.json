@@ -1,0 +1,1029 @@
+{
+  "questions": [
+    {
+      "sceneId": "lei-01",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-coaf",
+      "dialogue": [
+        {
+          "speaker": "Mônica Araújo — Analista de PLD",
+          "text": "Preciso citar a lei certa numa nota sobre o COAF e não quero errar o número."
+        }
+      ],
+      "question": "Qual lei criou o COAF e definiu o crime de lavagem de dinheiro no Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 9.613/1998",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 9.613/1998 tipifica a lavagem de dinheiro, cria o COAF e fixa os deveres de comunicação das instituições."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 4.595/1964",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.595/1964 reformulou o sistema financeiro e criou o Banco Central e o CMN."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 7.492/1986",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 7.492/1986 define os crimes contra o Sistema Financeiro Nacional."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 14.286/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 14.286/2021 é o novo marco legal do câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-02",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-bcb",
+      "dialogue": [
+        {
+          "speaker": "Iara Fontes — Analista de Estudos do SFN",
+          "text": "Vou montar a linha do tempo do SFN e preciso do número da lei que criou o Banco Central e o CMN."
+        }
+      ],
+      "question": "Qual lei criou o Banco Central do Brasil e o Conselho Monetário Nacional?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 6.385/1976",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 6.385/1976 criou a CVM e disciplina o mercado de valores mobiliários."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 4.595/1964",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 4.595/1964 dispõe sobre a política e as instituições monetárias, bancárias e creditícias e criou o BCB e o CMN."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro e criou o COAF."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 4.131/1962",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.131/1962 disciplina a aplicação de capital estrangeiro e as remessas ao exterior."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-03",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-autonomia-bcb",
+      "dialogue": [
+        {
+          "speaker": "Rogério Falcão — Analista Regulatório",
+          "text": "Vou atualizar o resumo sobre a autonomia do Banco Central e quero citar a norma correta."
+        }
+      ],
+      "question": "Qual norma estabeleceu a autonomia do Banco Central do Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei Complementar nº 105/2001",
+          "correct": false,
+          "feedback": "Incorreta. A Lei Complementar nº 105/2001 trata do sigilo das operações de instituições financeiras."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 14.286/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 14.286/2021 trata do mercado de câmbio e do capital estrangeiro."
+        },
+        {
+          "id": "c",
+          "text": "Lei Complementar nº 179/2021",
+          "correct": true,
+          "feedback": "Correto. A Lei Complementar nº 179/2021 deu autonomia ao Banco Central, com mandatos fixos para o Presidente e os Diretores."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 13.506/2017",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.506/2017 trata do processo administrativo sancionador do BCB e da CVM."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-04",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-sigilo",
+      "dialogue": [
+        {
+          "speaker": "Alícia Frota — Analista Jurídica",
+          "text": "Recebi um pedido de informações sobre um cliente e preciso citar a lei do sigilo bancário."
+        }
+      ],
+      "question": "Qual lei regulamenta o sigilo das operações das instituições financeiras?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei Complementar nº 179/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei Complementar nº 179/2021 trata da autonomia do Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro e do COAF."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 7.492/1986",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 7.492/1986 define crimes contra o Sistema Financeiro Nacional."
+        },
+        {
+          "id": "d",
+          "text": "Lei Complementar nº 105/2001",
+          "correct": true,
+          "feedback": "Correto. A Lei Complementar nº 105/2001 impõe o dever de sigilo e lista as hipóteses em que ele pode ser afastado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-05",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-crimes-sfn",
+      "dialogue": [
+        {
+          "speaker": "Heitor Camargo — Analista de Investigações",
+          "text": "Estou revisando casos de operação sem autorização e preciso citar a lei que define esses crimes."
+        }
+      ],
+      "question": "Qual lei define os crimes contra o Sistema Financeiro Nacional, como fazer operar instituição financeira sem autorização?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 7.492/1986",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 7.492/1986 define os crimes contra o SFN; os arts. 16, 21 e 22 são os mais cobrados na área de câmbio."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 define o crime de lavagem de dinheiro."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 13.260/2016",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.260/2016 disciplina o terrorismo e seu financiamento."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 12.850/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.850/2013 trata das organizações criminosas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-06",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-marco-cambio",
+      "dialogue": [
+        {
+          "speaker": "Natália Brito — Analista de Câmbio",
+          "text": "Vou treinar a equipe no novo marco do câmbio e preciso do número certo da lei."
+        }
+      ],
+      "question": "Qual lei é o novo marco legal do mercado de câmbio brasileiro, em vigor desde 2023?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 4.131/1962",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.131/1962 é a antiga lei do capital estrangeiro, parcialmente alterada pelo novo marco."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 14.286/2021",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 14.286/2021 consolidou e simplificou a legislação cambial e o tratamento do capital estrangeiro e brasileiro no exterior."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 11.371/2006",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 11.371/2006 trata da manutenção no exterior de recursos de exportações."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 13.506/2017",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.506/2017 trata do processo sancionador do BCB e da CVM."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-07",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-cvm",
+      "dialogue": [
+        {
+          "speaker": "Raquel Sobral — Analista de Mercado de Capitais",
+          "text": "Vou citar a base legal da CVM numa apresentação e preciso do número da lei."
+        }
+      ],
+      "question": "Qual lei criou a Comissão de Valores Mobiliários e disciplina o mercado de valores mobiliários?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 4.595/1964",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.595/1964 criou o Banco Central e o CMN."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 12.154/2009",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.154/2009 criou a Previc."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 6.385/1976",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 6.385/1976 criou a CVM, que fiscaliza, normatiza, disciplina e desenvolve o mercado de valores mobiliários."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 6.024/1974",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 6.024/1974 trata da intervenção e da liquidação extrajudicial de instituições financeiras."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-08",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-lavagem-3a",
+      "dialogue": [
+        {
+          "speaker": "Otto Lemos — Analista de Risco-País",
+          "text": "Estou explicando por que a lei brasileira é considerada de terceira geração e preciso citar a norma."
+        }
+      ],
+      "question": "Qual lei alterou a Lei nº 9.613/1998 e permitiu que qualquer infração penal seja crime antecedente da lavagem?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 13.260/2016",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.260/2016 disciplina o terrorismo e seu financiamento."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 12.850/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.850/2013 define organização criminosa e trata da investigação desses crimes."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 13.810/2019",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.810/2019 trata do cumprimento de sanções do Conselho de Segurança da ONU."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 12.683/2012",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 12.683/2012 ampliou o alcance da lei de lavagem de dinheiro, que passou a admitir qualquer infração penal como antecedente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-09",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-terrorismo",
+      "dialogue": [
+        {
+          "speaker": "Danilo Fontes — Analista de Monitoramento",
+          "text": "Um alerta envolveu possível financiamento de terrorismo e quero citar a lei que o disciplina."
+        }
+      ],
+      "question": "Qual lei disciplina o terrorismo e o seu financiamento no Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 13.260/2016",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 13.260/2016 define o terrorismo e trata de atos preparatórios e de financiamento."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 12.850/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.850/2013 trata das organizações criminosas."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 13.810/2019",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.810/2019 trata da indisponibilidade de ativos por sanções da ONU, e não define o crime de terrorismo."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-12",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-capital-estrangeiro",
+      "dialogue": [
+        {
+          "speaker": "Lorena Falcão — Analista de Memória Regulatória",
+          "text": "Estou lendo uma norma antiga sobre remessas de lucros e preciso identificar a lei de origem."
+        }
+      ],
+      "question": "Qual lei disciplina a aplicação de capital estrangeiro e as remessas de valores ao exterior, desde 1962?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 14.286/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 14.286/2021 é o novo marco do câmbio, que alterou dispositivos da lei de 1962."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 11.371/2006",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 11.371/2006 trata da manutenção no exterior de recursos de exportações."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 4.595/1964",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.595/1964 criou o Banco Central e o CMN."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 4.131/1962",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 4.131/1962 disciplina o capital estrangeiro e as remessas ao exterior, e foi alterada pelo novo marco do câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-13",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-exportacoes",
+      "dialogue": [
+        {
+          "speaker": "Wesley Brandão — Analista de Comércio Exterior",
+          "text": "Um exportador perguntou se pode manter no exterior o que recebeu pelas vendas. Vou citar a lei."
+        }
+      ],
+      "question": "Qual lei faculta a manutenção no exterior de recursos em moeda estrangeira recebidos por exportações brasileiras?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 11.371/2006",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 11.371/2006 faculta manter no exterior os recursos em moeda estrangeira das exportações de mercadorias e serviços."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 4.131/1962",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.131/1962 trata de capital estrangeiro e remessas."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 14.286/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 14.286/2021 é o marco legal do câmbio, e a Lei nº 11.371/2006 foi alterada por ele."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 12.683/2012",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.683/2012 alterou a lei de lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-14",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-sancionador",
+      "dialogue": [
+        {
+          "speaker": "Verônica Lacerda — Coordenadora de Governança",
+          "text": "Estamos revisando o processo de sanções aplicadas por BCB e CVM e preciso da lei correta."
+        }
+      ],
+      "question": "Qual lei trata do processo administrativo sancionador na esfera de atuação do Banco Central e da CVM?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 6.024/1974",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 6.024/1974 trata da intervenção e da liquidação extrajudicial de instituições financeiras."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 13.506/2017",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 13.506/2017 trata do processo administrativo sancionador do BCB e da CVM; ela também é aplicada às infrações da lei do câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 7.492/1986",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 7.492/1986 define crimes contra o SFN, e não o processo administrativo sancionador."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-15",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-liquidacao",
+      "dialogue": [
+        {
+          "speaker": "Edson Pimentel — Auditor Interno",
+          "text": "Estou estudando o que acontece quando uma instituição financeira entra em crise e preciso da lei."
+        }
+      ],
+      "question": "Qual lei trata da intervenção e da liquidação extrajudicial de instituições financeiras?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 13.506/2017",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.506/2017 trata do processo administrativo sancionador."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 7.492/1986",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 7.492/1986 define crimes contra o SFN."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 6.024/1974",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 6.024/1974 trata da intervenção e da liquidação extrajudicial de instituições financeiras."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 6.385/1976",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 6.385/1976 criou a CVM."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-16",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-organizacao-criminosa",
+      "dialogue": [
+        {
+          "speaker": "Bianca Rocha — Analista de PLD",
+          "text": "Num caso de investigação apareceu uma organização criminosa e quero citar a lei dela."
+        }
+      ],
+      "question": "Qual lei define organização criminosa e trata da investigação criminal desses grupos?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 13.260/2016",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.260/2016 disciplina o terrorismo."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 12.846/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.846/2013 é a Lei Anticorrupção, que trata da responsabilização de pessoas jurídicas."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 12.850/2013",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 12.850/2013 define organização criminosa e dispõe sobre a investigação e os meios de obtenção de prova."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-17",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-anticorrupcao",
+      "dialogue": [
+        {
+          "speaker": "Cecília Prado — Analista de Integridade",
+          "text": "Vou montar um treinamento de integridade e preciso citar a Lei Anticorrupção."
+        }
+      ],
+      "question": "Qual lei trata da responsabilização administrativa e civil de pessoas jurídicas por atos contra a administração pública, a Lei Anticorrupção?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 12.846/2013",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 12.846/2013, a Lei Anticorrupção, responsabiliza pessoas jurídicas por atos contra a administração pública."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 12.850/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.850/2013 trata das organizações criminosas."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 9.613/1998",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 9.613/1998 trata da lavagem de dinheiro."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 13.260/2016",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.260/2016 disciplina o terrorismo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-18",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-sancoes-onu",
+      "dialogue": [
+        {
+          "speaker": "Tânia Ribeiro — Analista de Sanções",
+          "text": "Chegou uma lista de sanções do Conselho de Segurança da ONU e preciso citar a lei que manda cumpri-las."
+        }
+      ],
+      "question": "Qual lei trata do cumprimento de sanções impostas por resoluções do Conselho de Segurança da ONU, incluindo a indisponibilidade de ativos?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei nº 13.260/2016",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 13.260/2016 define o terrorismo, mas não regula o cumprimento de sanções da ONU."
+        },
+        {
+          "id": "b",
+          "text": "Lei nº 13.810/2019",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 13.810/2019 trata do cumprimento das sanções do CSNU e da indisponibilidade de ativos de pessoas e entidades listadas."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 12.850/2013",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.850/2013 trata das organizações criminosas."
+        },
+        {
+          "id": "d",
+          "text": "Lei nº 12.683/2012",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 12.683/2012 alterou a lei de lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-19",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-res-277",
+      "dialogue": [
+        {
+          "speaker": "Luana Peçanha — Analista de Operações de Câmbio",
+          "text": "Vou consultar o regulamento do câmbio do Banco Central e preciso do número da resolução."
+        }
+      ],
+      "question": "Qual resolução do Banco Central regulamenta a Lei nº 14.286/2021 no mercado de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 traz as diretrizes do Conselho Monetário Nacional para o câmbio, e não o regulamento do Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Resolução CMN nº 4.935/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 4.935/2021 trata dos correspondentes no País."
+        },
+        {
+          "id": "c",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 277/2022 regulamenta a Lei nº 14.286/2021 nos aspectos de competência do Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "Circular BCB nº 3.978/2020",
+          "correct": false,
+          "feedback": "Incorreta. A Circular BCB nº 3.978/2020 trata dos procedimentos de PLD/FTP."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-20",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-res-5042",
+      "dialogue": [
+        {
+          "speaker": "Ramiro Tavares — Analista de Autorizações Regulatórias",
+          "text": "Preciso citar as diretrizes que o CMN fixou para o mercado de câmbio."
+        }
+      ],
+      "question": "Qual resolução do CMN estabelece as diretrizes para a realização das operações no mercado de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 é a regulamentação do Banco Central, e não do CMN."
+        },
+        {
+          "id": "b",
+          "text": "Resolução CMN nº 4.935/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 4.935/2021 trata dos correspondentes no País."
+        },
+        {
+          "id": "c",
+          "text": "Resolução CMN nº 5.280/2026",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.280/2026 tratou das SPSAVs no sigilo bancário."
+        },
+        {
+          "id": "d",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 5.042/2022 estabelece as diretrizes do CMN para o câmbio, como a livre pactuação da taxa e a livre realização de operações sem limite de valor."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-21",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-res-4935",
+      "dialogue": [
+        {
+          "speaker": "Danilo Prates — Gerente de Rede de Correspondentes",
+          "text": "Vou contratar um novo correspondente e preciso citar a resolução que rege essa contratação."
+        }
+      ],
+      "question": "Qual resolução do CMN dispõe sobre a contratação de correspondentes no País?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução CMN nº 4.935/2021",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 4.935/2021 aprimorou as regras de contratação e gestão de correspondentes, inclusive os que atuam de forma digital."
+        },
+        {
+          "id": "b",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 trata das diretrizes do mercado de câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 regulamenta a Lei do câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Circular BCB nº 3.978/2020",
+          "correct": false,
+          "feedback": "Incorreta. A Circular BCB nº 3.978/2020 trata de PLD/FTP."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-22",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-circ-3978",
+      "dialogue": [
+        {
+          "speaker": "Heloísa Barcelos — Analista de Prevenção a Ilícitos",
+          "text": "Vou revisar nossa política e preciso citar a norma do Banco Central que fixa os procedimentos de PLD."
+        }
+      ],
+      "question": "Qual norma do Banco Central dispõe sobre a política, os procedimentos e os controles internos de prevenção à lavagem de dinheiro e ao financiamento do terrorismo?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Carta Circular BCB nº 4.001/2020",
+          "correct": false,
+          "feedback": "Incorreta. A Carta Circular BCB nº 4.001/2020 lista situações que podem indicar lavagem de dinheiro, mas não fixa os procedimentos de PLD."
+        },
+        {
+          "id": "b",
+          "text": "Circular BCB nº 3.978/2020",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 trata da política de PLD/FTP, da avaliação interna de risco, do conheça seu cliente e das comunicações ao COAF."
+        },
+        {
+          "id": "c",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 regulamenta o mercado de câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Resolução CMN nº 4.935/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 4.935/2021 trata dos correspondentes."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-23",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-carta-4001",
+      "dialogue": [
+        {
+          "speaker": "Murilo Cavalcanti — Analista de Monitoramento",
+          "text": "Quero citar o documento que lista exemplos de situações com indício de lavagem de dinheiro."
+        }
+      ],
+      "question": "Qual norma do Banco Central relaciona situações que podem configurar indícios de crimes de lavagem de dinheiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Circular BCB nº 3.978/2020",
+          "correct": false,
+          "feedback": "Incorreta. A Circular BCB nº 3.978/2020 fixa os procedimentos de PLD/FTP, e não lista os indícios."
+        },
+        {
+          "id": "b",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 regulamenta o câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Carta Circular BCB nº 4.001/2020",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 relaciona situações que podem configurar indícios de lavagem de dinheiro e de financiamento do terrorismo."
+        },
+        {
+          "id": "d",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 traz as diretrizes do câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-24",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-in-rfb",
+      "dialogue": [
+        {
+          "speaker": "Sabrina Moura — Analista da Mesa de Câmbio",
+          "text": "Um viajante perguntou se precisa declarar o dinheiro que leva na mala. Vou citar a norma da Receita."
+        }
+      ],
+      "question": "Qual instrução normativa da Receita Federal exige declarar o porte de valores em espécie a partir de US$ 10.000,00 na entrada ou saída do País?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 regulamenta o câmbio, e a declaração aduaneira é da Receita Federal."
+        },
+        {
+          "id": "b",
+          "text": "Circular BCB nº 3.978/2020",
+          "correct": false,
+          "feedback": "Incorreta. A Circular BCB nº 3.978/2020 trata de PLD/FTP."
+        },
+        {
+          "id": "c",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 traz as diretrizes do câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Instrução Normativa RFB nº 2.117/2022",
+          "correct": true,
+          "feedback": "Correto. A IN RFB nº 2.117/2022 exige a declaração aduaneira do porte de valores em espécie, cheques e cheques de viagem a partir de US$ 10.000,00."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-25",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-decreto-12002",
+      "dialogue": [
+        {
+          "speaker": "Elisa Brandão — Analista de Normas e Regulação",
+          "text": "Vou atualizar a tabela de atos do CMN e do Banco Central e preciso citar o decreto da hierarquia."
+        }
+      ],
+      "question": "Qual decreto, de 2024, substituiu o Decreto nº 10.139/2019 sobre a nomenclatura e a hierarquia das normas?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Decreto nº 12.002/2024",
+          "correct": true,
+          "feedback": "Correto. O Decreto nº 12.002/2024 substituiu o Decreto nº 10.139/2019 e consolidou a nomenclatura e a hierarquia dos atos normativos."
+        },
+        {
+          "id": "b",
+          "text": "Decreto-Lei nº 73/1966",
+          "correct": false,
+          "feedback": "Incorreta. O Decreto-Lei nº 73/1966 criou a Susep e o sistema de seguros privados."
+        },
+        {
+          "id": "c",
+          "text": "Lei nº 14.286/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 14.286/2021 é o marco legal do câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Instrução Normativa RFB nº 2.117/2022",
+          "correct": false,
+          "feedback": "Incorreta. A IN RFB nº 2.117/2022 trata da declaração aduaneira de valores."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-26",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-res-521",
+      "dialogue": [
+        {
+          "speaker": "Priscila Tavares — Analista de Ativos Virtuais",
+          "text": "Estou revisando quando a prestação de serviços de ativos virtuais entrou no regulamento do câmbio."
+        }
+      ],
+      "question": "Qual resolução do Banco Central incluiu a prestação de serviços de ativos virtuais no escopo da Resolução BCB nº 277?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução CMN nº 5.280/2026",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.280/2026 considerou as SPSAVs instituições financeiras para a lei do sigilo bancário."
+        },
+        {
+          "id": "b",
+          "text": "Resolução BCB nº 521/2025",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 521/2025 incluiu a prestação de serviços de ativos virtuais entre os temas do mercado de câmbio da Resolução BCB nº 277."
+        },
+        {
+          "id": "c",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 traz as diretrizes do câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Resolução CMN nº 4.935/2021",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 4.935/2021 trata dos correspondentes."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lei-27",
+      "categories": [
+        "leis"
+      ],
+      "topicTag": "lei-res-5280",
+      "dialogue": [
+        {
+          "speaker": "Cristina Aguiar — Analista Jurídica de Compliance",
+          "text": "Preciso saber que norma colocou as prestadoras de ativos virtuais sob o sigilo bancário."
+        }
+      ],
+      "question": "Qual resolução do CMN considerou as SPSAVs instituições financeiras para os efeitos da lei do sigilo bancário?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução BCB nº 521/2025",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 521/2025 incluiu a prestação de serviços de ativos virtuais no regulamento do câmbio, e não tratou do sigilo."
+        },
+        {
+          "id": "b",
+          "text": "Resolução CMN nº 5.042/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução CMN nº 5.042/2022 traz as diretrizes do câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Resolução CMN nº 5.280/2026",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 5.280/2026 considerou as SPSAVs instituições financeiras para os fins da Lei Complementar nº 105/2001."
+        },
+        {
+          "id": "d",
+          "text": "Resolução BCB nº 277/2022",
+          "correct": false,
+          "feedback": "Incorreta. A Resolução BCB nº 277/2022 regulamenta o câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

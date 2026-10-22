@@ -1,0 +1,2566 @@
+{
+  "questions": [
+    {
+      "sceneId": "sim-abt1-03",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-03-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Otávio Ferraz — Analista de Cadastro de Parceiros",
+          "text": "Estou conferindo a lista de instituições que podem ser contrapartes nas nossas operações e quero separar quem não é autorizada a operar em câmbio."
+        }
+      ],
+      "question": "Entre as instituições abaixo, indique aquela que o Banco Central do Brasil não autoriza a operar no mercado de câmbio.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sociedades de crédito, financiamento e investimento.",
+          "correct": false,
+          "feedback": "Incorreta. As sociedades de crédito, financiamento e investimento podem ser autorizadas pelo Banco Central a operar no mercado de câmbio."
+        },
+        {
+          "id": "b",
+          "text": "Caixa Econômica Federal.",
+          "correct": false,
+          "feedback": "Incorreta. A Caixa Econômica Federal é uma das instituições autorizadas a operar no mercado de câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Sociedades de crédito imobiliário.",
+          "correct": true,
+          "feedback": "Correto. As sociedades de crédito imobiliário não integram o rol de instituições que o Banco Central autoriza a operar no mercado de câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Bancos comerciais.",
+          "correct": false,
+          "feedback": "Incorreta. Bancos comerciais são os agentes mais tradicionais do mercado de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-06",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-06-sfn",
+      "dialogue": [
+        {
+          "speaker": "Elisa Brandão — Analista de Normas e Regulação",
+          "text": "Vou atualizar a nossa tabela de fontes normativas e quero citar os instrumentos que realmente são usados hoje."
+        }
+      ],
+      "question": "Marque a alternativa correta. No âmbito das instituições financeiras, os principais normativos são:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolução CMN, resolução BCB, instrução normativa BCB e portaria BCB.",
+          "correct": true,
+          "feedback": "Correto. Hoje os principais normativos aplicáveis às instituições financeiras são as resoluções do CMN, as resoluções do BCB, as instruções normativas do BCB e as portarias do BCB."
+        },
+        {
+          "id": "b",
+          "text": "Resoluções, circulares, cartas circulares e instruções normativas.",
+          "correct": false,
+          "feedback": "Incorreta. Essa lista reflete o modelo antigo de atos do Banco Central, anterior à reorganização que passou a usar resoluções do BCB como principal instrumento."
+        },
+        {
+          "id": "c",
+          "text": "Decretos, resoluções, circulares, cartas circulares e comunicados.",
+          "correct": false,
+          "feedback": "Incorreta. Decretos são atos do Poder Executivo e não estão entre os principais normativos do âmbito das instituições financeiras; a lista também mantém instrumentos do modelo antigo."
+        },
+        {
+          "id": "d",
+          "text": "Resoluções, circulares, cartas circulares, comunicados e atos declaratórios.",
+          "correct": false,
+          "feedback": "Incorreta. Circulares, cartas circulares, comunicados e atos declaratórios pertencem ao modelo anterior de atos do Banco Central e não resumem os principais normativos atuais."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-07",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-07-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Gabriel Morais — Analista de PLD",
+          "text": "Vou dar um treinamento de integração e preciso explicar se a definição de lavagem de dinheiro é igual em todo o mundo."
+        }
+      ],
+      "question": "Quanto ao conceito mundial de prevenção à lavagem de dinheiro (PLD), podemos afirmar que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Todos os países adotam o mesmo conceito, portanto ele é padronizado.",
+          "correct": false,
+          "feedback": "Incorreta. Os países não adotam o mesmo conceito: cada legislação define a lavagem de dinheiro e seus crimes antecedentes à sua maneira."
+        },
+        {
+          "id": "b",
+          "text": "Há conceitos padronizados dentro de cada continente.",
+          "correct": false,
+          "feedback": "Incorreta. Também não há padronização por continente; as diferenças aparecem de país para país, e não em blocos continentais."
+        },
+        {
+          "id": "c",
+          "text": "Não há padronização na doutrina de PLD.",
+          "correct": true,
+          "feedback": "Correto. Não existe um conceito mundial padronizado: a doutrina de PLD varia entre países, que adotam definições e crimes antecedentes diferentes."
+        },
+        {
+          "id": "d",
+          "text": "A padronização depende do momento econômico de cada país.",
+          "correct": false,
+          "feedback": "Incorreta. O conceito não muda conforme o momento econômico do país; a falta de padronização vem de legislações e doutrinas distintas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-08-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Cecília Prado — Analista de KYC",
+          "text": "Estamos redesenhando o fluxo de conhecer o cliente e quero listar o que a devida diligência precisa cobrir além do cadastro inicial."
+        }
+      ],
+      "question": "Um eficiente processo de Devida Diligência sobre o Cliente deve abranger também:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tarifação dos serviços de manutenção das informações cadastrais.",
+          "correct": false,
+          "feedback": "Incorreta. Cobrar tarifa pela manutenção de informações cadastrais é uma questão comercial e não faz parte da devida diligência."
+        },
+        {
+          "id": "b",
+          "text": "Guarda de cópias de e-mails recebidos nos últimos 90 dias.",
+          "correct": false,
+          "feedback": "Incorreta. Guardar cópias de e-mails dos últimos 90 dias não é elemento da devida diligência; a guarda de documentos e registros segue prazos próprios, bem maiores."
+        },
+        {
+          "id": "c",
+          "text": "Apresentação de passaporte válido, para todos os clientes, com retenção de cópia.",
+          "correct": false,
+          "feedback": "Incorreta. Passaporte válido para todos os clientes não é exigência; os documentos variam conforme o tipo de cliente e o risco."
+        },
+        {
+          "id": "d",
+          "text": "Permanente atualização das informações cadastrais.",
+          "correct": true,
+          "feedback": "Correto. A devida diligência não termina no cadastro inicial: ela exige permanente atualização das informações cadastrais, para que o perfil e o risco do cliente continuem correspondendo à realidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-09",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-09-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Leonardo Siqueira — Analista de Monitoramento",
+          "text": "Um colega ficou com receio de ser responsabilizado por comunicar uma operação que depois se mostrou regular. Vou explicar o que a lei diz."
+        }
+      ],
+      "question": "De acordo com a Lei nº 9.613/1998, operações atípicas ou suspeitas devem ser comunicadas ao Conselho de Controle de Atividades Financeiras (COAF). A citada lei ainda define que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As comunicações de boa-fé não acarretam responsabilidades civil e administrativa.",
+          "correct": true,
+          "feedback": "Correto. As comunicações feitas de boa-fé não acarretam responsabilidade civil nem administrativa para quem as faz, o que protege a instituição e seus profissionais."
+        },
+        {
+          "id": "b",
+          "text": "As comunicações de boa-fé não acarretam responsabilidade civil, mas acarretam responsabilidade administrativa.",
+          "correct": false,
+          "feedback": "Incorreta. A lei afasta as duas responsabilidades para quem comunica de boa-fé: a civil e também a administrativa. O trecho que muda a resposta é \"mas acarretam responsabilidade administrativa\"."
+        },
+        {
+          "id": "c",
+          "text": "As comunicações de má-fé não acarretam responsabilidades civil e administrativa.",
+          "correct": false,
+          "feedback": "Incorreta. A proteção vale para as comunicações de boa-fé; quem comunica de má-fé não tem essa proteção. O trecho que muda a resposta é \"de má-fé\"."
+        },
+        {
+          "id": "d",
+          "text": "As comunicações de boa-fé só afastam a responsabilidade administrativa, mantendo a responsabilidade civil.",
+          "correct": false,
+          "feedback": "Incorreta. A boa-fé afasta a responsabilidade civil e a administrativa, e não apenas a administrativa. O trecho que muda a resposta é \"mantendo a responsabilidade civil\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-10-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Verônica Lacerda — Coordenadora de Governança",
+          "text": "Vamos atualizar a política de PLD e preciso saber quem aprova o documento e que regras de conflito ele pode trazer."
+        }
+      ],
+      "question": "As políticas, procedimentos e controles internos requeridos pela regulamentação do Banco Central devem:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ser aprovadas pelo conselho de administração ou, na sua ausência, pela diretoria da instituição.",
+          "correct": true,
+          "feedback": "Correto. As políticas, procedimentos e controles internos devem ser aprovados pelo conselho de administração ou, se não houver, pela diretoria da instituição, o que dá peso de alta administração ao tema."
+        },
+        {
+          "id": "b",
+          "text": "Ser aprovadas pelo conselho de administração ou, na sua ausência, pela área de Compliance da instituição.",
+          "correct": false,
+          "feedback": "Incorreta. Na ausência do conselho de administração, quem aprova é a diretoria, e não a área de Compliance. O trecho que muda a resposta é \"pela área de Compliance\"."
+        },
+        {
+          "id": "c",
+          "text": "Ser aprovadas pela diretoria ou, na sua ausência, pelo conselho de administração da instituição.",
+          "correct": false,
+          "feedback": "Incorreta. A ordem está invertida: a aprovação é do conselho de administração e, só na ausência dele, da diretoria."
+        },
+        {
+          "id": "d",
+          "text": "Ser aprovadas pelo conselho de administração ou, na sua ausência, pelo comitê de auditoria da instituição.",
+          "correct": false,
+          "feedback": "Incorreta. Na ausência do conselho de administração, a aprovação é da diretoria, e não do comitê de auditoria. O trecho que muda a resposta é \"pelo comitê de auditoria\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-11",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-11-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Rafaela Duarte — Analista de Risco de Clientes",
+          "text": "Estou revisando o cadastro de PEP e quero conferir quais cargos brasileiros a norma manda considerar."
+        }
+      ],
+      "question": "A Circular nº 3.978/2020, do Banco Central, determina que as instituições financeiras devem obter de seus clientes informações que permitam qualificá-los, ou não, como pessoas expostas politicamente (PEP) e identificar a origem dos fundos envolvidos nas transações dos clientes assim caracterizados. No caso de clientes brasileiros, devem ser abrangidos:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Os ocupantes de cargo, no Poder Executivo da União, do Grupo Direção e Assessoramento Superiores (DAS), nível 6, ou equivalentes.",
+          "correct": false,
+          "feedback": "Incompleta. Os ocupantes de cargos DAS nível 6 ou equivalentes no Poder Executivo da União estão, sim, no rol de PEP, mas não são os únicos abrangidos."
+        },
+        {
+          "id": "b",
+          "text": "Os membros do Conselho Nacional de Justiça, do Supremo Tribunal Federal, dos tribunais superiores, dos tribunais regionais federais, do trabalho e eleitorais, do Conselho Superior da Justiça do Trabalho e do Conselho da Justiça Federal.",
+          "correct": false,
+          "feedback": "Incompleta. Os membros dos conselhos e dos tribunais superiores citados estão, sim, no rol de PEP, mas não são os únicos abrangidos."
+        },
+        {
+          "id": "c",
+          "text": "Os Governadores e os Secretários de Estado e do Distrito Federal, os Deputados Estaduais e Distritais, os presidentes, ou equivalentes, de entidades da administração pública indireta estadual e distrital e os presidentes de Tribunais de Justiça, Tribunais Militares, Tribunais de Contas ou equivalentes dos Estados e do Distrito Federal.",
+          "correct": false,
+          "feedback": "Incompleta. Governadores, secretários de estado, deputados estaduais e distritais e presidentes de entidades e tribunais estaduais estão, sim, no rol de PEP, mas não são os únicos abrangidos."
+        },
+        {
+          "id": "d",
+          "text": "Todos os cargos e funções citados nas demais alternativas.",
+          "correct": true,
+          "feedback": "Correto. O rol de PEP brasileiros da Circular 3.978/2020 reúne todos os cargos e funções citados nas outras alternativas, e a instituição deve identificar também a origem dos fundos desses clientes."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-12-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Heitor Camargo — Analista de Comunicações ao COAF",
+          "text": "Chegou um depósito em dinheiro vivo bem alto e preciso saber a partir de que valor a norma manda comunicar."
+        }
+      ],
+      "question": "A Circular nº 3.978/2020, do Banco Central, define que as instituições financeiras devem comunicar ao Conselho de Controle de Atividades Financeiras (COAF):",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em espécie, de valor igual ou superior a R$ 50.000,00 (cinquenta mil reais).",
+          "correct": true,
+          "feedback": "Correto. A Circular 3.978/2020 exige a comunicação ao COAF de operações de pagamento, recebimento ou transferência de recursos em espécie de valor igual ou superior a R$ 50.000,00."
+        },
+        {
+          "id": "b",
+          "text": "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em espécie, de valor igual ou superior a R$ 100.000,00 (cem mil reais).",
+          "correct": false,
+          "feedback": "Incorreta. O valor de referência é de R$ 50.000,00, e não de R$ 100.000,00. O trecho que muda a resposta é o valor."
+        },
+        {
+          "id": "c",
+          "text": "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em espécie, de valor superior a R$ 50.000,00 (cinquenta mil reais).",
+          "correct": false,
+          "feedback": "Incorreta. A norma fala em valor igual ou superior a R$ 50.000,00, de modo que uma operação de exatamente R$ 50.000,00 também é comunicada. O trecho que muda a resposta é \"superior\" no lugar de \"igual ou superior\"."
+        },
+        {
+          "id": "d",
+          "text": "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em cheque, de valor igual ou superior a R$ 50.000,00 (cinquenta mil reais).",
+          "correct": false,
+          "feedback": "Incorreta. A regra trata de operações pagas em espécie, e não em cheque. O trecho que muda a resposta é \"em cheque\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-13",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-13-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Bianca Rocha — Analista de PLD",
+          "text": "Um novo colega perguntou se existe um valor mínimo geral para comunicar ao COAF. Vou responder com base na lei."
+        }
+      ],
+      "question": "Quais operações devem ser comunicadas ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Devem ser comunicadas ao COAF todas as operações e propostas mencionadas no artigo 11 da Lei nº 9.613, de 1998, desde que em valores superiores a US$ 10 mil quando se tratar de operações de câmbio.",
+          "correct": false,
+          "feedback": "Incorreta. A lei não fixa um piso geral de US$ 10 mil para operações de câmbio; os parâmetros específicos vêm dos normativos de cada órgão regulador."
+        },
+        {
+          "id": "b",
+          "text": "Todas as operações e propostas mencionadas no artigo 11 da Lei nº 9.613, de 1998, observadas as orientações contidas nos normativos específicos emitidos pelos órgãos reguladores das respectivas pessoas físicas e jurídicas sujeitas à referida Lei.",
+          "correct": true,
+          "feedback": "Correto. Devem ser comunicadas as operações e propostas do art. 11 da Lei 9.613/1998, observadas as orientações dos normativos específicos de cada órgão regulador das pessoas sujeitas à lei."
+        },
+        {
+          "id": "c",
+          "text": "Todas as operações e propostas mencionadas no artigo 9º da Lei nº 9.613, de 1998, observadas as orientações contidas nos normativos específicos emitidos pelos órgãos reguladores das respectivas pessoas físicas e jurídicas sujeitas à referida Lei.",
+          "correct": false,
+          "feedback": "Incorreta. As operações e propostas a comunicar são as do artigo 11 da lei, e não as do artigo 9º. O trecho que muda a resposta é o número do artigo."
+        },
+        {
+          "id": "d",
+          "text": "Todas as operações mencionadas no artigo 11 da Lei nº 9.613, de 1998, excluídas as propostas não concretizadas, observadas as orientações contidas nos normativos específicos emitidos pelos órgãos reguladores das respectivas pessoas físicas e jurídicas sujeitas à referida Lei.",
+          "correct": false,
+          "feedback": "Incorreta. As propostas de negócio não realizadas também devem ser comunicadas quando houver indício de atipicidade ou suspeição. O trecho que muda a resposta é \"excluídas as propostas não concretizadas\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-17",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-17-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Laís Barreto — Analista de Estruturas do SFN",
+          "text": "Estou desenhando um organograma do SFN e preciso encaixar as corretoras de câmbio no papel certo."
+        }
+      ],
+      "question": "Dentro do Sistema Financeiro Nacional, as corretoras de câmbio desempenham uma função:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reguladora.",
+          "correct": false,
+          "feedback": "Incorreta. As corretoras são reguladas, e não reguladoras; quem regula é o conjunto de órgãos normativos e supervisores."
+        },
+        {
+          "id": "b",
+          "text": "Normativa.",
+          "correct": false,
+          "feedback": "Incorreta. A função normativa é dos conselhos, como o CMN, que editam as regras gerais do sistema."
+        },
+        {
+          "id": "c",
+          "text": "Supervisora.",
+          "correct": false,
+          "feedback": "Incorreta. A supervisão cabe a órgãos como o Banco Central e a CVM, que fiscalizam as instituições."
+        },
+        {
+          "id": "d",
+          "text": "Operacional.",
+          "correct": true,
+          "feedback": "Correto. As corretoras de câmbio são instituições operadoras: executam as operações no mercado, sob as regras dos normativos e a fiscalização dos supervisores."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-18",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-18-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Murilo Cavalcanti — Analista de Supervisão",
+          "text": "Vou explicar para os novatos quem edita as regras e quem fiscaliza o cumprimento delas no SFN."
+        }
+      ],
+      "question": "O Banco Central do Brasil e a Comissão de Valores Mobiliários, quando supervisionam o mercado de câmbio e de capitais:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "São operadores do Sistema Financeiro Nacional.",
+          "correct": false,
+          "feedback": "Incorreta. Operadores são as instituições que atuam no mercado, como bancos e corretoras; BCB e CVM supervisionam, e não operam."
+        },
+        {
+          "id": "b",
+          "text": "São órgãos normativos do Sistema Financeiro Nacional.",
+          "correct": false,
+          "feedback": "Incorreta. O órgão normativo é o CMN, que define as regras gerais; BCB e CVM, ao supervisionar, fiscalizam o cumprimento delas."
+        },
+        {
+          "id": "c",
+          "text": "Dependem de autorização do Poder Executivo para fiscalizarem os respectivos mercados.",
+          "correct": false,
+          "feedback": "Incorreta. BCB e CVM não dependem de autorização do Poder Executivo para fiscalizar: a competência vem da lei."
+        },
+        {
+          "id": "d",
+          "text": "São órgãos supervisores, que fiscalizam o cumprimento das regras editadas pelos órgãos normativos, como o Conselho Monetário Nacional.",
+          "correct": true,
+          "feedback": "Correto. BCB e CVM são órgãos supervisores: fiscalizam o cumprimento das regras editadas pelos órgãos normativos, como o CMN."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-19",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-19-sfn",
+      "dialogue": [
+        {
+          "speaker": "Alícia Frota — Analista Jurídica",
+          "text": "Recebemos um pedido de informações sobre um cliente e preciso lembrar de onde vem o sigilo bancário e quem pode afastá-lo."
+        }
+      ],
+      "question": "Sobre o sigilo bancário:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Está amparado na Constituição Federal e é um direito que visa proteger a individualidade e a intimidade dos cidadãos, sendo regulamentado pela Lei Complementar nº 105/2001.",
+          "correct": true,
+          "feedback": "Correto. O sigilo bancário tem base constitucional, protege a intimidade e a individualidade das pessoas e é regulamentado pela Lei Complementar nº 105/2001."
+        },
+        {
+          "id": "b",
+          "text": "Está amparado na Constituição Federal e é um direito que visa proteger a individualidade e a intimidade dos cidadãos, sendo regulamentado pela Lei nº 9.613/1998.",
+          "correct": false,
+          "feedback": "Incorreta. A regulamentação do sigilo bancário é a Lei Complementar nº 105/2001; a Lei nº 9.613/1998 trata da lavagem de dinheiro. O trecho que muda a resposta é a lei citada."
+        },
+        {
+          "id": "c",
+          "text": "Está amparado na Constituição Federal e é um direito que visa proteger a individualidade e a intimidade dos cidadãos, sendo regulamentado pela Lei Complementar nº 179/2021.",
+          "correct": false,
+          "feedback": "Incorreta. A Lei Complementar nº 179/2021 trata da autonomia do Banco Central, e não do sigilo bancário. O trecho que muda a resposta é a lei citada."
+        },
+        {
+          "id": "d",
+          "text": "Está amparado em Resolução do Conselho Monetário Nacional e é um direito que visa proteger a individualidade e a intimidade dos cidadãos, sendo regulamentado pela Lei Complementar nº 105/2001.",
+          "correct": false,
+          "feedback": "Incorreta. O sigilo bancário tem base constitucional, e não nasce de resolução do CMN. O trecho que muda a resposta é \"em Resolução do Conselho Monetário Nacional\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-abt1-20",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-abt1-20-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Joana Ventura — Analista de Capacitação",
+          "text": "Estou montando o slide de abertura do curso sobre o SFN e preciso listar os três grandes segmentos do sistema."
+        }
+      ],
+      "question": "O Sistema Financeiro Nacional possui três grandes segmentos, que são:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Câmbio, crédito e seguros privados.",
+          "correct": false,
+          "feedback": "Incorreta. Câmbio, crédito e seguros privados deixa de fora o segmento de capitais e a previdência fechada."
+        },
+        {
+          "id": "b",
+          "text": "Crédito, valores mobiliários e previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. Crédito, valores mobiliários e previdência complementar não cobrem o segmento de moeda e câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Créditos imobiliários, crédito consignado e poupança.",
+          "correct": false,
+          "feedback": "Incorreta. Crédito imobiliário, crédito consignado e poupança são produtos, e não os grandes segmentos do sistema."
+        },
+        {
+          "id": "d",
+          "text": "Moeda, crédito, capitais e câmbio; seguros privados; e previdência fechada.",
+          "correct": true,
+          "feedback": "Correto. O SFN abrange três segmentos: moeda, crédito, capitais e câmbio; seguros privados; e previdência fechada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-08-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Sabrina Moura — Analista da Mesa de Câmbio",
+          "text": "Na mesa, precisamos saber quem compra e quem vende dólar no mercado para entender o fluxo do dia."
+        }
+      ],
+      "question": "Quem são os demandantes de moeda estrangeira no mercado de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exportadores, Importadores, Turistas e Investidores Brasileiros.",
+          "correct": false,
+          "feedback": "Incorreta. Exportadores não demandam moeda estrangeira: eles a ofertam, ao vender dólares recebidos pelas exportações."
+        },
+        {
+          "id": "b",
+          "text": "Exportadores, Turistas e Investidores Estrangeiros.",
+          "correct": false,
+          "feedback": "Incorreta. Exportadores e investidores estrangeiros trazem moeda ao país e, portanto, são ofertantes, e não demandantes."
+        },
+        {
+          "id": "c",
+          "text": "Importadores, Turistas e Investidores Brasileiros.",
+          "correct": true,
+          "feedback": "Correto. Demandam moeda estrangeira os agentes que precisam pagar ou investir fora do país: importadores, turistas brasileiros no exterior e investidores brasileiros."
+        },
+        {
+          "id": "d",
+          "text": "Importadores, turistas no exterior e investidores em geral.",
+          "correct": false,
+          "feedback": "Incorreta. A alternativa trata investidores \"em geral\" como demandantes, mas investidores estrangeiros que trazem recursos ao país ofertam moeda; o gabarito fala em investidores brasileiros."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-09",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-09-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Ícaro Valente — Analista de Inteligência de PLD",
+          "text": "Vi o GAFI citado num relatório de risco-país e quero entender quem ele é antes de usar a referência."
+        }
+      ],
+      "question": "O que é o GAFI e qual é a sua principal função?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O GAFI é um órgão nacional que determina, em conjunto com a CVM, as regras de proteção ao investidor.",
+          "correct": false,
+          "feedback": "Incorreta. O GAFI não é um órgão nacional e não atua com a CVM na proteção ao investidor; ele é internacional e trata de lavagem de dinheiro e financiamento do terrorismo."
+        },
+        {
+          "id": "b",
+          "text": "O GAFI é uma entidade intergovernamental que tem o objetivo de definir estratégias e implementar medidas e normas para combater a lavagem de dinheiro e o financiamento do terrorismo.",
+          "correct": true,
+          "feedback": "Correto. O GAFI (Grupo de Ação Financeira Internacional) é uma entidade intergovernamental que define estratégias, padrões e medidas para combater a lavagem de dinheiro e o financiamento do terrorismo."
+        },
+        {
+          "id": "c",
+          "text": "O GAFI é uma entidade governamental que monitora o crime de lavagem de dinheiro e o financiamento do terrorismo no mundo inteiro.",
+          "correct": false,
+          "feedback": "Incorreta. O GAFI não é uma entidade governamental de um país, e sua função vai além de monitorar: ele estabelece padrões internacionais, as chamadas Recomendações."
+        },
+        {
+          "id": "d",
+          "text": "O GAFI é um conselho de gestão de atividades financeiras internacional que tem como principal função combater a lavagem de dinheiro e o financiamento do terrorismo.",
+          "correct": false,
+          "feedback": "Incorreta. O nome e a natureza estão errados: trata-se de um grupo de ação financeira, entidade intergovernamental, e não de um \"conselho de gestão de atividades financeiras\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-10-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Aurora Pacheco — Analista de Treinamento",
+          "text": "Na aula de hoje vou listar os segmentos do sistema financeiro e não quero esquecer nenhum."
+        }
+      ],
+      "question": "Quais são os segmentos do sistema financeiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Moeda, crédito, capitais e seguros privados.",
+          "correct": false,
+          "feedback": "Incompleta. Faltam o câmbio e a previdência fechada."
+        },
+        {
+          "id": "b",
+          "text": "Moeda, câmbio, capitais, seguros privados e previdência fechada.",
+          "correct": false,
+          "feedback": "Incompleta. Falta o segmento de crédito."
+        },
+        {
+          "id": "c",
+          "text": "Moeda, capitais e seguros.",
+          "correct": false,
+          "feedback": "Incompleta. Faltam crédito, câmbio e previdência fechada, entre outros segmentos."
+        },
+        {
+          "id": "d",
+          "text": "Moeda, crédito, capitais e câmbio, seguros privados e previdência fechada.",
+          "correct": true,
+          "feedback": "Correto. O sistema financeiro abrange moeda, crédito, capitais e câmbio, além de seguros privados e previdência fechada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-11",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-11-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Tomás Guedes — Analista de Produtos Financeiros",
+          "text": "Vou montar uma tabela comparando os mercados do SFN e quero associar cada um à definição certa."
+        }
+      ],
+      "question": "De acordo com o principal ramo do SFN, temos quatro tipos de segmentos: moeda, crédito, capitais e câmbio. Assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mercado monetário: é o mercado de compra e venda de moeda estrangeira. Mercado de câmbio: é o mercado que fornece à economia papel-moeda e moeda escritural, aquela depositada em conta corrente; Mercado de crédito: é o mercado que fornece recursos para o consumo das pessoas em geral e para o funcionamento das empresas; (Ex: empréstimos, financiamentos, cheque especial etc) Mercado de capitais: é o mercado que permite às empresas em geral captar recursos de terceiros e, portanto, compartilhar os ganhos e os riscos; (Ex. investimentos)",
+          "correct": false,
+          "feedback": "Incorreta. A alternativa troca as definições: o mercado monetário é o que fornece moeda à economia, e o de câmbio é o de compra e venda de moeda estrangeira."
+        },
+        {
+          "id": "b",
+          "text": "Mercado monetário: é o mercado que fornece à economia papel-moeda e moeda escritural, aquela depositada em conta corrente; Mercado de crédito: é o mercado que fornece recursos para o consumo das pessoas em geral e para o funcionamento das empresas; (Ex: empréstimos, financiamentos, cheque especial etc) Mercado de capitais: é o mercado que permite às empresas em geral captar recursos de terceiros e, portanto, compartilhar os ganhos e os riscos; (Ex. Investimentos) Mercado de câmbio: é o mercado de compra e venda de moeda estrangeira.",
+          "correct": true,
+          "feedback": "Correto. O mercado monetário fornece papel-moeda e moeda escritural; o de crédito financia consumo e empresas; o de capitais permite captar recursos de terceiros; e o de câmbio é o de compra e venda de moeda estrangeira."
+        },
+        {
+          "id": "c",
+          "text": "Mercado monetário: é o mercado de compra e venda de moeda estrangeira. Mercado de câmbio: é o mercado que fornece à economia papel-moeda e moeda escritural, aquela depositada em conta corrente; Mercado de crédito: é o mercado que permite às empresas em geral captar recursos de terceiros e, portanto, compartilhar os ganhos e os riscos; (Ex. Investimentos) Mercado de capitais: é o mercado que fornece recursos para o consumo das pessoas em geral e para o funcionamento das empresas; (Ex: empréstimos, financiamentos, cheque especial etc)",
+          "correct": false,
+          "feedback": "Incorreta. Troca as definições dos mercados monetário e de câmbio e também as de crédito e de capitais."
+        },
+        {
+          "id": "d",
+          "text": "Mercado monetário e mercado de câmbio são sinônimos e tratam exclusivamente da compra e venda de moeda estrangeira.",
+          "correct": false,
+          "feedback": "Incorreta. Mercado monetário e mercado de câmbio não são sinônimos: o primeiro fornece moeda nacional à economia, e o segundo negocia moeda estrangeira."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-12",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-12-sfn",
+      "dialogue": [
+        {
+          "speaker": "Luiza Camargo — Analista de Parcerias com Seguradoras",
+          "text": "Um cliente perguntou o que cabe dentro do ramo de seguros privados. Quero responder de forma completa."
+        }
+      ],
+      "question": "O que é o ramo de seguros privados?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É o ramo do sistema financeiro para quem busca contratos de capitalização e previdência complementar aberta.",
+          "correct": false,
+          "feedback": "Incompleta. A alternativa cita capitalização e previdência complementar aberta, mas deixa de fora os próprios seguros privados."
+        },
+        {
+          "id": "b",
+          "text": "É o ramo do sistema financeiro para quem busca seguros privados e previdência complementar fechada “Fundos de Pensão”.",
+          "correct": false,
+          "feedback": "Incorreta. A previdência complementar fechada (fundos de pensão) é outro segmento, supervisionado pela Previc, e não faz parte do ramo de seguros privados."
+        },
+        {
+          "id": "c",
+          "text": "É o ramo do sistema financeiro para quem busca seguros privados e previdência complementar aberta.",
+          "correct": false,
+          "feedback": "Incompleta. Cita seguros privados e previdência aberta, mas omite os contratos de capitalização."
+        },
+        {
+          "id": "d",
+          "text": "É o ramo do sistema financeiro para quem busca seguros privados, contratos de capitalização e previdência complementar aberta.",
+          "correct": true,
+          "feedback": "Correto. O ramo de seguros privados reúne seguros privados, contratos de capitalização e previdência complementar aberta, normatizado pelo CNSP e supervisionado pela Susep."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-13",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-13-sfn",
+      "dialogue": [
+        {
+          "speaker": "Rodolfo Neves — Analista de Educação Financeira",
+          "text": "Vou preparar um material simples explicando previdência complementar aberta para o público geral."
+        }
+      ],
+      "question": "O que é previdência complementar aberta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É um tipo de plano de aposentadoria, poupança ou pensão. Funciona à parte do regime geral de previdência e aceita a participação do público em geral.",
+          "correct": true,
+          "feedback": "Correto. A previdência complementar aberta é um plano de aposentadoria, poupança ou pensão que funciona à parte do regime geral de previdência e aceita a participação do público em geral."
+        },
+        {
+          "id": "b",
+          "text": "É um tipo de poupança ou pensão.",
+          "correct": false,
+          "feedback": "Incorreta. A definição é genérica demais: não diz que o plano é aberto ao público e que funciona à parte do regime geral."
+        },
+        {
+          "id": "c",
+          "text": "É a previdência voltada para funcionários e organizações particulares.",
+          "correct": false,
+          "feedback": "Incorreta. A previdência voltada a funcionários e organizações é a fechada, operada por fundos de pensão."
+        },
+        {
+          "id": "d",
+          "text": "É o plano de previdência do INSS aberto a todos os cidadãos brasileiros.",
+          "correct": false,
+          "feedback": "Incorreta. O plano do INSS é o regime geral de previdência; a previdência complementar aberta funciona à parte dele."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-14",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-14-sfn",
+      "dialogue": [
+        {
+          "speaker": "Priscila Maia — Analista de Produtos de Capitalização",
+          "text": "Chegou uma dúvida sobre um título de capitalização e quero explicar como ele funciona na prática."
+        }
+      ],
+      "question": "O que é contrato de capitalização?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "São os acordos em que o contratante deposita valores podendo recebê-los de volta em moeda estrangeira.",
+          "correct": false,
+          "feedback": "Incorreta. Na capitalização não há devolução em moeda estrangeira."
+        },
+        {
+          "id": "b",
+          "text": "São os acordos em que o contratante deposita valores podendo recebê-los de volta em forma de aposentadoria.",
+          "correct": false,
+          "feedback": "Incorreta. Receber valores em forma de aposentadoria descreve a previdência, e não a capitalização."
+        },
+        {
+          "id": "c",
+          "text": "São os acordos em que o contratante deposita valores podendo recebê-los de volta com juros e concorrer a prêmios.",
+          "correct": true,
+          "feedback": "Correto. No contrato de capitalização, o contratante deposita valores, pode recebê-los de volta com juros e ainda concorre a prêmios."
+        },
+        {
+          "id": "d",
+          "text": "São os acordos em que o contratante deposita valores podendo recebê-los de volta se for sorteado.",
+          "correct": false,
+          "feedback": "Incorreta. O resgate não depende de sorteio: o sorteio dá apenas a chance de ganhar prêmios, e o valor depositado pode ser recebido de volta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-15",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-15-sfn",
+      "dialogue": [
+        {
+          "speaker": "Gilberto Assis — Analista de Benefícios",
+          "text": "Estamos avaliando um plano de previdência para os colaboradores e preciso entender como funciona a previdência fechada."
+        }
+      ],
+      "question": "O que é previdência fechada?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É a previdência voltada para funcionários de empresas e organizações. O ramo dos fundos de pensão trata de planos de aposentadoria, poupança ou pensão para funcionários de empresas, servidores públicos e integrantes de associações ou entidades de classe.",
+          "correct": true,
+          "feedback": "Correto. A previdência fechada é a voltada a funcionários de empresas e organizações: os fundos de pensão administram planos de aposentadoria, poupança ou pensão para funcionários, servidores públicos e integrantes de associações ou entidades de classe."
+        },
+        {
+          "id": "b",
+          "text": "É o ramo do sistema financeiro para quem busca seguros privados, contratos de capitalização e previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. Essa é a descrição do ramo de seguros privados, e não da previdência fechada."
+        },
+        {
+          "id": "c",
+          "text": "São os acordos em que o contratante deposita valores podendo recebê-los de volta com juros.",
+          "correct": false,
+          "feedback": "Incorreta. Depositar valores e recebê-los de volta com juros descreve produtos como a capitalização, e não um plano de pensão para grupos específicos."
+        },
+        {
+          "id": "d",
+          "text": "É um programa que permite às empresas captar recursos de terceiros para pagar a aposentadoria de seus funcionários.",
+          "correct": false,
+          "feedback": "Incorreta. Os fundos de pensão não captam recursos de terceiros: são planos destinados aos próprios funcionários, servidores ou associados."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-16",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-16-sfn",
+      "dialogue": [
+        {
+          "speaker": "Natália Brito — Analista de Estruturas Regulatórias",
+          "text": "Vou desenhar o mapa dos órgãos do SFN e preciso separar quem edita as regras de quem fiscaliza."
+        }
+      ],
+      "question": "O Sistema Financeiro Nacional é composto por quais órgãos normativos?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "CMN: Conselho Monetário Nacional, CNSP: Conselho Nacional de Seguros Privados e CNPC: Conselho Nacional de Previdência Complementar.",
+          "correct": true,
+          "feedback": "Correto. Os órgãos normativos do SFN são o CMN, o CNSP e o CNPC: eles definem as regras gerais dos segmentos de moeda e crédito, seguros privados e previdência complementar fechada."
+        },
+        {
+          "id": "b",
+          "text": "CMN: Conselho Monetário Nacional e BCB: Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco Central é um órgão supervisor, e não normativo; o CMN sozinho não completa a lista de órgãos normativos."
+        },
+        {
+          "id": "c",
+          "text": "CMN: Conselho Monetário Nacional, CNSP: Conselho Nacional de Seguros Privados e CVM: Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. A CVM é um órgão supervisor, e não normativo, e a lista omite o CNPC."
+        },
+        {
+          "id": "d",
+          "text": "BCB: Banco Central do Brasil e CVM: Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco Central e a CVM são órgãos supervisores, e não normativos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-17",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-17-sfn",
+      "dialogue": [
+        {
+          "speaker": "Cláudio Prates — Analista de Governança Regulatória",
+          "text": "Preciso resumir em uma frase o papel dos órgãos normativos para o glossário do projeto."
+        }
+      ],
+      "question": "O que fazem os órgãos normativos?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Os órgãos normativos determinam as regras gerais para o bom funcionamento do Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "Incorreta. Os órgãos normativos definem regras para o funcionamento de todo o Sistema Financeiro Nacional, e não apenas do Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Os órgãos normativos executam as regras gerais para o bom funcionamento do Sistema Financeiro Nacional.",
+          "correct": false,
+          "feedback": "Incorreta. Executar as regras é papel de outros agentes: os órgãos normativos as determinam."
+        },
+        {
+          "id": "c",
+          "text": "Os órgãos normativos determinam as regras gerais para o bom funcionamento do Sistema Financeiro Nacional e trabalham como operadores.",
+          "correct": false,
+          "feedback": "Incorreta. Os órgãos normativos determinam as regras, mas não atuam como operadores do sistema."
+        },
+        {
+          "id": "d",
+          "text": "Os órgãos normativos determinam as regras gerais para o bom funcionamento do Sistema Financeiro Nacional.",
+          "correct": true,
+          "feedback": "Correto. Os órgãos normativos determinam as regras gerais para o bom funcionamento do Sistema Financeiro Nacional."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-18",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-18-sfn",
+      "dialogue": [
+        {
+          "speaker": "Paula Ribeiro — Analista de Políticas Monetárias",
+          "text": "Estou escrevendo a introdução do guia do SFN e vou começar explicando o que é o CMN."
+        }
+      ],
+      "question": "O que é o Conselho Monetário Nacional?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É órgão supervisor do Sistema Financeiro Nacional e tem a responsabilidade de formular a política da moeda e do crédito, objetivando a estabilidade da moeda e o desenvolvimento econômico e social do País.",
+          "correct": false,
+          "feedback": "Incorreta. O CMN não é órgão supervisor: ele é o órgão normativo superior do sistema."
+        },
+        {
+          "id": "b",
+          "text": "É órgão superior do Sistema Financeiro Nacional e tem a responsabilidade de formular a política da moeda e do crédito, objetivando a estabilidade da moeda e o desenvolvimento econômico e social do País.",
+          "correct": true,
+          "feedback": "Correto. O CMN é o principal órgão normativo do SFN e formula a política da moeda e do crédito, com o objetivo de manter a estabilidade da moeda e promover o desenvolvimento econômico e social do País; o gabarito o descreve como órgão superior."
+        },
+        {
+          "id": "c",
+          "text": "É órgão inferior do Sistema Financeiro Nacional e tem a responsabilidade de formular a política da moeda e do crédito, objetivando a estabilidade da moeda e o desenvolvimento econômico e social do País.",
+          "correct": false,
+          "feedback": "Incorreta. O CMN é o órgão superior do sistema, e não inferior."
+        },
+        {
+          "id": "d",
+          "text": "É órgão executor do Sistema Financeiro Nacional e tem a responsabilidade de formular a política da moeda e do crédito, objetivando a estabilidade da moeda e o desenvolvimento econômico e social do País.",
+          "correct": false,
+          "feedback": "Incorreta. O CMN não é órgão executor: a execução das suas orientações cabe principalmente ao Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-21",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-21-sfn",
+      "dialogue": [
+        {
+          "speaker": "Mirela Antunes — Analista de Regulação de Seguros",
+          "text": "Preciso diferenciar quem fixa as regras de seguros de quem fiscaliza as seguradoras no nosso material."
+        }
+      ],
+      "question": "Qual é a responsabilidade do CNSP, o Conselho Nacional de Seguros Privados?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É responsável por fixar as diretrizes e normas da política de seguro privado.",
+          "correct": true,
+          "feedback": "Correto. O CNSP é o órgão normativo responsável por fixar as diretrizes e normas da política de seguros privados."
+        },
+        {
+          "id": "b",
+          "text": "É responsável por executar as diretrizes e normas da política de seguro privado.",
+          "correct": false,
+          "feedback": "Incorreta. Executar as diretrizes não é a função do conselho: ele fixa as normas, e a supervisão fica com a Susep."
+        },
+        {
+          "id": "c",
+          "text": "É responsável por fixar as diretrizes e normas da política de seguro complementar aberto.",
+          "correct": false,
+          "feedback": "Incorreta. A alternativa restringe a atuação a \"seguro complementar aberto\", mas a competência do CNSP é a política de seguros privados."
+        },
+        {
+          "id": "d",
+          "text": "É responsável por fiscalizar e operar as diretrizes e normas da política de seguro privado.",
+          "correct": false,
+          "feedback": "Incorreta. Fiscalizar e operar não são funções do conselho: a fiscalização é da Susep, e a operação, das seguradoras."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-22",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-22-sfn",
+      "dialogue": [
+        {
+          "speaker": "Davi Cordeiro — Analista de Estruturas de Governança",
+          "text": "Estou montando a ficha do CNSP e preciso confirmar quem o preside e quem o integra."
+        }
+      ],
+      "question": "Qual é a composição do CNSP?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ministro da Educação (Presidente), representante do Ministério da Justiça, representante do Ministério da Previdência Social, Superintendente da Superintendência de Seguros Privados, representante do Banco Central do Brasil e representante da Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. O Ministro da Educação não preside o CNSP."
+        },
+        {
+          "id": "b",
+          "text": "Ministro da Economia (Presidente), representante do Ministério da Justiça, representante do Ministério da Previdência Social, Superintendente da Superintendência de Seguros Privados, representante do Banco Central do Brasil e representante da Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. Na composição apontada pelo simulado, o presidente é o Ministro da Fazenda, e não o da Economia."
+        },
+        {
+          "id": "c",
+          "text": "Ministro da Fazenda (Presidente), representante do Ministério da Justiça, representante do Ministério da Previdência Social, Superintendente da Superintendência de Seguros Privados, representante do Banco Central do Brasil e representante da Comissão de Valores Mobiliários.",
+          "correct": true,
+          "feedback": "Correto. O CNSP é presidido pelo Ministro da Fazenda e conta com representantes dos Ministérios da Justiça e da Previdência Social, o Superintendente da Susep e representantes do Banco Central e da CVM."
+        },
+        {
+          "id": "d",
+          "text": "Presidente do Banco Central (Presidente), representante do Ministério da Justiça, representante do Ministério da Previdência Social, Superintendente da Superintendência de Seguros Privados, representante do Banco Central do Brasil e representante da Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. O Presidente do Banco Central não preside o CNSP; ele tem apenas um representante no conselho."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-23",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-23-sfn",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Sampaio — Analista de Regulação de Previdência",
+          "text": "Na revisão do glossário, preciso deixar claro qual regime de previdência o CNPC regula."
+        }
+      ],
+      "question": "Qual é a responsabilidade do CNPC, o Conselho Nacional de Previdência Complementar?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É responsável por fiscalizar o regime de previdência complementar operado pelas entidades abertas de previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. O CNPC regula, e não fiscaliza; e a previdência aberta pertence ao âmbito do CNSP, e não do CNPC."
+        },
+        {
+          "id": "b",
+          "text": "É responsável por regular o regime de previdência complementar operado pelas entidades fechadas de previdência complementar.",
+          "correct": true,
+          "feedback": "Correto. O CNPC é responsável por regular o regime de previdência complementar operado pelas entidades fechadas de previdência complementar, os fundos de pensão."
+        },
+        {
+          "id": "c",
+          "text": "É responsável por regular o regime de previdência complementar aberta.",
+          "correct": false,
+          "feedback": "Incorreta. A previdência complementar aberta está sob o CNSP e a Susep, e não sob o CNPC."
+        },
+        {
+          "id": "d",
+          "text": "É responsável por regular o regime da Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. O CNPC não regula o regime da Comissão de Valores Mobiliários, que é o supervisor do mercado de capitais."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-25",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-25-sfn",
+      "dialogue": [
+        {
+          "speaker": "Adriana Queiroz — Analista de Supervisão do SFN",
+          "text": "Estou preparando um quadro com os supervisores do SFN e preciso ter certeza de quem entra nele."
+        }
+      ],
+      "question": "Quais são os órgãos supervisores?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "BCB: Banco Central do Brasil, CMN: Conselho Monetário Nacional, SUSEP: Superintendência de Seguro Privado e PREVIC: Superintendência Nacional de Previdência Complementar.",
+          "correct": false,
+          "feedback": "Incorreta. O CMN é órgão normativo, e não supervisor."
+        },
+        {
+          "id": "b",
+          "text": "BCB: Banco Central do Brasil, CVM: Comissão de Valores Mobiliários, SUSEP: Superintendência de Seguro Privado e PREVIC: Superintendência Nacional de Previdência Complementar.",
+          "correct": true,
+          "feedback": "Correto. Os órgãos supervisores são o Banco Central, a CVM, a Susep e a Previc, que fiscalizam o cumprimento das regras dos órgãos normativos."
+        },
+        {
+          "id": "c",
+          "text": "CMN: Conselho Monetário Nacional, CVM: Comissão de Valores Mobiliários, SUSEP: Superintendência de Seguro Privado e PREVIC: Superintendência Nacional de Previdência Complementar.",
+          "correct": false,
+          "feedback": "Incorreta. O CMN é normativo, e não supervisor; a lista também omite o Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "BB: Banco do Brasil, CVM: Comissão de Valores Mobiliários, SUSEP: Superintendência de Seguro Privado e PREVIC: Superintendência Nacional de Previdência Complementar.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco do Brasil é uma instituição financeira, e não um órgão supervisor."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-26",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-26-sfn",
+      "dialogue": [
+        {
+          "speaker": "Ivan Duarte — Analista de Conformidade Regulatória",
+          "text": "Um colega confundiu quem faz as regras com quem fiscaliza. Vou explicar a função dos supervisores."
+        }
+      ],
+      "question": "Qual é a responsabilidade dos órgãos supervisores?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As entidades supervisoras trabalham para que os cidadãos e os integrantes do sistema financeiro sigam as regras definidas pelos órgãos normativos.",
+          "correct": true,
+          "feedback": "Correto. As entidades supervisoras trabalham para que os cidadãos e os integrantes do sistema financeiro sigam as regras definidas pelos órgãos normativos."
+        },
+        {
+          "id": "b",
+          "text": "As entidades supervisoras trabalham para que os cidadãos e os integrantes do sistema financeiro elaborem as regras para os órgãos normativos.",
+          "correct": false,
+          "feedback": "Incorreta. Elaborar regras para os órgãos normativos inverte os papéis: os normativos definem as regras, e os supervisores fiscalizam seu cumprimento."
+        },
+        {
+          "id": "c",
+          "text": "As entidades supervisoras trabalham para que Banco Central do Brasil e a CVM sigam as regras definidas pelos órgãos normativos.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco Central e a CVM são, eles mesmos, supervisores; a função não é fazê-los cumprir regras, mas fiscalizar o mercado."
+        },
+        {
+          "id": "d",
+          "text": "As entidades supervisoras trabalham para que o Banco do Brasil e a CVM sigam as regras definidas pelos órgãos normativos.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco do Brasil é uma instituição financeira e não está entre os agentes que os supervisores orientam desse modo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-27",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-27-sfn",
+      "dialogue": [
+        {
+          "speaker": "Lorena Falcão — Analista de História Institucional",
+          "text": "Vou incluir uma linha do tempo no manual e preciso da lei que criou o Banco Central."
+        }
+      ],
+      "question": "O Banco Central do Brasil foi criado por qual lei?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O Banco Central foi criado pela lei 4.001",
+          "correct": false,
+          "feedback": "Incorreta. A Lei 4.001 não é a lei de criação do Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "O Banco Central foi criado pela lei 3.690",
+          "correct": false,
+          "feedback": "Incorreta. A Lei 3.690 não é a lei de criação do Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "O Banco Central foi criado pela lei 3.691",
+          "correct": false,
+          "feedback": "Incorreta. A Lei 3.691 não é a lei de criação do Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "O Banco Central foi criado pela lei 4.595",
+          "correct": true,
+          "feedback": "Correto. O Banco Central foi criado pela Lei nº 4.595/1964, que dispõe sobre a política e as instituições monetárias, bancárias e creditícias."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-28",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-28-sfn",
+      "dialogue": [
+        {
+          "speaker": "Felipe Amorim — Analista de Política Monetária",
+          "text": "Na reunião vão me perguntar qual é o papel do Banco Central frente ao CMN. Quero responder com precisão."
+        }
+      ],
+      "question": "Qual é a responsabilidade do Banco Central do Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É o principal executor das orientações do CMN e responsável por garantir o poder de compra da moeda nacional.",
+          "correct": true,
+          "feedback": "Correto. O Banco Central é o principal executor das orientações do CMN e responsável por garantir o poder de compra da moeda nacional."
+        },
+        {
+          "id": "b",
+          "text": "É o principal executor das orientações da CVM e responsável por garantir o poder de compra da moeda nacional.",
+          "correct": false,
+          "feedback": "Incorreta. As orientações que o Banco Central executa são as do CMN, e não as da CVM."
+        },
+        {
+          "id": "c",
+          "text": "É o principal executor das orientações do CNPC e responsável por garantir o poder de compra da moeda nacional.",
+          "correct": false,
+          "feedback": "Incorreta. O CNPC regula a previdência complementar fechada; não é ele quem orienta o Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "É o principal supervisor das orientações da CVM e responsável por formular a política e o crédito, com o objetivo de manter a estabilidade da moeda e promover o desenvolvimento econômico e social do País.",
+          "correct": false,
+          "feedback": "Incorreta. Formular a política da moeda e do crédito é função do CMN, e não do Banco Central, que a executa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-29",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-29-sfn",
+      "dialogue": [
+        {
+          "speaker": "Raquel Sobral — Analista de Mercado de Capitais",
+          "text": "Um cliente quer investir em ações e perguntou quem fiscaliza esse mercado. Vou explicar o papel da CVM."
+        }
+      ],
+      "question": "Qual é o objetivo da CVM, a Comissão de Valores Mobiliários?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A CVM tem o objetivo de fiscalizar, normatizar, disciplinar e desenvolver o mercado de seguros privados.",
+          "correct": false,
+          "feedback": "Incorreta. O mercado de seguros privados é fiscalizado pela Susep; a CVM cuida do mercado de valores mobiliários. O trecho que muda a resposta é \"seguros privados\"."
+        },
+        {
+          "id": "b",
+          "text": "A CVM tem o objetivo de fiscalizar, normatizar, disciplinar e desenvolver o mercado de crédito.",
+          "correct": false,
+          "feedback": "Incorreta. O crédito é acompanhado pelo Banco Central, e a CVM cuida do mercado de valores mobiliários. O trecho que muda a resposta é \"mercado de crédito\"."
+        },
+        {
+          "id": "c",
+          "text": "A CVM tem o objetivo de fiscalizar e normatizar o mercado de valores mobiliários.",
+          "correct": false,
+          "feedback": "Incompleta. A CVM fiscaliza e normatiza o mercado de valores mobiliários, mas o gabarito também inclui disciplinar e desenvolver esse mercado."
+        },
+        {
+          "id": "d",
+          "text": "A CVM tem o objetivo de fiscalizar, normatizar, disciplinar e desenvolver o mercado de valores mobiliários.",
+          "correct": true,
+          "feedback": "Correto. A CVM tem o objetivo de fiscalizar, normatizar, disciplinar e desenvolver o mercado de valores mobiliários."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-30",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-30-sfn",
+      "dialogue": [
+        {
+          "speaker": "Viviane Torres — Analista de Relacionamento Institucional",
+          "text": "Vou classificar os tipos de instituição que aparecem no nosso cadastro e preciso de uma definição para o grupo dos bancos e corretoras."
+        }
+      ],
+      "question": "Bancos, caixas econômicas, corretoras e distribuidoras, entre outras instituições, são:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "São instituições financeiras que lidam diretamente com o público, no papel de intermediário financeiro.",
+          "correct": true,
+          "feedback": "Correto. São instituições financeiras que lidam diretamente com o público, no papel de intermediário financeiro."
+        },
+        {
+          "id": "b",
+          "text": "São instituições financeiras públicas e privadas que atuam diretamente sob as ordens da CVM.",
+          "correct": false,
+          "feedback": "Incorreta. As instituições financeiras não atuam sob as ordens da CVM: sua supervisão, em regra, cabe ao Banco Central, e a CVM supervisiona o mercado de valores mobiliários."
+        },
+        {
+          "id": "c",
+          "text": "São instituições financeiras que determinam regras para o funcionamento do Sistema Financeiro Nacional.",
+          "correct": false,
+          "feedback": "Incorreta. Quem determina as regras de funcionamento do sistema são os órgãos normativos, e não essas instituições."
+        },
+        {
+          "id": "d",
+          "text": "São instituições que apenas custodiam valores mobiliários, sem contato com o público.",
+          "correct": false,
+          "feedback": "Incorreta. Bancos, caixas econômicas, corretoras e distribuidoras lidam diretamente com o público e atuam como intermediários financeiros; a custódia de valores não define esse grupo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-31",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-31-sfn",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Peixoto — Analista de Seguros Corporativos",
+          "text": "Vamos contratar um seguro para a operação e quero entender quem fiscaliza as seguradoras no Brasil."
+        }
+      ],
+      "question": "O que é a Susep, a Superintendência de Seguros Privados?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A SUSEP é o órgão responsável pelo controle dos mercados de capitais, seguros, previdência privada aberta, capitalização e resseguro. Autarquia vinculada ao Ministério da Fazenda.",
+          "correct": false,
+          "feedback": "Incorreta. O controle do mercado de capitais não é da Susep: é da CVM."
+        },
+        {
+          "id": "b",
+          "text": "A Susep é o órgão responsável pelo controle e fiscalização dos mercados de previdência complementar, previdência privada aberta, capitalização e resseguro. Autarquia vinculada ao Ministério da Fazenda.",
+          "correct": false,
+          "feedback": "Incorreta. A alternativa omite os seguros, que são a atividade central supervisionada pela Susep, e fala em previdência complementar de forma imprecisa."
+        },
+        {
+          "id": "c",
+          "text": "A SUSEP é o órgão responsável pelo controle e fiscalização dos mercados de seguros, previdência privada aberta, capitalização e resseguro. Autarquia vinculada ao Ministério da Previdência.",
+          "correct": false,
+          "feedback": "Incorreta. A Susep é vinculada ao Ministério da Fazenda, e não ao da Previdência."
+        },
+        {
+          "id": "d",
+          "text": "A SUSEP é o órgão responsável pelo controle e fiscalização dos mercados de seguros, previdência privada aberta, capitalização e resseguro. Autarquia vinculada ao Ministério da Fazenda.",
+          "correct": true,
+          "feedback": "Correto. A Susep é a autarquia vinculada ao Ministério da Fazenda responsável por controlar e fiscalizar os mercados de seguros, previdência privada aberta, capitalização e resseguro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual-32",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual-32-sfn",
+      "dialogue": [
+        {
+          "speaker": "Carolina Esteves — Analista de Previdência Corporativa",
+          "text": "Nosso plano de previdência será fiscalizado por algum órgão específico. Quero entender o que é a Previc."
+        }
+      ],
+      "question": "O que é a Previc?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Superintendência Nacional de Previdência Complementar é uma entidade governamental subordinada ao Ministério da Previdência Social, com a finalidade de fiscalizar e supervisionar as entidades abertas de previdência complementar e de executar políticas para o regime de previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. A Previc é uma autarquia e fiscaliza as entidades fechadas de previdência complementar, e não as abertas, que são supervisionadas pela Susep."
+        },
+        {
+          "id": "b",
+          "text": "A Superintendência Nacional de Previdência Complementar é uma entidade governamental autônoma, constituída sob a forma de autarquia especial vinculada ao Ministério da Previdência Social, com a finalidade de fiscalizar e supervisionar as entidades fechadas de previdência complementar e de executar políticas para o regime de previdência complementar.",
+          "correct": true,
+          "feedback": "Correto. A Previc é uma autarquia especial, autônoma, vinculada ao Ministério da Previdência Social, que fiscaliza e supervisiona as entidades fechadas de previdência complementar e executa as políticas para esse regime."
+        },
+        {
+          "id": "c",
+          "text": "A Superintendência Nacional de Previdência Complementar é uma entidade particular vinculada ao Ministério da Fazenda, com a finalidade de fiscalizar e supervisionar as entidades fechadas de previdência complementar e de executar políticas para o regime de previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. A Previc não é uma entidade particular: é uma autarquia do governo federal."
+        },
+        {
+          "id": "d",
+          "text": "A Superintendência Nacional de Previdência Complementar é uma entidade governamental autônoma, constituída sob a forma de autarquia especial vinculada ao Ministério da Previdência de Seguros Privados, com a finalidade de fiscalizar e supervisionar as entidades fechadas de previdência complementar e de executar políticas para o regime de previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. O ministério ao qual a Previc se vincula é o da Previdência Social; \"Ministério da Previdência de Seguros Privados\" não existe."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-02",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-02-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Otto Lemos — Analista de Risco-País",
+          "text": "Estou classificando países por \"geração\" das leis de lavagem de dinheiro e preciso enquadrar um que lista crimes de forma fechada."
+        }
+      ],
+      "question": "Um país cuja legislação tipifica como crime antecedente da lavagem de dinheiro um rol limitado e taxativo de infrações penais de relevância significativa tem legislação de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Primeira geração",
+          "correct": false,
+          "feedback": "Incorreta. A primeira geração prevê como crime antecedente apenas o tráfico de drogas e entorpecentes."
+        },
+        {
+          "id": "b",
+          "text": "Segunda geração",
+          "correct": true,
+          "feedback": "Correto. Na segunda geração, a lei amplia o rol de crimes antecedentes para além do tráfico de drogas, mas de forma limitada e taxativa, com uma lista fechada de infrações relevantes."
+        },
+        {
+          "id": "c",
+          "text": "Terceira geração",
+          "correct": false,
+          "feedback": "Incorreta. A terceira geração adota um amplo rol de crimes graves como antecedentes, e não apenas um rol limitado; o Brasil se enquadra nela desde a Lei nº 12.683/2012."
+        },
+        {
+          "id": "d",
+          "text": "Quarta geração",
+          "correct": false,
+          "feedback": "Incorreta. O material de apoio trabalha com três gerações (primeira, segunda e terceira); não existe uma quarta geração nessa classificação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-03",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-03-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Luana Peçanha — Analista de Análise de Operações",
+          "text": "Fui questionada sobre uma remessa sem relação clara com o negócio do cliente e quero citar o princípio correto."
+        }
+      ],
+      "question": "Toda operação realizada no mercado de câmbio deve ter lastro em operação real, firme e consistente, com razoabilidade econômica e conexão da remessa com a atividade comercial do cliente. Esse princípio é conhecido como:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Transferências unilaterais",
+          "correct": false,
+          "feedback": "Incorreta. Transferências unilaterais são um tipo de operação, e não o nome do princípio do lastro econômico."
+        },
+        {
+          "id": "b",
+          "text": "Manutenção de viajantes no exterior",
+          "correct": false,
+          "feedback": "Incorreta. Manutenção de viajantes no exterior é uma natureza de operação, e não o princípio descrito."
+        },
+        {
+          "id": "c",
+          "text": "Fundamentação econômica",
+          "correct": true,
+          "feedback": "Correto. A fundamentação econômica exige que a operação tenha lastro real, firme e consistente, com razoabilidade econômica e conexão com a atividade do cliente."
+        },
+        {
+          "id": "d",
+          "text": "Autorregulação cambial.",
+          "correct": false,
+          "feedback": "Incorreta. Autorregulação cambial não é o nome do princípio descrito no enunciado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-04",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-04-sfn",
+      "dialogue": [
+        {
+          "speaker": "Ramiro Tavares — Analista de Autorizações Regulatórias",
+          "text": "Estou mapeando quem responde ao Banco Central e quem responde a outros supervisores para organizar nossas consultas."
+        }
+      ],
+      "question": "Quem o Banco Central supervisiona?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bancos e caixas econômicas, administradoras de consórcios, cooperativas de crédito, instituições de pagamento, corretoras e distribuidoras e demais instituições não bancárias.",
+          "correct": true,
+          "feedback": "Correto. O Banco Central supervisiona bancos, caixas econômicas, administradoras de consórcios, cooperativas de crédito, instituições de pagamento, corretoras e distribuidoras e demais instituições não bancárias."
+        },
+        {
+          "id": "b",
+          "text": "Bancos e caixas econômicas, administradoras de consórcios, cooperativas de crédito, instituições de pagamento, corretoras e distribuidoras e a bolsa de valores.",
+          "correct": false,
+          "feedback": "Incorreta. A bolsa de valores é supervisionada pela CVM, e não pelo Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "Bancos e caixas econômicas, administradoras de consórcios, cooperativas de crédito, instituições de pagamento, corretoras e distribuidoras, bolsa de valores, seguradoras e resseguradoras.",
+          "correct": false,
+          "feedback": "Incorreta. A bolsa de valores é da CVM, e as seguradoras e resseguradoras são supervisionadas pela Susep."
+        },
+        {
+          "id": "d",
+          "text": "Somente a Comissão de Valores Mobiliários, os bancos e caixas econômicas e as cooperativas de crédito.",
+          "correct": false,
+          "feedback": "Incorreta. A CVM é outro supervisor e não está sob a supervisão do Banco Central; a lista também deixa de fora várias instituições que o BC supervisiona."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-05",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-05-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Cristina Aguiar — Analista Jurídica de Compliance",
+          "text": "Precisamos responder a um ofício e quero conferir quem a lei do sigilo bancário trata como instituição financeira."
+        }
+      ],
+      "question": "De acordo com a Lei Complementar nº 105/2001 (sigilo bancário), são consideradas instituições financeiras:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bancos, cooperativas de crédito, sociedades de arrendamento mercantil, corretoras de câmbio e empresas do segmento de logística.",
+          "correct": false,
+          "feedback": "Incorreta. Empresas do segmento de logística não são instituições financeiras para fins da lei do sigilo bancário."
+        },
+        {
+          "id": "b",
+          "text": "Bancos, cooperativas de crédito, sociedades de arrendamento mercantil e corretoras de câmbio e de valores mobiliários.",
+          "correct": true,
+          "feedback": "Correto. Para a LC 105/2001, são instituições financeiras os bancos, as cooperativas de crédito, as sociedades de arrendamento mercantil e as corretoras de câmbio e de valores mobiliários, entre outras."
+        },
+        {
+          "id": "c",
+          "text": "Bancos, cooperativas de crédito, sociedades de arrendamento mercantil, corretoras de câmbio e empresas do segmento de varejo.",
+          "correct": false,
+          "feedback": "Incorreta. Empresas do segmento de varejo não são instituições financeiras para fins da lei."
+        },
+        {
+          "id": "d",
+          "text": "Apenas os bancos e as cooperativas de crédito.",
+          "correct": false,
+          "feedback": "Incorreta. O rol da lei é mais amplo e inclui, por exemplo, as sociedades de arrendamento mercantil e as corretoras."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-06",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-06-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Beto Nogueira — Analista de Tratados e Padrões Internacionais",
+          "text": "Vou citar o GAFI num parecer e quero descrever com precisão o que ele faz."
+        }
+      ],
+      "question": "Qual é a função do GAFI?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Desenvolver e promover políticas nacionais e internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo.",
+          "correct": true,
+          "feedback": "Correto. A função do GAFI é desenvolver e promover políticas nacionais e internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo."
+        },
+        {
+          "id": "b",
+          "text": "Desenvolver e promover políticas nacionais de combate à lavagem de dinheiro, sem tratar do financiamento do terrorismo.",
+          "correct": false,
+          "feedback": "Incorreta. O GAFI trata também do financiamento do terrorismo e atua em políticas nacionais e internacionais. O trecho que muda a resposta é \"sem tratar do financiamento do terrorismo\"."
+        },
+        {
+          "id": "c",
+          "text": "Desenvolver e promover políticas nacionais e internacionais de combate à evasão fiscal e ao financiamento do terrorismo.",
+          "correct": false,
+          "feedback": "Incorreta. O foco do GAFI é a lavagem de dinheiro, e não a evasão fiscal. O trecho que muda a resposta é \"evasão fiscal\"."
+        },
+        {
+          "id": "d",
+          "text": "Disciplinar e aplicar penas administrativas aos setores bancários.",
+          "correct": false,
+          "feedback": "Incorreta. O GAFI não disciplina nem aplica penas administrativas ao setor bancário; isso cabe às autoridades de cada país."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-08-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Lívia Seixas — Analista de Educação do Mercado",
+          "text": "Vou explicar o mercado de câmbio para os estagiários, começando por quem compra moeda estrangeira."
+        }
+      ],
+      "question": "O mercado de câmbio tem vários atores: os demandantes de moeda estrangeira, os ofertantes e os intermediários. Quem são os demandantes?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Importadores e viajantes ao exterior.",
+          "correct": true,
+          "feedback": "Correto. Os demandantes são os que precisam de moeda estrangeira para pagar ou viajar ao exterior, como os importadores e os viajantes."
+        },
+        {
+          "id": "b",
+          "text": "Exportadores e turistas estrangeiros.",
+          "correct": false,
+          "feedback": "Incorreta. Exportadores e turistas estrangeiros trazem moeda estrangeira ao país, sendo ofertantes."
+        },
+        {
+          "id": "c",
+          "text": "Importadores e exportadores.",
+          "correct": false,
+          "feedback": "Incorreta. Exportadores ofertam moeda estrangeira ao vender para o mercado os recursos que recebem pelas vendas ao exterior."
+        },
+        {
+          "id": "d",
+          "text": "Importadores, exportadores e casas de câmbio.",
+          "correct": false,
+          "feedback": "Incorreta. As casas de câmbio são intermediárias, e não demandantes, e os exportadores são ofertantes."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-10",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-10-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Elaine Mascarenhas — Analista de Relacionamento com Autoridades",
+          "text": "Vou preparar uma resposta a uma autoridade e preciso listar todas as competências do COAF."
+        }
+      ],
+      "question": "Quais são as competências do COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O COAF foi criado pela Lei 9.613/1998, para coordenar e propor mecanismos de cooperação que viabilizem ações rápidas no combate à lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "Incompleta. Coordenar e propor mecanismos de cooperação contra a lavagem de dinheiro é uma competência do COAF, mas não a única."
+        },
+        {
+          "id": "b",
+          "text": "O COAF foi criado pela Lei 9.613/1998, para comunicar às autoridades competentes a instauração dos procedimentos cabíveis nas situações em que o Conselho concluir pela existência ou indícios de crimes de lavagem, ocultação de bens ou de qualquer outro ilícito.",
+          "correct": false,
+          "feedback": "Incompleta. Comunicar às autoridades competentes os casos com indícios de crimes é uma competência do COAF, mas não a única."
+        },
+        {
+          "id": "c",
+          "text": "O COAF foi criado pela Lei 9.613/1998, para receber, examinar e identificar as ocorrências suspeitas de atividades ilícitas.",
+          "correct": false,
+          "feedback": "Incompleta. Receber, examinar e identificar ocorrências suspeitas é uma competência do COAF, mas não a única."
+        },
+        {
+          "id": "d",
+          "text": "Todas as competências descritas nas demais alternativas.",
+          "correct": true,
+          "feedback": "Correto. O COAF, criado pela Lei 9.613/1998, reúne todas as competências descritas: coordenar mecanismos de cooperação, comunicar às autoridades e receber, examinar e identificar ocorrências suspeitas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-12-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Sílvia Noronha — Coordenadora de Programa de PLD",
+          "text": "Vou montar o desenho do nosso programa de PLD e quero listar todos os pilares que o sustentam."
+        }
+      ],
+      "question": "Quais são os pilares de sustentação da PLD?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Devida diligência sobre o cliente, abordagem baseada no risco, fundamentação econômica e auditoria.",
+          "correct": false,
+          "feedback": "Incompleta. Faltam os controles internos adequados e a comunicação ao COAF."
+        },
+        {
+          "id": "b",
+          "text": "Devida diligência sobre o cliente, fundamentação econômica e auditoria, controles internos adequados.",
+          "correct": false,
+          "feedback": "Incompleta. Faltam a abordagem baseada no risco e a comunicação ao COAF."
+        },
+        {
+          "id": "c",
+          "text": "Abordagem baseada no risco, fundamentação econômica, controles internos adequados e comunicação ao COAF.",
+          "correct": false,
+          "feedback": "Incompleta. Falta a devida diligência sobre o cliente, que é a base do programa."
+        },
+        {
+          "id": "d",
+          "text": "Devida diligência sobre o cliente, abordagem baseada no risco (ABR), fundamentação econômica, auditoria, controles internos adequados e comunicação ao COAF, com qualidade.",
+          "correct": true,
+          "feedback": "Correto. Os pilares reúnem devida diligência sobre o cliente, abordagem baseada no risco, fundamentação econômica, auditoria, controles internos adequados e comunicação ao COAF com qualidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-15",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-15-sfn",
+      "dialogue": [
+        {
+          "speaker": "Jussara Cavalcante — Analista de Previdência Complementar",
+          "text": "Vou orientar um colega sobre qual órgão fiscaliza os fundos de pensão e preciso citar o correto."
+        }
+      ],
+      "question": "A Previc fiscaliza:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O envio de dinheiro ao exterior referente à aplicação de recursos da previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. A Previc não fiscaliza o envio de dinheiro ao exterior; sua atuação é sobre as entidades de previdência complementar fechada."
+        },
+        {
+          "id": "b",
+          "text": "As transações do mercado de valores mobiliários.",
+          "correct": false,
+          "feedback": "Incorreta. As transações do mercado de valores mobiliários são fiscalizadas pela CVM."
+        },
+        {
+          "id": "c",
+          "text": "As entidades fechadas de previdência complementar, além de executar a política para o regime de previdência complementar.",
+          "correct": true,
+          "feedback": "Correto. A Previc fiscaliza e supervisiona as entidades fechadas de previdência complementar e executa a política para esse regime."
+        },
+        {
+          "id": "d",
+          "text": "As entidades abertas de previdência complementar, além de executar a política para o regime de previdência complementar.",
+          "correct": false,
+          "feedback": "Incorreta. As entidades abertas de previdência complementar são fiscalizadas pela Susep, e não pela Previc."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-17",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-17-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Kleber Antunes — Analista de Avaliação de Jurisdições",
+          "text": "O país do nosso cliente só pune lavagem ligada a drogas. Preciso enquadrá-lo na classificação por gerações."
+        }
+      ],
+      "question": "Um país cuja legislação tipifica como crime antecedente da lavagem de dinheiro apenas o tráfico de drogas e entorpecentes é considerado país com legislação de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Primeira geração.",
+          "correct": true,
+          "feedback": "Correto. As leis de primeira geração tratam como crime antecedente da lavagem apenas o tráfico de drogas e entorpecentes."
+        },
+        {
+          "id": "b",
+          "text": "Segunda geração.",
+          "correct": false,
+          "feedback": "Incorreta. A segunda geração amplia o rol de crimes antecedentes para além do tráfico de drogas, por meio de uma lista taxativa."
+        },
+        {
+          "id": "c",
+          "text": "Terceira geração.",
+          "correct": false,
+          "feedback": "Incorreta. A terceira geração adota um amplo rol de crimes graves como antecedentes, e não apenas um rol limitado; o Brasil se enquadra nela desde a Lei nº 12.683/2012."
+        },
+        {
+          "id": "d",
+          "text": "Quarta geração.",
+          "correct": false,
+          "feedback": "Incorreta. O material de apoio trabalha com três gerações (primeira, segunda e terceira); não existe uma quarta geração nessa classificação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-18",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-18-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Isabela Ferraz — Analista de Pesquisa em PLD",
+          "text": "Estou escrevendo a linha do tempo da PLD e preciso da data de criação do GAFI e do seu objetivo."
+        }
+      ],
+      "question": "Em que ano foi criado o GAFI e com qual finalidade?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O GAFI foi criado em 1964, com a finalidade de comunicar às autoridades competentes os crimes de lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "Incorreta. 1964 não é o ano de criação do GAFI, e comunicar crimes às autoridades é função das unidades de inteligência financeira."
+        },
+        {
+          "id": "b",
+          "text": "O GAFI foi criado em 1989, com o propósito de desenvolver e promover políticas nacionais e internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo.",
+          "correct": true,
+          "feedback": "Correto. O GAFI foi criado em 1989, com o propósito de desenvolver e promover políticas nacionais e internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo."
+        },
+        {
+          "id": "c",
+          "text": "O GAFI foi criado em 2001, com a finalidade de apoiar e zelar pela estabilidade permanente do sistema financeiro internacional.",
+          "correct": false,
+          "feedback": "Incorreta. O GAFI não nasceu em 2001, e sua finalidade não é zelar pela estabilidade do sistema financeiro internacional."
+        },
+        {
+          "id": "d",
+          "text": "O GAFI foi criado em 1990, com o propósito de desenvolver e promover políticas nacionais e internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo.",
+          "correct": false,
+          "feedback": "Incorreta. Em 1990 o GAFI divulgou suas primeiras Recomendações, mas ele já havia sido criado em 1989."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-19",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-19-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Bruna Camargo — Analista de Monitoramento de Transações",
+          "text": "Fiz um alerta de transação e preciso separar o que é realmente indício de lavagem do que é um comportamento normal."
+        }
+      ],
+      "question": "De acordo com a Carta Circular nº 4.001, qual das situações não configura indício de crime de lavagem de dinheiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Transferências unilaterais que, pela habitualidade, valor ou forma, não se justifiquem ou apresentem atipicidade.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: transferências unilaterais que, pela habitualidade, valor ou forma, não se justifiquem ou apresentem atipicidade são sinal de alerta."
+        },
+        {
+          "id": "b",
+          "text": "As operações realizadas ou os serviços prestados que, por sua habitualidade, valor ou forma, configurem artifício que objetive burlar os procedimentos de identificação, qualificação, registro, monitoramento e seleção previstos nesta Circular.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: operações que, por habitualidade, valor ou forma, configurem artifício para burlar os procedimentos de identificação, qualificação, registro, monitoramento e seleção são sinal de alerta."
+        },
+        {
+          "id": "c",
+          "text": "Movimentações de moeda estrangeira em espécie ou de cheques de viagem denominados em moeda estrangeira, que apresentem atipicidade em relação à atividade econômica do cliente ou incompatibilidade com a sua capacidade financeira.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: movimentações de moeda estrangeira em espécie ou de cheques de viagem atípicas em relação à atividade econômica do cliente são sinal de alerta."
+        },
+        {
+          "id": "d",
+          "text": "Investimentos significativos, proporcionais à capacidade financeira do cliente ou cuja origem seja claramente conhecida.",
+          "correct": true,
+          "feedback": "Correto. Investimentos significativos, proporcionais à capacidade financeira do cliente e de origem claramente conhecida são compatíveis com o perfil e não configuram indício de lavagem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-21",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-21-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Ana Clara Peixoto — Instrutora de Treinamento de PLD",
+          "text": "Na aula de hoje vou apresentar o ciclo da lavagem de dinheiro, e quero a sequência certa das fases."
+        }
+      ],
+      "question": "Indique as fases da lavagem de dinheiro:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Recepção, ocultação e integração.",
+          "correct": false,
+          "feedback": "Incorreta. A primeira fase não se chama recepção: o nome correto é colocação."
+        },
+        {
+          "id": "b",
+          "text": "Colocação, ocultação (ou dissimulação) e integração.",
+          "correct": true,
+          "feedback": "Correto. A lavagem de dinheiro tem três fases: colocação, ocultação (ou dissimulação) e integração."
+        },
+        {
+          "id": "c",
+          "text": "Dissimulação, colocação e integração.",
+          "correct": false,
+          "feedback": "Incorreta. Os nomes estão certos, mas a ordem está invertida: a colocação vem antes da dissimulação."
+        },
+        {
+          "id": "d",
+          "text": "Inserção, integração e incorporação.",
+          "correct": false,
+          "feedback": "Incorreta. Inserção, integração e incorporação não são os nomes consagrados das fases da lavagem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-22",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-22-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Rui Montenegro — Analista de Investigações Financeiras",
+          "text": "Durante uma investigação, vi vários depósitos pequenos em dinheiro e quero explicar em qual fase da lavagem isso se encaixa."
+        }
+      ],
+      "question": "O que é \"colocação\" no processo de lavagem de dinheiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Processo que consiste na estruturação da operação que busca dificultar o rastreamento contábil dos recursos ilícitos.",
+          "correct": false,
+          "feedback": "Incorreta. Estruturar operações para dificultar o rastreamento contábil dos recursos é a fase de ocultação (ou dissimulação), e não a colocação."
+        },
+        {
+          "id": "b",
+          "text": "Introduzir o dinheiro no sistema econômico, buscando ocultar a origem dos recursos ilícitos.",
+          "correct": true,
+          "feedback": "Correto. A colocação é a etapa em que o dinheiro ilícito é introduzido no sistema econômico, buscando ocultar sua origem."
+        },
+        {
+          "id": "c",
+          "text": "É o momento onde os recursos estão incorporados formalmente ao sistema econômico.",
+          "correct": false,
+          "feedback": "Incorreta. O momento em que os recursos já estão incorporados formalmente ao sistema econômico é a integração."
+        },
+        {
+          "id": "d",
+          "text": "Introduzir o dinheiro na economia, com lastro e rastreabilidade.",
+          "correct": false,
+          "feedback": "Incorreta. Na colocação, o dinheiro entra na economia sem lastro e sem rastreabilidade, justamente para esconder a origem ilícita."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-24",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-24-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Sandro Valença — Analista de Supervisão de Parceiros",
+          "text": "Vou separar nossos parceiros por supervisor e preciso saber qual deles não responde ao Banco Central."
+        }
+      ],
+      "question": "Qual destas instituições financeiras não é regulada pelo Banco Central?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Corretoras de câmbio.",
+          "correct": false,
+          "feedback": "Incorreta. As corretoras de câmbio são autorizadas e supervisionadas pelo Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Bancos comerciais.",
+          "correct": false,
+          "feedback": "Incorreta. Os bancos comerciais estão entre as instituições mais tradicionais supervisionadas pelo Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "Administradoras de consórcios.",
+          "correct": false,
+          "feedback": "Incorreta. As administradoras de consórcios são reguladas e supervisionadas pelo Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "Empresas de capitalização.",
+          "correct": true,
+          "feedback": "Correto. As empresas de capitalização pertencem ao segmento de seguros privados, regulado pelo CNSP e supervisionado pela Susep, e não pelo Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-25",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-25-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Nádia Cordeiro — Analista de Memória Regulatória",
+          "text": "Vou citar a lei que criou o COAF numa nota técnica e quero evitar confundir com outras leis do SFN."
+        }
+      ],
+      "question": "Qual lei criou o COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lei 9.613",
+          "correct": true,
+          "feedback": "Correto. O COAF foi criado pela Lei nº 9.613/1998, a lei de combate à lavagem de dinheiro."
+        },
+        {
+          "id": "b",
+          "text": "Lei 4.595",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.595/1964 reformulou o sistema financeiro e criou o Banco Central, e não o COAF."
+        },
+        {
+          "id": "c",
+          "text": "Lei 7.492",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 7.492/1986 define os crimes contra o Sistema Financeiro Nacional, e não criou o COAF."
+        },
+        {
+          "id": "d",
+          "text": "Lei 4.131",
+          "correct": false,
+          "feedback": "Incorreta. A Lei nº 4.131/1962 disciplina a aplicação de capital estrangeiro e as remessas ao exterior, e não criou o COAF."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-26",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-26-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Aragão — Analista Jurídico de Compliance",
+          "text": "Um colega perguntou se estados ou municípios podem ter leis próprias sobre lavagem de dinheiro. Vou explicar."
+        }
+      ],
+      "question": "Em que âmbito são criadas as leis referentes à lavagem de dinheiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Estado",
+          "correct": false,
+          "feedback": "Incorreta. Os estados não legislam sobre direito penal, e a lavagem de dinheiro é matéria penal."
+        },
+        {
+          "id": "b",
+          "text": "União",
+          "correct": true,
+          "feedback": "Correto. A competência para legislar sobre direito penal é da União, e por isso as leis de lavagem de dinheiro são federais."
+        },
+        {
+          "id": "c",
+          "text": "Prefeitura",
+          "correct": false,
+          "feedback": "Incorreta. Prefeituras não têm competência para legislar sobre direito penal."
+        },
+        {
+          "id": "d",
+          "text": "União e Estado",
+          "correct": false,
+          "feedback": "Incorreta. A competência não é compartilhada com os estados: é da União."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-27",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-27-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Hélio Brandão — Analista de Risco de Jurisdições",
+          "text": "O país da contraparte lista muitos crimes graves como antecedentes da lavagem. Quero classificá-lo corretamente."
+        }
+      ],
+      "question": "Um país cuja legislação tipifica como crime antecedente da lavagem de dinheiro um amplo rol de crimes graves tem legislação de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Primeira geração.",
+          "correct": false,
+          "feedback": "Incorreta. A primeira geração trata como antecedente apenas o tráfico de drogas e entorpecentes."
+        },
+        {
+          "id": "b",
+          "text": "Segunda geração.",
+          "correct": false,
+          "feedback": "Incorreta. A segunda geração adota um rol limitado e taxativo, e não amplo, de crimes antecedentes."
+        },
+        {
+          "id": "c",
+          "text": "Terceira geração.",
+          "correct": true,
+          "feedback": "Correto. As leis de terceira geração adotam um amplo rol de crimes graves como antecedentes da lavagem de dinheiro; no Brasil, a Lei nº 12.683/2012 ampliou o alcance da lei e a enquadrou nessa geração."
+        },
+        {
+          "id": "d",
+          "text": "Quarta geração.",
+          "correct": false,
+          "feedback": "Incorreta. O material de apoio trabalha com três gerações (primeira, segunda e terceira); não existe uma quarta geração nessa classificação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-31",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-31-sfn",
+      "dialogue": [
+        {
+          "speaker": "Cíntia Veloso — Analista de Políticas de KYC",
+          "text": "Vou publicar o manual de identificação de clientes e preciso decidir quem deve aprová-lo."
+        }
+      ],
+      "question": "Quanto à identificação e à qualificação de clientes, é correto afirmar que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Deve ser avaliado o perfil de risco do cliente, com medidas reforçadas apenas para clientes classificados em categorias de baixo risco.",
+          "correct": false,
+          "feedback": "Incorreta. As medidas reforçadas são para os clientes de maior risco, e não para os de baixo risco. O trecho que muda a resposta é \"de baixo risco\"."
+        },
+        {
+          "id": "b",
+          "text": "Os procedimentos de identificação e qualificação devem ser formalizados em manual específico aprovado pela área de Compliance.",
+          "correct": false,
+          "feedback": "Incorreta. O manual é aprovado pela diretoria da instituição, e não pela área de Compliance. O trecho que muda a resposta é \"área de Compliance\"."
+        },
+        {
+          "id": "c",
+          "text": "Os procedimentos de identificação e qualificação devem ser formalizados em manual específico aprovado pela Diretoria.",
+          "correct": true,
+          "feedback": "Correto. Os procedimentos de identificação e qualificação devem ser formalizados em manual específico aprovado pela Diretoria, o que lhes dá respaldo da alta administração."
+        },
+        {
+          "id": "d",
+          "text": "Os procedimentos de identificação e qualificação devem ser registrados pelo Compliance e ficar disponíveis para consulta de toda a instituição financeira.",
+          "correct": false,
+          "feedback": "Incorreta. Esses registros não precisam ficar disponíveis a toda a instituição; o acesso é restrito conforme a necessidade e o sigilo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-32",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-32-sfn",
+      "dialogue": [
+        {
+          "speaker": "Edson Pimentel — Auditor de Processos de Cadastro",
+          "text": "Na auditoria do cadastro, preciso classificar o que representa deficiência de verdade no processo de identificação."
+        }
+      ],
+      "question": "O que pode ser indicado como uma deficiência no processo de identificação dos clientes?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Não solicitar Declaração de Imposto de Renda.",
+          "correct": false,
+          "feedback": "Incorreta. A Declaração de Imposto de Renda não é exigência geral de identificação, então não solicitá-la não é, por si só, uma deficiência."
+        },
+        {
+          "id": "b",
+          "text": "Identificar o cliente pelo nome e não pelo CPF.",
+          "correct": false,
+          "feedback": "Incorreta para o simulado. A identificação deve ser feita por documento completo; ainda assim, o gabarito elege a falta de atualização cadastral como a deficiência."
+        },
+        {
+          "id": "c",
+          "text": "Cadastro sem a ocupação principal do cliente.",
+          "correct": false,
+          "feedback": "Incorreta para o simulado. A ocupação principal é informação relevante do cadastro, mas o gabarito elege a falta de atualização cadastral como a deficiência."
+        },
+        {
+          "id": "d",
+          "text": "Não zelar pela atualização dos dados cadastrais.",
+          "correct": true,
+          "feedback": "Correto. Não zelar pela atualização dos dados cadastrais é uma deficiência clara do processo, porque o perfil do cliente deixa de refletir a realidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-33",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-33-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Miguel Bastos — Analista de Comunicações Regulatórias",
+          "text": "Um gerente perguntou se pode avisar o cliente de que a operação dele foi comunicada ao COAF. Vou responder."
+        }
+      ],
+      "question": "Com relação às comunicações ao COAF, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As instituições que não tiverem realizado nenhuma comunicação ao COAF devem prestar declaração a cada dois anos.",
+          "correct": false,
+          "feedback": "Incorreta. A instituição que não fez nenhuma comunicação ao COAF no ano civil presta uma declaração de não ocorrência todos os anos, até dez dias úteis após o encerramento do ano, e não a cada dois anos."
+        },
+        {
+          "id": "b",
+          "text": "Devem ser realizadas sem dar ciência aos envolvidos, mas com ciência aos gestores das áreas comerciais da instituição.",
+          "correct": false,
+          "feedback": "Incorreta. A comunicação não pode ser revelada a ninguém fora do processo de comunicação, nem às áreas comerciais. O trecho que muda a resposta é \"com ciência aos gestores das áreas comerciais\"."
+        },
+        {
+          "id": "c",
+          "text": "Devem ser realizadas sem dar ciência aos envolvidos ou a terceiros.",
+          "correct": true,
+          "feedback": "Correto. As comunicações devem ser feitas em sigilo, sem dar ciência aos envolvidos ou a terceiros, para não comprometer a análise nem alertar o investigado."
+        },
+        {
+          "id": "d",
+          "text": "Devem ser realizadas dando ciência aos envolvidos, mas sem dar ciência a terceiros.",
+          "correct": false,
+          "feedback": "Incorreta. Os envolvidos também não podem saber da comunicação. O trecho que muda a resposta é \"dando ciência aos envolvidos\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-34",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-34-sfn",
+      "dialogue": [
+        {
+          "speaker": "Samuel Pontes — Analista de Estudos do SFN",
+          "text": "Vou montar uma lista do que o Banco Central faz e do que não faz, e a pergunta pede a afirmativa incorreta."
+        }
+      ],
+      "question": "Entre as atividades do Banco Central, não é correto afirmar que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Executa as políticas cambial, de crédito e de capitais.",
+          "correct": true,
+          "feedback": "Correto. É a afirmativa errada: o Banco Central executa as políticas monetária e cambial, mas a política de capitais não é dele, pois o mercado de capitais é supervisionado pela CVM."
+        },
+        {
+          "id": "b",
+          "text": "Autoriza o funcionamento das Instituições financeiras.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: autorizar o funcionamento das instituições financeiras é, de fato, atividade do Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "Autoriza a emissão de papel moeda.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: autorizar a emissão de papel-moeda é, de fato, atividade do Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "Cumpre as diretrizes do CMN.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: cumprir as diretrizes do CMN é, de fato, atividade do Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-36",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-36-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Verena Dutra — Analista de Seleção de Contrapartes",
+          "text": "Estou filtrando contrapartes possíveis e preciso eliminar as que não podem operar em câmbio."
+        }
+      ],
+      "question": "Qual instituição abaixo não está autorizada pelo Banco Central a operar no mercado de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Caixa econômica.",
+          "correct": false,
+          "feedback": "Incorreta. As caixas econômicas podem ser autorizadas a operar no mercado de câmbio."
+        },
+        {
+          "id": "b",
+          "text": "Sociedade de crédito imobiliário.",
+          "correct": true,
+          "feedback": "Correto. As sociedades de crédito imobiliário não estão entre as instituições que o Banco Central autoriza a operar no mercado de câmbio."
+        },
+        {
+          "id": "c",
+          "text": "Banco de desenvolvimento.",
+          "correct": false,
+          "feedback": "Incorreta. Os bancos de desenvolvimento podem ser autorizados a operar no mercado de câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Cooperativa de crédito.",
+          "correct": false,
+          "feedback": "Incorreta. As cooperativas de crédito podem ser autorizadas a operar no mercado de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-38",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-38-cambio-pld",
+      "dialogue": [
+        {
+          "speaker": "Tânia Ribeiro — Analista de Detecção de Operações Suspeitas",
+          "text": "Apareceu uma remessa estranha no monitoramento e quero conferir se ela se enquadra nos sinais da Carta Circular."
+        }
+      ],
+      "question": "De acordo com a Carta Circular nº 4.001, considera-se uma operação suspeita:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Transferências de valores para o Golfo Pérsico.",
+          "correct": false,
+          "feedback": "Incorreta. A região de destino, sozinha, não torna a operação suspeita; a análise considera perfil, valor e contexto."
+        },
+        {
+          "id": "b",
+          "text": "Recebimento de investimento externo direto, com realização quase imediata de remessas de recursos para o exterior a título de lucros e dividendos.",
+          "correct": true,
+          "feedback": "Correto. Receber investimento externo direto e remeter quase imediatamente os recursos ao exterior, como lucros e dividendos, é uma situação típica de suspeita prevista na Carta Circular nº 4.001."
+        },
+        {
+          "id": "c",
+          "text": "Transferências de valores para offshores.",
+          "correct": false,
+          "feedback": "Incorreta para o simulado. Operações com países de tributação favorecida só configuram indício quando não estão claramente caracterizadas em sua legalidade e fundamentação econômica; a situação que o gabarito elege é o investimento externo direto remetido de volta logo em seguida."
+        },
+        {
+          "id": "d",
+          "text": "Saques em espécie de conta que recebe depósitos mensais de uma origem com vínculo empregatício.",
+          "correct": false,
+          "feedback": "Incorreta. Saques em espécie de uma conta que recebe depósitos mensais de origem trabalhista são compatíveis com o perfil e não indicam suspeita."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-qual2-40",
+      "categories": [
+        "punicoes"
+      ],
+      "exam": true,
+      "topicTag": "sim-qual2-40-punicoes",
+      "dialogue": [
+        {
+          "speaker": "Aline Furtado — Analista de Convergência Normativa",
+          "text": "Estou comparando leis de lavagem de dinheiro de vários países e preciso encaixar um que lista crimes, além do tráfico de drogas."
+        }
+      ],
+      "question": "Um país cuja legislação tipifica como crime antecedente da lavagem de dinheiro, além do tráfico de drogas e entorpecentes, um rol limitado e taxativo de infrações de relevância significativa é considerado país com legislação de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Primeira geração.",
+          "correct": false,
+          "feedback": "Incorreta. A primeira geração prevê apenas o tráfico de drogas como crime antecedente, sem outras infrações."
+        },
+        {
+          "id": "b",
+          "text": "Segunda geração.",
+          "correct": true,
+          "feedback": "Correto. Na segunda geração, além do tráfico de drogas, a lei inclui um rol limitado e taxativo de infrações de relevância significativa."
+        },
+        {
+          "id": "c",
+          "text": "Terceira geração.",
+          "correct": false,
+          "feedback": "Incorreta. A terceira geração adota um amplo rol de crimes graves como antecedentes, e não apenas um rol limitado; o Brasil se enquadra nela desde a Lei nº 12.683/2012."
+        },
+        {
+          "id": "d",
+          "text": "Quarta geração.",
+          "correct": false,
+          "feedback": "Incorreta. O material de apoio trabalha com três gerações (primeira, segunda e terceira); não existe uma quarta geração nessa classificação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "sim-psav-01",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "psav-atividades-mercado-cambio",
+      "dialogue": [
+        {
+          "speaker": "Priscila Tavares — Analista de Ativos Virtuais",
+          "text": "Vamos atender uma prestadora de serviços de ativos virtuais, a PSAV, e preciso saber exatamente quais atividades dela contam como mercado de câmbio."
+        }
+      ],
+      "question": "Segundo a regulamentação cambial, a prestação de serviços de ativos virtuais (PSAV) está incluída no mercado de câmbio quando compreende quais atividades ou operações?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "(I) pagamento ou transferência internacional com ativos virtuais; (II) transferência de ativo virtual de ou para cliente de prestadora de serviços de ativos virtuais, para cumprimento de obrigação decorrente do uso internacional de cartão ou de outro meio de pagamento eletrônico; (III) transferência de ativo virtual de ou para carteira autocustodiada que não envolva pagamento ou transferência internacional com ativos virtuais; e (IV) compra, venda ou troca de ativos virtuais referenciados em moeda fiduciária.",
+          "correct": true,
+          "feedback": "Correto. A prestação de serviços de ativos virtuais entra no mercado de câmbio nestas quatro atividades: pagamento ou transferência internacional com ativos virtuais; transferência de ativo virtual para cumprir obrigação do uso internacional de cartão ou de outro meio de pagamento eletrônico; transferência de ou para carteira autocustodiada sem pagamento ou transferência internacional; e compra, venda ou troca de ativos virtuais referenciados em moeda fiduciária."
+        },
+        {
+          "id": "b",
+          "text": "(I) pagamento ou transferência internacional com ativos virtuais; (II) transferência de ativo virtual de ou para cliente de prestadora de serviços de ativos virtuais, para cumprimento de obrigação decorrente do uso internacional de cartão ou de outro meio de pagamento eletrônico; (III) transferência de ativo virtual de ou para carteira autocustodiada que não envolva pagamento ou transferência internacional com ativos virtuais; e (IV) compra, venda ou troca de quaisquer ativos virtuais, inclusive os que não são referenciados em moeda fiduciária.",
+          "correct": false,
+          "feedback": "Incorreta. Só entra a compra, venda ou troca de ativos virtuais referenciados em moeda fiduciária, e não de quaisquer ativos virtuais. O trecho que muda a resposta é a atividade IV."
+        },
+        {
+          "id": "c",
+          "text": "(I) pagamento ou transferência internacional com ativos virtuais; (II) transferência de ativo virtual de ou para cliente de prestadora de serviços de ativos virtuais, para cumprimento de obrigação decorrente do uso nacional de cartão ou de outro meio de pagamento eletrônico; (III) transferência de ativo virtual de ou para carteira autocustodiada que não envolva pagamento ou transferência internacional com ativos virtuais; e (IV) compra, venda ou troca de ativos virtuais referenciados em moeda fiduciária.",
+          "correct": false,
+          "feedback": "Incorreta. A obrigação que entra no câmbio é a decorrente do uso internacional de cartão ou de outro meio de pagamento eletrônico, e não do uso nacional. O trecho que muda a resposta é a atividade II."
+        },
+        {
+          "id": "d",
+          "text": "(I) pagamento ou transferência internacional com ativos virtuais; (II) transferência de ativo virtual de ou para cliente de prestadora de serviços de ativos virtuais, para cumprimento de obrigação decorrente do uso internacional de cartão ou de outro meio de pagamento eletrônico; (III) transferência de ativo virtual de ou para carteira custodiada pela própria prestadora, que não envolva pagamento ou transferência internacional com ativos virtuais; e (IV) compra, venda ou troca de ativos virtuais referenciados em moeda fiduciária.",
+          "correct": false,
+          "feedback": "Incorreta. A carteira da atividade III é a autocustodiada, isto é, mantida pelo próprio cliente, e não a custodiada pela prestadora. O trecho que muda a resposta é a atividade III."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

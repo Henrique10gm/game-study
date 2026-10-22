@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "lim-01",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-correspondentes-especie-fisica",
+      "dialogue": [
+        {
+          "speaker": "Carolina Mendes — Analista de Câmbio",
+          "text": "Chegou uma dúvida do parceiro: um cliente quer comprar dólares em cédulas num correspondente cambial. Preciso saber como o correspondente deve agir."
+        }
+      ],
+      "question": "Um cliente quer comprar o equivalente a US$ 2.500,00 em moeda estrangeira, em espécie (cédulas físicas), num correspondente cambial. Segundo a Resolução CMN nº 4.935/2021, qual deve ser a conduta do correspondente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Realizar a operação normalmente, pois o limite geral dos correspondentes cambiais é de US$ 3.000,00 por operação.",
+          "correct": false,
+          "feedback": "O limite de US$ 3.000,00 vale para as operações de câmbio em geral (por exemplo, por meios eletrônicos ou conta). Quando a liquidação é em espécie física, o teto cai para US$ 1.000,00."
+        },
+        {
+          "id": "b",
+          "text": "Recusar a operação nos termos pedidos, pois operações liquidadas simultaneamente em espécie física têm limite de US$ 1.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 4.935/2021 mantém o limite geral de US$ 3.000,00 por operação nos correspondentes, mas reduz para US$ 1.000,00 quando a liquidação é simultânea em espécie física (cédulas)."
+        },
+        {
+          "id": "c",
+          "text": "Dividir a transação em três operações consecutivas de US$ 833,33 no mesmo dia para conseguir atender o cliente.",
+          "correct": false,
+          "feedback": "Fracionar operações para escapar de limite regulatório é vedado e ainda é indício de atipicidade a ser avaliado para fins de PLD/FTP."
+        },
+        {
+          "id": "d",
+          "text": "Executar a operação desde que obtenha autorização prévia, por e-mail, da instituição contratante.",
+          "correct": false,
+          "feedback": "Autorização interna da instituição contratante não afasta um limite fixado pelo CMN, que é obrigatório para todos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-02",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-especie-reais-no-brasil",
+      "dialogue": [
+        {
+          "speaker": "Rafael Souza — Coordenador de Operações",
+          "text": "Um cliente pessoa física fechou câmbio e quer receber o valor em reais, em dinheiro vivo, aqui no Brasil. Qual é o teto para isso?"
+        }
+      ],
+      "question": "Uma operação de câmbio de pessoa física prevê o recebimento do contravalor em reais, em espécie, no território brasileiro. Segundo as regras do mercado de câmbio, qual é o valor máximo permitido para entrega ou recebimento de recursos em espécie no país?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até R$ 10.000,00 por operação.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 277/2022 limita a R$ 10.000,00 por operação a movimentação, liquidação, entrega ou recebimento de reais em espécie no território brasileiro."
+        },
+        {
+          "id": "b",
+          "text": "Até US$ 3.000,00, ou o equivalente em reais.",
+          "correct": false,
+          "feedback": "US$ 3.000,00 é o limite geral por operação dos correspondentes cambiais, e não o teto para reais em espécie no Brasil."
+        },
+        {
+          "id": "c",
+          "text": "Até R$ 50.000,00, desde que haja aviso prévio de 3 dias úteis.",
+          "correct": false,
+          "feedback": "R$ 50.000,00 é o gatilho de comunicação automática ao COAF e de provisionamento prévio de saques, não o limite de liquidação em espécie no câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Não há limite para movimentações em reais em espécie no Brasil.",
+          "correct": false,
+          "feedback": "Existe limite: R$ 10.000,00 por operação, justamente para conter o uso de dinheiro físico no câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-03",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-corretoras-de-cambio",
+      "dialogue": [
+        {
+          "speaker": "Helena Albuquerque — Gerente de Parcerias",
+          "text": "Uma empresa quer mandar um valor alto para o exterior por uma corretora de câmbio parceira. Antes de seguir, preciso saber se o limite da corretora comporta."
+        }
+      ],
+      "question": "Uma Sociedade Corretora de Câmbio é procurada por uma empresa para intermediar uma transferência internacional unilateral de US$ 450.000,00. Quanto ao limite operacional estabelecido pela Resolução BCB nº 277/2022 para corretoras de câmbio, a operação:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pode ser realizada pela corretora, pois o limite regulatório das corretoras de câmbio é de até US$ 500.000,00 por operação.",
+          "correct": true,
+          "feedback": "Correto. Pela Resolução BCB nº 277/2022, as corretoras de câmbio e as distribuidoras autorizadas operam até US$ 500.000,00, ou o equivalente em outras moedas, por operação."
+        },
+        {
+          "id": "b",
+          "text": "Não pode ser realizada, pois as corretoras de câmbio só podem operar até US$ 100.000,00.",
+          "correct": false,
+          "feedback": "US$ 100.000,00 é o limite das Instituições de Pagamento autorizadas a operar em câmbio, não o das corretoras."
+        },
+        {
+          "id": "c",
+          "text": "Exige autorização prévia e individual do Banco Central para operações acima de US$ 100.000,00.",
+          "correct": false,
+          "feedback": "Dentro do limite de US$ 500.000,00 não existe exigência de autorização individual do Banco Central para cada operação."
+        },
+        {
+          "id": "d",
+          "text": "Só pode ser conduzida por bancos múltiplos ou comerciais, sendo vedada a atuação das corretoras.",
+          "correct": false,
+          "feedback": "As corretoras têm amparo regulatório expresso para operar câmbio até US$ 500.000,00 por operação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-04",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-instituicoes-de-pagamento-cambio",
+      "dialogue": [
+        {
+          "speaker": "Thiago Nogueira — Analista de Produtos",
+          "text": "Estamos desenhando um fluxo de câmbio para quem usa instituição de pagamento. Preciso do valor máximo por operação para configurar a regra no sistema."
+        }
+      ],
+      "question": "A Resolução BCB nº 277/2022 disciplinou a atuação das Instituições de Pagamento (IPs) autorizadas a operar no mercado de câmbio. Qual é o limite máximo por operação para as IPs?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 10.000,00.",
+          "correct": false,
+          "feedback": "US$ 10.000,00 é o limite por operação dos prestadores de serviços de eFX, não das IPs."
+        },
+        {
+          "id": "b",
+          "text": "Até US$ 100.000,00.",
+          "correct": true,
+          "feedback": "Correto. Pela Resolução BCB nº 277/2022, as IPs autorizadas a operar câmbio podem realizar operações de até US$ 100.000,00, ou equivalente em outras moedas, por operação."
+        },
+        {
+          "id": "c",
+          "text": "Até US$ 500.000,00.",
+          "correct": false,
+          "feedback": "US$ 500.000,00 é o teto das sociedades corretoras de câmbio e das distribuidoras, não das IPs."
+        },
+        {
+          "id": "d",
+          "text": "Sem limite de valor, desde que liquidadas exclusivamente por Pix.",
+          "correct": false,
+          "feedback": "As IPs têm limite de valor expresso na norma do Banco Central, independentemente do meio de liquidação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-05",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-efx",
+      "dialogue": [
+        {
+          "speaker": "Larissa Campos — Analista de Compliance",
+          "text": "Um cliente quer pagar um fornecedor no exterior usando um serviço de eFX. Preciso confirmar qual é o valor máximo por operação nessa modalidade."
+        }
+      ],
+      "question": "A prestação de serviços de eFX abrange a aquisição de bens e serviços e as transferências unilaterais. Qual é o valor limite regulatório por operação no eFX?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 3.000,00.",
+          "correct": false,
+          "feedback": "US$ 3.000,00 é o limite geral dos correspondentes cambiais no país, não o do eFX."
+        },
+        {
+          "id": "b",
+          "text": "Até US$ 10.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 277/2022 fixa em US$ 10.000,00 por operação o limite dos prestadores de serviços de eFX, seja pagamento ou transferência internacional."
+        },
+        {
+          "id": "c",
+          "text": "Até US$ 50.000,00.",
+          "correct": false,
+          "feedback": "Não existe patamar de US$ 50.000,00 como limite regulatório de eFX."
+        },
+        {
+          "id": "d",
+          "text": "Até US$ 100.000,00.",
+          "correct": false,
+          "feedback": "US$ 100.000,00 é o limite das Instituições de Pagamento que operam no mercado de câmbio regular, não o do eFX."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-06",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-livre-porte-viagem-internacional",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Prado — Atendimento a Clientes",
+          "text": "Um cliente vai viajar e perguntou se pode levar uma quantia grande em cédulas na bagagem. Quero orientá-lo direito, sem prometer o que não sei."
+        }
+      ],
+      "question": "Um residente no Brasil pretende viajar ao exterior levando consigo o equivalente a US$ 12.000,00 em cédulas de dólar. Com base no Novo Marco Legal do Câmbio (Lei nº 14.286/2021), como o viajante deve proceder?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pode transportar, mas deve apresentar a Declaração Eletrônica de Bens de Viajante (e-DBV) à Receita Federal e deixar o valor que exceder US$ 10.000,00 depositado no Banco Central até a volta.",
+          "correct": false,
+          "feedback": "Incorreta. O valor excedente pode ser transportado mediante declaração à Receita; não há depósito no Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Pode transportar, mas deve obrigatoriamente apresentar a Declaração Eletrônica de Bens de Viajante (e-DBV) à Receita Federal, pois ultrapassa o limite de livre porte de US$ 15.000,00.",
+          "correct": false,
+          "feedback": "Incorreta. O limite de livre porte é de US$ 10.000,00, e não de US$ 15.000,00; por isso US$ 12.000,00 exigem declaração."
+        },
+        {
+          "id": "c",
+          "text": "Pode transportar, mas deve obrigatoriamente apresentar a Declaração Eletrônica de Bens de Viajante (e-DBV) à Receita Federal, pois ultrapassa o limite de livre porte de US$ 10.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 14.286/2021 fixa em US$ 10.000,00 (ou equivalente) o valor em espécie que cada viajante pode levar ao sair do país ou trazer ao entrar sem declaração aduaneira. Acima disso, o transporte é permitido mediante declaração à Receita Federal (e-DBV)."
+        },
+        {
+          "id": "d",
+          "text": "Pode transportar, mas deve obrigatoriamente apresentar a Declaração Eletrônica de Bens de Viajante (e-DBV) à Receita Federal e também obter autorização prévia do Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. Basta a declaração à Receita Federal; não há autorização prévia do Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-07",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-fracionamento-burla-limites",
+      "dialogue": [
+        {
+          "speaker": "Priscila Barros — Analista de PLD/FTP",
+          "text": "Caiu um alerta no monitoramento: um mesmo cliente, no mesmo dia, em sequência, no mesmo correspondente. Preciso classificar a conduta."
+        }
+      ],
+      "question": "Um cliente pede a um correspondente cambial quatro compras consecutivas de moeda estrangeira em espécie no mesmo dia, de US$ 800,00 cada, totalizando US$ 3.200,00. Analisando a conduta sob as normas de câmbio e de PLD/FTP, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A operação é regular, pois cada transação individual está abaixo do limite de US$ 1.000,00 em espécie.",
+          "correct": false,
+          "feedback": "A análise dos limites considera a unicidade da operação e do cliente no período, e não cada transação isolada. Dividir o valor não afasta o limite."
+        },
+        {
+          "id": "b",
+          "text": "A operação é irregular, pois o fracionamento busca burlar o limite de US$ 1.000,00 em espécie e o limite geral de US$ 3.000,00 do correspondente.",
+          "correct": true,
+          "feedback": "Correto. O fracionamento (smurfing) para contornar limites operacionais é vedado pelas normas do CMN e do Banco Central e é grave indício de lavagem de dinheiro."
+        },
+        {
+          "id": "c",
+          "text": "A operação só seria irregular se o cliente usasse cartões de crédito corporativos.",
+          "correct": false,
+          "feedback": "A vedação ao fracionamento vale independentemente do meio de pagamento usado."
+        },
+        {
+          "id": "d",
+          "text": "O correspondente deve aceitar a operação, desde que cobre uma taxa de serviço adicional.",
+          "correct": false,
+          "feedback": "Cobrar tarifa não legaliza a violação de um limite regulatório."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-08",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-substabelecimento-correspondentes",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Ferraz — Gerente Comercial",
+          "text": "Um correspondente nosso quer ampliar a capilaridade e propôs fechar contrato com uma rede de farmácias para atender em nome dele. Isso é possível?"
+        }
+      ],
+      "question": "Um correspondente cambial contratado por uma corretora de câmbio quer firmar contrato com uma rede de farmácias para que esta preste serviços de câmbio em seu nome. De acordo com a Resolução CMN nº 4.935/2021, essa contratação é:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Permitida, desde que a corretora de câmbio seja notificada no prazo de 30 dias.",
+          "correct": false,
+          "feedback": "Uma contratação vedada não passa a ser regular por simples notificação posterior."
+        },
+        {
+          "id": "b",
+          "text": "Permitida, desde que a rede de farmácias limite suas operações a US$ 1.000,00.",
+          "correct": false,
+          "feedback": "A vedação à subcontratação é absoluta e independe de limite de valor."
+        },
+        {
+          "id": "c",
+          "text": "Vedada, pois é expressamente proibido que um correspondente subcontrate (substabeleça) o contrato de correspondente a terceiros.",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 4.935/2021 veda o substabelecimento (ou franchising) do contrato de correspondente e a contratação de empresas que prestem serviços de correspondente a terceiros."
+        },
+        {
+          "id": "d",
+          "text": "Permitida apenas para operações de venda de moeda estrangeira em espécie.",
+          "correct": false,
+          "feedback": "Não há exceção para a venda de moeda em espécie: a subcontratação é vedada em qualquer modalidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-09",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-exclusividade-correspondentes",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Lacerda — Analista Jurídica",
+          "text": "Estou revisando o modelo de contrato com correspondentes e quero confirmar se a norma exige exclusividade na relação com a instituição contratante."
+        }
+      ],
+      "question": "Em relação à prestação de serviços de câmbio por correspondentes no país, a Resolução CMN nº 4.935/2021 estabelece que a relação entre a instituição financeira contratante e o correspondente:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exige obrigatoriamente cláusula de exclusividade, proibindo o correspondente de atuar para outra instituição financeira.",
+          "correct": false,
+          "feedback": "A exclusividade não é requisito obrigatório previsto na regulamentação."
+        },
+        {
+          "id": "b",
+          "text": "Não exige exclusividade, e o correspondente pode prestar serviços a mais de uma instituição autorizada a operar em câmbio.",
+          "correct": true,
+          "feedback": "Correto. A regulamentação do CMN não impõe exclusividade, e a mesma pessoa jurídica pode ser correspondente de mais de uma instituição, desde que se identifique claramente perante os clientes."
+        },
+        {
+          "id": "c",
+          "text": "Proíbe a contratação de pessoas jurídicas que atuem no comércio varejista.",
+          "correct": false,
+          "feedback": "Empresas do comércio varejista e agências de viagens estão entre os tipos mais comuns de correspondentes, portanto não há essa proibição."
+        },
+        {
+          "id": "d",
+          "text": "Exige que o correspondente seja constituído como sociedade anônima de capital aberto.",
+          "correct": false,
+          "feedback": "O correspondente pode ser qualquer pessoa jurídica regularmente constituída no Brasil, sem exigência de forma societária específica."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-10",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-vet-valor-efetivo-total",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Oliveira — Analista de Atendimento",
+          "text": "Um cliente reclamou que o valor final do câmbio ficou diferente da cotação que ele tinha visto. Vou explicar o VET para ele, mas quero ter certeza do conceito."
+        }
+      ],
+      "question": "Nas operações de compra ou venda de moeda estrangeira, as instituições autorizadas devem calcular e informar ao cliente o VET (Valor Efetivo Total). O VET representa:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O valor da operação convertido pela taxa PTAX, acrescido exclusivamente do IOF.",
+          "correct": false,
+          "feedback": "O VET inclui obrigatoriamente as tarifas e reflete a taxa efetivamente negociada, e não a PTAX de fechamento."
+        },
+        {
+          "id": "b",
+          "text": "O custo total da operação de câmbio por unidade de moeda estrangeira, englobando a taxa de câmbio, as tarifas cobradas e o IOF incidente.",
+          "correct": true,
+          "feedback": "Correto. O VET expressa o custo real da operação, em reais por unidade de moeda estrangeira, somando a taxa contratada, as tarifas de serviço eventualmente cobradas e o IOF."
+        },
+        {
+          "id": "c",
+          "text": "A taxa média de câmbio praticada no mercado interbancário, divulgada ao final do dia pelo Banco Central.",
+          "correct": false,
+          "feedback": "Isso descreve uma taxa de referência de mercado, a PTAX. O VET é o custo efetivo da operação individual do cliente."
+        },
+        {
+          "id": "d",
+          "text": "O limite máximo de crédito que uma instituição pode conceder a um mesmo cliente no mercado futuro.",
+          "correct": false,
+          "feedback": "O VET não é uma métrica de limite de crédito, e sim de custo da operação de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-11",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-cambio-eventual-pessoas-fisicas",
+      "dialogue": [
+        {
+          "speaker": "Renato Vasconcelos — Analista de Compliance",
+          "text": "Um cliente perguntou se pode vender dólares em espécie para um conhecido, sem passar por instituição. Quero responder com base no Novo Marco Legal do Câmbio."
+        }
+      ],
+      "question": "A Lei nº 14.286/2021 (Novo Marco Legal do Câmbio) trata das compras e vendas de moeda estrangeira em espécie feitas no país, de forma eventual e não profissional, entre pessoas físicas. Até qual valor por operação a Lei não se aplica a essas transações, e qual é a condição?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 1.000,00, desde que efetuada de forma eventual e não profissional.",
+          "correct": false,
+          "feedback": "US$ 1.000,00 é o limite do correspondente cambial quando moeda estrangeira e reais são ambos em espécie, e não o desta regra. Entre pessoas físicas o valor é US$ 500,00."
+        },
+        {
+          "id": "b",
+          "text": "Até US$ 500,00, desde que realizada de forma eventual e não profissional.",
+          "correct": true,
+          "feedback": "Correto. O art. 19 da Lei nº 14.286/2021 afasta a aplicação da Lei às compras e vendas de moeda estrangeira em espécie de até US$ 500,00 (ou equivalente), no país, de forma eventual e não profissional, entre pessoas físicas."
+        },
+        {
+          "id": "c",
+          "text": "Até US$ 3.000,00, devendo ser registrada obrigatoriamente no Sisbacen.",
+          "correct": false,
+          "feedback": "US$ 3.000,00 é o limite geral do correspondente cambial. Essas operações entre pessoas físicas, até US$ 500,00, não exigem registro no sistema oficial de câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Até R$ 10.000,00, exigindo autorização prévia de uma corretora de câmbio.",
+          "correct": false,
+          "feedback": "Dentro do limite de US$ 500,00 a Lei não se aplica, e não há exigência de intermediação ou autorização de corretora."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-12",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-bancos-sem-teto-operacional",
+      "dialogue": [
+        {
+          "speaker": "Daniela Rezende — Gerente de Relacionamento",
+          "text": "Um cliente corporativo vai fechar uma operação de câmbio bem grande por um banco múltiplo. Queria entender se o banco tem algum teto por operação, como as corretoras têm."
+        }
+      ],
+      "question": "Diferentemente das corretoras de câmbio e das instituições de pagamento, qual é o limite de valor por operação estabelecido pela regulamentação do Banco Central para operações de câmbio realizadas por bancos múltiplos com carteira comercial ou por bancos comerciais?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Limite de até US$ 5.000.000,00 por operação.",
+          "correct": false,
+          "feedback": "Não existe teto regulatório de US$ 5 milhões por operação para bancos."
+        },
+        {
+          "id": "b",
+          "text": "Não há limite de valor por operação previamente fixado em norma para os bancos.",
+          "correct": true,
+          "feedback": "Correto. Bancos comerciais, múltiplos e de investimento autorizados a operar câmbio não têm teto normativo de valor por operação definido pelo Banco Central e atuam em todas as modalidades do mercado cambial."
+        },
+        {
+          "id": "c",
+          "text": "Limite vinculado estritamente ao patrimônio líquido da instituição financeira.",
+          "correct": false,
+          "feedback": "Embora a gestão de riscos considere o patrimônio, a norma operacional de câmbio não fixa um teto numérico direto para os bancos, como faz para as corretoras."
+        },
+        {
+          "id": "d",
+          "text": "Limite fixado em US$ 100.000.000,00 por dia útil.",
+          "correct": false,
+          "feedback": "Não há limitação numérica diária imposta pelo regulador para as operações de câmbio dos bancos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-13",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-sce-ied-aporte-capital",
+      "dialogue": [
+        {
+          "speaker": "Marcelo Torres — Analista Financeiro",
+          "text": "Um cliente PJ acabou de receber o aporte de um sócio que mora fora do país e quer saber se precisa informar isso ao Banco Central."
+        }
+      ],
+      "question": "Uma empresa brasileira recebe um aporte de capital social de um sócio não residente, no valor de US$ 120.000,00. De acordo com a Resolução BCB nº 278/2022 (Sistema de Capital Estrangeiro, SCE), qual é a regra de prestação de informações e registro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A operação está dispensada de prestar informações no SCE, pois está abaixo do limite de US$ 500.000,00.",
+          "correct": false,
+          "feedback": "O limite de obrigatoriedade é de US$ 100.000,00, e o aporte de US$ 120.000,00 está plenamente sujeito às regras."
+        },
+        {
+          "id": "b",
+          "text": "A prestação de informações no SCE-IED é obrigatória, pois o valor do investimento é igual ou superior ao limite de US$ 100.000,00.",
+          "correct": true,
+          "feedback": "Correto. Pela Resolução BCB nº 278/2022, a prestação de informações no módulo SCE-IED (Investimento Estrangeiro Direto) é obrigatória para movimentações de capital estrangeiro no país de valor igual ou superior a US$ 100.000,00, ou equivalente."
+        },
+        {
+          "id": "c",
+          "text": "O registro no SCE-IED só é exigido se o investidor for pessoa física residente em paraíso fiscal.",
+          "correct": false,
+          "feedback": "A obrigatoriedade decorre do valor do aporte e da condição de não residente do investidor, e não de ele estar em paraíso fiscal."
+        },
+        {
+          "id": "d",
+          "text": "A empresa brasileira tem prazo de 365 dias para prestar as informações ao Banco Central após o encerramento do exercício social.",
+          "correct": false,
+          "feedback": "A prestação e a atualização das informações seguem prazos específicos contados da ocorrência do fato ou da declaração periódica, e não esse prazo anual."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-14",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-sce-credito-emprestimo-externo",
+      "dialogue": [
+        {
+          "speaker": "Aline Cardoso — Analista de Câmbio",
+          "text": "Uma S.A. cliente fechou um empréstimo direto com um banco estrangeiro e perguntou como isso entra no reporte ao Banco Central."
+        }
+      ],
+      "question": "Uma sociedade anônima brasileira obtém um empréstimo externo (mútuo), diretamente de uma instituição financeira com sede no exterior, no valor de US$ 1.500.000,00. Sob a regulação do SCE-Crédito (Resolução BCB nº 278/2022), assinale a afirmativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A operação exige prestação de informações no módulo SCE-Crédito, por atingir valor igual ou superior a US$ 1.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 278/2022 sujeita à prestação de informações no SCE-Crédito as operações de crédito externo (empréstimos, financiamentos e títulos lançados no exterior) de valor igual ou superior a US$ 1.000.000,00."
+        },
+        {
+          "id": "b",
+          "text": "A operação é isenta de registro no Banco Central, pois créditos privados não sofrem controle de capital estrangeiro.",
+          "correct": false,
+          "feedback": "Créditos externos privados acima do patamar regulatório estão obrigatoriamente sujeitos ao controle estatístico do Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "O limite de obrigatoriedade de registro para crédito externo no SCE é de US$ 100.000,00.",
+          "correct": false,
+          "feedback": "US$ 100.000,00 é o limite do módulo SCE-IED (investimento estrangeiro direto). No SCE-Crédito o piso é de US$ 1.000.000,00."
+        },
+        {
+          "id": "d",
+          "text": "O registro deve ser feito exclusivamente pela corretora de câmbio que intermediou o contrato de câmbio.",
+          "correct": false,
+          "feedback": "A responsabilidade primária pela prestação de informações no SCE é do tomador do crédito no país."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-15",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "limites-sce-ied-dispensa-abaixo-piso",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Duarte — Analista de Compliance",
+          "text": "Entrou um aporte de investidor estrangeiro para uma empresa cliente, bem abaixo do que costumamos ver. Preciso decidir se isso gera algum registro."
+        }
+      ],
+      "question": "Uma empresa receptora no Brasil recebe, em sua conta bancária, um aporte de um investidor não residente no valor de US$ 60.000,00. De acordo com a Resolução BCB nº 278/2022, essa movimentação:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exige obrigatoriamente o registro sumário no SCE-IED no prazo de 10 dias.",
+          "correct": false,
+          "feedback": "Valores abaixo de US$ 100.000,00 não demandam registro no módulo SCE-IED."
+        },
+        {
+          "id": "b",
+          "text": "Está dispensada da prestação de informações no SCE-IED, por ser de valor inferior ao piso de US$ 100.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 278/2022 estabelece o piso de US$ 100.000,00 para a obrigatoriedade de prestar informações sobre investimento estrangeiro direto, e movimentações abaixo desse valor são dispensadas no SCE-IED."
+        },
+        {
+          "id": "c",
+          "text": "Deve ser comunicada ao COAF no dia útil seguinte, por se tratar de capital estrangeiro desobrigado de registro no Banco Central.",
+          "correct": false,
+          "feedback": "A ausência de exigência de registro no SCE não transforma a operação, automaticamente, em reporte obrigatório de atipicidade ao COAF."
+        },
+        {
+          "id": "d",
+          "text": "Só pode ser aceita pela instituição financeira se for convertida em criptoativo.",
+          "correct": false,
+          "feedback": "Não existe qualquer imposição de conversão para criptoativos."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

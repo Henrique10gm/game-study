@@ -1,0 +1,1894 @@
+{
+  "questions": [
+    {
+      "sceneId": "abt1-1-01",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sfn-diretoria-colegiada-bcb",
+      "dialogue": [
+        {
+          "speaker": "Marina Souza — Analista de Compliance",
+          "text": "Estou montando um material de onboarding sobre o Sistema Financeiro Nacional e travei na parte do Banco Central. Preciso descrever certinho quem forma a Diretoria Colegiada."
+        }
+      ],
+      "question": "De acordo com a Lei Complementar nº 179/2021, como é composta a Diretoria Colegiada do Banco Central do Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Por 9 membros, sendo um deles o Presidente, todos nomeados pelo Presidente da República entre brasileiros idôneos, de reputação ilibada e de notória capacidade em assuntos econômico-financeiros, após aprovação do Senado Federal.",
+          "correct": true,
+          "feedback": "Correto. A LC nº 179/2021 prevê 9 membros (1 Presidente e 8 Diretores), nomeados pelo Presidente da República depois de sabatina e aprovação prévia do Senado Federal."
+        },
+        {
+          "id": "b",
+          "text": "Por 10 membros, sendo um deles o Presidente, nomeados pelo Presidente da República entre brasileiros idôneos, de reputação ilibada e de notória capacidade em assuntos econômico-financeiros ou com conhecimentos que os qualifiquem para a função.",
+          "correct": false,
+          "feedback": "Incorreta. O número de membros está errado (são 9, e não 10) e a alternativa omite a exigência de aprovação prévia pelo Senado Federal."
+        },
+        {
+          "id": "c",
+          "text": "Por 10 membros, sendo um deles o Presidente e outro o Vice-Presidente, nomeados pelo Presidente da República entre brasileiros idôneos e de reputação ilibada.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco Central não tem cargo estatutário de Vice-Presidente na Diretoria Colegiada, e o total de membros é 9, não 10."
+        },
+        {
+          "id": "d",
+          "text": "Por 9 membros, sendo um deles o Presidente, todos nomeados pelo Presidente do Conselho Monetário Nacional entre brasileiros idôneos, de reputação ilibada e de notória capacidade.",
+          "correct": false,
+          "feedback": "Incorreta. A nomeação é feita pelo Presidente da República, e não pelo Presidente do CMN."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-02",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sigilo-bancario-lc-105",
+      "dialogue": [
+        {
+          "speaker": "Rafael Duarte — Analista de Atendimento",
+          "text": "Um cliente me perguntou de onde vem o sigilo bancário e quem pode mandar quebrá-lo. Prefiro não chutar e voltar para ele com a resposta certa."
+        }
+      ],
+      "question": "Sobre o sigilo bancário no Brasil, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tem amparo na Constituição Federal, protege a individualidade e a intimidade dos cidadãos e é regulamentado pela Lei Complementar nº 105, de 2001.",
+          "correct": true,
+          "feedback": "Correto. O sigilo bancário deriva da proteção constitucional à intimidade e à privacidade (art. 5º, X e XII, da CF/88) e é disciplinado pela Lei Complementar nº 105/2001."
+        },
+        {
+          "id": "b",
+          "text": "Está previsto em Resolução do Conselho Monetário Nacional e é regulamentado pelo Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. A matéria tem reserva de Lei Complementar federal; não pode ser instituída nem regulada primariamente por Resolução do CMN."
+        },
+        {
+          "id": "c",
+          "text": "Pode ser quebrado por pedido direto do Ministério Público Federal, sem necessidade de ordem judicial.",
+          "correct": false,
+          "feedback": "Incorreta. Em regra, a quebra exige decisão fundamentada do Poder Judiciário, com exceções legais pontuais, como as comissões parlamentares de inquérito e a fiscalização tributária formal."
+        },
+        {
+          "id": "d",
+          "text": "Pode ser quebrado por pedido da Polícia Federal, desde que o Ministro da Justiça autorize.",
+          "correct": false,
+          "feedback": "Incorreta. Nem a Polícia Federal nem o Ministro da Justiça têm competência para autorizar a quebra do sigilo bancário sem chancela judicial."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-03",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "cambio-operacoes-entre-pessoas-fisicas",
+      "dialogue": [
+        {
+          "speaker": "Camila Prado — Analista de Produtos",
+          "text": "Estamos desenhando um conteúdo de educação financeira sobre câmbio e queremos explicar o que é permitido no mercado brasileiro, inclusive entre pessoas comuns."
+        }
+      ],
+      "question": "Sobre o mercado de câmbio brasileiro, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O mercado de câmbio brasileiro é formado exclusivamente por instituições bancárias autorizadas pelo Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. Além dos bancos, o mercado de câmbio reúne corretoras, distribuidoras, sociedades de crédito e instituições de pagamento autorizadas."
+        },
+        {
+          "id": "b",
+          "text": "A compra e a venda de moeda estrangeira em espécie entre duas pessoas físicas são operações legais quando limitadas a US$ 500,00, feitas de forma eventual e não profissional.",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 14.286/2021 autoriza a compra e venda eventual e não profissional de moeda estrangeira em espécie entre pessoas físicas, até US$ 500,00 (ou o equivalente)."
+        },
+        {
+          "id": "c",
+          "text": "A figura das \"casas de câmbio\" está prevista expressamente como tipo de instituição autorizada na legislação cambial atual.",
+          "correct": false,
+          "feedback": "Incorreta. A legislação atual não usa o termo \"casa de câmbio\"; quem opera são corretoras de câmbio, corretoras de títulos, DTVMs ou instituições de pagamento."
+        },
+        {
+          "id": "d",
+          "text": "A Empresa Brasileira de Correios e Telégrafos não pode realizar operações cambiais relativas a vales postais internacionais.",
+          "correct": false,
+          "feedback": "Incorreta. A regulamentação (Res. BCB nº 277, arts. 20 e 70, III) permite expressamente o serviço de vale postal internacional pelos Correios."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-04",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "correspondentes-no-pais-entidades-elegiveis",
+      "dialogue": [
+        {
+          "speaker": "Bruno Tavares — Analista de Parcerias",
+          "text": "Chegaram vários interessados em atender clientes como ponto de apoio, e preciso saber que tipo de entidade a regulamentação aceita como correspondente antes de responder qualquer um."
+        }
+      ],
+      "question": "Segundo a Resolução CMN nº 4.935/2021, qual das entidades abaixo pode ser contratada como correspondente no País?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Uma organização religiosa.",
+          "correct": false,
+          "feedback": "Incorreta. Organizações religiosas não constam do rol de entidades com objeto empresarial compatível para contratação como correspondente."
+        },
+        {
+          "id": "b",
+          "text": "Um partido político.",
+          "correct": false,
+          "feedback": "Incorreta. Partidos políticos têm finalidade estritamente eleitoral e partidária, e a regulamentação não os admite como correspondentes."
+        },
+        {
+          "id": "c",
+          "text": "Uma sociedade limitada.",
+          "correct": true,
+          "feedback": "Correto. O art. 4º, I, da Res. CMN nº 4.935/2021 admite como correspondentes as sociedades empresárias (inclusive limitadas), os empresários individuais e as associações definidas no Código Civil."
+        },
+        {
+          "id": "d",
+          "text": "Uma fundação de assistência social sem atividade empresarial.",
+          "correct": false,
+          "feedback": "Incorreta. O contratado precisa ter estrutura e capacidade legal e comercial compatíveis com o atendimento financeiro, o que uma fundação sem atividade empresarial não tem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-05",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "crimes-sfn-evasao-divisas-falsa-identidade",
+      "dialogue": [
+        {
+          "speaker": "Larissa Moreira — Analista de Riscos",
+          "text": "Estou preparando um relatório interno sobre crimes contra o Sistema Financeiro Nacional ligados ao câmbio e preciso fechar a parte da Lei nº 7.492/1986 sem deixar dúvida."
+        }
+      ],
+      "question": "Em relação aos crimes contra o Sistema Financeiro Nacional previstos na Lei nº 7.492/1986, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Quem faz operação de câmbio não autorizada com o fim de promover evasão de divisas do País sujeita-se apenas a penas administrativas impostas pelo Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. A evasão de divisas é crime, punido com reclusão de 2 a 6 anos e multa (art. 22 da Lei nº 7.492/1986), sem prejuízo das sanções administrativas."
+        },
+        {
+          "id": "b",
+          "text": "Somente a conduta de promover, sem autorização legal, a saída de moeda ou divisa para o exterior, ou manter lá depósitos não declarados à repartição federal competente, é crime; atribuir a si ou a terceiro falsa identidade em operação de câmbio é mera infração administrativa.",
+          "correct": false,
+          "feedback": "Incorreta. Atribuir a si ou a terceiro falsa identidade para realizar operação de câmbio também é crime contra o SFN, previsto no art. 21 da Lei nº 7.492/1986, e não mera infração administrativa."
+        },
+        {
+          "id": "c",
+          "text": "Somente atribuir a si ou a terceiro falsa identidade em operação de câmbio é crime; promover a saída não autorizada de moeda para o exterior ou manter depósitos não declarados lá não é crime.",
+          "correct": false,
+          "feedback": "Incorreta. Promover sem autorização legal a saída de moeda ou divisa para o exterior, ou manter lá depósitos não declarados, é crime e sofre a mesma pena da evasão de divisas (parágrafo único do art. 22)."
+        },
+        {
+          "id": "d",
+          "text": "Ambas as condutas são crime: promover, sem autorização legal, a saída de moeda ou divisa para o exterior (ou manter lá depósitos não declarados à repartição federal competente), com a mesma pena da evasão de divisas; e atribuir a si ou a terceiro falsa identidade para realizar operação de câmbio (art. 21).",
+          "correct": true,
+          "feedback": "Correto. O parágrafo único do art. 22 da Lei nº 7.492/1986 equipara essas condutas à evasão de divisas, e o art. 21 pune a falsa identidade em operação de câmbio; as duas são crimes."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-06",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-transferencias-unilaterais",
+      "dialogue": [
+        {
+          "speaker": "Thiago Nogueira — Analista de Operações",
+          "text": "Estou classificando remessas ao exterior em uma planilha de estudo e fiquei em dúvida sobre quais delas a regulamentação chama de transferências unilaterais."
+        }
+      ],
+      "question": "Na regulamentação cambial, as operações de câmbio relacionadas a qual dos itens abaixo são classificadas como transferências unilaterais?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Viagens internacionais.",
+          "correct": false,
+          "feedback": "Incorreta. Gastos com viagens internacionais pertencem ao grupo de Serviços de Turismo e Viagens Internacionais."
+        },
+        {
+          "id": "b",
+          "text": "Aluguel de imóveis no exterior.",
+          "correct": false,
+          "feedback": "Incorreta. O aluguel de imóveis é classificado no grupo de Serviços ou de Rendas de Capital, não como transferência unilateral."
+        },
+        {
+          "id": "c",
+          "text": "Doações e manutenção de residentes ou familiares.",
+          "correct": true,
+          "feedback": "Correto. Transferências unilaterais são remessas ou ingressos de recursos sem contrapartida direta em bens ou serviços, como doações, heranças e manutenção de residentes."
+        },
+        {
+          "id": "d",
+          "text": "Pagamento de fretes internacionais de mercadorias.",
+          "correct": false,
+          "feedback": "Incorreta. O frete internacional integra o grupo de Serviços de Transporte ligados ao comércio exterior."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-07",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "cambio-instituicoes-autorizadas",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Lima — Analista de Compliance",
+          "text": "Uma empresa parceira quer saber quais tipos de instituição podem operar câmbio, e eu preciso identificar rapidinho quem fica de fora desse grupo."
+        }
+      ],
+      "question": "Qual das instituições abaixo o Banco Central do Brasil NÃO autoriza a operar no mercado de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sociedades de crédito, financiamento e investimento (financeiras).",
+          "correct": false,
+          "feedback": "Podem operar. As financeiras são autorizadas a operar em câmbio para liquidação pronta de até US$ 500 mil (art. 29, II, da Res. BCB nº 277)."
+        },
+        {
+          "id": "b",
+          "text": "Caixa Econômica Federal.",
+          "correct": false,
+          "feedback": "Pode operar. A Caixa Econômica Federal tem autorização plena para todas as operações de câmbio (art. 29, I, da Res. BCB nº 277)."
+        },
+        {
+          "id": "c",
+          "text": "Sociedades de crédito imobiliário.",
+          "correct": true,
+          "feedback": "Correto. As sociedades de crédito imobiliário não constam do rol do art. 29 da Res. BCB nº 277/2022 entre as entidades que podem ser autorizadas a operar câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Bancos comerciais e bancos múltiplos.",
+          "correct": false,
+          "feedback": "Podem operar. Os bancos comerciais e múltiplos têm autorização ampla para atuar no mercado de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-formacao-taxa",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Ramos — Analista Financeiro",
+          "text": "Um cliente achou que o banco central define a taxa do dólar para todo mundo no começo do dia. Quero explicar como a taxa de câmbio é realmente formada nas operações com clientes."
+        }
+      ],
+      "question": "Quanto à formação da taxa de câmbio no mercado brasileiro, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A taxa de câmbio é livremente pactuada entre as instituições autorizadas a operar nesse mercado e seus clientes.",
+          "correct": true,
+          "feedback": "Correto. O regime cambial brasileiro é de taxa flutuante, e o parágrafo único do art. 2º da Lei nº 14.286/2021 diz que a taxa é livremente pactuada entre as partes."
+        },
+        {
+          "id": "b",
+          "text": "A taxa é determinada pela instituição autorizada, que deve respeitar uma banda de valores máximos e mínimos divulgada diariamente pelo Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. Não existe regime de bandas cambiais obrigatórias fixadas pelo Banco Central para as operações com clientes."
+        },
+        {
+          "id": "c",
+          "text": "A taxa é formada a partir de um consenso fixado por associação de classe dos bancos.",
+          "correct": false,
+          "feedback": "Incorreta. Cartéis ou consensos para fixar taxas são ilegais e configuram infração grave de mercado."
+        },
+        {
+          "id": "d",
+          "text": "A taxa de câmbio oficial do país é fixada unilateralmente pelo Banco Central no início do dia.",
+          "correct": false,
+          "feedback": "Incorreta. O Banco Central divulga a PTAX como média de mercado, para fins estatísticos e contábeis, mas não fixa a taxa das operações comerciais."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-09",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-formalizacao-operacao",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Castro — Analista de Processos",
+          "text": "Estou mapeando como formalizar uma operação de câmbio de ponta a ponta e quero ter certeza do que a norma exige em termos de contrato e consentimento do cliente."
+        }
+      ],
+      "question": "Com relação ao contrato e à formalização da operação de câmbio, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É obrigatório usar um modelo de contrato padrão impresso, previamente aprovado pelo Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. O Novo Marco Legal do Câmbio eliminou a exigência de um formulário rígido de contrato padrão do Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "As informações mínimas que devem constar da operação de câmbio ficam a critério exclusivo da instituição financeira.",
+          "correct": false,
+          "feedback": "Incorreta. O Anexo I da Res. BCB nº 277/2022 define o rol de informações mínimas obrigatórias que integram a operação de câmbio."
+        },
+        {
+          "id": "c",
+          "text": "É indispensável a assinatura física, em papel, das duas partes em todas as operações.",
+          "correct": false,
+          "feedback": "Incorreta. A contratação pode ser feita por meios eletrônicos, digitais ou virtuais, sem necessidade de papel físico."
+        },
+        {
+          "id": "d",
+          "text": "A forma de celebração da operação de câmbio é livre, mas a instituição deve conseguir comprovar o consentimento do cliente às condições pactuadas.",
+          "correct": true,
+          "feedback": "Correto. O art. 2º da Res. BCB nº 277/2022 diz que a forma de celebração é livre, exigindo apenas a comprovação do consentimento do cliente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-comunicacao-coaf",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Pereira — Analista de PLD",
+          "text": "Caiu uma dúvida no time sobre o que acontece com quem comunica uma operação suspeita ao COAF. Quero explicar corretamente a proteção e a natureza dessas comunicações."
+        }
+      ],
+      "question": "De acordo com a Lei nº 9.613/1998, sobre as comunicações de operações atípicas ou suspeitas feitas ao COAF, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As comunicações feitas de boa-fé, no cumprimento do dever legal, não geram responsabilidade civil ou administrativa para a instituição nem para seus funcionários.",
+          "correct": true,
+          "feedback": "Correto. O art. 11, § 2º, da Lei nº 9.613/1998 afasta a responsabilidade civil e administrativa nas comunicações de boa-fé feitas na forma da lei."
+        },
+        {
+          "id": "b",
+          "text": "As comunicações ao COAF têm natureza jurídica de denúncia criminal formal.",
+          "correct": false,
+          "feedback": "Incorreta. A comunicação é um reporte de inteligência financeira, e não uma denúncia criminal."
+        },
+        {
+          "id": "c",
+          "text": "As comunicações devem ser notificadas previamente ao cliente investigado.",
+          "correct": false,
+          "feedback": "Incorreta. A lei proíbe dar ciência ao cliente ou a terceiros da comunicação feita ao COAF (vedação ao tipping off)."
+        },
+        {
+          "id": "d",
+          "text": "As informações das comunicações não podem ser usadas pela Polícia para subsidiar investigações.",
+          "correct": false,
+          "feedback": "Incorreta. Os Relatórios de Inteligência Financeira gerados pelo COAF se destinam justamente à Polícia e ao Ministério Público, para orientar investigações."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-11",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "sigilo-bancario-hipoteses-nao-violacao",
+      "dialogue": [
+        {
+          "speaker": "Juliana Ferraz — Analista de Atendimento",
+          "text": "Um cliente quis saber em que situações a instituição pode compartilhar dados dele sem estar quebrando o sigilo bancário. Preciso separar o que é permitido do que não é."
+        }
+      ],
+      "question": "A Lei Complementar nº 105/2001 impõe o dever de sigilo bancário, mas lista hipóteses que NÃO o violam. Qual alternativa traz uma dessas hipóteses legais?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O fornecimento de extratos detalhados de movimentação bancária a emissoras de televisão que fazem reportagens investigativas.",
+          "correct": false,
+          "feedback": "Incorreta. Entregar dados sigilosos à imprensa, sem ordem judicial ou consentimento do cliente, é quebra ilegal de sigilo e crime (art. 10)."
+        },
+        {
+          "id": "b",
+          "text": "A troca de informações cadastrais entre instituições financeiras e o fornecimento de dados de devedores inadimplentes a entidades de proteção ao crédito (Serasa/SPC).",
+          "correct": true,
+          "feedback": "Correto. O art. 1º, § 3º, incisos I e II, da LC nº 105/2001 estabelece que a troca de dados cadastrais entre instituições e o registro de inadimplentes em cadastros de proteção ao crédito não violam o sigilo."
+        },
+        {
+          "id": "c",
+          "text": "A publicação, no site da instituição financeira, das maiores contas de depósito à vista do mês.",
+          "correct": false,
+          "feedback": "Incorreta. Divulgar saldos de depósitos fere diretamente o dever legal de resguardar os dados financeiros dos clientes."
+        },
+        {
+          "id": "d",
+          "text": "O envio de saldos bancários de clientes a empresas de marketing, sem consentimento prévio.",
+          "correct": false,
+          "feedback": "Incorreta. Enviar dados protegidos a terceiros sem autorização do titular é ilícito penal e administrativo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "financiamento-terrorismo-pena",
+      "dialogue": [
+        {
+          "speaker": "Ricardo Almeida — Analista de Compliance",
+          "text": "No treinamento de PLD/FTP surgiu a pergunta sobre o quão grave é financiar terrorismo na lei brasileira, e quero responder com a pena correta."
+        }
+      ],
+      "question": "A Lei nº 13.260/2016 disciplina o terrorismo e seu financiamento. Qual é a pena para quem provê, recebe, obtém, guarda ou investe recursos para planejar, preparar ou executar crimes terroristas (art. 6º)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção de 6 meses a 2 anos, substituível por prestação de serviços à comunidade.",
+          "correct": false,
+          "feedback": "Incorreta. O financiamento do terrorismo é infração penal gravíssima e inafiançável, que não se enquadra como crime de menor potencial ofensivo."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão de 15 a 30 anos.",
+          "correct": true,
+          "feedback": "Correto. O art. 6º da Lei nº 13.260/2016 prevê reclusão de 15 a 30 anos para o crime de financiamento do terrorismo."
+        },
+        {
+          "id": "c",
+          "text": "Multa administrativa de até R$ 5.000.000,00, sem privação de liberdade.",
+          "correct": false,
+          "feedback": "Incorreta. O financiamento do terrorismo é crime gravíssimo, punido com pena privativa de liberdade severa, e não apenas com multa administrativa."
+        },
+        {
+          "id": "d",
+          "text": "Reclusão de 1 a 3 anos, em regime aberto.",
+          "correct": false,
+          "feedback": "Incorreta. A pena privativa de liberdade prevista é muito maior: reclusão de 15 a 30 anos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-13",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "lavagem-dinheiro-tipificacao-pena",
+      "dialogue": [
+        {
+          "speaker": "Aline Barros — Analista de PLD",
+          "text": "Estou fechando um material sobre lavagem de dinheiro e quero citar a pena do crime base da Lei nº 9.613/1998 sem errar a faixa de anos."
+        }
+      ],
+      "question": "O art. 1º da Lei nº 9.613/1998 pune quem oculta ou dissimula a natureza, a origem, a localização, a disposição, a movimentação ou a propriedade de bens, direitos ou valores provenientes de infração penal. Qual é a pena prevista?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção de 1 a 3 anos, e multa.",
+          "correct": false,
+          "feedback": "Incorreta. A pena é de reclusão, e a faixa de anos começa em 3, não em 1; não se trata de detenção."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão de 3 a 10 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O caput do art. 1º da Lei nº 9.613/1998 prevê reclusão de 3 a 10 anos, e multa, para o crime de lavagem de dinheiro."
+        },
+        {
+          "id": "c",
+          "text": "Trabalhos comunitários obrigatórios pelo período de 5 anos.",
+          "correct": false,
+          "feedback": "Incorreta. O crime é punido com pena privativa de liberdade de reclusão, e não com trabalhos comunitários."
+        },
+        {
+          "id": "d",
+          "text": "Reclusão de 10 a 30 anos, sem direito a multa.",
+          "correct": false,
+          "feedback": "Incorreta. A pena máxima base do caput é de 10 anos, e a pena de reclusão é cumulada obrigatoriamente com multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-14",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "crimes-sfn-instituicao-clandestina",
+      "dialogue": [
+        {
+          "speaker": "Diego Carvalho — Analista de Riscos",
+          "text": "Recebemos uma denúncia sobre alguém oferecendo câmbio sem autorização do Banco Central, e quero explicar ao time qual a pena para quem faz isso."
+        }
+      ],
+      "question": "O art. 16 da Lei nº 7.492/1986 pune quem faz operar, sem a devida autorização (ou com autorização obtida mediante declaração falsa), instituição financeira, inclusive de distribuição de valores mobiliários ou de câmbio. Qual é a pena?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção de 6 meses a 2 anos, e multa.",
+          "correct": false,
+          "feedback": "Incorreta. Operar instituição financeira clandestina é punido com reclusão, e não com detenção."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão de 1 a 4 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O art. 16 da Lei nº 7.492/1986 prevê reclusão de 1 a 4 anos, e multa."
+        },
+        {
+          "id": "c",
+          "text": "Reclusão de 5 a 15 anos, sem cumulação de multa.",
+          "correct": false,
+          "feedback": "Incorreta. A pena máxima base é de 4 anos, e a pena de reclusão é cumulada expressamente com multa."
+        },
+        {
+          "id": "d",
+          "text": "Cassação de direitos políticos por 8 anos.",
+          "correct": false,
+          "feedback": "Incorreta. A Constituição veda a cassação de direitos políticos; a condenação criminal gera apenas a suspensão desses direitos enquanto durar a execução da pena."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-1-15",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "crimes-sfn-falsa-identidade-cambio",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Lopes — Analista de Compliance",
+          "text": "Estou comparando as penas dos crimes da Lei nº 7.492/1986 e um deles chamou minha atenção pela pena diferente. Me ajuda a confirmar qual é a particularidade?"
+        }
+      ],
+      "question": "O art. 21 da Lei nº 7.492/1986 pune quem atribui a si ou a terceiro falsa identidade para realizar operação de câmbio. Qual é a característica singular da pena desse crime em relação aos demais da Lei de Crimes contra o SFN?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É o único crime da lei punido com pena de detenção, de 1 a 4 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O art. 21 da Lei nº 7.492/1986 pune a falsa identidade em câmbio com detenção de 1 a 4 anos, e multa, sendo a única hipótese de detenção da lei; os demais crimes são punidos com reclusão."
+        },
+        {
+          "id": "b",
+          "text": "É punido exclusivamente com prestação de cestas básicas, sem sanção penal.",
+          "correct": false,
+          "feedback": "Incorreta. O tipo penal prevê pena privativa de liberdade e multa, e não apenas uma prestação de cestas básicas."
+        },
+        {
+          "id": "c",
+          "text": "É punido com reclusão de 10 a 20 anos, a pena mais severa da legislação financeira.",
+          "correct": false,
+          "feedback": "Incorreta. A pena é de detenção, de 1 a 4 anos, e não de reclusão de 10 a 20 anos."
+        },
+        {
+          "id": "d",
+          "text": "Trata-se de infração administrativa que não gera inquérito policial.",
+          "correct": false,
+          "feedback": "Incorreta. O art. 21 é crime previsto na Lei de Crimes contra o SFN e exige apuração por inquérito policial e processo penal."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-01",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-autorizacoes-bcb",
+      "dialogue": [
+        {
+          "speaker": "Marina Teixeira — Analista de Câmbio",
+          "text": "Estou revisando as regras sobre as autorizações para operar em câmbio e quero ter certeza do que o Banco Central pode fazer com elas."
+        }
+      ],
+      "question": "No que diz respeito às autorizações concedidas para a prática de operações de câmbio, é correto afirmar que o Banco Central do Brasil pode:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "cassá-las em razão de irregularidades apuradas em processo administrativo.",
+          "correct": false,
+          "feedback": "A cassação é uma sanção típica de processo administrativo sancionador. A hipótese que a norma prevê expressamente, no art. 34 da Resolução BCB nº 277/2022, é o cancelamento por ausência de prática habitual de operações."
+        },
+        {
+          "id": "b",
+          "text": "cancelá-las pela falta de prática habitual da realização de operações no mercado de câmbio.",
+          "correct": true,
+          "feedback": "Correto. O art. 34, § 2º, I, da Resolução BCB nº 277/2022 permite ao Banco Central cancelar de ofício a autorização quando constatar a falta de prática habitual de operações no mercado de câmbio."
+        },
+        {
+          "id": "c",
+          "text": "revogá-las, em definitivo, se a instituição ficar mais de 360 dias sem operar.",
+          "correct": false,
+          "feedback": "Não existe dispositivo regulamentar que fixe um prazo de 360 dias para a revogação definitiva por inatividade."
+        },
+        {
+          "id": "d",
+          "text": "suspendê-las temporariamente por conveniência e oportunidade.",
+          "correct": false,
+          "feedback": "As decisões do Banco Central sobre autorizações seguem a legalidade estrita e a regulamentação vigente, e não uma conveniência e oportunidade discricionárias."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-02",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-instrucao-pagamento-exterior",
+      "dialogue": [
+        {
+          "speaker": "Rafael Moura — Analista de Operações",
+          "text": "Um cliente vai fazer uma remessa de recursos ao exterior e quero conferir as regras gerais das operações de câmbio antes de montar a instrução de pagamento."
+        }
+      ],
+      "question": "Marque a alternativa correta em relação às regras das operações de câmbio:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Na remessa de recursos ao exterior, a instrução de pagamento deve trazer informações do remetente (nome, documento de identificação, endereço, conta/CPF/CNPJ e forma de entrega da moeda) e do beneficiário (nome e identificador da conta ou da transação).",
+          "correct": true,
+          "feedback": "Correto. É o que determina o parágrafo único do art. 13 da Resolução BCB nº 277/2022 para a instrução de pagamento internacional."
+        },
+        {
+          "id": "b",
+          "text": "Na remessa de recursos ao exterior, a instrução de pagamento deve trazer informações do remetente (nome, documento de identificação, endereço, conta/CPF/CNPJ e forma de entrega da moeda) e do beneficiário (nome, endereço e telefone).",
+          "correct": false,
+          "feedback": "Incorreta. Do beneficiário se exigem o nome e o identificador da conta ou da transação; o trecho que muda a resposta é \"endereço e telefone\"."
+        },
+        {
+          "id": "c",
+          "text": "Na remessa de recursos ao exterior, a instrução de pagamento deve trazer informações do remetente (nome, documento de identificação e endereço) e do beneficiário (nome e identificador da conta ou da transação).",
+          "correct": false,
+          "feedback": "Incorreta. Faltam, do remetente, o identificador da conta ou o CPF/CNPJ e a forma de entrega da moeda."
+        },
+        {
+          "id": "d",
+          "text": "Na remessa de recursos ao exterior, a instrução de pagamento deve trazer informações do remetente (nome, documento de identificação, endereço, conta/CPF/CNPJ e forma de entrega da moeda) e do beneficiário (nome e identificador da conta ou da transação), mas apenas nas remessas feitas por pessoas jurídicas.",
+          "correct": false,
+          "feedback": "Incorreta. A regra vale para qualquer remetente; o trecho que muda a resposta é \"apenas nas remessas feitas por pessoas jurídicas\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-03",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "cambio-liquidacao-especie",
+      "dialogue": [
+        {
+          "speaker": "Camila Rocha — Atendimento ao Cliente",
+          "text": "Um cliente quer comprar dólares em espécie e perguntou em quanto tempo a operação é liquidada. Preciso responder com base nas regras de liquidação."
+        }
+      ],
+      "question": "Marque a alternativa correta quanto aos prazos e condições de liquidação das operações de câmbio:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A contratação de câmbio para compra ou venda de moeda estrangeira em espécie, em cheques de viagem ou para carregamento e descarregamento de cartões pré-pagos deve ser liquidada em até dois dias úteis após a contratação.",
+          "correct": false,
+          "feedback": "Incorreta. Para esses casos a liquidação é obrigatória no mesmo dia, e não em até dois dias úteis."
+        },
+        {
+          "id": "b",
+          "text": "A contratação de câmbio para compra ou venda de moeda estrangeira em espécie, em cheques de viagem ou para carregamento e descarregamento de cartões pré-pagos deve ser liquidada obrigatoriamente no mesmo dia da contratação.",
+          "correct": true,
+          "feedback": "Correto. O art. 38, § 2º, da Resolução BCB nº 277/2022 torna obrigatória a liquidação no mesmo dia para moeda em espécie, cheques de viagem e cartões pré-pagos."
+        },
+        {
+          "id": "c",
+          "text": "A contratação de câmbio para compra ou venda de moeda estrangeira em espécie e em cheques de viagem, mas não para carregamento e descarregamento de cartões pré-pagos, deve ser liquidada obrigatoriamente no mesmo dia da contratação.",
+          "correct": false,
+          "feedback": "Incorreta. A liquidação no mesmo dia vale também para os cartões pré-pagos; o trecho que muda a resposta é \"mas não para carregamento e descarregamento de cartões pré-pagos\"."
+        },
+        {
+          "id": "d",
+          "text": "A contratação de câmbio para compra ou venda de moeda estrangeira em espécie, em cheques de viagem ou para carregamento e descarregamento de cartões pré-pagos deve ser liquidada obrigatoriamente no dia útil seguinte à contratação.",
+          "correct": false,
+          "feedback": "Incorreta. A liquidação é no mesmo dia, e não no dia útil seguinte."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-04",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "capital-brasileiro-exterior-remessas",
+      "dialogue": [
+        {
+          "speaker": "Diego Salgado — Analista de Compliance",
+          "text": "Estou montando um quadro com os tipos de transferência ao exterior e quais deles têm regulamentação específica. Qual deles entra nessa categoria?"
+        }
+      ],
+      "question": "Estão sujeitas à regulamentação específica as transferências financeiras ao exterior relativas a:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "constituição de disponibilidades no exterior.",
+          "correct": false,
+          "feedback": "Constituir disponibilidade própria no exterior, por pessoa física ou jurídica não financeira, é operação livre, regulada pelas normas gerais de câmbio e pela declaração de capital brasileiro no exterior (CBE)."
+        },
+        {
+          "id": "b",
+          "text": "doações internacionais de pequeno valor.",
+          "correct": false,
+          "feedback": "As doações seguem as regras gerais das transferências unilaterais, sem necessidade de regulamentação especial de natureza prudencial."
+        },
+        {
+          "id": "c",
+          "text": "aplicações financeiras no exterior de interesse de instituições financeiras.",
+          "correct": true,
+          "feedback": "Correto. Aplicações e investimentos no exterior feitos por instituições financeiras autorizadas estão sujeitos a regras prudenciais específicas do CMN e do Banco Central (art. 4º da Resolução BCB nº 279)."
+        },
+        {
+          "id": "d",
+          "text": "manutenção de estudantes residentes no exterior.",
+          "correct": false,
+          "feedback": "A manutenção de estudantes é uma transferência unilateral corrente de caráter geral, sem regulamentação específica."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-05",
+      "categories": [
+        "sfn"
+      ],
+      "exam": true,
+      "topicTag": "corretoras-cambio-limites-operacionais",
+      "dialogue": [
+        {
+          "speaker": "Larissa Duarte — Analista de Câmbio",
+          "text": "Estou preparando um material comparativo sobre os tipos de instituição que atuam no câmbio e preciso confirmar o que vale para as sociedades corretoras de câmbio."
+        }
+      ],
+      "question": "Sobre as sociedades corretoras de câmbio autorizadas pelo Banco Central do Brasil, é correto afirmar que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "podem comprar e vender moeda estrangeira até US$ 500.000,00, sendo permitido fracionar operações de valor maior para enquadrá-las no limite.",
+          "correct": false,
+          "feedback": "O fracionamento de operações para burlar limites regulamentares é expressamente vedado (art. 22 da Resolução BCB nº 277/2022)."
+        },
+        {
+          "id": "b",
+          "text": "podem abrir contas no exterior para cumprir ordens de pagamento limitadas a US$ 100.000,00.",
+          "correct": false,
+          "feedback": "As contas mantidas no exterior por instituições autorizadas seguem regras específicas do Título III da Resolução BCB nº 277/2022, sem essa limitação de US$ 100.000,00 por ordem de pagamento."
+        },
+        {
+          "id": "c",
+          "text": "atuam no mercado de câmbio intermediando operações ou operando com seus clientes para liquidação pronta de até US$ 500.000,00 (ou equivalente).",
+          "correct": true,
+          "feedback": "Correto. O art. 29, II, 'a', da Resolução BCB nº 277/2022 fixa em até US$ 500.000,00 o limite das operações com clientes para liquidação pronta pelas corretoras de câmbio."
+        },
+        {
+          "id": "d",
+          "text": "podem atuar no mercado de capitais sem necessidade de autorização da Comissão de Valores Mobiliários (CVM).",
+          "correct": false,
+          "feedback": "A atuação no mercado de valores mobiliários depende de regulação e de autorização expressa da CVM."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-06",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-ftp-devida-diligencia-clientes",
+      "dialogue": [
+        {
+          "speaker": "Juliana Prado — Analista de Compliance",
+          "text": "Vou revisar o nosso processo de conheça seu cliente e quero listar o que uma devida diligência eficiente precisa contemplar."
+        }
+      ],
+      "question": "Um procedimento eficiente de Devida Diligência sobre o Cliente (KYC/DDC), no âmbito da prevenção à lavagem de dinheiro, deve contemplar obrigatoriamente:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a cobrança mensal de tarifa de manutenção cadastral do cliente.",
+          "correct": false,
+          "feedback": "A cobrança de tarifas não tem relação com compliance nem com a prevenção à lavagem de dinheiro."
+        },
+        {
+          "id": "b",
+          "text": "a guarda de cópias dos e-mails pessoais recebidos pelo cliente nos últimos 90 dias.",
+          "correct": false,
+          "feedback": "Monitorar e guardar e-mails pessoais do cliente viola o direito constitucional à privacidade e ao sigilo das comunicações."
+        },
+        {
+          "id": "c",
+          "text": "a retenção do passaporte original dos clientes que fazem operações de câmbio de viagem.",
+          "correct": false,
+          "feedback": "Reter documentos originais de clientes é conduta ilegal."
+        },
+        {
+          "id": "d",
+          "text": "a atualização periódica e permanente das informações cadastrais do cliente e a reavaliação de sua capacidade financeira.",
+          "correct": true,
+          "feedback": "Correto. Os arts. 17 e 18, § 4º, da Circular BCB nº 3.978/2020 exigem a atualização cadastral periódica e a reavaliação permanente da qualificação e da capacidade financeira do cliente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-07",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "vet-transparencia-cambio",
+      "dialogue": [
+        {
+          "speaker": "Bruno Almeida — Analista de Produtos",
+          "text": "Um cliente perguntou o que está embutido no custo total do câmbio que mostramos antes de fechar a operação. Preciso confirmar as regras do VET."
+        }
+      ],
+      "question": "A Resolução BCB nº 277/2022 disciplina o cálculo e a prestação de informações sobre o Valor Efetivo Total (VET). Sobre o VET, assinale a alternativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O VET considera apenas a taxa de câmbio negociada, sem tributos nem tarifas operacionais.",
+          "correct": false,
+          "feedback": "O VET engloba a taxa de câmbio, os tributos incidentes (IOF) e as tarifas eventualmente cobradas, e é expresso em Reais por unidade de moeda estrangeira (art. 18)."
+        },
+        {
+          "id": "b",
+          "text": "A informação do VET é opcional para as instituições, funcionando apenas como recomendação não vinculante.",
+          "correct": false,
+          "feedback": "A informação prévia do VET é um dever regulatório obrigatório determinado pelo Banco Central do Brasil."
+        },
+        {
+          "id": "c",
+          "text": "O VET é expresso em dólares dos Estados Unidos por unidade de moeda nacional.",
+          "correct": false,
+          "feedback": "O VET é expresso em Reais (R$) por unidade de moeda estrangeira negociada, e não o contrário."
+        },
+        {
+          "id": "d",
+          "text": "Nas operações de câmbio com clientes para liquidação pronta de até US$ 100.000,00, a instituição deve informar o VET ao cliente antes de realizar a operação.",
+          "correct": true,
+          "feedback": "Correto. O parágrafo único do art. 18 da Resolução BCB nº 277/2022 exige a informação prévia do VET ao cliente nas operações prontas de até US$ 100.000,00."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "guarda-documentos-cambio",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Lima — Analista de Operações",
+          "text": "Estamos organizando o arquivo das operações de câmbio fechadas com clientes e preciso saber por quanto tempo esses documentos devem ficar à disposição do Banco Central."
+        }
+      ],
+      "question": "Quanto à conservação e guarda de documentos e registros de operações de câmbio contratadas com clientes, as instituições autorizadas devem mantê-los à disposição do Banco Central pelo prazo mínimo de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 (cinco) anos, contados da data de celebração do contrato.",
+          "correct": false,
+          "feedback": "O prazo geral do mercado de câmbio na Resolução BCB nº 277/2022 é de 10 anos, e não de 5."
+        },
+        {
+          "id": "b",
+          "text": "5 (cinco) anos, contados a partir do primeiro dia do ano seguinte ao da contratação.",
+          "correct": false,
+          "feedback": "Essa contagem a partir do primeiro dia do ano seguinte vale para o registro geral de transações de PLD da Circular 3.978. No câmbio, o art. 8º da Resolução 277 usa o término do exercício do evento e um prazo de 10 anos."
+        },
+        {
+          "id": "c",
+          "text": "10 (dez) anos, contados a partir do término do exercício em que ocorrer a contratação ou a liquidação/cancelamento da operação.",
+          "correct": true,
+          "feedback": "Correto. O art. 8º da Resolução BCB nº 277/2022 fixa o prazo mínimo de guarda de 10 anos, contados do término do exercício em que ocorrer a contratação, a liquidação ou o cancelamento."
+        },
+        {
+          "id": "d",
+          "text": "20 (vinte) anos, conforme o prazo prescricional geral do Código Civil.",
+          "correct": false,
+          "feedback": "O prazo prescricional máximo do Código Civil atual é de 10 anos, e a norma cambial tem regramento próprio, também de 10 anos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-09",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "correspondentes-cambio-limites",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Nunes — Analista de Parcerias",
+          "text": "Estamos avaliando o atendimento de câmbio por correspondentes no País e preciso conferir quais são os limites por operação."
+        }
+      ],
+      "question": "A Resolução CMN nº 4.935/2021 estabelece limites operacionais para o atendimento prestado por correspondentes no País em operações de câmbio. Assinale a afirmativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nas operações de compra ou venda de moeda estrangeira em espécie com entrega do contravalor em reais também em espécie, o limite é de US$ 3.000,00 (ou equivalente).",
+          "correct": false,
+          "feedback": "Incorreta. US$ 3.000,00 é o limite geral por operação; com liquidação em espécie dos dois lados, o limite é de US$ 1.000,00."
+        },
+        {
+          "id": "b",
+          "text": "Nas operações de compra ou venda de moeda estrangeira em espécie com entrega do contravalor em reais também em espécie, o limite é de US$ 1.000,00 (ou equivalente), podendo ser superado com autorização do diretor de compliance do banco.",
+          "correct": false,
+          "feedback": "Incorreta. O limite regulamentar não pode ser superado por autorização interna; o trecho que muda a resposta é \"podendo ser superado\"."
+        },
+        {
+          "id": "c",
+          "text": "Nas operações de compra ou venda de moeda estrangeira em espécie com entrega do contravalor em reais também em espécie, o limite é de US$ 1.000,00 (ou equivalente).",
+          "correct": true,
+          "feedback": "Correto. Quando a operação de compra ou venda em espécie envolve a entrega do contravalor em reais também em espécie, o limite regulamentar cai para US$ 1.000,00 (Resolução CMN nº 4.935/2021)."
+        },
+        {
+          "id": "d",
+          "text": "Nas operações de compra ou venda de moeda estrangeira em espécie com entrega do contravalor em reais também em espécie, o limite é de US$ 1.000,00 (ou equivalente) por mês.",
+          "correct": false,
+          "feedback": "Incorreta. O limite é por operação, e não mensal; o trecho que muda a resposta é \"por mês\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "capital-brasileiro-exterior-cbe",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Barreto — Analista Financeiro",
+          "text": "Um cliente com ativos no exterior perguntou se precisa declará-los ao Banco Central e a partir de quanto. Quero responder certo sobre o CBE."
+        }
+      ],
+      "question": "A Resolução BCB nº 279/2022 disciplina a prestação de informações sobre o Capital Brasileiro no Exterior (CBE). Quanto aos limites e às datas-base de declaração, assinale a alternativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Declaração Trimestral de CBE é obrigatória para todos os residentes com ativos no exterior a partir de US$ 10.000,00.",
+          "correct": false,
+          "feedback": "O piso da Declaração Trimestral é de US$ 100.000.000,00 (art. 11 da Resolução BCB nº 279), e não de US$ 10.000,00."
+        },
+        {
+          "id": "b",
+          "text": "A Declaração Anual de CBE deve ser prestada quando os ativos no exterior somarem US$ 1.000.000,00 ou mais na data-base de 31 de dezembro.",
+          "correct": true,
+          "feedback": "Correto. O art. 10 da Resolução BCB nº 279/2022 estabelece o piso de US$ 1.000.000,00 na data-base de 31 de dezembro para a obrigatoriedade da Declaração Anual de CBE."
+        },
+        {
+          "id": "c",
+          "text": "Residentes com ativos no exterior superiores a US$ 100.000.000,00 prestam apenas a declaração anual e ficam dispensados das trimestrais.",
+          "correct": false,
+          "feedback": "Quem tem ativos a partir de US$ 100 milhões deve prestar obrigatoriamente as três declarações trimestrais e também a declaração anual."
+        },
+        {
+          "id": "d",
+          "text": "A omissão na entrega da declaração de CBE é mera falta cadastral e não sujeita o responsável a penalidades do Banco Central.",
+          "correct": false,
+          "feedback": "A não prestação, o atraso ou a prestação de informações falsas no CBE sujeita os responsáveis a multas e penalidades aplicadas pelo Banco Central (art. 16)."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-11",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "capital-estrangeiro-sce-ied-credito",
+      "dialogue": [
+        {
+          "speaker": "Larissa Duarte — Analista de Câmbio",
+          "text": "Chegou uma dúvida sobre investimento estrangeiro direto e crédito externo e sobre os sistemas de registro do Banco Central. Vou revisar o que a norma pede."
+        }
+      ],
+      "question": "A Resolução BCB nº 278/2022 regulamenta a prestação de informações sobre investimento estrangeiro direto (IED) e crédito externo. Sobre as informações do capital estrangeiro no País, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As operações de crédito externo dispensam qualquer registro no Banco Central e devem ser informadas apenas à Receita Federal.",
+          "correct": false,
+          "feedback": "As operações de crédito externo que atingem os pisos regulamentares devem ser declaradas obrigatoriamente no sistema SCE-Crédito do Banco Central (art. 23)."
+        },
+        {
+          "id": "b",
+          "text": "O devedor de operação de crédito externo fica dispensado de guardar a documentação comprobatória depois da liquidação do contrato.",
+          "correct": false,
+          "feedback": "A documentação comprobatória deve ser guardada por 10 anos, contados do encerramento das obrigações da operação (art. 18, I)."
+        },
+        {
+          "id": "c",
+          "text": "Nas transferências financeiras de IED de valor igual ou superior a US$ 100.000,00, deve constar obrigatoriamente o código SCE-IED na operação de câmbio.",
+          "correct": true,
+          "feedback": "Correto. O art. 21, II, da Resolução BCB nº 278/2022 exige a inclusão do código SCE-IED nas transferências financeiras de IED de valor igual ou superior a US$ 100.000,00."
+        },
+        {
+          "id": "d",
+          "text": "Qualquer remessa de investimento estrangeiro direto de até US$ 1.000,00 exige a criação do código SCE-Crédito.",
+          "correct": false,
+          "feedback": "O investimento estrangeiro direto é registrado no SCE-IED, com código na transferência a partir de US$ 100.000,00. O SCE-Crédito é o sistema das operações de dívida e crédito."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "marco-cambial-classificacao-finalidade",
+      "dialogue": [
+        {
+          "speaker": "Thiago Martins — Atendimento ao Cliente",
+          "text": "Um cliente errou a finalidade ao preencher uma remessa e perguntou de quem é a responsabilidade por essa classificação. Preciso lembrar como a lei divide esse papel."
+        }
+      ],
+      "question": "A Lei nº 14.286/2021 (Novo Marco Legal do Câmbio) dividiu os papéis do cliente e da instituição autorizada na classificação da finalidade da operação de câmbio. Assinale a alternativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A classificação da finalidade é responsabilidade do cliente, e as instituições autorizadas devem prestar orientação e suporte técnico para o enquadramento correto apenas quando o cliente for pessoa jurídica.",
+          "correct": false,
+          "feedback": "Incorreta. O suporte vale para qualquer cliente que precise de apoio; o trecho que muda a resposta é \"apenas quando o cliente for pessoa jurídica\"."
+        },
+        {
+          "id": "b",
+          "text": "A classificação da finalidade é responsabilidade da instituição autorizada, e o cliente deve prestar orientação e suporte técnico para o enquadramento correto.",
+          "correct": false,
+          "feedback": "Incorreta. Os papéis estão invertidos: a responsabilidade é do cliente, e quem presta o suporte é a instituição."
+        },
+        {
+          "id": "c",
+          "text": "A classificação da finalidade é responsabilidade do cliente, e as instituições autorizadas podem se recusar a prestar orientação e suporte técnico para o enquadramento correto.",
+          "correct": false,
+          "feedback": "Incorreta. As instituições devem prestar o suporte; o trecho que muda a resposta é \"podem se recusar\"."
+        },
+        {
+          "id": "d",
+          "text": "A classificação da finalidade é responsabilidade do cliente, e as instituições autorizadas devem prestar orientação e suporte técnico para o enquadramento correto.",
+          "correct": true,
+          "feedback": "Correto. O art. 4º, §§ 2º e 3º, da Lei nº 14.286/2021 atribui ao cliente a responsabilidade pela classificação e obriga as instituições a prestar suporte técnico para auxiliá-lo."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-13",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "porte-valores-viagens-internacionais",
+      "dialogue": [
+        {
+          "speaker": "Renata Siqueira — Atendimento ao Cliente",
+          "text": "Uma cliente vai viajar para o exterior levando dinheiro em espécie e quer saber o que precisa declarar. Preciso conferir os limites de declaração."
+        }
+      ],
+      "question": "A entrada e a saída do País de moeda nacional e estrangeira em espécie por viajantes internacionais seguem limites de declaração aduaneira. Sobre o porte de valores em espécie, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É proibido portar valores em espécie superiores a R$ 10.000,00 ao viajar para o exterior.",
+          "correct": false,
+          "feedback": "Não há proibição nesse valor. O limite de dispensa de declaração foi atualizado e unificado no equivalente a US$ 10.000,00."
+        },
+        {
+          "id": "b",
+          "text": "Valores em espécie acima de US$ 10.000,00 não podem sair do País em nenhuma hipótese e são confiscados na alfândega.",
+          "correct": false,
+          "feedback": "É permitido portar mais de US$ 10.000,00 em espécie, desde que o viajante apresente a declaração à Receita Federal (e-DBV). O perdimento só ocorre se não houver declaração."
+        },
+        {
+          "id": "c",
+          "text": "O porte em espécie de valores de até US$ 10.000,00 (ou o equivalente em outras moedas) é dispensado de declaração à Receita Federal.",
+          "correct": true,
+          "feedback": "Correto. O art. 14, § 1º, I, da Lei nº 14.286/2021 dispensa de declaração aduaneira o porte em espécie de até US$ 10.000,00 ou o equivalente."
+        },
+        {
+          "id": "d",
+          "text": "A declaração aduaneira de porte de valores deve ser prestada diretamente ao Banco Central, via SISBACEN, antes de o viajante ir ao aeroporto.",
+          "correct": false,
+          "feedback": "A declaração aduaneira de bens e valores do viajante é prestada à Secretaria da Receita Federal do Brasil, e não ao Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-14",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "marco-cambial-lei-usura",
+      "dialogue": [
+        {
+          "speaker": "Felipe Cardoso — Analista de Compliance",
+          "text": "Estou preparando um resumo do Novo Marco Legal do Câmbio e preciso confirmar o que o artigo 16 estabeleceu sobre as taxas negociadas no mercado de câmbio."
+        }
+      ],
+      "question": "O art. 16 da Lei nº 14.286/2021 trouxe um esclarecimento importante para afastar a insegurança jurídica nas taxas negociadas no mercado de câmbio. Esse dispositivo estabeleceu que:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "as instituições autorizadas a operar em câmbio estão isentas de recolher o Imposto sobre Operações Financeiras (IOF).",
+          "correct": false,
+          "feedback": "A incidência de IOF sobre câmbio continua regida pela legislação tributária federal própria."
+        },
+        {
+          "id": "b",
+          "text": "é proibida a cobrança de qualquer tarifa administrativa nas operações de câmbio de turismo.",
+          "correct": false,
+          "feedback": "As instituições podem cobrar tarifas pelos serviços prestados, desde que pactuadas e transparentes."
+        },
+        {
+          "id": "c",
+          "text": "as taxas de câmbio contratadas no mercado interbancário são imunes à fiscalização de compliance.",
+          "correct": false,
+          "feedback": "As operações interbancárias continuam sob rigorosa fiscalização prudencial e de conduta do Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "as disposições da Lei de Crimes contra a Economia Popular (Lei nº 1.521/1951, usura) não se aplicam às operações de câmbio realizadas na forma da lei.",
+          "correct": true,
+          "feedback": "Correto. O art. 16 da Lei nº 14.286/2021 prevê que as regras sobre usura e lucro excessivo, do art. 4º, alínea 'a', da Lei nº 1.521/1951, não se aplicam às operações de câmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-2-15",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "residencia-cambial",
+      "dialogue": [
+        {
+          "speaker": "Aline Figueiredo — Analista de Cadastro",
+          "text": "Um cliente pessoa física vai passar uma temporada fora do Brasil e perguntou se continua sendo considerado residente para fins cambiais."
+        }
+      ],
+      "question": "A Resolução BCB nº 280/2022 define os conceitos de residente e não residente para fins da legislação cambial. A pessoa física residente que se ausenta do Brasil em caráter temporário mantém a condição de residente durante os primeiros:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "30 (trinta) dias consecutivos de ausência.",
+          "correct": false,
+          "feedback": "O prazo para a ausência temporária manter a condição de residente é de 12 meses, e não de 30 dias."
+        },
+        {
+          "id": "b",
+          "text": "180 (cento e oitenta) dias do ano-calendário.",
+          "correct": false,
+          "feedback": "A regra da Resolução BCB nº 280 adota a contagem contínua de 12 meses consecutivos, e não de dias dentro do ano-calendário."
+        },
+        {
+          "id": "c",
+          "text": "5 (cinco) anos consecutivos de ausência.",
+          "correct": false,
+          "feedback": "Depois de 12 meses consecutivos de ausência, sem declaração em contrário, a pessoa física passa à condição de não residente a partir do dia seguinte, muito antes de 5 anos."
+        },
+        {
+          "id": "d",
+          "text": "12 (doze) meses consecutivos de ausência.",
+          "correct": true,
+          "feedback": "Correto. Segundo o art. 2º, VI, e o art. 3º, IV, da Resolução BCB nº 280/2022, a pessoa física mantém o status de residente nos primeiros 12 meses consecutivos de ausência temporária do País."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-01",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-governanca-aprovadores",
+      "dialogue": [
+        {
+          "speaker": "Marcela Tavares — Analista de Compliance",
+          "text": "Estamos fechando a revisão da política de PLD/FTP e eu preciso deixar registrado quem aprova esse documento e o que ele deve prever. Me ajuda a conferir?"
+        }
+      ],
+      "question": "Segundo a regulamentação do Banco Central, a política, os procedimentos e os controles internos de PLD/FTP devem:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ser revisados todo mês por comitês operacionais específicos da área de câmbio.",
+          "correct": false,
+          "feedback": "Não há exigência de revisão mensal. A revisão regulatória mínima da Avaliação Interna de Risco é de 2 anos, e o Relatório de Efetividade é anual."
+        },
+        {
+          "id": "b",
+          "text": "Prever que, em caso de conflito, as metas comerciais prevalecem sobre os alertas de compliance.",
+          "correct": false,
+          "feedback": "É o contrário: os controles de compliance e de prevenção a ilícitos têm precedência sobre interesses comerciais. Uma política que subordinasse alertas a metas seria incompatível com a Circular BCB nº 3.978/2020."
+        },
+        {
+          "id": "c",
+          "text": "Ser aprovados pelo conselho de administração ou, na ausência dele, pela diretoria da instituição.",
+          "correct": true,
+          "feedback": "Correto. O Art. 7º, II da Circular BCB nº 3.978/2020 determina que a política de PLD/FTP seja aprovada pelo conselho de administração ou, na sua ausência, pela diretoria da instituição."
+        },
+        {
+          "id": "d",
+          "text": "Definir que todo servidor público municipal seja automaticamente classificado como PEP.",
+          "correct": false,
+          "feedback": "O enquadramento como PEP no âmbito municipal é restrito a prefeitos, vereadores, secretários municipais e presidentes de entidades públicas indiretas (Art. 27, § 1º, VIII). Não alcança todos os servidores."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-02",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-reporte-automatico-especie",
+      "dialogue": [
+        {
+          "speaker": "Rogério Peixoto — Coordenador de Monitoramento",
+          "text": "Hoje apareceu no painel um saque grande em espécie e o time ficou na dúvida sobre o que a gente precisa comunicar ao COAF sem nem passar por análise. Qual é a regra?"
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 estabelece que as instituições financeiras devem comunicar obrigatoriamente, e de forma automática, ao COAF:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Os depósitos ou saques em espécie de valor igual ou superior a R$ 100.000,00.",
+          "correct": false,
+          "feedback": "O valor está errado: o gatilho fixado pelo Banco Central é de R$ 50.000,00, e não de R$ 100.000,00. Além disso, a regra alcança também o aporte em espécie."
+        },
+        {
+          "id": "b",
+          "text": "As movimentações por PIX acima de R$ 5.000,00 realizadas no período noturno.",
+          "correct": false,
+          "feedback": "O reporte automático do Art. 49 trata de dinheiro físico (papel-moeda), e não de transações eletrônicas como o PIX. Movimentação noturna por PIX só entra na comunicação se, após análise, for considerada suspeita."
+        },
+        {
+          "id": "c",
+          "text": "Todas as compras de moeda estrangeira feitas por turistas brasileiros no exterior.",
+          "correct": false,
+          "feedback": "Câmbio de turismo dentro dos limites legais e sem atipicidades não é reportado automaticamente ao COAF."
+        },
+        {
+          "id": "d",
+          "text": "As operações de depósito, aporte ou saque em espécie de valor igual ou superior a R$ 50.000,00.",
+          "correct": true,
+          "feedback": "Correto. O Art. 49, I da Circular BCB nº 3.978/2020 determina a comunicação automática ao COAF das movimentações em espécie (depósito, aporte ou saque) de R$ 50.000,00 ou mais."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-03",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sinais-alerta-indicios-cadastrais",
+      "dialogue": [
+        {
+          "speaker": "Fabiana Queiroz — Líder de Onboarding",
+          "text": "Vou treinar o time de cadastro esta semana e quero montar um exemplo do que realmente é sinal de alerta na identificação e qualificação de clientes, e do que é só rotina."
+        }
+      ],
+      "question": "Segundo a Carta Circular BCB nº 4.001/2020, qual situação configura indício de suspeita de lavagem de dinheiro relacionado à identificação e qualificação de clientes?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Um cliente envia uma procuração pública outorgada pelo pai ao filho para movimentar a conta.",
+          "correct": false,
+          "feedback": "Mandato outorgado entre familiares diretos por instrumento público é perfeitamente válido e não configura sinal de alerta por si só."
+        },
+        {
+          "id": "b",
+          "text": "Um cliente usa o aplicativo do banco digital para atualizar a foto do cadastro.",
+          "correct": false,
+          "feedback": "Biometria facial e foto enviada pelo aplicativo são procedimentos padrão de validação digital, sem relação com suspeita de lavagem."
+        },
+        {
+          "id": "c",
+          "text": "Um cliente apresenta informações e documentos que se mostram conflitantes com as informações públicas disponíveis.",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 (Art. 1º, III, 'm') lista expressamente como sinal de alerta a apresentação de dados ou documentos conflitantes com bases públicas disponíveis."
+        },
+        {
+          "id": "d",
+          "text": "Um cliente apresenta comprovante de residência em nome do cônjuge.",
+          "correct": false,
+          "feedback": "Comprovante em nome do cônjuge é prática comum e aceita mediante comprovação do vínculo conjugal. Não é, por si só, sinal de alerta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-04",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sinais-alerta-atividades-internacionais",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Meireles — Analista de Câmbio",
+          "text": "Estou revisando o checklist das remessas internacionais da semana e preciso separar o que é operação normal do que a Carta Circular trata como situação atípica."
+        }
+      ],
+      "question": "Qual das situações abaixo consta na Carta Circular BCB nº 4.001/2020 como atípica, podendo configurar indício de lavagem de dinheiro ou financiamento do terrorismo?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pagamento antecipado de importação com a documentação aduaneira regularizada.",
+          "correct": false,
+          "feedback": "Pagamento antecipado de importação com lastro econômico e comprovante aduaneiro é operação comercial legítima."
+        },
+        {
+          "id": "b",
+          "text": "Transferência unilateral para manter um filho matriculado em universidade no exterior.",
+          "correct": false,
+          "feedback": "Manutenção de dependente no exterior para estudos é hipótese clássica e legítima de transferência unilateral."
+        },
+        {
+          "id": "c",
+          "text": "Transferências internacionais cuja origem dos fundos não se justifica ou que são incompatíveis com a capacidade financeira do cliente.",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 (Art. 1º, X, 'f') lista como sinal de alerta as transferências internacionais sem origem de fundos justificada ou incompatíveis com a capacidade financeira do cliente."
+        },
+        {
+          "id": "d",
+          "text": "Pagamento de frete internacional respaldado por conhecimento de transporte marítimo (Bill of Lading).",
+          "correct": false,
+          "feedback": "Frete pago com documento de transporte idôneo, como o Bill of Lading, tem perfeita fundamentação econômica e não é sinal de alerta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-05",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-avaliacao-interna-risco",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Nogueira — Gerente de Riscos e Compliance",
+          "text": "A auditoria interna pediu a nossa Avaliação Interna de Risco e eu quero confirmar o que ela precisa cobrir e de quanto em quanto tempo tem que ser revisada."
+        }
+      ],
+      "question": "A Avaliação Interna de Risco (AIR) é o pilar da Abordagem Baseada em Risco exigida pelo Banco Central. Sobre ela, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Deve ser feita obrigatoriamente a cada 6 meses e submetida à aprovação da CVM.",
+          "correct": false,
+          "feedback": "O prazo regular de revisão da AIR é de, no máximo, 2 anos (Art. 12, III), e não de 6 meses. A aprovação da CVM também não faz parte do processo."
+        },
+        {
+          "id": "b",
+          "text": "Instituições que atuam exclusivamente com câmbio manual ficam dispensadas de elaborá-la.",
+          "correct": false,
+          "feedback": "Todas as instituições autorizadas a funcionar pelo Banco Central estão sujeitas à Circular BCB nº 3.978/2020, sem exceção para o câmbio manual."
+        },
+        {
+          "id": "c",
+          "text": "Deve considerar, no mínimo, os perfis de risco dos clientes, da instituição, das operações e produtos e dos funcionários e parceiros, com revisão a cada 2 anos.",
+          "correct": true,
+          "feedback": "Correto. Os Arts. 10 e 12, III da Circular BCB nº 3.978/2020 exigem a consideração dos quatro perfis de risco e fixam a revisão a cada 2 anos."
+        },
+        {
+          "id": "d",
+          "text": "Deve focar exclusivamente no risco de crédito dos clientes da instituição.",
+          "correct": false,
+          "feedback": "A AIR serve para mensurar o risco de lavagem de dinheiro e de financiamento do terrorismo, e não o risco de crédito tradicional."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-06",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-pessoas-expostas-politicamente",
+      "dialogue": [
+        {
+          "speaker": "Tadeu Albuquerque — Analista de Cadastro",
+          "text": "Entrou uma solicitação de abertura de conta de um cliente que é ex-secretário de estado, e outra de um cunhado de um deputado. Preciso entender como o enquadramento como PEP funciona na prática."
+        }
+      ],
+      "question": "Quanto ao enquadramento e aos procedimentos aplicáveis às Pessoas Expostas Politicamente (PEP), segundo a Circular BCB nº 3.978/2020, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A condição de PEP termina no dia seguinte ao fim do mandato ou à exoneração do cargo.",
+          "correct": false,
+          "feedback": "A condição de PEP deve ser mantida durante os 5 anos seguintes à data em que a pessoa deixou de exercer a função pública (Art. 27, § 5º)."
+        },
+        {
+          "id": "b",
+          "text": "Somente são PEP os ocupantes de cargos no Governo Federal brasileiro, excluídos os agentes estrangeiros.",
+          "correct": false,
+          "feedback": "A norma abrange agentes públicos federais, estaduais e municipais, agentes estrangeiros e dirigentes de organismos internacionais."
+        },
+        {
+          "id": "c",
+          "text": "O relacionamento com PEP dispensa aprovação de nível hierárquico superior, bastando o aceite do gerente comercial.",
+          "correct": false,
+          "feedback": "O Art. 19, § 3º exige que a decisão de iniciar ou manter relacionamento com PEP seja tomada por detentor de cargo de nível hierárquico superior."
+        },
+        {
+          "id": "d",
+          "text": "O monitoramento de PEP se estende a parentes em linha reta ou colateral até o 2º grau, cônjuge, companheiro(a), enteado(a) e estreitos colaboradores.",
+          "correct": true,
+          "feedback": "Correto. O Art. 19, § 1º da Circular BCB nº 3.978/2020 abrange expressamente parentes até o 2º grau, cônjuge, companheiro(a), enteado(a) e estreitos colaboradores no escopo do monitoramento de PEP."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-07",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-beneficiario-final",
+      "dialogue": [
+        {
+          "speaker": "Cláudia Rezende — Analista de KYC",
+          "text": "Peguei um dossiê de pessoa jurídica com três camadas de holdings. Antes de seguir, preciso ter clareza sobre qual percentual de participação a gente usa como referência para chegar ao beneficiário final."
+        }
+      ],
+      "question": "Na qualificação de clientes pessoa jurídica, a instituição deve mapear a cadeia societária até o beneficiário final (pessoa natural). Sobre o valor de referência de participação societária, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O limite regulamentar mínimo de participação é de 50% mais uma ação do capital votante.",
+          "correct": false,
+          "feedback": "O teto aceitável na abordagem baseada em risco é de 25%. A instituição pode adotar percentuais ainda menores, para maior rigor."
+        },
+        {
+          "id": "b",
+          "text": "Toda companhia aberta com ações em bolsa deve declarar individualmente seus beneficiários finais à instituição financeira.",
+          "correct": false,
+          "feedback": "As companhias abertas são expressamente dispensadas da identificação individualizada de beneficiário final no KYC (Art. 24, § 3º, I)."
+        },
+        {
+          "id": "c",
+          "text": "O valor de referência é definido pela instituição com base no risco e não pode ser superior a 25% de participação, direta ou indireta.",
+          "correct": true,
+          "feedback": "Correto. O Art. 25, § 1º da Circular BCB nº 3.978/2020 determina que o valor de referência para identificar o beneficiário final não pode ser superior a 25% de participação direta ou indireta."
+        },
+        {
+          "id": "d",
+          "text": "A identificação do beneficiário final é facultativa para grandes empresas importadoras e exportadoras.",
+          "correct": false,
+          "feedback": "Identificar o beneficiário final é dever regulatório obrigatório para pessoas jurídicas, justamente para impedir a ocultação por empresas de fachada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-provisionamento-saque-especie",
+      "dialogue": [
+        {
+          "speaker": "Evandro Siqueira — Supervisor de Operações",
+          "text": "Um cliente quer sacar um valor alto em espécie e ficou contrariado quando perguntamos a finalidade. Estou revisando com o time as regras de saque em espécie para não errar o atendimento."
+        }
+      ],
+      "question": "Em relação ao provisionamento prévio de saques em espécie, previsto na Circular BCB nº 3.978/2020, assinale a afirmativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O provisionamento prévio é exigido para qualquer saque a partir de R$ 10.000,00, com 24 horas de antecedência.",
+          "correct": false,
+          "feedback": "O valor que exige provisionamento é de R$ 50.000,00, e a antecedência mínima é de 3 dias úteis."
+        },
+        {
+          "id": "b",
+          "text": "A recusa do cliente em informar a finalidade do saque impede legalmente a realização da retirada.",
+          "correct": false,
+          "feedback": "Se o cliente se recusa a informar a finalidade ou a origem, a instituição deve registrar o fato e encaminhar a operação para análise de suspeição (Art. 35, parágrafo único), e não está legalmente impedida de realizá-la."
+        },
+        {
+          "id": "c",
+          "text": "Saques feitos por empresas de transporte de valores dispensam o registro do portador e do proprietário dos recursos.",
+          "correct": false,
+          "feedback": "A empresa de transporte de valores é identificada como portadora, com CNPJ e razão social, no registro de operações em espécie. O registro não é dispensado."
+        },
+        {
+          "id": "d",
+          "text": "Saques em espécie de R$ 50.000,00 ou mais exigem solicitação de provisionamento com, no mínimo, 3 dias úteis de antecedência.",
+          "correct": true,
+          "feedback": "Correto. Conforme o Art. 36 da Circular BCB nº 3.978/2020, saques em espécie de valor igual ou superior a R$ 50.000,00 exigem provisionamento prévio com 3 dias úteis de antecedência."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-09",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-prazos-monitoramento-dossie",
+      "dialogue": [
+        {
+          "speaker": "Heloísa Barcellos — Analista de Prevenção a Ilícitos",
+          "text": "Estou desenhando o fluxo de monitoramento, seleção e análise da área e preciso colocar os prazos máximos de cada etapa direitinho. Pode me confirmar a régua da norma?"
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 fixa prazos máximos para as etapas do fluxo de prevenção a ilícitos (monitoramento, seleção e análise). Qual alternativa os indica corretamente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O monitoramento e a seleção têm até 15 dias, e a análise do dossiê tem mais 15 dias.",
+          "correct": false,
+          "feedback": "Os prazos da Circular BCB nº 3.978/2020 não são de 15 dias: são de 45 dias para cada etapa."
+        },
+        {
+          "id": "b",
+          "text": "A montagem do dossiê de análise pode ser terceirizada para auditorias independentes sediadas no exterior.",
+          "correct": false,
+          "feedback": "O Art. 44 veda a contratação de terceiros para realizar a análise de suspeição e proíbe que essa análise seja executada no exterior."
+        },
+        {
+          "id": "c",
+          "text": "A análise de atipicidades deve ser feita em, no máximo, 24 horas a contar do fato ocorrido.",
+          "correct": false,
+          "feedback": "O prazo de 24 horas não é o da análise: ele se relaciona à comunicação ao COAF, que ocorre até o dia útil seguinte à decisão de comunicar, e não a todo o processo de análise."
+        },
+        {
+          "id": "d",
+          "text": "Os procedimentos de monitoramento e seleção têm até 45 dias contados da ocorrência, e a análise, com formalização em dossiê, até 45 dias contados da seleção.",
+          "correct": true,
+          "feedback": "Correto. O Art. 39, parágrafo único (45 dias para monitoramento e seleção) e o Art. 43, § 1º (45 dias para análise e dossiê) definem a régua temporal da Circular BCB nº 3.978/2020."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-prazo-comunicacao-coaf",
+      "dialogue": [
+        {
+          "speaker": "Wellington Ramos — Analista Sênior de PLD",
+          "text": "Terminei a análise de um caso e o parecer é de suspeita de lavagem de dinheiro. Já estou com a decisão de comunicar fechada e preciso saber quanto tempo tenho para enviar ao COAF."
+        }
+      ],
+      "question": "Concluída a análise e caracterizada a suspeita de lavagem de dinheiro ou financiamento do terrorismo, em que prazo a decisão de comunicar ao COAF deve ser efetivada?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até o fim do mês seguinte à data da operação.",
+          "correct": false,
+          "feedback": "Esperar até o fim do mês seguinte violaria o dever de tempestividade na prestação de inteligência financeira ao COAF."
+        },
+        {
+          "id": "b",
+          "text": "Até o dia útil seguinte ao da decisão de comunicação.",
+          "correct": true,
+          "feedback": "Correto. O Art. 48, § 2º da Circular BCB nº 3.978/2020 determina que a comunicação de operação ou situação suspeita seja feita até o dia útil seguinte ao da decisão de comunicar."
+        },
+        {
+          "id": "c",
+          "text": "Imediatamente, em até 2 horas, por telefone direto com o plenário do COAF.",
+          "correct": false,
+          "feedback": "As comunicações são enviadas eletronicamente pelo Siscoaf. Não existe canal telefônico imediato com o plenário do COAF."
+        },
+        {
+          "id": "d",
+          "text": "Até 5 dias úteis contados do fim do ano civil.",
+          "correct": false,
+          "feedback": "Esse prazo não existe para comunicações de suspeição ao COAF. O prazo é contado da decisão de comunicar, e não do fim do ano."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-11",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-declaracao-negativa-coaf",
+      "dialogue": [
+        {
+          "speaker": "Nathália Cordeiro — Coordenadora de Compliance",
+          "text": "O ano está acabando e, olhando o nosso histórico, não identificamos nenhuma operação suspeita para comunicar ao COAF. Já queria deixar o calendário de obrigações pronto para janeiro."
+        }
+      ],
+      "question": "Se uma instituição autorizada pelo Banco Central não identificou nenhuma operação ou situação suspeita comunicável ao COAF ao longo de todo um ano civil, ela deverá:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ficar isenta de qualquer manifestação perante as autoridades, já que não houve ocorrências.",
+          "correct": false,
+          "feedback": "A ausência de comunicações exige manifestação formal perante o órgão regulador, por meio da Declaração Negativa."
+        },
+        {
+          "id": "b",
+          "text": "Publicar nota explicativa em jornal de grande circulação até 31 de janeiro.",
+          "correct": false,
+          "feedback": "A declaração é prestada diretamente nos sistemas regulatórios (Siscoaf/BCB), sem qualquer publicação em jornal."
+        },
+        {
+          "id": "c",
+          "text": "Solicitar uma auditoria extraordinária do Banco Central para comprovar a ausência de ilícitos.",
+          "correct": false,
+          "feedback": "Não há previsão de convocação de auditoria extraordinária em razão de declaração negativa."
+        },
+        {
+          "id": "d",
+          "text": "Prestar a Declaração Negativa, atestando a não ocorrência de eventos suspeitos, em até 10 dias úteis após o encerramento do ano civil.",
+          "correct": true,
+          "feedback": "Correto. O Art. 54 da Circular BCB nº 3.978/2020 estabelece que a instituição que não efetuou comunicações no ano civil preste declaração atestando a não ocorrência, em até 10 dias úteis após o fim do ano."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "lavagem-sancoes-administrativas",
+      "dialogue": [
+        {
+          "speaker": "Otávio Lacerda — Gerente Jurídico de Compliance",
+          "text": "Vou apresentar para a diretoria o que está em jogo se a gente falhar nas obrigações de identificação, cadastro e comunicação da Lei de Lavagem. Preciso ser preciso sobre o teto da multa."
+        }
+      ],
+      "question": "Em caso de descumprimento das obrigações de identificação, cadastro e comunicação da Lei nº 9.613/1998, as autoridades supervisoras podem aplicar sanções administrativas. Sobre o teto da multa pecuniária do Art. 12, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A multa é variável e limitada ao dobro do valor da operação, ao dobro do lucro real obtido ou ao teto de R$ 20.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. Conforme o Art. 12, II da Lei nº 9.613/1998, a multa pode alcançar até o dobro do valor da operação, o dobro do lucro real ou o limite de R$ 20.000.000,00."
+        },
+        {
+          "id": "b",
+          "text": "A multa não pode passar do valor fixo de R$ 100.000,00 por instituição.",
+          "correct": false,
+          "feedback": "O teto da multa administrativa foi elevado pela Lei nº 12.683/2012 para R$ 20 milhões. Não há limite fixo de R$ 100.000,00."
+        },
+        {
+          "id": "c",
+          "text": "A única sanção administrativa prevista na lei é a advertência por escrito.",
+          "correct": false,
+          "feedback": "O rol do Art. 12 inclui advertência, multa pecuniária, inabilitação temporária de administradores (até 10 anos) e cassação da licença."
+        },
+        {
+          "id": "d",
+          "text": "As multas aplicadas pelo COAF e pelo BCB são revertidas como comissão aos analistas do processo.",
+          "correct": false,
+          "feedback": "Os valores arrecadados com multas são recolhidos ao Tesouro Nacional, e não pagos como comissão aos analistas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-13",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sinais-alerta-cedulas-especie",
+      "dialogue": [
+        {
+          "speaker": "Débora Figueiredo — Operadora de Câmbio",
+          "text": "Atendi agora no balcão um cliente querendo vender um bolo de dólares em espécie. As notas estavam úmidas, com cheiro forte de mofo e amarradas em maços fora do padrão. Fiquei sem saber o que fazer."
+        }
+      ],
+      "question": "Nos termos da Carta Circular BCB nº 4.001/2020, esse fato:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É uma situação corriqueira de mercado, que dispensa qualquer registro ou atenção especial.",
+          "correct": false,
+          "feedback": "Cédulas com aspecto de armazenamento impróprio são hipótese expressa de indício de suspeita, então a situação exige atenção e registro."
+        },
+        {
+          "id": "b",
+          "text": "Obriga a instituição a apreender imediatamente o dinheiro e acionar a Polícia Militar no balcão.",
+          "correct": false,
+          "feedback": "A instituição não tem poder de polícia para apreender valores. Deve conduzir o rito de análise do dossiê e, se confirmada a suspeita, comunicar o COAF."
+        },
+        {
+          "id": "c",
+          "text": "Impede a corretora de comprar as moedas, sob pena de multa sanitária.",
+          "correct": false,
+          "feedback": "A norma não proíbe a compra por esse motivo. Ela determina o monitoramento e a análise de suspeição no âmbito do sistema de compliance."
+        },
+        {
+          "id": "d",
+          "text": "Constitui sinal de alerta relacionado a operações em espécie, que exige seleção para análise de suspeição de ilícito.",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 (Art. 1º, II, 'e') enquadra expressamente cédulas úmidas, malcheirosas, mofadas ou com marcas desconhecidas como sinal de alerta de PLD/FTP."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-14",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "sinais-alerta-mercado-ouro",
+      "dialogue": [
+        {
+          "speaker": "Ricardo Sampaio — Analista de Prevenção a Ilícitos",
+          "text": "Chegou uma consulta sobre a primeira aquisição de ouro de um novo fornecedor. Quero conferir os sinais de alerta que a IN BCB nº 461/2024 acrescentou antes de seguir com o cadastro."
+        }
+      ],
+      "question": "A IN BCB nº 461/2024 incluiu na Carta Circular nº 4.001/2020 sinais de alerta específicos para o ouro ativo financeiro ou instrumento cambial. Qual situação configura indício de suspeita na primeira aquisição de ouro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Venda de ouro acompanhada de nota fiscal eletrônica, com recolhimento comprovado de tributos.",
+          "correct": false,
+          "feedback": "Venda com nota fiscal idônea e tributos recolhidos é o procedimento regular de comércio, e não sinal de alerta."
+        },
+        {
+          "id": "b",
+          "text": "Proposta de venda de ouro com pagamento em espécie ou com pagamento direcionado a terceiros.",
+          "correct": true,
+          "feedback": "Correto. A IN BCB nº 461/2024 (Art. 1º, XVIII, 'a' e 'b') lista como indícios de suspeita a proposta de venda de ouro com pagamento em espécie ou a terceiros."
+        },
+        {
+          "id": "c",
+          "text": "Oferta de ouro extraído de área com título minerário ativo e cadastrado na ANM.",
+          "correct": false,
+          "feedback": "Título minerário ativo e regular perante a ANM indica regularidade na origem da lavra, e não suspeita."
+        },
+        {
+          "id": "d",
+          "text": "Venda por empresa de mineração tradicional, com pagamento por transferência bancária direta para a conta da própria mineradora.",
+          "correct": false,
+          "feedback": "A transferência bancária direta entre as contas dos titulares é a forma recomendada para garantir a rastreabilidade financeira."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "abt1-3-15",
+      "categories": [
+        "cambio-pld"
+      ],
+      "exam": true,
+      "topicTag": "pld-relatorio-efetividade",
+      "dialogue": [
+        {
+          "speaker": "Simone Vasconcelos — Gerente de Governança de PLD",
+          "text": "Estou montando o cronograma anual da área e preciso encaixar o Relatório de Avaliação de Efetividade dos controles de PLD/FTP. Quais são os prazos e a governança dele?"
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 exige o Relatório de Avaliação de Efetividade para a melhoria contínua dos controles de PLD/FTP. Sobre seus prazos e governança, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O plano de ação para corrigir as deficiências apontadas deve ser enviado ao Banco Central em até 24 horas.",
+          "correct": false,
+          "feedback": "O plano de ação e seu relatório de acompanhamento devem ser encaminhados aos órgãos de governança até 30 de junho do ano seguinte (Art. 65, § 2º), e não ao Banco Central em 24 horas."
+        },
+        {
+          "id": "b",
+          "text": "O relatório é elaborado mensalmente e publicado no Diário Oficial da União.",
+          "correct": false,
+          "feedback": "A avaliação de efetividade é anual e tem caráter de governança interna, sem publicação no Diário Oficial."
+        },
+        {
+          "id": "c",
+          "text": "O relatório tem data-base de 31 de dezembro e deve ser encaminhado até 31 de março do ano seguinte ao comitê de auditoria e ao conselho de administração ou à diretoria.",
+          "correct": true,
+          "feedback": "Correto. Conforme o Art. 62, §§ 1º e 2º da Circular BCB nº 3.978/2020, o relatório é anual, com data-base de 31 de dezembro, e é enviado ao conselho ou à diretoria até 31 de março."
+        },
+        {
+          "id": "d",
+          "text": "A elaboração do relatório substitui a necessidade de manter auditoria interna na instituição.",
+          "correct": false,
+          "feedback": "O relatório de efetividade é uma ferramenta de governança e não elimina a atuação nem a responsabilidade da auditoria interna."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "questions": [
+    {
+      "sceneId": "ent-31",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "vet-valor-efetivo-total-transparencia",
+      "dialogue": [
+        {
+          "speaker": "Camila Barreto — Analista de Atendimento",
+          "text": "Um cliente me perguntou por que o número que aparece no comprovante de câmbio é diferente da cotação do dia. Preciso explicar direitinho o que é esse VET que a gente informa."
+        }
+      ],
+      "question": "Nas operações de câmbio com clientes, as instituições autorizadas e os correspondentes são obrigados a informar o Valor Efetivo Total (VET). O VET representa:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A taxa de câmbio pura, sem a inclusão de tarifas ou tributos.",
+          "correct": false,
+          "feedback": "Essa é a taxa comercial pura, justamente o que o VET não é. O VET existe para ir além da cotação e mostrar o custo completo da operação."
+        },
+        {
+          "id": "b",
+          "text": "O custo total da operação por unidade de moeda estrangeira, reunindo a taxa de câmbio, as tarifas bancárias e o IOF incidentes.",
+          "correct": true,
+          "feedback": "Correto. O VET consolida taxa de câmbio, tarifas e IOF em um único indicador, o que dá transparência ao cliente e permite comparar propostas de instituições diferentes."
+        },
+        {
+          "id": "c",
+          "text": "A comissão paga pela instituição ao gerente de vendas pela operação.",
+          "correct": false,
+          "feedback": "A remuneração interna da equipe comercial não é custo repassado ao cliente nem tem relação com o VET. A definição está errada."
+        },
+        {
+          "id": "d",
+          "text": "A taxa de juros futura praticada no mercado interbancário de derivativos.",
+          "correct": false,
+          "feedback": "Taxas futuras de derivativos são referência de mercado e não representam o custo efetivo de uma operação de câmbio específica com o cliente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-32",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "livre-porte-valores-viagens-internacionais",
+      "dialogue": [
+        {
+          "speaker": "Rafael Quintela — Especialista de Câmbio",
+          "text": "Chegou uma consulta de um cliente que viaja para fora do país na semana que vem levando dinheiro em espécie. Ele quer saber até quanto pode levar sem declarar nada à Receita."
+        }
+      ],
+      "question": "Segundo a Lei nº 14.286/2021, o passageiro que entra no Brasil ou sai dele portando dinheiro em espécie (moeda nacional ou estrangeira) fica dispensado de declarar à Receita Federal até qual limite?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "R$ 10.000,00.",
+          "correct": false,
+          "feedback": "Esse era o limite antigo, que foi atualizado pelo Novo Marco Legal do Câmbio."
+        },
+        {
+          "id": "b",
+          "text": "US$ 3.000,00 ou o equivalente em outra moeda.",
+          "correct": false,
+          "feedback": "US$ 3 mil é o teto geral das operações feitas por correspondente cambial, não o limite de porte de valores em viagem."
+        },
+        {
+          "id": "c",
+          "text": "US$ 10.000,00 ou o equivalente em outra moeda.",
+          "correct": true,
+          "feedback": "Correto. Pela Lei nº 14.286/2021, o livre porte de dinheiro em espécie, sem necessidade de e-DBV (Declaração de Bens do Viajante), vai até US$ 10.000,00 ou equivalente."
+        },
+        {
+          "id": "d",
+          "text": "US$ 100.000,00 ou o equivalente em outra moeda.",
+          "correct": false,
+          "feedback": "O valor é excessivo: um limite dessa ordem não corresponde ao livre porte, e acima do teto correto já é preciso declarar."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-33",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "cambio-eventual-entre-pessoas-fisicas",
+      "dialogue": [
+        {
+          "speaker": "Larissa Nogueira — Analista de Produtos",
+          "text": "Chegou uma pergunta no atendimento: dois amigos querem trocar dólares em espécie entre si, sem passar por instituição nenhuma. Isso tem algum limite ou condição na lei?"
+        }
+      ],
+      "question": "A Lei nº 14.286/2021 passou a permitir operações de câmbio eventuais e não profissionais diretamente entre pessoas físicas. Essa permissão está sujeita a qual limite e condição?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Não há limite de valor, e a prática pode ser feita de forma profissional e diária.",
+          "correct": false,
+          "feedback": "A permissão não é ilimitada nem profissional: a lei só tolera a negociação eventual e fixa um teto de valor."
+        },
+        {
+          "id": "b",
+          "text": "Limite de até US$ 500,00 ou equivalente por operação, desde que de forma eventual e não profissional.",
+          "correct": true,
+          "feedback": "Correto. O Art. 19 da Lei nº 14.286/2021 deixa fora do regime cambial a negociação eventual e não profissional de moeda estrangeira em espécie entre pessoas físicas, até o limite de US$ 500,00."
+        },
+        {
+          "id": "c",
+          "text": "Limite de até US$ 10.000,00 por operação, exclusivamente via Pix.",
+          "correct": false,
+          "feedback": "O limite está errado e a lei não condiciona a permissão ao uso do Pix. O teto de US$ 10 mil é o do livre porte de dinheiro em viagens, outro assunto."
+        },
+        {
+          "id": "d",
+          "text": "É totalmente proibida e constitui crime inafiançável de agiotagem cambial.",
+          "correct": false,
+          "feedback": "A lei justamente passou a permitir a prática eventual entre pessoas físicas, dentro do limite previsto. Não há crime de agiotagem cambial nesse caso."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-34",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "prazo-guarda-documentos-cambio-compliance",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Matos — Coordenador de Controles Internos",
+          "text": "Estamos revisando a rotina de arquivamento do time e eu quero fixar no procedimento por quanto tempo a gente precisa guardar cadastro e registros de operações para o BCB e o COAF."
+        }
+      ],
+      "question": "Conforme a Circular BCB nº 3.978/2020, as instituições devem manter à disposição do BCB e do COAF os dados cadastrais e os registros das transações. Qual é o prazo regulamentar de guarda dessas informações?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "1 ano após a conclusão da operação.",
+          "correct": false,
+          "feedback": "O prazo é extremamente curto frente ao exigido pela regulação, que busca permitir a reconstituição de operações muito tempo depois."
+        },
+        {
+          "id": "b",
+          "text": "No mínimo 10 anos, contados a partir do primeiro dia do ano seguinte ao do encerramento do relacionamento ou da conclusão da transação.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 fixa o prazo geral de guarda de registros e cadastros em 10 anos, com contagem a partir do primeiro dia do ano seguinte."
+        },
+        {
+          "id": "c",
+          "text": "20 anos para operações em dinheiro e 3 anos para operações eletrônicas.",
+          "correct": false,
+          "feedback": "A norma não faz essa distinção por meio de pagamento. O prazo geral é único e os valores citados são incompatíveis com a regulação de compliance."
+        },
+        {
+          "id": "d",
+          "text": "Até que o cliente solicite a exclusão dos dados com base na LGPD.",
+          "correct": false,
+          "feedback": "O prazo de guarda é uma obrigação regulatória da instituição e não depende de pedido do cliente. Um pedido de exclusão não afasta o dever de manter os registros."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-35",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "sigilo-bancario-excecoes-lc-105",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Valadares — Analista Jurídica",
+          "text": "Recebi dois pedidos de informação sobre clientes e fiquei em dúvida se algum deles dispensa ordem judicial. Quero revisar com você o que a Lei do Sigilo Bancário permite."
+        }
+      ],
+      "question": "A Lei Complementar nº 105/2001 protege o sigilo das operações das instituições financeiras, mas prevê situações em que o fornecimento de informações não é quebra de sigilo. Qual hipótese NÃO exige autorização judicial?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O envio de extratos bancários detalhados de correntistas à imprensa esportiva.",
+          "correct": false,
+          "feedback": "Entregar extratos à imprensa é violação grave do sigilo, sem amparo em qualquer exceção legal. Configura conduta ilícita."
+        },
+        {
+          "id": "b",
+          "text": "A troca de informações cadastrais entre instituições financeiras para fins defensivos e o envio de comunicações de operações atípicas ao COAF.",
+          "correct": true,
+          "feedback": "Correto. A LC nº 105/2001 prevê expressamente que a troca de dados cadastrais entre instituições financeiras e as comunicações obrigatórias ao COAF são exceções legais, que não configuram quebra de sigilo."
+        },
+        {
+          "id": "c",
+          "text": "A interceptação telefônica e a quebra de sigilo bancário solicitadas diretamente por um detetive particular.",
+          "correct": false,
+          "feedback": "Um detetive particular não tem poder legal para requerer quebra de sigilo nem interceptação. Atender esse pedido seria conduta ilícita, possivelmente criminosa."
+        },
+        {
+          "id": "d",
+          "text": "A divulgação das senhas de acesso aos aplicativos bancários de clientes inadimplentes.",
+          "correct": false,
+          "feedback": "Senhas de acesso são protegidas e a inadimplência não autoriza divulgá-las. É uma violação grave do sigilo e das regras de segurança."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-36",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "saque-deposito-especie-50-mil-provisionamento",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Pimentel — Gerente de Operações",
+          "text": "Um cliente da área quer sacar um valor bem alto em dinheiro vivo e me perguntou se pode chegar e levar na hora. Preciso saber o que a norma exige para saques e depósitos em espécie desse porte."
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 estabeleceu regras rigorosas para saques e depósitos em espécie de valor igual ou superior a R$ 50.000,00. Sobre essas regras, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O saque em espécie igual ou superior a R$ 50.000,00 exige provisionamento prévio pelo cliente com antecedência mínima de 5 dias úteis, e a instituição deve comunicar o evento ao COAF até o dia útil seguinte à sua realização.",
+          "correct": false,
+          "feedback": "Incorreta. A antecedência mínima é de 3 dias úteis, e não de 5."
+        },
+        {
+          "id": "b",
+          "text": "O saque em espécie igual ou superior a R$ 50.000,00 exige provisionamento prévio pelo cliente com antecedência mínima de 3 dias úteis, e a instituição deve comunicar o evento ao COAF até o dia útil seguinte à sua realização.",
+          "correct": true,
+          "feedback": "Correto. Pela Circular BCB nº 3.978/2020, o saque a partir de R$ 50 mil exige 3 dias úteis de aviso prévio, e a comunicação ao COAF é compulsória, feita até o dia útil seguinte."
+        },
+        {
+          "id": "c",
+          "text": "O saque em espécie igual ou superior a R$ 50.000,00 exige provisionamento prévio pelo cliente com antecedência mínima de 3 dias úteis, mas a instituição só deve comunicar o evento ao COAF se houver suspeita específica.",
+          "correct": false,
+          "feedback": "Incorreta. A comunicação ao COAF é obrigatória para essas operações, e não depende de suspeita específica."
+        },
+        {
+          "id": "d",
+          "text": "O saque em espécie igual ou superior a R$ 50.000,00 exige provisionamento prévio pelo cliente com antecedência mínima de 3 dias úteis, e a instituição deve comunicar o evento ao COAF em até 30 dias após a sua realização.",
+          "correct": false,
+          "feedback": "Incorreta. O prazo de comunicação é até o dia útil seguinte, e não 30 dias."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-37",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "identificacao-portador-especie-2-mil",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Albuquerque — Analista de Cadastro",
+          "text": "Alguém foi ao balcão depositar dinheiro em espécie na conta de outra pessoa e eu não tinha certeza se precisava registrar os dados de quem estava no atendimento. Qual é o valor de corte?"
+        }
+      ],
+      "question": "Segundo as normas de PLD/FTP, a partir de qual valor em espécie as instituições financeiras devem registrar os dados de identificação do portador que faz o depósito ou o saque em conta de terceiros?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "R$ 100,00.",
+          "correct": false,
+          "feedback": "O valor está abaixo da régua normativa. A regra não exige identificação do portador a partir de um valor tão baixo."
+        },
+        {
+          "id": "b",
+          "text": "R$ 2.000,00.",
+          "correct": true,
+          "feedback": "Correto. Conforme a Circular BCB nº 3.978/2020, depósitos ou saques em espécie de valor igual ou superior a R$ 2.000,00 exigem a identificação do portador do recurso."
+        },
+        {
+          "id": "c",
+          "text": "R$ 50.000,00.",
+          "correct": false,
+          "feedback": "R$ 50 mil é o patamar do provisionamento e da comunicação automática de saques e depósitos em espécie ao COAF, não o da identificação do portador."
+        },
+        {
+          "id": "d",
+          "text": "R$ 1.000.000,00.",
+          "correct": false,
+          "feedback": "O valor é discrepante da régua normativa e deixaria sem identificação quase todas as movimentações em espécie."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-38",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "prazos-monitoramento-analise-45-45-dias",
+      "dialogue": [
+        {
+          "speaker": "Tiago Rezende — Analista de Monitoramento",
+          "text": "Estou montando o fluxo de tratamento de alertas e preciso definir quanto tempo o time tem para selecionar uma operação suspeita e quanto tempo para concluir a análise. Qual é o desenho da norma?"
+        }
+      ],
+      "question": "No tratamento de operações suspeitas, há as etapas de monitoramento (seleção) e de análise pela equipe de compliance. De acordo com o Banco Central, quais são os prazos máximos dessas etapas?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 dias para a seleção e 5 dias para a análise.",
+          "correct": false,
+          "feedback": "Os prazos divergem da regra do BCB. Não é esse o desenho de prazos fixado para seleção e análise."
+        },
+        {
+          "id": "b",
+          "text": "Até 45 dias para a seleção/monitoramento, seguidos de até mais 45 dias para concluir a análise de suspeição.",
+          "correct": true,
+          "feedback": "Correto. O rito regulatório prevê até 45 dias para a seleção das operações atípicas e até mais 45 dias para concluir a análise e decidir sobre o reporte ao COAF."
+        },
+        {
+          "id": "c",
+          "text": "1 ano para a seleção e 2 anos para a análise.",
+          "correct": false,
+          "feedback": "Prazos de anos são incompatíveis com a urgência da inteligência financeira e com a regra do BCB."
+        },
+        {
+          "id": "d",
+          "text": "Prazo indeterminado, a critério do diretor de operações.",
+          "correct": false,
+          "feedback": "A norma fixa prazos máximos e o tratamento de alertas não fica ao critério da área de operações, que ainda teria conflito de interesse."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-39",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "prazo-comunicacao-suspeita-coaf",
+      "dialogue": [
+        {
+          "speaker": "Aline Siqueira — Analista de Compliance",
+          "text": "Concluí a análise de um caso e confirmei a suspeita de lavagem de dinheiro. Agora preciso saber até quando a comunicação ao COAF tem que ser enviada."
+        }
+      ],
+      "question": "Depois que a equipe de compliance conclui a análise e confirma a suspeita de lavagem de dinheiro ou de financiamento do terrorismo, em que prazo a comunicação ao COAF deve ser feita?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Em até 30 dias úteis após o encerramento do trimestre.",
+          "correct": false,
+          "feedback": "Esperar o fim do trimestre é incompatível com a urgência da inteligência financeira. A comunicação não é periódica."
+        },
+        {
+          "id": "b",
+          "text": "Até o dia útil seguinte àquele em que a instituição decidiu comunicar.",
+          "correct": true,
+          "feedback": "Correto. Decidida a suspeição de PLD/FTP, a comunicação deve ser transmitida ao COAF até o dia útil imediatamente seguinte à decisão."
+        },
+        {
+          "id": "c",
+          "text": "Apenas no balanço anual da instituição.",
+          "correct": false,
+          "feedback": "Comunicação de suspeita não espera o balanço. Um prazo anual esvaziaria a utilidade da informação para as autoridades."
+        },
+        {
+          "id": "d",
+          "text": "Em até 6 meses após a realização do contrato de câmbio.",
+          "correct": false,
+          "feedback": "Seis meses é prazo incompatível com a regra. O prazo corre da decisão de comunicar e é de um dia útil."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-40",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "sce-ied-sce-credito-capital-estrangeiro",
+      "dialogue": [
+        {
+          "speaker": "Bruno Albuquerque — Analista de Câmbio",
+          "text": "Um cliente vai receber capital de um investidor de fora e outro vai captar crédito no exterior. Eu queria confirmar a partir de que valores precisamos reportar essas operações ao SCE."
+        }
+      ],
+      "question": "A Resolução BCB nº 278/2022 disciplina o registro de capital estrangeiro no país por meio do SCE. Sobre os limites de reporte obrigatório, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O SCE-IED (investimento estrangeiro direto) deve ser prestado em operações a partir de US$ 100.000,00 ou equivalente, e o SCE-Crédito, para operações de crédito externo a partir de US$ 1.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 278/2022 fixa o piso de US$ 100 mil para o SCE-IED e de US$ 1 milhão para o SCE-Crédito."
+        },
+        {
+          "id": "b",
+          "text": "Todas as operações acima de R$ 10,00 devem ser declaradas diariamente no SCE-IED.",
+          "correct": false,
+          "feedback": "Esse piso e essa periodicidade não existem na norma. Os limites de reporte são em dólares e muito superiores."
+        },
+        {
+          "id": "c",
+          "text": "O SCE-Crédito se aplica apenas a pessoas físicas que tomem empréstimo em moeda nacional no cheque especial.",
+          "correct": false,
+          "feedback": "O SCE-Crédito trata de operações de crédito externo, e não de cheque especial em reais. O escopo descrito contraria a norma."
+        },
+        {
+          "id": "d",
+          "text": "O registro no SCE é opcional e isento de qualquer fiscalização do Banco Central.",
+          "correct": false,
+          "feedback": "O reporte é obrigatório nos limites da norma e está sujeito à fiscalização do Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-41",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "declaracao-capital-brasileiro-exterior-cbe",
+      "dialogue": [
+        {
+          "speaker": "Sofia Menezes — Consultora de Câmbio",
+          "text": "Uma cliente mantém recursos em conta fora do país e perguntou se precisa prestar alguma declaração ao Banco Central e com que frequência. Quero responder com os números certos da norma."
+        }
+      ],
+      "question": "A Resolução BCB nº 279/2022 regulamenta a Declaração de Capital Brasileiro no Exterior (CBE). Sobre limites e periodicidade das declarações de residentes no Brasil, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A declaração de CBE é sempre mensal, qualquer que seja o valor dos bens mantidos fora do país.",
+          "correct": false,
+          "feedback": "Não existe periodicidade mensal. As declarações são anual e trimestral, conforme o valor dos ativos."
+        },
+        {
+          "id": "b",
+          "text": "A declaração anual é obrigatória para ativos no exterior iguais ou superiores a US$ 1.000.000,00 em 31 de dezembro, e a trimestral, para ativos iguais ou superiores a US$ 100.000.000,00 nas datas-bases de março, junho e setembro.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 279/2022 prevê CBE anual para ativos a partir de US$ 1 milhão em 31 de dezembro e CBE trimestral para ativos a partir de US$ 100 milhões nas datas-bases intermediárias."
+        },
+        {
+          "id": "c",
+          "text": "Somente multinacionais do setor de petróleo estão sujeitas à prestação de CBE.",
+          "correct": false,
+          "feedback": "A obrigação alcança pessoas físicas e jurídicas residentes no Brasil, e não um setor específico."
+        },
+        {
+          "id": "d",
+          "text": "Deixar de apresentar a declaração de CBE não acarreta sanção nem multa administrativa.",
+          "correct": false,
+          "feedback": "O descumprimento sujeita o declarante a multas aplicadas pelo Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-42",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "sinais-alerta-red-flags-carta-circular-4001",
+      "dialogue": [
+        {
+          "speaker": "Marcos Vilela — Analista de Monitoramento",
+          "text": "Na fila de hoje tem quatro operações de câmbio de perfis bem diferentes e eu preciso decidir qual delas merece atenção por sinal de alerta. Me ajuda a aplicar o que a Carta Circular diz?"
+        }
+      ],
+      "question": "A Carta Circular BCB nº 4.001/2020 lista operações e situações que são indícios de suspeita de lavagem de dinheiro no mercado de câmbio. Qual das situações abaixo é uma clara red flag regulatória?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Contrato de câmbio de importadora com 20 anos de histórico, fechado à taxa de mercado praticada no momento da liquidação.",
+          "correct": false,
+          "feedback": "É uma conduta regular e legítima: cliente com longo histórico, taxa de mercado e liquidação normal. Não é sinal de alerta."
+        },
+        {
+          "id": "b",
+          "text": "Operação de câmbio com preço muito divergente das taxas de mercado ou sem fundamentação econômica ou comercial plausível.",
+          "correct": true,
+          "feedback": "Correto. Variações injustificadas de preço ou taxa frente ao mercado, e operações sem lógica econômica, são sinais claros de atipicidade e de possível lavagem ou evasão, conforme a Carta Circular BCB nº 4.001/2020."
+        },
+        {
+          "id": "c",
+          "text": "Pagamento de fatura de exportação em moeda estrangeira, por transferência bancária regular, vindo do comprador estrangeiro final.",
+          "correct": false,
+          "feedback": "Recebimento regular, rastreável e vindo do comprador efetivo é uma prática legítima do comércio exterior. Não indica suspeita."
+        },
+        {
+          "id": "d",
+          "text": "Apresentação de documentos originais e de fácil verificação cadastral.",
+          "correct": false,
+          "feedback": "Documentação verificável reduz o risco, em vez de aumentá-lo. É o comportamento esperado de um cliente regular."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-43",
+      "categories": [
+        "limites",
+        "cambio-pld"
+      ],
+      "topicTag": "fracionamento-operacoes-smurfing",
+      "dialogue": [
+        {
+          "speaker": "Daniela Cardoso — Analista de Monitoramento",
+          "text": "Notei um cliente que fez várias operações pequenas em sequência em vez de uma só e fiquei com a pulga atrás da orelha. Como a gente deve enxergar esse tipo de padrão sob a ótica de PLD/FTP?"
+        }
+      ],
+      "question": "O fracionamento de operações consiste em dividir grandes montantes em vários valores menores. Sob a ótica de PLD/FTP, qual é a principal finalidade dessa prática e como as instituições a tratam?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É uma técnica recomendada pelos bancos para que os clientes paguem menos tarifas de manutenção de conta.",
+          "correct": false,
+          "feedback": "Os bancos não recomendam a prática, e seu significado em PLD/FTP não tem relação com tarifas de manutenção de conta."
+        },
+        {
+          "id": "b",
+          "text": "É uma tentativa deliberada de burlar os limites regulatórios de identificação, aprovação ou comunicação compulsória, devendo ser selecionada e analisada como sinal de alerta (red flag).",
+          "correct": true,
+          "feedback": "Correto. O fracionamento (smurfing) visa driblar as réguas de controle, como o patamar de R$ 50 mil em espécie ou as alçadas internas, e é um dos indícios de atipicidade mais importantes do mercado."
+        },
+        {
+          "id": "c",
+          "text": "É um procedimento legal que isenta a operação do cumprimento das regras de KYC.",
+          "correct": false,
+          "feedback": "Fracionar não dispensa o KYC nem nenhum outro controle. As regras de conheça seu cliente continuam valendo para cada operação."
+        },
+        {
+          "id": "d",
+          "text": "É uma operação autorizada, desde que realizada exclusivamente nos finais de semana.",
+          "correct": false,
+          "feedback": "Dia da semana não legitima o fracionamento. A afirmação é falsa: a prática continua sendo sinal de alerta em qualquer data."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-44",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "sinais-alerta-mercado-ouro-in-bcb-461",
+      "dialogue": [
+        {
+          "speaker": "Henrique Santana — Analista de Risco",
+          "text": "Estamos estudando as regras novas de vigilância para operações com ouro e eu queria testar o time: sabendo o que é sinal de alerta, quem consegue apontar a situação que é perfeitamente regular?"
+        }
+      ],
+      "question": "Conforme a IN BCB nº 461/2024, constituem sinais de alerta específicos para negociações com ouro ativo financeiro ou instrumento cambial todas as situações a seguir, EXCETO:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apresentação de nota fiscal eletrônica emitida por DTVM autorizada, com identificação completa do título minerário, mas com liquidação em espécie ou direcionada a terceiros sem vínculo com a operação.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: pagamento em espécie ou a terceiros sem vínculo com a operação é, sim, sinal de alerta; o trecho que a torna alerta é \"liquidação em espécie ou direcionada a terceiros\"."
+        },
+        {
+          "id": "b",
+          "text": "Apresentação de nota fiscal eletrônica emitida por DTVM autorizada e liquidação por transferência bancária, mas com ouro extraído de região com registro de garimpo ilegal e sem guia de licenciamento.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: ouro de região com garimpo ilegal e sem licenciamento é, sim, sinal de alerta, mesmo com nota fiscal e liquidação bancária."
+        },
+        {
+          "id": "c",
+          "text": "Apresentação de nota fiscal eletrônica emitida por DTVM autorizada, com identificação completa do título minerário e liquidação por transferência bancária.",
+          "correct": true,
+          "feedback": "Correto, é a exceção. Trata-se de operação plenamente regular: nota fiscal eletrônica, liquidação bancária rastreável e identificação do título minerário não configuram sinal de alerta."
+        },
+        {
+          "id": "d",
+          "text": "Apresentação de nota fiscal eletrônica emitida por DTVM autorizada e liquidação por transferência bancária, mas com peso e teor de pureza do ouro incompatíveis com os documentos informados.",
+          "correct": false,
+          "feedback": "Incorreta como resposta: incompatibilidade entre o ouro entregue e os documentos é, sim, sinal de alerta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-45",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "crimes-evasao-divisas-falsa-identidade-lei-7492",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Teixeira — Analista Jurídica",
+          "text": "Estou preparando um material de treinamento sobre os crimes contra o sistema financeiro e queria checar as penas de três artigos da Lei 7.492 que costumam cair em prova."
+        }
+      ],
+      "question": "A Lei nº 7.492/1986 tipifica crimes contra o Sistema Financeiro Nacional. Em relação às penas dos artigos 16, 21 e 22 dessa lei, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Operar instituição financeira sem autorização (Art. 16) é punido com detenção de 10 a 20 anos.",
+          "correct": false,
+          "feedback": "O Art. 16 prevê reclusão de 1 a 4 anos e multa. A pena e o regime descritos não correspondem ao texto da lei."
+        },
+        {
+          "id": "b",
+          "text": "Prestar informação falsa ou atribuir-se falsa identidade em operação de câmbio (Art. 21) é punido com detenção de 1 a 4 anos e multa, sendo o único dos três crimes punido com detenção.",
+          "correct": true,
+          "feedback": "Correto. Entre os artigos 16, 21 e 22 da Lei nº 7.492/1986, apenas o Art. 21 é punido com detenção (1 a 4 anos e multa); os outros dois preveem reclusão."
+        },
+        {
+          "id": "c",
+          "text": "A evasão de divisas (Art. 22) é crime menor, punido apenas com advertência por escrito do Banco Central.",
+          "correct": false,
+          "feedback": "A evasão de divisas é crime grave, punido com reclusão de 2 a 6 anos e multa. Advertência é sanção administrativa, não pena criminal."
+        },
+        {
+          "id": "d",
+          "text": "Nenhum dos crimes contra o SFN prevê cumulação com sanção pecuniária ou multa.",
+          "correct": false,
+          "feedback": "Todos esses crimes cumulam a pena privativa de liberdade com multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

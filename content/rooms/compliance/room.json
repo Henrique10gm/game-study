@@ -1,0 +1,77 @@
+{
+  "id": "compliance",
+  "order": 1,
+  "title": "Sala ABT1",
+  "tagline": "Rumo à ABT1",
+  "accent": "#DBFFA5",
+  "kicker": "Missões ABT1",
+  "menuTitle": "Escolha a missão",
+  "blurb": "Treino para a certificação ABT1: SFN, limites, câmbio, PLD e punições.",
+  "emptyNote": "As missões desta sala estão sendo escritas.",
+  "examLabel": "Prova ABT1",
+  "remoteBank": true,
+  "categories": [
+    "sfn",
+    "cambio-pld",
+    "limites",
+    "punicoes",
+    "leis",
+    "atipicas"
+  ],
+  "modes": [
+    {
+      "id": "prova-abt1",
+      "kind": "exam",
+      "title": "Dia da Prova",
+      "description": "As 106 questões do simulado da certificação."
+    },
+    {
+      "id": "treino-sfn",
+      "kind": "category",
+      "category": "sfn",
+      "title": "Quem é quem no SFN",
+      "description": "Quem faz o quê no Sistema Financeiro Nacional."
+    },
+    {
+      "id": "treino-limites",
+      "kind": "category",
+      "category": "limites",
+      "title": "Na Régua: limites e reportes",
+      "description": "Limites, valores de comunicação e prazos de reporte."
+    },
+    {
+      "id": "treino-cambio",
+      "kind": "category",
+      "category": "cambio-pld",
+      "title": "Mesa de Câmbio e PLD",
+      "description": "Câmbio, PLD/FTP e operações de câmbio e interbancário."
+    },
+    {
+      "id": "treino-punicoes",
+      "kind": "category",
+      "category": "punicoes",
+      "title": "O Tribunal: quem pune quem",
+      "description": "Quem pune quem, sanções administrativas e crimes."
+    },
+    {
+      "id": "treino-leis",
+      "kind": "category",
+      "category": "leis",
+      "title": "Qual é a Lei?",
+      "description": "O número da lei, resolução ou circular que criou, regulou ou mudou cada tema."
+    },
+    {
+      "id": "treino-atipicas",
+      "kind": "category",
+      "category": "atipicas",
+      "title": "Ache o erro: transações atípicas",
+      "description": "Quatro cenários quase iguais: ache a transação atípica (ou a típica) entre eles."
+    },
+    {
+      "id": "treino-erros",
+      "kind": "wrong",
+      "title": "Revanche",
+      "description": "As questões em que sua última tentativa foi errada."
+    }
+  ]
+}

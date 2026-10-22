@@ -1,0 +1,26 @@
+{
+  "id": "banking",
+  "order": 2,
+  "title": "Sala de Banking",
+  "tagline": "Produtos e operações",
+  "accent": "#FCF8EC",
+  "kicker": "Missões Banking",
+  "menuTitle": "Escolha a missão",
+  "blurb": "Treino sobre produtos e operações bancárias.",
+  "emptyNote": "As missões desta sala estão sendo escritas. Volte em breve!",
+  "categories": ["geral"],
+  "modes": [
+    {
+      "id": "banking-geral",
+      "kind": "all",
+      "title": "Treino geral",
+      "description": "Questões de todos os assuntos da sala."
+    },
+    {
+      "id": "banking-erros",
+      "kind": "wrong",
+      "title": "Revanche",
+      "description": "As questões em que sua última tentativa foi errada."
+    }
+  ]
+}

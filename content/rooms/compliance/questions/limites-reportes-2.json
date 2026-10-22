@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "lim-16",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "penalidades-atraso-omissao-capital-estrangeiro",
+      "dialogue": [
+        {
+          "speaker": "Camila Rezende — Analista de Compliance Regulatório",
+          "text": "O financeiro de uma empresa cliente esqueceu de enviar a declaração do SCE dentro do prazo e agora está preocupado com as consequências. O que pode acontecer com ela?"
+        }
+      ],
+      "question": "A pessoa jurídica no Brasil que deixar de prestar, no prazo fixado pelo Banco Central, as informações obrigatórias sobre Capital Estrangeiro no País (SCE), ou prestar informações falsas ou incorretas, sujeita-se a:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Anulação automática do contrato social e liquidação compulsória da empresa pelo Banco Central.",
+          "correct": false,
+          "feedback": "O Banco Central não tem competência para anular contratos sociais nem para decretar a liquidação de empresas não financeiras."
+        },
+        {
+          "id": "b",
+          "text": "Penalidades administrativas aplicadas pelo Banco Central do Brasil, incluindo multa pecuniária.",
+          "correct": true,
+          "feedback": "Correto. Atraso, omissão ou informação enganosa ou falsa no SCE configuram infração administrativa, sujeita a multa aplicada pelo Banco Central, nos termos da Lei nº 14.286/2021 e da regulamentação sancionatória do BCB."
+        },
+        {
+          "id": "c",
+          "text": "Pena automática de reclusão de 3 a 10 anos para o contador da empresa.",
+          "correct": false,
+          "feedback": "Sanção penal é atribuição exclusiva do Poder Judiciário. A simples omissão regulatória é infração administrativa, sem reclusão automática."
+        },
+        {
+          "id": "d",
+          "text": "Bloqueio imediato do CNPJ da empresa perante a Receita Federal.",
+          "correct": false,
+          "feedback": "O bloqueio de CNPJ não é um ato automático do Banco Central perante a Receita Federal por atraso em declaração cambial."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-17",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "sce-ied-atualizacao-periodica",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Batista — Analista de Onboarding",
+          "text": "Estou revisando uma empresa que recebe investimento de sócio estrangeiro e é bem grande. Ela precisa mandar atualizações periódicas dos dados contábeis ao Banco Central?"
+        }
+      ],
+      "question": "Empresas receptoras de Investimento Estrangeiro Direto enquadradas no SCE-IED têm deveres de atualização periódica. Qual a regra para as empresas com patrimônio líquido ou ativo total igual ou superior a R$ 300.000.000,00?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Prestar declaração trimestral de atualização de dados contábeis ao Banco Central.",
+          "correct": true,
+          "feedback": "Correto. A regulamentação do SCE-IED exige que receptoras de IED com ativo total ou patrimônio líquido igual ou superior a R$ 300.000.000,00 prestem declarações de atualização ao Banco Central nas datas-base previstas na norma."
+        },
+        {
+          "id": "b",
+          "text": "Prestar declaração diária ao Banco Central por meio do SISBACEN.",
+          "correct": false,
+          "feedback": "Não existe exigência de declaração contábil ou patrimonial diária no SCE-IED."
+        },
+        {
+          "id": "c",
+          "text": "Ficar isenta de declarações contábeis se o sócio estrangeiro for residente na América Latina.",
+          "correct": false,
+          "feedback": "A localização geográfica do investidor não afasta a obrigação declaratória, que se baseia no porte financeiro da empresa."
+        },
+        {
+          "id": "d",
+          "text": "Enviar balanços auditados mensalmente à Comissão de Valores Mobiliários (CVM).",
+          "correct": false,
+          "feedback": "A obrigação junto ao Banco Central refere-se ao SCE-IED e não se confunde com os reportes regulares à CVM feitos por companhias abertas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-18",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "sce-responsabilidade-prestacao-informacoes",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lacerda — Analista de Câmbio",
+          "text": "Um cliente recebeu aporte de capital do exterior e perguntou se o banco que liquidou o câmbio é quem informa tudo ao Banco Central. Preciso responder com segurança."
+        }
+      ],
+      "question": "Nas operações de Capital Estrangeiro no País sujeitas a registro no SCE-IED ou no SCE-Crédito, quem tem a responsabilidade legal primária pela veracidade e pela tempestividade das informações prestadas ao Banco Central?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O auditor independente que assina as demonstrações financeiras.",
+          "correct": false,
+          "feedback": "A responsabilidade perante o Banco Central pelas declarações regulatórias é da própria pessoa jurídica declarante, não do auditor."
+        },
+        {
+          "id": "b",
+          "text": "A instituição financeira intermediária que liquidou o contrato de câmbio.",
+          "correct": false,
+          "feedback": "As instituições financeiras dão suporte e liquidam a operação, mas não respondem pelas obrigações declaratórias próprias do cliente no SCE."
+        },
+        {
+          "id": "c",
+          "text": "A empresa receptora do investimento ou o tomador do crédito no Brasil.",
+          "correct": true,
+          "feedback": "Correto. A responsabilidade pela prestação, veracidade, exatidão e tempestividade das informações no SCE é da empresa receptora no país (no IED) ou do tomador/devedor nacional (no Crédito Externo)."
+        },
+        {
+          "id": "d",
+          "text": "O COAF, ao homologar as operações comunicadas pelo sistema bancário.",
+          "correct": false,
+          "feedback": "O COAF é a Unidade de Inteligência Financeira e não homologa registros de capital estrangeiro no Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-19",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "financiamento-importacao-sce-credito",
+      "dialogue": [
+        {
+          "speaker": "Thiago Nogueira — Analista de Comércio Exterior",
+          "text": "Um cliente importador fechou a compra de máquinas com o próprio fornecedor lá fora, que concedeu um prazo longo para pagar. Será que isso precisa ser informado ao Banco Central?"
+        }
+      ],
+      "question": "Um importador brasileiro contrata financiamento direto com um fornecedor estrangeiro para pagar máquinas importadas, com prazo de pagamento de 540 dias e valor de US$ 2.000.000,00. Esse financiamento:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exige registro no SCE-Crédito, por ser crédito externo de longo prazo de valor igual ou superior a US$ 1.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. Financiamentos de importação com prazo superior a 180 dias, concedidos por residentes no exterior a residentes no Brasil, de valor igual ou superior a US$ 1.000.000,00, são crédito externo e exigem prestação de informações no SCE-Crédito (Resolução BCB nº 278/2022)."
+        },
+        {
+          "id": "b",
+          "text": "Está dispensado de qualquer registro, por ser uma operação comercial de importação.",
+          "correct": false,
+          "feedback": "Financiamento de longo prazo concedido pelo fornecedor configura crédito externo e está sujeito a registro, mesmo ligado a uma importação."
+        },
+        {
+          "id": "c",
+          "text": "Deve ser registrado no SCE-IED, por envolver aquisição de bens de capital.",
+          "correct": false,
+          "feedback": "O SCE-IED destina-se a participações no capital social, não a dívidas de financiamento operacional."
+        },
+        {
+          "id": "d",
+          "text": "Só pode ser liquidado se houver pagamento à vista antes do embarque.",
+          "correct": false,
+          "feedback": "A legislação cambial permite expressamente o financiamento de importações de longo prazo; não há exigência de pagamento à vista."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-20",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "conceito-investimento-estrangeiro-direto",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Moura — Analista de Compliance",
+          "text": "Estou montando um material de treinamento sobre capital estrangeiro e preciso deixar bem claro o que caracteriza um IED, para não confundir com outros tipos de aplicação."
+        }
+      ],
+      "question": "Para fins de enquadramento na Resolução BCB nº 278/2022, o Investimento Estrangeiro Direto (IED) caracteriza-se por:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Qualquer aplicação de não residente em títulos de renda fixa no mercado financeiro brasileiro.",
+          "correct": false,
+          "feedback": "Aplicações em renda fixa são investimento de portfólio, regulado por norma específica, e não IED."
+        },
+        {
+          "id": "b",
+          "text": "A intenção de estabelecer vínculo duradouro, mediante aquisição ou manutenção de participação no capital social de empresa no Brasil.",
+          "correct": true,
+          "feedback": "Correto. IED é a alocação de capital no país por não residente que resulta em participação no capital social de empresa brasileira, com intuito de vínculo econômico de longo prazo e poder de gestão ou influência."
+        },
+        {
+          "id": "c",
+          "text": "A compra de criptomoedas custodiadas em corretoras estrangeiras por residentes no Brasil.",
+          "correct": false,
+          "feedback": "Compra de ativos no exterior por residentes diz respeito ao Capital Brasileiro no Exterior (CBE), não ao IED."
+        },
+        {
+          "id": "d",
+          "text": "A concessão de empréstimos de curto prazo entre bancos de fomento.",
+          "correct": false,
+          "feedback": "Empréstimos são operações de crédito externo (dívida), e não investimento em capital social (equity)."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-21",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-anual-limite-data-base",
+      "dialogue": [
+        {
+          "speaker": "Leandro Siqueira — Gerente de Relacionamento",
+          "text": "Um cliente pessoa física me contou que tem conta e imóveis nos Estados Unidos e perguntou se precisa declarar isso ao Banco Central. Vamos conferir o caso dele?"
+        }
+      ],
+      "question": "Uma pessoa física residente no Brasil possui depósitos bancários e imóveis nos Estados Unidos que, somados em 31 de dezembro, totalizam o equivalente a US$ 1.200.000,00. Segundo a Resolução BCB nº 279/2022, essa pessoa:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Está isenta de declarar o CBE ao Banco Central, por se tratar de bens de pessoa natural.",
+          "correct": false,
+          "feedback": "A obrigação de CBE se aplica de forma idêntica a pessoas físicas e jurídicas residentes no Brasil."
+        },
+        {
+          "id": "b",
+          "text": "Deve apresentar a Declaração Anual de CBE, pois seus ativos no exterior atingem ou superam US$ 1.000.000,00 na data-base de 31 de dezembro.",
+          "correct": true,
+          "feedback": "Correto. A Resolução BCB nº 279/2022 obriga pessoas físicas ou jurídicas residentes que tenham ativos no exterior somando US$ 1.000.000,00 ou mais em 31 de dezembro a prestar a Declaração Anual de CBE."
+        },
+        {
+          "id": "c",
+          "text": "Está obrigada a apresentar a Declaração Trimestral de CBE.",
+          "correct": false,
+          "feedback": "A Declaração Trimestral só é exigida para ativos no exterior iguais ou superiores a US$ 100.000.000,00, patamar que esse cliente não atinge."
+        },
+        {
+          "id": "d",
+          "text": "Deve transferir obrigatoriamente 50% dos ativos para o Brasil até março do ano seguinte.",
+          "correct": false,
+          "feedback": "A legislação não impõe repatriação compulsória de ativos mantidos no exterior de forma lícita."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-22",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-trimestral-limite-datas-base",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Andrade — Analista de Compliance Corporativo",
+          "text": "Uma multinacional brasileira cliente tem subsidiárias e aplicações lá fora, tudo bem grande. Preciso confirmar com ela quais declarações de CBE entram no calendário deste ano."
+        }
+      ],
+      "question": "Uma grande empresa multinacional brasileira possui subsidiárias e aplicações financeiras no exterior cujos ativos consolidados somam o equivalente a US$ 150.000.000,00. Segundo a Resolução BCB nº 279/2022, a que modalidade de declaração de CBE ela está sujeita?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas à Declaração Anual de CBE, pois não existe declaração de CBE com periodicidade inferior a um ano.",
+          "correct": false,
+          "feedback": "A norma prevê expressamente a Declaração Trimestral para quem detém grandes volumes de ativos, a partir de US$ 100.000.000,00."
+        },
+        {
+          "id": "b",
+          "text": "Às Declarações Trimestrais referentes às datas-base de 31 de março, 30 de junho e 30 de setembro (além da anual), por superar US$ 100.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. Pela Resolução BCB nº 279/2022, quem tem ativos no exterior iguais ou superiores a US$ 100.000.000,00 nas datas-base de 31 de março, 30 de junho e 30 de setembro deve apresentar as Declarações Trimestrais de CBE."
+        },
+        {
+          "id": "c",
+          "text": "Apenas à apresentação de balanços ao COAF até o quinto dia útil de cada mês.",
+          "correct": false,
+          "feedback": "O COAF não recebe declarações rotineiras de patrimônio e bens no exterior; o CBE é prestado ao Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "À prestação de informações diárias via SISBACEN diretamente ao Departamento de Câmbio.",
+          "correct": false,
+          "feedback": "As declarações de CBE seguem periodicidade trimestral e anual, nas datas-base definidas pela norma, e não diária."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-23",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-dispensa-declaracao",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Farias — Atendimento Premium",
+          "text": "Um cliente brasileiro, residente aqui, mantém uma conta na Europa e ficou em dúvida se precisa fazer a declaração de capital no exterior ao Banco Central. Vamos ver o caso."
+        }
+      ],
+      "question": "Um brasileiro residente no país mantém uma conta bancária na Europa com saldo equivalente a US$ 450.000,00 em 31 de dezembro. Em relação à Declaração de Capital Brasileiro no Exterior (CBE) ao Banco Central, ele:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Está desobrigado de prestar a declaração, pois o total de seus ativos no exterior é inferior ao patamar mínimo de US$ 1.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. A Declaração Anual de CBE só é obrigatória se o total de ativos e bens no exterior de residente no Brasil for igual ou superior a US$ 1.000.000,00 na data-base. Valores abaixo disso estão dispensados."
+        },
+        {
+          "id": "b",
+          "text": "Está obrigado a apresentar a declaração e pagar taxa regulatória de 1% sobre o saldo.",
+          "correct": false,
+          "feedback": "Ativos abaixo do piso estão dispensados de declaração, e a entrega do CBE não gera cobrança de taxa de serviço."
+        },
+        {
+          "id": "c",
+          "text": "Deve declarar o valor diretamente no SISCOAF até o primeiro dia útil do ano seguinte.",
+          "correct": false,
+          "feedback": "O SISCOAF serve à comunicação de operações suspeitas ou atípicas, não ao controle de patrimônio no exterior."
+        },
+        {
+          "id": "d",
+          "text": "Deverá solicitar ao Ministério da Fazenda autorização para manter o saldo no exterior.",
+          "correct": false,
+          "feedback": "Manter ativos no exterior é livre para residentes, sem necessidade de autorização ministerial."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-24",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-ativos-sujeitos-declaracao",
+      "dialogue": [
+        {
+          "speaker": "Aline Carvalho — Analista de Compliance",
+          "text": "Um cliente quer entender o que entra na conta quando soma o que tem fora do país para a declaração de CBE. Só o dinheiro em conta, ou tem mais coisa?"
+        }
+      ],
+      "question": "Na composição da Declaração de Capital Brasileiro no Exterior (CBE) a ser prestada ao Banco Central, quais ativos mantidos no exterior por residentes devem ser computados?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas depósitos em conta corrente em instituições financeiras de primeira linha.",
+          "correct": false,
+          "feedback": "A declaração não se restringe a depósitos bancários: abrange todos os tipos de ativos mantidos fora do país."
+        },
+        {
+          "id": "b",
+          "text": "Quaisquer bens, direitos, depósitos em moeda, imóveis, participações societárias, títulos de dívida e créditos mantidos fora do país.",
+          "correct": true,
+          "feedback": "Correto. O CBE abrange a totalidade dos bens e direitos mantidos fora do território nacional por residentes no Brasil, incluindo depósitos, empréstimos concedidos, participações societárias, imóveis, títulos, derivados e demais ativos financeiros ou reais."
+        },
+        {
+          "id": "c",
+          "text": "Apenas imóveis situados em países com os quais o Brasil mantenha tratado para evitar bitributação.",
+          "correct": false,
+          "feedback": "A existência de acordos tributários não limita a exigência de reporte estatístico ao Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "Exclusivamente investimentos em bolsas de valores, como NYSE ou NASDAQ.",
+          "correct": false,
+          "feedback": "Investimentos em qualquer mercado estrangeiro, assim como ativos reais, devem ser somados."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-25",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-penalidades-regulatorias",
+      "dialogue": [
+        {
+          "speaker": "Marcos Vinícius Pires — Analista de Compliance Regulatório",
+          "text": "Durante uma revisão, apareceu um caso de residente que não informou ao Banco Central um patrimônio relevante no exterior. A fiscalização já constatou a omissão. O que ele enfrenta?"
+        }
+      ],
+      "question": "Um residente no Brasil que detinha US$ 5.000.000,00 no exterior omitiu integralmente essa informação na Declaração de CBE ao Banco Central. Constatada a infração pela fiscalização do BCB, quais as penalidades administrativas aplicáveis segundo a regulamentação vigente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Perda imediata da nacionalidade brasileira por ato do Poder Executivo.",
+          "correct": false,
+          "feedback": "O descumprimento de dever regulatório administrativo não é hipótese de perda de nacionalidade."
+        },
+        {
+          "id": "b",
+          "text": "Multa pecuniária administrativa aplicada pelo Banco Central, cujo valor varia conforme a gravidade e o montante omitido.",
+          "correct": true,
+          "feedback": "Correto. Não entregar o CBE, atrasar, prestar informação incorreta ou incompleta, ou falsear a declaração sujeita o infrator a multa punitiva do Banco Central, graduada conforme a natureza da infração e o valor dos ativos envolvidos."
+        },
+        {
+          "id": "c",
+          "text": "Cassação do passaporte do declarante pela Polícia Federal.",
+          "correct": false,
+          "feedback": "A cassação de passaporte é medida cautelar judicial em processo penal ou de execução, e não sanção administrativa direta do Banco Central."
+        },
+        {
+          "id": "d",
+          "text": "Obrigação de doação compulsória de 30% dos ativos à União.",
+          "correct": false,
+          "feedback": "O ordenamento jurídico não prevê doação compulsória de bens como sanção por infração administrativa de CBE."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-26",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-burla-por-fracionamento-titularidade",
+      "dialogue": [
+        {
+          "speaker": "Daniela Cardoso — Analista de PLD",
+          "text": "Chegou um caso curioso: um empresário com patrimônio no exterior passou metade para o nome de um dependente justamente para não precisar declarar. Como devemos enxergar isso?"
+        }
+      ],
+      "question": "Um empresário residente no Brasil detém US$ 1.800.000,00 em ativos no exterior e, para evitar a Declaração de CBE, transfere formalmente a titularidade de US$ 900.000,00 para um parente próximo, seu dependente econômico. Sob a regulação de controle e prevenção a ilícitos, essa conduta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É legal e constitui planejamento tributário e regulatório válido.",
+          "correct": false,
+          "feedback": "Simulação para fraudar norma declaratória obrigatória não é planejamento legítimo, mas fraude."
+        },
+        {
+          "id": "b",
+          "text": "É irregular: caracteriza simulação e falsidade quanto ao real beneficiário dos ativos, sujeitando os envolvidos às penalidades por omissão e informação falsa no CBE.",
+          "correct": true,
+          "feedback": "Correto. A transferência simulada a terceiros ou interpostas pessoas para ocultar a real titularidade e burlar o limite do CBE configura informação falsa ou omissão intencional perante o Banco Central, com sanções administrativas e possíveis desdobramentos penais."
+        },
+        {
+          "id": "c",
+          "text": "Deixa o valor isento de qualquer declaração se o parente for menor de idade.",
+          "correct": false,
+          "feedback": "O menor residente no Brasil que detém bens tem a declaração feita por seus representantes legais, se o patamar for atingido."
+        },
+        {
+          "id": "d",
+          "text": "Transfere a responsabilidade de declarar para a instituição custodiante estrangeira.",
+          "correct": false,
+          "feedback": "A custodiante estrangeira não é sujeito passivo das obrigações regulatórias brasileiras de CBE."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-27",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-residencia-domicilio-cambial",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Menezes — Analista de Câmbio",
+          "text": "Um cliente brasileiro mudou de país faz tempo e outro é estrangeiro morando aqui, os dois com patrimônio fora. Qual é o critério que define quem tem que declarar o CBE?"
+        }
+      ],
+      "question": "A obrigação de apresentar a Declaração de Capital Brasileiro no Exterior (CBE) ao Banco Central fundamenta-se principalmente no conceito de:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nacionalidade brasileira nata do titular dos ativos.",
+          "correct": false,
+          "feedback": "O critério é de residência cambial, e não de nacionalidade: brasileiro não residente não declara CBE."
+        },
+        {
+          "id": "b",
+          "text": "Residência ou domicílio no Brasil (condição de residente para fins cambiais e tributários) na data-base da declaração.",
+          "correct": true,
+          "feedback": "Correto. A obrigação do CBE vincula-se à residência cambial no Brasil. Brasileiros com Declaração de Saída Definitiva do País (não residentes) não estão sujeitos ao CBE, e estrangeiros residentes no Brasil estão, se atingirem o patamar de ativos."
+        },
+        {
+          "id": "c",
+          "text": "Posse de conta corrente ativa em bancos estatais brasileiros.",
+          "correct": false,
+          "feedback": "A exigência independe de o titular manter contas em bancos estatais no país."
+        },
+        {
+          "id": "d",
+          "text": "Inscrição ativa no Conselho Regional de Economia.",
+          "correct": false,
+          "feedback": "Não há qualquer vínculo com registro profissional em conselhos de classe."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-28",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "cbe-finalidade-estatistica",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Torres — Analista de Compliance",
+          "text": "Um cliente reclamou que o CBE é só mais uma burocracia para o Banco Central cobrar imposto. Preciso explicar para que a declaração serve de verdade."
+        }
+      ],
+      "question": "Qual é a finalidade principal do Banco Central ao exigir a Declaração de Capital Brasileiro no Exterior (CBE) dos residentes no país?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apurar a Posição de Investimento Internacional do Brasil e subsidiar a formulação da política monetária e cambial.",
+          "correct": true,
+          "feedback": "Correto. Os dados de CBE servem para mensurar a Posição de Investimento Internacional (PII), conhecer o ativo e o passivo externo da economia e subsidiar estudos macroeconômicos e a condução da política cambial."
+        },
+        {
+          "id": "b",
+          "text": "Cobrar diretamente o imposto sobre rendimentos de ativos financeiros.",
+          "correct": false,
+          "feedback": "A arrecadação de tributos sobre a renda é competência da Receita Federal, e não do Banco Central."
+        },
+        {
+          "id": "c",
+          "text": "Autorizar previamente cada remessa bancária ao exterior feita pelo declarante.",
+          "correct": false,
+          "feedback": "O CBE é uma declaração posterior (ex-post), e não um pedido de autorização prévia de remessas."
+        },
+        {
+          "id": "d",
+          "text": "Garantir o lastro em ouro físico para a emissão de papel-moeda.",
+          "correct": false,
+          "feedback": "O Brasil não adota o padrão-ouro como lastro de sua moeda."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-29",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "coaf-comunicacao-automatica-especie-50k",
+      "dialogue": [
+        {
+          "speaker": "Rafael Ximenes — Operador de Caixa",
+          "text": "Acabou de entrar na agência um depósito grande em dinheiro vivo na conta de um cliente e o time ficou em dúvida se precisa esperar a análise de compliance para comunicar o COAF."
+        }
+      ],
+      "question": "Uma instituição financeira autorizada recebe um depósito em espécie (cédulas) de R$ 60.000,00 na conta de um cliente. Quanto à obrigação de comunicação ao COAF prevista na Circular BCB nº 3.978/2020, a instituição deve:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Comunicar a operação ao COAF somente se o analista de compliance comprovar que o dinheiro vem de crime.",
+          "correct": false,
+          "feedback": "A comunicação de operações em espécie a partir de R$ 50.000,00 é objetiva e automática, sem exigir prova ou análise prévia de ilícito."
+        },
+        {
+          "id": "b",
+          "text": "Fazer a comunicação automática ao COAF até o dia útil seguinte, independentemente de análise de suspeição, por atingir o patamar de R$ 50.000,00.",
+          "correct": true,
+          "feedback": "Correto. Pelo Art. 49 da Circular BCB nº 3.978/2020, movimentações em espécie (depósitos, saques ou emissão de cheques e instrumentos) iguais ou superiores a R$ 50.000,00 devem ser comunicadas ao COAF, mesmo sem suspeita, até o dia útil seguinte."
+        },
+        {
+          "id": "c",
+          "text": "Aguardar 45 dias de monitoramento antes de decidir se envia ao COAF.",
+          "correct": false,
+          "feedback": "O prazo estendido de 45 dias refere-se à análise de operações atípicas ou suspeitas, e não aos reportes automáticos de espécie a partir de R$ 50.000,00."
+        },
+        {
+          "id": "d",
+          "text": "Dispensar a comunicação se o cliente apresentar uma nota fiscal emitida no mesmo dia.",
+          "correct": false,
+          "feedback": "Documento comercial apresentado pelo cliente não afasta o dever de reporte automático exigido pela norma."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-30",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "coaf-provisionamento-saque-especie-50k",
+      "dialogue": [
+        {
+          "speaker": "Juliana Albuquerque — Gerente de Agência",
+          "text": "Um correntista chegou ao balcão querendo sacar um valor alto em dinheiro, no caixa, na hora. Preciso orientar a equipe sobre o que a norma pede nesse caso."
+        }
+      ],
+      "question": "Um correntista comparece a uma agência bancária e pede para sacar R$ 80.000,00 em espécie no caixa. De acordo com a Circular BCB nº 3.978/2020, quais são as exigências normativas para realizar a operação?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O saque pode ser feito imediatamente, sem necessidade de identificar o portador.",
+          "correct": false,
+          "feedback": "Saques desse montante exigem provisionamento prévio e identificação rigorosa do titular e do portador dos recursos."
+        },
+        {
+          "id": "b",
+          "text": "O cliente deve pedir o provisionamento com antecedência mínima de 3 dias úteis e declarar a finalidade dos recursos, e a instituição deve comunicar a solicitação ao COAF até o dia útil seguinte.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 exige, para saques em espécie iguais ou superiores a R$ 50.000,00, provisionamento prévio com antecedência mínima de 3 dias úteis, informação sobre finalidade ou origem e comunicação da solicitação ao COAF pela instituição no dia útil seguinte."
+        },
+        {
+          "id": "c",
+          "text": "O banco deve reter 20% do valor sacado a título de imposto sobre operações em dinheiro vivo.",
+          "correct": false,
+          "feedback": "As instituições financeiras não retêm tributos punitivos sobre saques."
+        },
+        {
+          "id": "d",
+          "text": "O saque é proibido pela legislação brasileira por ultrapassar o teto de R$ 10.000,00.",
+          "correct": false,
+          "feedback": "O teto de R$ 10.000,00 aplica-se à entrega em espécie no mercado de câmbio, e não a saques em conta corrente em reais."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

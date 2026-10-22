@@ -1,0 +1,122 @@
+/* Hud component styles (01-UI-SPEC.md "HUD placement"). Relies on the CSS
+   custom properties declared in tokens.css. */
+
+.hud {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  right: var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.hud-chip {
+  background: var(--color-surface);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 0;
+  clip-path: polygon(0 3px, 3px 3px, 3px 0, calc(100% - 3px) 0, calc(100% - 3px) 3px, 100% 3px, 100% calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 3px 100%, 3px calc(100% - 3px), 0 calc(100% - 3px));
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+}
+
+.hud-chip--xp {
+  color: var(--color-accent);
+}
+
+.hud-chip--muted {
+  color: var(--color-muted);
+}
+
+.hud-chip--xp-bump {
+  animation: hud-xp-bump 0.4s ease-out;
+}
+
+@keyframes hud-xp-bump {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hud-chip--xp-bump {
+    animation: none;
+  }
+}
+
+.hud-chip--lives {
+  color: var(--color-accent);
+  letter-spacing: 2px;
+}
+
+.hud-chip--streak {
+  color: var(--color-bg);
+  background: var(--color-accent);
+}
+
+.hud-chip--progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text);
+}
+
+.hud-chip--progress .px-bar {
+  width: 96px;
+  height: 8px;
+}
+
+.hud-chip--mode {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hud-chip--button {
+  margin-left: auto;
+  border: 0;
+  box-shadow: inset 0 0 0 2px var(--color-muted);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+/* Narrow screens: chips wrap onto a second row instead of squeezing. */
+.hud {
+  flex-wrap: wrap;
+}
+
+.hud-chip {
+  white-space: nowrap;
+}
+
+/* Phones: smaller chips, and the long mode name gives way. */
+@media (max-width: 640px) {
+  .hud {
+    top: calc(var(--space-sm) + env(safe-area-inset-top, 0px));
+    left: var(--space-sm);
+    right: var(--space-sm);
+    gap: 4px;
+  }
+
+  .hud-chip {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .hud-chip--mode,
+  [data-testid='hud-barriers'] {
+    display: none;
+  }
+
+  .hud-chip--progress .px-bar {
+    width: 56px;
+  }
+}

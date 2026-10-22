@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "ent-01",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "estrutura-sfn-competencia-cmn",
+      "dialogue": [
+        {
+          "speaker": "Larissa Brandão — Analista de Compliance",
+          "text": "Estou montando o material de integração para os novos colegas e quero explicar direitinho o que é o CMN dentro do Sistema Financeiro Nacional. Me ajuda a conferir o que posso afirmar sobre ele?"
+        }
+      ],
+      "question": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional. Sobre as suas atribuições normativas e de governança econômica, qual afirmativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O CMN tem personalidade jurídica própria e fiscaliza diretamente bancos e corretoras de câmbio.",
+          "correct": false,
+          "feedback": "O CMN é um órgão colegiado sem personalidade jurídica própria e não exerce fiscalização operacional direta sobre as instituições."
+        },
+        {
+          "id": "b",
+          "text": "O CMN é composto pelo Ministro da Fazenda (presidente), pelo Ministro do Planejamento e Orçamento e pelo Presidente do Banco Central do Brasil.",
+          "correct": true,
+          "feedback": "Correto. Conforme a legislação vigente, o CMN é formado por esses três membros, com a presidência exercida pelo Ministro da Fazenda."
+        },
+        {
+          "id": "c",
+          "text": "O CMN emite autorizações individuais de funcionamento para instituições financeiras e aplica sanções administrativas a elas.",
+          "correct": false,
+          "feedback": "Autorizar o funcionamento de instituições e aplicar sanções administrativas é papel dos órgãos supervisores, como o BCB e a CVM, e não do CMN, que é órgão normativo."
+        },
+        {
+          "id": "d",
+          "text": "O CMN integra o Poder Legislativo Federal e vota as leis sobre o mercado cambial.",
+          "correct": false,
+          "feedback": "O CMN pertence ao Poder Executivo Federal. Ele edita normas dentro de suas competências, mas não vota leis."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-02",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "autonomia-banco-central-bcb",
+      "dialogue": [
+        {
+          "speaker": "Rafael Cordeiro — Analista de Regulatório",
+          "text": "Vou atualizar o resumo interno sobre o Banco Central depois da lei da autonomia e preciso garantir que descrevi certo a diretoria e a natureza do BCB. Qual é o quadro correto?"
+        }
+      ],
+      "question": "A Lei Complementar nº 179/2021 estabeleceu a autonomia formal do Banco Central do Brasil. Sobre a composição da Diretoria Colegiada e as competências do BCB no SFN, qual opção está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Diretoria Colegiada tem 9 membros, com mandatos de 4 anos não coincidentes, e a nomeação exige aprovação prévia do Senado Federal.",
+          "correct": true,
+          "feedback": "Correto. A Diretoria Colegiada do BCB tem 9 membros com mandatos fixos e não coincidentes de 4 anos, sabatinados pelo Senado, conforme a LC nº 179/2021."
+        },
+        {
+          "id": "b",
+          "text": "O Presidente do Banco Central é nomeado livremente pelo Presidente da República e pode ser exonerado a qualquer momento, sem justificativa.",
+          "correct": false,
+          "feedback": "Com a autonomia, a exoneração antes do fim do mandato só cabe nas hipóteses legais estritas e exige aprovação do Senado. Não existe exoneração livre."
+        },
+        {
+          "id": "c",
+          "text": "O Banco Central é uma autarquia subordinada hierarquicamente ao Ministério da Fazenda.",
+          "correct": false,
+          "feedback": "O BCB é uma autarquia de natureza especial, sem vinculação hierárquica a qualquer Ministério."
+        },
+        {
+          "id": "d",
+          "text": "O Banco Central tem competência para julgar crimes de lavagem de dinheiro e aplicar penas de reclusão.",
+          "correct": false,
+          "feedback": "O BCB aplica apenas sanções administrativas. Penas de reclusão são aplicadas exclusivamente pelo Poder Judiciário."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-03",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "papel-cvm",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Menezes — Coordenadora de Regulatório",
+          "text": "Um parceiro nos perguntou quem fiscaliza o quê entre BCB e CVM, e eu não quero responder de memória. Qual é o papel da CVM nesse desenho?"
+        }
+      ],
+      "question": "A Comissão de Valores Mobiliários (CVM) é o órgão supervisor do mercado de valores mobiliários. Sobre seu papel e sua articulação com o mercado financeiro e cambial, qual afirmativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A CVM regula e fiscaliza emissoras de valores mobiliários, fundos de investimento, bolsas de valores e corretoras e distribuidoras no âmbito do mercado de capitais e também as operações de câmbio de seus clientes.",
+          "correct": false,
+          "feedback": "Incorreta. Acrescenta uma competência que não é da CVM: as operações de câmbio são reguladas e supervisionadas pelo Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "A CVM regula e fiscaliza emissoras de valores mobiliários, fundos de investimento, bolsas de valores e corretoras e distribuidoras no âmbito do mercado de capitais.",
+          "correct": true,
+          "feedback": "Correto. Essa é a competência institucional da CVM no mercado de capitais."
+        },
+        {
+          "id": "c",
+          "text": "A CVM regula e fiscaliza emissoras de valores mobiliários e bolsas de valores no âmbito do mercado de capitais, mas não os fundos de investimento, que ficam sob o Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. Os fundos de investimento também são regulados e fiscalizados pela CVM; o trecho que muda a resposta é \"mas não os fundos de investimento\"."
+        },
+        {
+          "id": "d",
+          "text": "A CVM regula e fiscaliza emissoras de valores mobiliários, fundos de investimento, bolsas de valores e corretoras e distribuidoras no âmbito do mercado de capitais, e substitui o COAF no recebimento das comunicações de atipicidade.",
+          "correct": false,
+          "feedback": "Incorreta. A CVM supervisiona seus regulados, mas não substitui o COAF: as comunicações de operações suspeitas são feitas ao COAF."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-04",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "orgaos-normativos-e-supervisores",
+      "dialogue": [
+        {
+          "speaker": "Thiago Nogueira — Analista de Compliance",
+          "text": "Estou montando um quadro para o treinamento com os órgãos do SFN, separando quem dita regra, quem supervisiona e quem opera. Preciso garantir que cada função está no lugar certo."
+        }
+      ],
+      "question": "No Sistema Financeiro Nacional, a estrutura funcional se divide entre órgãos normativos, supervisores e operadores. Qual alternativa apresenta corretamente um órgão supervisor e a sua respectiva função?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Conselho Monetário Nacional: executa a política monetária e emite papel-moeda.",
+          "correct": false,
+          "feedback": "O CMN é órgão normativo. Quem executa a política monetária é o Banco Central."
+        },
+        {
+          "id": "b",
+          "text": "Banco Central do Brasil: define as diretrizes e as metas de inflação do governo.",
+          "correct": false,
+          "feedback": "O BCB atua como supervisor e executor. A definição da meta de inflação é do CMN."
+        },
+        {
+          "id": "c",
+          "text": "Superintendência de Seguros Privados (SUSEP): fiscaliza os mercados de seguro, de previdência complementar aberta e de capitalização.",
+          "correct": true,
+          "feedback": "Correto. A SUSEP é o órgão supervisor dos mercados de seguros, previdência aberta e capitalização."
+        },
+        {
+          "id": "d",
+          "text": "Conselho Nacional de Previdência Complementar (CNPC): fiscaliza diretamente os fundos de pensão fechados.",
+          "correct": false,
+          "feedback": "O CNPC é órgão normativo. A supervisão da previdência complementar fechada cabe à PREVIC."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-05",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "enquadramento-regulatorio-spsavs",
+      "dialogue": [
+        {
+          "speaker": "Camila Aragão — Analista de Parcerias",
+          "text": "Recebemos uma proposta de parceria com uma empresa de ativos virtuais e eu quero entender em que regime ela se encaixa antes de avançar. Como as SPSAVs são tratadas no arcabouço regulatório?"
+        }
+      ],
+      "question": "As Sociedades Prestadoras de Serviços de Ativos Virtuais (SPSAVs) passaram por importante integração ao arcabouço regulatório do SFN. Sobre o enquadramento legal delas, qual opção está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As SPSAVs são equiparadas às instituições financeiras para fins da Lei Complementar nº 105/2001, mas se sujeitam à supervisão da CVM, e não do Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "Incorreta. A regulação e a supervisão das SPSAVs são do Banco Central, e não da CVM."
+        },
+        {
+          "id": "b",
+          "text": "As SPSAVs são equiparadas às instituições financeiras para fins da Lei Complementar nº 105/2001 e se sujeitam à regulação e à supervisão do Banco Central do Brasil.",
+          "correct": true,
+          "feedback": "Correto. O arcabouço do BCB e do CMN equiparou as SPSAVs às instituições financeiras para fins de sigilo (LC nº 105/2001) e de regulação de PLD/FTP."
+        },
+        {
+          "id": "c",
+          "text": "As SPSAVs são equiparadas às instituições financeiras apenas para fins de prevenção à lavagem de dinheiro, e não para fins da Lei Complementar nº 105/2001, e se sujeitam à regulação e à supervisão do Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "Incorreta. A equiparação alcança também a LC nº 105/2001 (sigilo bancário), e não só a PLD; o trecho que muda a resposta é \"apenas para fins de prevenção à lavagem de dinheiro\"."
+        },
+        {
+          "id": "d",
+          "text": "As SPSAVs são equiparadas às instituições financeiras para fins da Lei Complementar nº 105/2001 e se sujeitam à regulação e à supervisão do Banco Central do Brasil, mas ficam dispensadas dos deveres de prevenção à lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "Incorreta. As SPSAVs não ficam dispensadas dos deveres de PLD; o trecho que muda a resposta é \"mas ficam dispensadas\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-06",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "coaf-inteligencia-financeira",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Faria — Analista de Monitoramento",
+          "text": "Toda vez que fechamos uma comunicação, alguém pergunta o que acontece depois que ela chega ao COAF. Quero explicar o papel e a estrutura do órgão sem errar nenhum detalhe."
+        }
+      ],
+      "question": "O Conselho de Controle de Atividades Financeiras (COAF) tem papel estratégico na prevenção e no combate aos ilícitos financeiros. Sobre a sua estrutura e atuação, qual afirmativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O COAF é um órgão do Poder Judiciário que expede mandados de prisão preventiva contra lavadores de dinheiro.",
+          "correct": false,
+          "feedback": "O COAF pertence ao Poder Executivo Federal e não decreta prisões. Isso cabe ao Judiciário."
+        },
+        {
+          "id": "b",
+          "text": "O Plenário do COAF é o órgão que elabora, em sigilo, os Relatórios de Inteligência Financeira (RIFs) individualizados.",
+          "correct": false,
+          "feedback": "O Plenário é órgão deliberativo e sancionador administrativo. A elaboração dos RIFs cabe exclusivamente ao Quadro Técnico, formado pelos analistas."
+        },
+        {
+          "id": "c",
+          "text": "O COAF é a Unidade de Inteligência Financeira (UIF) do Brasil, vinculada administrativamente ao Banco Central, e recebe, analisa e dissemina comunicações de operações suspeitas.",
+          "correct": true,
+          "feedback": "Correto. Essa é a definição do COAF como UIF nacional: receber, analisar e disseminar as comunicações de operações suspeitas."
+        },
+        {
+          "id": "d",
+          "text": "O COAF fiscaliza diretamente as agências bancárias e aplica multas operacionais por falta de troco em espécie.",
+          "correct": false,
+          "feedback": "A fiscalização bancária cabe ao Banco Central. O COAF atua com inteligência financeira, não na supervisão operacional das agências."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-07",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "natureza-juridica-rif",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Quintela — Analista de Compliance",
+          "text": "Um cliente nos perguntou se poderia receber uma cópia do relatório que o COAF faz a partir das nossas comunicações. Preciso responder com segurança sobre o que é esse documento."
+        }
+      ],
+      "question": "Quando as instituições financeiras enviam comunicações de operações atípicas ao COAF, a equipe técnica produz o Relatório de Inteligência Financeira (RIF). Sobre a natureza jurídica do RIF, qual opção está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O RIF é prova pré-constituída e suficiente para condenar criminalmente os envolvidos, sem necessidade de inquérito.",
+          "correct": false,
+          "feedback": "O RIF traz indícios e inteligência. Não é prova judiciária autônoma e depende de apuração pelos órgãos competentes."
+        },
+        {
+          "id": "b",
+          "text": "O RIF é um documento sigiloso com indícios de ilícitos, que orienta a instauração de investigações pela Polícia Federal ou pelo Ministério Público.",
+          "correct": true,
+          "feedback": "Correto. O RIF é uma peça de inteligência sigilosa, usada para orientar os órgãos de persecução penal."
+        },
+        {
+          "id": "c",
+          "text": "O RIF é um documento público, que qualquer cidadão pode obter mediante pedido fundamentado na Lei de Acesso à Informação.",
+          "correct": false,
+          "feedback": "O RIF é protegido por sigilo legal e não está disponível por pedido de acesso à informação."
+        },
+        {
+          "id": "d",
+          "text": "O RIF é enviado diretamente ao cliente investigado para que ele apresente defesa no prazo de 15 dias.",
+          "correct": false,
+          "feedback": "É vedado dar ciência ao cliente da comunicação feita. Esse é o princípio da proibição de tipping off."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-08",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "enccla-articulacao-institucional",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Pimentel — Analista de Compliance",
+          "text": "Vi a sigla ENCCLA citada num material de PLD e na hora fiquei na dúvida se era órgão regulador, banco ou outra coisa. Preciso dar uma definição certa para o time."
+        }
+      ],
+      "question": "A Estratégia Nacional de Combate à Corrupção e à Lavagem de Dinheiro (ENCCLA) é uma rede de articulação institucional criada no Brasil. Sobre a ENCCLA, qual afirmativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É um banco privado que financia a implantação de softwares de compliance em corretoras.",
+          "correct": false,
+          "feedback": "A ENCCLA não é instituição financeira nem concede financiamentos."
+        },
+        {
+          "id": "b",
+          "text": "É um fórum que reúne dezenas de órgãos dos Poderes Executivo, Legislativo e Judiciário e do Ministério Público para formular políticas públicas e ações conjuntas contra a lavagem de dinheiro.",
+          "correct": true,
+          "feedback": "Correto. A ENCCLA é a principal rede de articulação institucional do Brasil para definir metas e ações de combate à corrupção e à lavagem de dinheiro (PLD/FTP)."
+        },
+        {
+          "id": "c",
+          "text": "Substituiu o Conselho Monetário Nacional na edição de normas sobre operações de câmbio.",
+          "correct": false,
+          "feedback": "A ENCCLA não tem função normativa sobre câmbio. Essa competência segue com o CMN e o BCB."
+        },
+        {
+          "id": "d",
+          "text": "É um tribunal internacional que julga crimes financeiros transfronteiriços.",
+          "correct": false,
+          "feedback": "A ENCCLA é uma iniciativa nacional de articulação, não um tribunal e muito menos internacional."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-09",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "instituicoes-autorizadas-mercado-cambio",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Siqueira — Analista de Câmbio",
+          "text": "Um cliente quer saber até quanto cada tipo de instituição pode operar câmbio por operação, e eu estou comparando os limites. Quero ter certeza do que vale para as instituições de pagamento."
+        }
+      ],
+      "question": "A Resolução BCB nº 277/2022 disciplina as instituições autorizadas a operar no mercado de câmbio e seus limites operacionais. Sobre os limites por tipo de instituição, qual opção está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As sociedades corretoras de câmbio podem realizar operações de câmbio sem qualquer limite de valor.",
+          "correct": false,
+          "feedback": "As corretoras de câmbio têm limite operacional de até US$ 500.000,00 por operação."
+        },
+        {
+          "id": "b",
+          "text": "As instituições de pagamento (IPs) autorizadas podem realizar operações de câmbio até US$ 100.000,00, ou o equivalente, por operação.",
+          "correct": true,
+          "feedback": "Correto. O limite para instituições de pagamento autorizadas a operar câmbio é de US$ 100 mil por operação."
+        },
+        {
+          "id": "c",
+          "text": "Os bancos múltiplos têm limite operacional de até US$ 500.000,00 por operação de câmbio.",
+          "correct": false,
+          "feedback": "Os bancos autorizados operam sem limite de valor. O teto de US$ 500 mil se aplica a outras instituições, como as corretoras."
+        },
+        {
+          "id": "d",
+          "text": "As distribuidoras de valores (DTVMs) são proibidas de realizar qualquer tipo de operação de câmbio.",
+          "correct": false,
+          "feedback": "As DTVMs autorizadas podem operar câmbio, respeitado o limite de US$ 500 mil por operação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-10",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "correspondentes-cambiais",
+      "dialogue": [
+        {
+          "speaker": "Márcio Valadares — Gerente de Parcerias",
+          "text": "Estamos avaliando contratar um correspondente para atender clientes em outra cidade, e quero saber o que a regra permite e proíbe antes de fechar o desenho com o jurídico."
+        }
+      ],
+      "question": "Conforme a Resolução CMN nº 4.935/2021, a contratação de correspondentes no país para prestar serviços de câmbio segue regras estritas. Sobre o tema, qual alternativa é correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O limite geral por operação via correspondente cambial é de até US$ 3.000,00 ou equivalente, reduzido para US$ 1.000,00 quando a liquidação é feita simultaneamente em espécie.",
+          "correct": true,
+          "feedback": "Correto. O teto geral é de US$ 3 mil, mas, para dinheiro físico em espécie, o limite cai para US$ 1.000,00."
+        },
+        {
+          "id": "b",
+          "text": "O limite geral por operação via correspondente cambial é de até US$ 3.000,00 ou equivalente, reduzido para US$ 500,00 quando a liquidação é feita simultaneamente em espécie.",
+          "correct": false,
+          "feedback": "Incorreta. O limite para a liquidação simultânea em espécie é de US$ 1.000,00, e não de US$ 500,00."
+        },
+        {
+          "id": "c",
+          "text": "O limite geral por operação via correspondente cambial é de até US$ 5.000,00 ou equivalente, reduzido para US$ 1.000,00 quando a liquidação é feita simultaneamente em espécie.",
+          "correct": false,
+          "feedback": "Incorreta. O limite geral é de US$ 3.000,00, e não de US$ 5.000,00."
+        },
+        {
+          "id": "d",
+          "text": "O limite geral por operação via correspondente cambial é de até US$ 3.000,00 ou equivalente, por dia, reduzido para US$ 1.000,00 quando a liquidação é feita simultaneamente em espécie.",
+          "correct": false,
+          "feedback": "Incorreta. O limite é por operação, e não por dia; o trecho que muda a resposta é \"por dia\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-11",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "atuacao-papel-gafi-fatf",
+      "dialogue": [
+        {
+          "speaker": "Juliana Rezende — Analista de Compliance",
+          "text": "Vou apresentar um resumo de PLD e preciso dizer o que é o GAFI para quem nunca ouviu falar. Qual descrição eu posso usar sem erro?"
+        }
+      ],
+      "question": "O Grupo de Ação Financeira contra a Lavagem de Dinheiro e o Financiamento do Terrorismo (GAFI/FATF) é o principal organismo internacional na definição de padrões globais. Qual opção descreve corretamente a sua atuação?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O GAFI emite as 40 Recomendações, que estabelecem diretrizes globais de PLD/FTP/PADM, e realiza avaliações mútuas periódicas para verificar a conformidade dos países.",
+          "correct": true,
+          "feedback": "Correto. O GAFI cria os padrões globais por meio das 40 Recomendações e avalia periodicamente os países por avaliações mútuas."
+        },
+        {
+          "id": "b",
+          "text": "O GAFI é um tribunal penal internacional que julga e prende chefes de cartéis de drogas.",
+          "correct": false,
+          "feedback": "O GAFI não é um tribunal penal. Ele define padrões e avalia países, sem julgar nem prender pessoas."
+        },
+        {
+          "id": "c",
+          "text": "O GAFI concede empréstimos internacionais em dólares a bancos comerciais com liquidez reduzida.",
+          "correct": false,
+          "feedback": "O GAFI não é instituição financeira nem bancária e não concede empréstimos."
+        },
+        {
+          "id": "d",
+          "text": "O GAFI estabelece as taxas de câmbio oficiais que todos os países-membros devem adotar.",
+          "correct": false,
+          "feedback": "As taxas de câmbio são livres e determinadas pelo mercado. O GAFI não as fixa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-12",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "abordagem-baseada-em-risco-abr",
+      "dialogue": [
+        {
+          "speaker": "Daniel Mourão — Coordenador de Compliance",
+          "text": "No treinamento, sempre aparece a pergunta se tratamos todos os clientes do mesmo jeito ou se existe um critério por risco. Quero explicar o princípio por trás disso do jeito correto."
+        }
+      ],
+      "question": "Um dos pilares das diretrizes do GAFI, acolhido pela regulação brasileira (Circular BCB nº 3.978/2020), é a Abordagem Baseada em Risco (ABR). Segundo a ABR, as instituições devem:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aplicar exatamente os mesmos procedimentos rígidos de verificação a todos os clientes, independentemente do perfil ou do volume financeiro.",
+          "correct": false,
+          "feedback": "Isso seria uma abordagem uniforme, contrária à ABR, que trabalha com proporcionalidade ao risco."
+        },
+        {
+          "id": "b",
+          "text": "Identificar, avaliar e compreender os riscos de PLD/FTP a que estão expostas, destinando mais recursos para mitigar os riscos mais elevados.",
+          "correct": true,
+          "feedback": "Correto. A ABR exige proporcionalidade: a instituição intensifica os controles onde o risco é maior."
+        },
+        {
+          "id": "c",
+          "text": "Eliminar 100% dos clientes de alto risco da carteira, sendo proibidas de prestar serviços a pessoas expostas politicamente (PEP).",
+          "correct": false,
+          "feedback": "As PEPs não são proibidas. Exigem procedimentos reforçados de devida diligência."
+        },
+        {
+          "id": "d",
+          "text": "Isentar de cadastro e de monitoramento os clientes de baixo risco que movimentem menos de R$ 100.000,00.",
+          "correct": false,
+          "feedback": "Todos os clientes devem ser identificados. O que muda conforme o risco é a intensidade do monitoramento, não a existência dele."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-13",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "grupo-egmont-intercambio-uifs",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Duarte — Analista de Compliance",
+          "text": "Estava lendo sobre cooperação internacional em inteligência financeira e vi o Grupo de Egmont citado várias vezes. Qual é o papel dele, afinal?"
+        }
+      ],
+      "question": "O Grupo de Egmont tem função importante no cenário internacional de inteligência financeira. Qual alternativa indica corretamente o seu papel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Oferecer uma plataforma global segura para o intercâmbio de informações e a cooperação operacional entre as Unidades de Inteligência Financeira (UIFs) de vários países.",
+          "correct": true,
+          "feedback": "Correto. O Grupo de Egmont reúne mais de 160 UIFs, como o COAF no Brasil, para a troca segura de inteligência financeira."
+        },
+        {
+          "id": "b",
+          "text": "Regular a taxa básica de juros das principais economias desenvolvidas.",
+          "correct": false,
+          "feedback": "Definir juros não tem relação com o escopo do Grupo de Egmont, que trata de cooperação entre UIFs."
+        },
+        {
+          "id": "c",
+          "text": "Fiscalizar o cumprimento de acordos de livre comércio de produtos agrícolas.",
+          "correct": false,
+          "feedback": "Comércio agrícola está completamente fora do escopo do Grupo de Egmont."
+        },
+        {
+          "id": "d",
+          "text": "Emitir moedas virtuais de curso forçado para países emergentes.",
+          "correct": false,
+          "feedback": "O Grupo de Egmont não emite moeda de nenhum tipo. Sua função é a troca de inteligência financeira entre UIFs."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-14",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "listas-gafi-jurisdicoes-monitoramento",
+      "dialogue": [
+        {
+          "speaker": "Renata Albuquerque — Analista de Câmbio",
+          "text": "Chegou um pedido de remessa para uma empresa em um país que aparece nas listas do GAFI. Antes de seguir, quero saber o que a regra pede da gente nesses casos."
+        }
+      ],
+      "question": "O GAFI publica periodicamente documentos que identificam jurisdições com deficiências estratégicas em seus regimes de PLD/FTP (a chamada Lista Cinza e a Lista Preta). Qual o impacto direto para as instituições brasileiras ao operarem com pessoas ou entidades situadas nessas jurisdições?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ficam automaticamente obrigadas a congelar, sem ordem prévia, os bens de todos os cidadãos dessas jurisdições.",
+          "correct": false,
+          "feedback": "O congelamento imediato de ativos depende de sanções do Conselho de Segurança da ONU ou de leis específicas, e não decorre automaticamente das listas do GAFI."
+        },
+        {
+          "id": "b",
+          "text": "As operações devem passar por procedimentos reforçados de devida diligência e por monitoramento intensivo, proporcionais ao risco identificado.",
+          "correct": true,
+          "feedback": "Correto. Jurisdições de risco elevado listadas pelo GAFI exigem devida diligência reforçada (Enhanced Due Diligence)."
+        },
+        {
+          "id": "c",
+          "text": "O Banco Central do Brasil assume a responsabilidade civil por todas as operações realizadas com esses países.",
+          "correct": false,
+          "feedback": "O BCB não assume responsabilidade pelas transações das instituições financeiras."
+        },
+        {
+          "id": "d",
+          "text": "O cliente fica dispensado de comprovar a fundamentação econômica da operação de câmbio.",
+          "correct": false,
+          "feedback": "A fundamentação econômica continua sendo exigida com rigor, ainda mais nesses casos de risco elevado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-15",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "avaliacao-mutua-gafi-metodologia",
+      "dialogue": [
+        {
+          "speaker": "Alexandre Tavares — Analista de Compliance",
+          "text": "Soube que o Brasil passa por avaliações do GAFI de tempos em tempos e quero entender o que os avaliadores realmente olham no país. Qual é o foco da avaliação mútua?"
+        }
+      ],
+      "question": "No processo de Avaliação Mútua conduzido pelo GAFI em um país membro, o que os peritos internacionais avaliam?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas o nível de arrecadação do imposto de renda e o superávit primário do governo.",
+          "correct": false,
+          "feedback": "Política fiscal e tributária não fazem parte do escopo da avaliação do GAFI."
+        },
+        {
+          "id": "b",
+          "text": "A conformidade técnica, ou seja, se as leis e normas do país atendem às 40 Recomendações, e também a efetividade prática do sistema de PLD/FTP/PADM.",
+          "correct": true,
+          "feedback": "Correto. A avaliação mede a conformidade técnica (o arcabouço legal) e a efetividade real do sistema, como os resultados práticos em investigações e apreensões."
+        },
+        {
+          "id": "c",
+          "text": "A quantidade de agências bancárias físicas existentes no território nacional.",
+          "correct": false,
+          "feedback": "O número de agências bancárias é alheio ao escopo da avaliação mútua."
+        },
+        {
+          "id": "d",
+          "text": "O saldo das reservas internacionais mantidas no Fundo Monetário Internacional.",
+          "correct": false,
+          "feedback": "Reservas internacionais não fazem parte da avaliação mútua do GAFI."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

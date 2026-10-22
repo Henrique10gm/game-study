@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "cam-01",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "cambio-manual-vs-sacado",
+      "dialogue": [
+        {
+          "speaker": "Marina Duarte — Analista de Câmbio",
+          "text": "Estou revisando o material de treinamento da mesa e quero conferir a diferença entre câmbio manual e câmbio sacado antes de repassar ao time."
+        }
+      ],
+      "question": "Segundo as normas do Banco Central do Brasil, qual alternativa diferencia corretamente a operação de câmbio manual da operação de câmbio sacado?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O câmbio manual é a compra e venda de moeda estrangeira em espécie (cédulas ou moedas metálicas) ou cheques de viagem, enquanto o câmbio sacado se refere a transferências bancárias escriturais, exclusivas de operações de importação.",
+          "correct": false,
+          "feedback": "Incorreta. O câmbio sacado também liquida exportações, investimentos e operações interbancárias; o trecho que muda a resposta é \"exclusivas de operações de importação\"."
+        },
+        {
+          "id": "b",
+          "text": "O câmbio sacado é a compra e venda de moeda estrangeira em espécie (cédulas ou moedas metálicas) ou cheques de viagem, enquanto o câmbio manual se refere a transferências bancárias escriturais entre contas.",
+          "correct": false,
+          "feedback": "Incorreta. Os conceitos estão trocados: manual é a entrega em mãos, e sacado é a liquidação por débito e crédito em contas."
+        },
+        {
+          "id": "c",
+          "text": "O câmbio manual é a compra e venda de moeda estrangeira em espécie (cédulas ou moedas metálicas) ou cheques de viagem, enquanto o câmbio sacado se refere a transferências bancárias escriturais entre contas.",
+          "correct": true,
+          "feedback": "Correto. O câmbio manual envolve a entrega ou o recebimento físico de moeda em espécie ou cheques de viagem, e o câmbio sacado envolve movimentações escriturais, como transferências eletrônicas e ordens de pagamento entre contas."
+        },
+        {
+          "id": "d",
+          "text": "O câmbio manual é a compra e venda de moeda estrangeira em espécie (cédulas ou moedas metálicas) ou cheques de viagem, enquanto o câmbio sacado se refere a transferências bancárias escriturais entre contas, liquidadas sempre em prazo superior a 360 dias.",
+          "correct": false,
+          "feedback": "Incorreta. O câmbio sacado não tem prazo fixo de 360 dias; o trecho que muda a resposta é \"liquidadas sempre em prazo superior a 360 dias\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-02",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "prazo-liquidacao-cambio-pronto",
+      "dialogue": [
+        {
+          "speaker": "Bruno Tavares — Coordenador de Tesouraria",
+          "text": "Um cliente fechou uma operação de câmbio pronto hoje e perguntou até quando o dinheiro precisa ser liquidado. Quero responder com base na norma."
+        }
+      ],
+      "question": "De acordo com a Resolução BCB nº 277/2022, qual é o prazo máximo padrão para a liquidação de uma operação de câmbio pronto (spot)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No mesmo dia útil da contratação (D+0), sem qualquer possibilidade de tolerância.",
+          "correct": false,
+          "feedback": "A liquidação em D+0 é uma possibilidade, mas o prazo regulatório do câmbio pronto admite até D+2, então não é correto falar em ausência de tolerância."
+        },
+        {
+          "id": "b",
+          "text": "Em até 30 dias úteis para pessoas físicas e 90 dias úteis para pessoas jurídicas.",
+          "correct": false,
+          "feedback": "Prazos acima de D+2 caracterizam operações de câmbio para entrega futura, não câmbio pronto. Além disso, a regra não distingue prazos por tipo de cliente."
+        },
+        {
+          "id": "c",
+          "text": "Em até 360 dias corridos a partir da assinatura da proposta de câmbio.",
+          "correct": false,
+          "feedback": "Um prazo desses descreve câmbio futuro (entrega futura), não câmbio pronto, que se liquida em até 2 dias úteis."
+        },
+        {
+          "id": "d",
+          "text": "Em até 2 (dois) dias úteis a contar da data de contratação (D+2).",
+          "correct": true,
+          "feedback": "Correto. Conforme a Resolução BCB nº 277/2022, câmbio pronto (spot) é aquele cuja liquidação ocorre em até 2 dias úteis da contratação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-03",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "composicao-taxa-ptax",
+      "dialogue": [
+        {
+          "speaker": "Letícia Ramos — Analista de Risco de Mercado",
+          "text": "O time de produto quer usar a PTAX como referência de preço e me perguntou como ela é formada. Quero explicar do jeito certo."
+        }
+      ],
+      "question": "Sobre a taxa PTAX divulgada diariamente pelo Banco Central do Brasil, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A PTAX corresponde à média ponderada das taxas praticadas no mercado interbancário, apurada pelo Banco Central por meio de quatro consultas diárias aos negociadores autorizados.",
+          "correct": true,
+          "feedback": "Correto. A PTAX é a taxa de referência do dólar calculada pelo Banco Central a partir das cotações informadas pelos dealers de câmbio em quatro janelas de consulta ao longo do dia, refletindo o mercado interbancário."
+        },
+        {
+          "id": "b",
+          "text": "A PTAX é uma taxa fixa estipulada unilateralmente pelo Ministro da Fazenda para orientar as transações do governo.",
+          "correct": false,
+          "feedback": "A PTAX reflete negociações reais do mercado e é apurada pelo Banco Central; não é fixada arbitrariamente pelo governo."
+        },
+        {
+          "id": "c",
+          "text": "A PTAX é calculada apenas no último dia útil do mês e serve exclusivamente para cobrar Imposto de Renda sobre ganho de capital no exterior.",
+          "correct": false,
+          "feedback": "A PTAX é apurada e divulgada todos os dias úteis, e seu uso vai muito além do Imposto de Renda."
+        },
+        {
+          "id": "d",
+          "text": "A PTAX é uma taxa aplicável apenas a operações de câmbio manual e turismo, sem efeito no mercado comercial.",
+          "correct": false,
+          "feedback": "Ao contrário, a PTAX é a taxa oficial de referência para contratos comerciais, derivativos cambiais e liquidações financeiras, não só para câmbio manual."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-04",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "vet-valor-efetivo-total",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Alves — Gerente de Produtos de Câmbio",
+          "text": "Vamos revisar a tela de cotação que o cliente enxerga antes de fechar o câmbio, e preciso garantir que o VET esteja explicado corretamente."
+        }
+      ],
+      "question": "O Valor Efetivo Total (VET) é um indicador fundamental para a transparência do mercado de câmbio. Qual alternativa descreve corretamente seus componentes e suas regras de aplicação?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O VET expressa o custo total da operação de câmbio, em moeda nacional por unidade de moeda estrangeira, englobando a taxa de câmbio e o IOF, sem as tarifas cobradas pela instituição.",
+          "correct": false,
+          "feedback": "Incorreta. O VET inclui também as tarifas; o trecho que muda a resposta é \"sem as tarifas\"."
+        },
+        {
+          "id": "b",
+          "text": "O VET expressa o custo total da operação de câmbio, em moeda nacional por unidade de moeda estrangeira, englobando a taxa de câmbio, o IOF e as eventuais tarifas cobradas pela instituição.",
+          "correct": true,
+          "feedback": "Correto. O VET informa o custo final por unidade de moeda estrangeira recebida ou entregue (taxa de câmbio pactuada + IOF + tarifas) e deve ser informado ao cliente antes da realização da operação."
+        },
+        {
+          "id": "c",
+          "text": "O VET expressa o custo total da operação de câmbio, em moeda nacional por unidade de moeda estrangeira, englobando a taxa de câmbio, o IOF e as eventuais tarifas cobradas pela instituição, e deve ser informado ao cliente apenas depois da liquidação.",
+          "correct": false,
+          "feedback": "Incorreta. O VET deve ser informado ao cliente antes da operação; o trecho que muda a resposta é \"apenas depois da liquidação\"."
+        },
+        {
+          "id": "d",
+          "text": "O VET expressa o custo total da operação de câmbio, em moeda nacional por unidade de moeda estrangeira, englobando a taxa de câmbio, o IOF e as eventuais tarifas cobradas pela instituição, e se aplica exclusivamente a operações interbancárias.",
+          "correct": false,
+          "feedback": "Incorreta. O VET é uma informação ao cliente da operação, e não se limita ao interbancário; o trecho que muda a resposta é \"exclusivamente a operações interbancárias\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-05",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "responsabilidade-classificacao-finalidade-cambial",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lopes — Analista de Compliance",
+          "text": "Um cliente me pediu para 'a instituição escolher o código de finalidade' da remessa dele. Antes de responder, quero lembrar quem responde pela classificação."
+        }
+      ],
+      "question": "Com o Novo Marco Legal do Câmbio (Lei nº 14.286/2021), quem é responsável pela classificação da finalidade das operações de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A indicação da finalidade é de responsabilidade exclusiva do cliente, cabendo à instituição autorizada prestar os esclarecimentos e o suporte técnico necessários, mas o Banco Central precisa aprovar previamente cada classificação.",
+          "correct": false,
+          "feedback": "Incorreta. Não há aprovação prévia do Banco Central para cada classificação; o trecho que muda a resposta é \"precisa aprovar previamente\"."
+        },
+        {
+          "id": "b",
+          "text": "A indicação da finalidade é de responsabilidade exclusiva da instituição autorizada, cabendo ao cliente apenas confirmar o código sugerido para a correta codificação.",
+          "correct": false,
+          "feedback": "Incorreta. A responsabilidade é do cliente, e a instituição presta os esclarecimentos e o suporte."
+        },
+        {
+          "id": "c",
+          "text": "A indicação da finalidade é de responsabilidade exclusiva do cliente, cabendo à instituição autorizada prestar os esclarecimentos e o suporte técnico necessários para a correta codificação.",
+          "correct": true,
+          "feedback": "Correto. O Art. 4º, § 2º da Lei nº 14.286/2021 estabelece que a classificação da finalidade (natureza cambial) é responsabilidade do cliente, e a instituição apoia com esclarecimentos para o enquadramento correto."
+        },
+        {
+          "id": "d",
+          "text": "A indicação da finalidade é de responsabilidade exclusiva do cliente, cabendo à instituição autorizada prestar os esclarecimentos e o suporte técnico necessários, mas o cliente só precisa indicá-la nas operações acima de US$ 50.000,00.",
+          "correct": false,
+          "feedback": "Incorreta. A finalidade é indicada em operações de qualquer valor, com códigos próprios para até e para acima de US$ 50.000,00."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-06",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "vedacao-documentos-redundantes-art-27",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Pires — Analista de Cadastro",
+          "text": "Estou revisando o checklist de documentos do onboarding de câmbio e quero alinhar o que a lei diz sobre exigências documentais."
+        }
+      ],
+      "question": "O Art. 27 da Lei nº 14.286/2021 trouxe uma diretriz de simplificação cadastral e documental para o mercado de câmbio. Qual é essa diretriz?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As instituições autorizadas não podem exigir documentos ou informações que já constem de suas próprias bases de dados ou de cadastros públicos oficiais de acesso autorizado.",
+          "correct": true,
+          "feedback": "Correto. O Art. 27 da Lei nº 14.286/2021 veda a exigência de documentos ou dados que a instituição já tenha em suas bases ou possa consultar em cadastros públicos oficiais, reduzindo a burocracia."
+        },
+        {
+          "id": "b",
+          "text": "Ficou proibida a exigência de documento oficial de identificação com foto em operações de câmbio manual, de qualquer valor.",
+          "correct": false,
+          "feedback": "A identificação do cliente continua obrigatória; o que se eliminou foi a exigência de dados e documentos redundantes."
+        },
+        {
+          "id": "c",
+          "text": "As instituições devem exigir comprovante de residência emitido nos últimos 5 dias em todas as trocas de moeda física.",
+          "correct": false,
+          "feedback": "Cria uma exigência documental excessiva, contrária ao espírito de desburocratização da lei."
+        },
+        {
+          "id": "d",
+          "text": "É obrigatório registrar em cartório todas as faturas e conhecimentos de embarque de importação e exportação.",
+          "correct": false,
+          "feedback": "A lei vai no sentido oposto: elimina o excesso de burocracia cartorária e não exige registro público dessas faturas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-07",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "cambio-eventual-entre-pessoas-fisicas",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Nogueira — Atendente de Câmbio",
+          "text": "Um cliente perguntou se pode vender alguns dólares em espécie a um conhecido, por conta própria, sem passar por instituição. Preciso orientá-lo com segurança."
+        }
+      ],
+      "question": "Em relação ao câmbio realizado entre pessoas físicas de forma eventual e não profissional, o que determina a Lei nº 14.286/2021?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É proibida em qualquer valor, configurando o crime de operar instituição financeira clandestina (Art. 16 da Lei nº 7.492/1986).",
+          "correct": false,
+          "feedback": "Desconsidera a exceção trazida pelo Novo Marco Legal para operações casuais de pequeno valor entre pessoas físicas."
+        },
+        {
+          "id": "b",
+          "text": "É autorizada até US$ 100.000,00, desde que haja emissão de nota fiscal registrada em cartório de títulos e documentos.",
+          "correct": false,
+          "feedback": "Inventa um limite e uma condição que não existem na legislação."
+        },
+        {
+          "id": "c",
+          "text": "É permitida sem limite de valor, desde que as duas partes sejam residentes e domiciliadas no mesmo município.",
+          "correct": false,
+          "feedback": "A lei não prevê isenção de limite por proximidade de domicílio; esse critério foi inventado."
+        },
+        {
+          "id": "d",
+          "text": "É permitida a negociação eventual e não profissional de moeda estrangeira em espécie entre pessoas físicas, até US$ 500,00 ou o equivalente em outras moedas.",
+          "correct": true,
+          "feedback": "Correto. O Art. 19 da Lei nº 14.286/2021 afasta a aplicação da lei às compras e vendas eventuais e não profissionais de moeda estrangeira em espécie entre pessoas físicas, no País, até US$ 500,00 (ou equivalente)."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-08",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "forma-celebracao-cambio",
+      "dialogue": [
+        {
+          "speaker": "Diego Carvalho — Analista de Operações",
+          "text": "Estou padronizando o fluxo de formalização das operações e preciso saber o que a norma exige quanto à forma de celebrar o câmbio."
+        }
+      ],
+      "question": "Segundo a Resolução BCB nº 277/2022, qual opção está correta sobre a forma de celebração das operações de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A forma de celebração é livre, mas, nas operações com cliente, a instituição deve ser capaz de comprovar que as partes consentem com as condições pactuadas.",
+          "correct": true,
+          "feedback": "Correto. O Art. 2º da Resolução BCB nº 277/2022 diz que é livre a forma de celebração do câmbio e, no parágrafo único, exige que a instituição consiga comprovar o consentimento do cliente com as condições."
+        },
+        {
+          "id": "b",
+          "text": "A forma de celebração é livre, mas, nas operações com cliente, a instituição deve ser capaz de comprovar que as partes consentem com as condições pactuadas, por meio de contrato escrito com firma reconhecida.",
+          "correct": false,
+          "feedback": "O trecho final cria uma exigência que a norma não faz: a forma é livre, e a comprovação do consentimento não depende de contrato escrito nem de firma reconhecida."
+        },
+        {
+          "id": "c",
+          "text": "A forma de celebração é livre apenas nas operações de até US$ 50.000,00; acima desse valor, é obrigatório o contrato de câmbio formal.",
+          "correct": false,
+          "feedback": "O limite de US$ 50.000,00 na norma serve para escolher o anexo de códigos de finalidade (III ou IV), e não para exigir contrato formal. A liberdade de forma vale para qualquer valor."
+        },
+        {
+          "id": "d",
+          "text": "A forma de celebração é livre e a instituição fica dispensada de comprovar o consentimento do cliente com as condições pactuadas.",
+          "correct": false,
+          "feedback": "A liberdade de forma não elimina a prova: nas operações com cliente a instituição deve ser capaz de comprovar o consentimento."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-09",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "transferencia-unilateral",
+      "dialogue": [
+        {
+          "speaker": "Aline Barbosa — Analista de Compliance de Câmbio",
+          "text": "Chegou uma remessa de um cliente para ajudar um familiar que estuda fora, sem nota fiscal nem contrato de serviço. Quero classificar a operação corretamente."
+        }
+      ],
+      "question": "O que caracteriza uma 'transferência unilateral' no mercado de câmbio e qual é o seu tratamento regulatório?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É uma transferência internacional de recursos sem contraprestação direta em bens ou serviços (por exemplo, doações ou sustento de familiares no exterior), dispensada de fundamentação e de indicação da natureza.",
+          "correct": false,
+          "feedback": "Incorreta. A transferência unilateral exige fundamentação e indicação da natureza; o trecho que muda a resposta é \"dispensada de fundamentação\"."
+        },
+        {
+          "id": "b",
+          "text": "É uma transferência internacional de recursos com contraprestação direta em bens ou serviços (por exemplo, importações e fretes), que exige fundamentação e indicação da natureza apropriada.",
+          "correct": false,
+          "feedback": "Incorreta. Com contraprestação em bens ou serviços, a operação é comercial, e não unilateral."
+        },
+        {
+          "id": "c",
+          "text": "É uma transferência internacional de recursos sem contraprestação direta em bens ou serviços (por exemplo, doações ou sustento de familiares no exterior), que exige fundamentação e indicação da natureza apropriada.",
+          "correct": true,
+          "feedback": "Correto. Transferências unilaterais são fluxos internacionais sem contrapartida econômica direta em mercadorias ou serviços, como doações e sustento de filho estudando fora, e devem ser classificadas com os códigos de natureza específicos."
+        },
+        {
+          "id": "d",
+          "text": "É uma transferência internacional de recursos sem contraprestação direta em bens ou serviços (por exemplo, doações ou sustento de familiares no exterior), exclusiva de pessoas jurídicas, que exige fundamentação e indicação da natureza apropriada.",
+          "correct": false,
+          "feedback": "Incorreta. Pessoas físicas também fazem transferências unilaterais, como o sustento de familiares; o trecho que muda a resposta é \"exclusiva de pessoas jurídicas\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-10",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "mercado-interbancario-de-cambio",
+      "dialogue": [
+        {
+          "speaker": "Thiago Moreira — Operador de Mesa",
+          "text": "Um colega novo da mesa perguntou o que é exatamente o mercado interbancário de câmbio e para que a gente negocia nele. Quero dar uma resposta clara."
+        }
+      ],
+      "question": "O que é e como opera o mercado interbancário de câmbio no Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É o ambiente de negociação, direta ou via corretoras, entre instituições financeiras autorizadas a operar em câmbio, usado para ajuste de liquidez, redistribuição de moeda e arbitragem.",
+          "correct": true,
+          "feedback": "Correto. O interbancário é o mercado atacadista em que bancos e instituições autorizadas negociam divisas entre si, para nivelar posições, suprir liquidez e realizar arbitragem."
+        },
+        {
+          "id": "b",
+          "text": "É o segmento em que apenas pessoas físicas compram moeda estrangeira para viagens, diretamente com o Banco Central.",
+          "correct": false,
+          "feedback": "Pessoas físicas não operam no mercado interbancário, que é atacadista e restrito às instituições autorizadas."
+        },
+        {
+          "id": "c",
+          "text": "É o mercado paralelo de dólares, operado exclusivamente por correspondentes cambiais e casas de câmbio de rua.",
+          "correct": false,
+          "feedback": "Confunde o interbancário formal e regulado com o mercado paralelo ilegal."
+        },
+        {
+          "id": "d",
+          "text": "É o sistema mantido pela bolsa de valores para negociar, em reais, ações de empresas estrangeiras.",
+          "correct": false,
+          "feedback": "Isso descreve o mercado de BDRs e ações, não o de divisas entre instituições."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-11",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "arbitragem-cambial",
+      "dialogue": [
+        {
+          "speaker": "Camila Freitas — Operadora Júnior de Câmbio",
+          "text": "Vi nas telas duas cotações diferentes para a mesma moeda em praças distintas e meu gestor comentou que isso envolve arbitragem. Quero entender o objetivo dessa operação."
+        }
+      ],
+      "question": "Qual é o objetivo principal de uma operação de arbitragem no mercado interbancário de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Solicitar ao Banco Central a anulação de um contrato de câmbio por erro de digitação no valor negociado.",
+          "correct": false,
+          "feedback": "Anular contrato por erro é um procedimento operacional e não tem relação com o conceito de arbitragem."
+        },
+        {
+          "id": "b",
+          "text": "Cobrar tarifas adicionais de clientes corporativos importadores em períodos de alta volatilidade.",
+          "correct": false,
+          "feedback": "Tarifas bancárias não têm relação com arbitragem financeira."
+        },
+        {
+          "id": "c",
+          "text": "Financiar a compra de ouro físico de garimpos da região amazônica.",
+          "correct": false,
+          "feedback": "Isso se refere à compra de commodities físicas, assunto distinto da arbitragem cambial."
+        },
+        {
+          "id": "d",
+          "text": "Obter lucro aproveitando discrepâncias momentâneas de preço ou cotação da mesma moeda (ou entre paridades de moedas) em diferentes mercados ou praças, sem assumir risco de crédito.",
+          "correct": true,
+          "feedback": "Correto. A arbitragem cambial compra a moeda onde está mais barata e vende simultaneamente onde está mais cara, obtendo ganho imediato sem exposição prolongada a risco."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-12",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "posicao-cambio-comprada-vs-vendida",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Siqueira — Analista de Risco",
+          "text": "Vou apresentar o relatório de exposição cambial da instituição e preciso definir direitinho posição comprada e posição vendida."
+        }
+      ],
+      "question": "Em relação à gestão da Posição de Câmbio pelas instituições autorizadas, qual é a definição correta de Posição Comprada e de Posição Vendida?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Posição Comprada ocorre quando as vendas de moeda estrangeira superam as compras (o banco ganha se o dólar subir), e Posição Vendida quando as compras superam as vendas (o banco ganha se o dólar cair).",
+          "correct": false,
+          "feedback": "Incorreta. Os conceitos estão trocados: a posição comprada é a de compras acima das vendas."
+        },
+        {
+          "id": "b",
+          "text": "Posição Comprada ocorre quando as compras de moeda estrangeira superam as vendas (o banco ganha se o dólar subir), e Posição Vendida quando as vendas superam as compras (o banco ganha se o dólar cair).",
+          "correct": true,
+          "feedback": "Correto. A posição comprada (long) é ter mais ativos em moeda estrangeira do que passivos, exposta à alta da divisa; a vendida (short) é o contrário, exposta à queda."
+        },
+        {
+          "id": "c",
+          "text": "Posição Comprada ocorre quando as compras de moeda estrangeira superam as vendas (o banco ganha se o dólar cair), e Posição Vendida quando as vendas superam as compras (o banco ganha se o dólar subir).",
+          "correct": false,
+          "feedback": "Incorreta. Quem está comprado ganha com a alta do dólar, e quem está vendido ganha com a queda; o raciocínio de ganho está invertido."
+        },
+        {
+          "id": "d",
+          "text": "Posição Comprada ocorre quando as compras de moeda estrangeira superam as vendas (o banco ganha se o dólar subir), e Posição Vendida quando as vendas superam as compras (o banco ganha se o dólar cair), e ambas são proibidas acima de US$ 1 milhão.",
+          "correct": false,
+          "feedback": "Incorreta. Não existe proibição dessas posições nesse valor; as instituições as gerenciam e acompanham o risco."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-13",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "camara-cambio-b3-contraparte-central",
+      "dialogue": [
+        {
+          "speaker": "Juliana Martins — Analista de Liquidação",
+          "text": "Nas operações interbancárias que a gente liquida, a Câmara de Câmbio da B3 aparece o tempo todo no meio. Preciso explicar o papel dela para o time novo."
+        }
+      ],
+      "question": "Qual é o papel da Câmara de Câmbio da B3 nas negociações interbancárias do mercado financeiro brasileiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fixar a taxa PTAX oficial do país no início de cada manhã.",
+          "correct": false,
+          "feedback": "A PTAX é apurada pelo Banco Central, não pela câmara de câmbio."
+        },
+        {
+          "id": "b",
+          "text": "Substituir a fiscalização do Banco Central em relação a indícios de lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "A fiscalização regulatória é competência do Banco Central e não pode ser substituída pela câmara."
+        },
+        {
+          "id": "c",
+          "text": "Atuar como Contraparte Central garantidora (CCP), mitigando o risco de crédito e de liquidação das operações de câmbio entre as instituições participantes.",
+          "correct": true,
+          "feedback": "Correto. A Câmara de Câmbio da B3 age como contraparte central pagadora e recebedora, garantindo a liquidação das operações interbancárias e eliminando o risco bilateral de default de uma das partes."
+        },
+        {
+          "id": "d",
+          "text": "Realizar saques de cédulas físicas para distribuição em caixas eletrônicos das redes bancárias.",
+          "correct": false,
+          "feedback": "A clearing cuida de liquidação financeira escritural, não do transporte ou da distribuição de cédulas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-14",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "swap-cambial-tradicional",
+      "dialogue": [
+        {
+          "speaker": "Marcelo Ribeiro — Analista de Tesouraria",
+          "text": "O BCB anunciou um leilão de swap cambial e a diretoria quer entender como o contrato funciona antes de a mesa se posicionar."
+        }
+      ],
+      "question": "Como funciona um contrato de Swap Cambial Tradicional oferecido pelo Banco Central do Brasil ao mercado?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O BCB assume a posição pagadora da variação cambial (mais cupom cambial) e a recebedora da taxa de juros doméstica (DI); o mercado se protege contra a alta do dólar.",
+          "correct": true,
+          "feedback": "Correto. No swap cambial tradicional o BCB paga a variação do dólar mais o cupom cambial e recebe o DI, o que equivale a uma venda futura de dólares e dá hedge ao mercado contra a alta da moeda sem usar as reservas à vista."
+        },
+        {
+          "id": "b",
+          "text": "O BCB entrega dólares em espécie, fisicamente, nos cofres dos bancos privados.",
+          "correct": false,
+          "feedback": "O swap é um derivativo com liquidação exclusivamente financeira em reais, sem entrega física de dólares."
+        },
+        {
+          "id": "c",
+          "text": "O mercado assume a obrigação de pagar a variação da inflação medida pelo IPCA, enquanto o BCB paga a taxa Selic.",
+          "correct": false,
+          "feedback": "A troca no swap cambial é dólar contra DI, e não IPCA contra Selic."
+        },
+        {
+          "id": "d",
+          "text": "É um contrato exclusivo para pessoas físicas que viajam ao exterior, com desconto no câmbio.",
+          "correct": false,
+          "feedback": "A negociação é atacadista e interbancária, sem relação com pessoas físicas ou descontos para viagem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-15",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "leilao-linha-compromisso-recompra",
+      "dialogue": [
+        {
+          "speaker": "Renata Gomes — Gerente de Tesouraria",
+          "text": "No fim do ano a liquidez em dólar costuma apertar, e vi o BCB falando em leilões de linha. Quero explicar a característica principal desse instrumento para o time."
+        }
+      ],
+      "question": "Em momentos de restrição pontual de liquidez em moeda estrangeira, o Banco Central pode realizar leilões de venda de moeda estrangeira com compromisso de recompra (Leilões de Linha, Resolução BCB nº 350/2023). Qual é a principal característica desse instrumento?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O Banco Central doa os recursos em dólares de forma definitiva, para conter a inflação, sem exigir devolução.",
+          "correct": false,
+          "feedback": "O BCB não doa recursos; a operação prevê recompra futura."
+        },
+        {
+          "id": "b",
+          "text": "O Banco Central vende dólares à vista, das reservas internacionais, para prover liquidez imediata, e assume o compromisso de recomprá-los das instituições em data futura.",
+          "correct": true,
+          "feedback": "Correto. Os Leilões de Linha vendem moeda estrangeira à vista com compromisso de recompra pelo BCB em data predeterminada, dando liquidez temporária sem reduzir de forma permanente o estoque de reservas."
+        },
+        {
+          "id": "c",
+          "text": "Os bancos comerciais vendem seu patrimônio imobiliário ao Banco Central em troca de cédulas de reais.",
+          "correct": false,
+          "feedback": "Envolve ativos imobiliários, que estão fora do escopo do instrumento."
+        },
+        {
+          "id": "d",
+          "text": "A operação é realizada diretamente com os clientes finais de câmbio, nas agências bancárias.",
+          "correct": false,
+          "feedback": "O leilão é feito com instituições, não com clientes de varejo; clientes finais estão fora do escopo do instrumento."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

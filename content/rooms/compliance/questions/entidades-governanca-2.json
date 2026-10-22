@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "ent-16",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-politica-alta-administracao",
+      "dialogue": [
+        {
+          "speaker": "Camila Rezende — Analista de Compliance",
+          "text": "Vamos atualizar a política de PLD/FTP da casa e preciso registrar direitinho quem tem que aprovar o documento. Quem assina por cima nesse caso?"
+        }
+      ],
+      "question": "Pela Circular BCB nº 3.978/2020, a instituição deve formular e implementar uma política de PLD/FTP compatível com seu perfil de risco. Sobre a aprovação e a governança dessa política, é correto afirmar:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A política deve ser aprovada pelo Conselho de Administração ou, se ele não existir, pela Diretoria da instituição.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 exige que a política de PLD/FTP seja aprovada pelo órgão máximo de governança: o Conselho de Administração ou, na sua ausência, a Diretoria."
+        },
+        {
+          "id": "b",
+          "text": "A política pode ser aprovada por qualquer gerente de agência ou por um analista júnior de compliance.",
+          "correct": false,
+          "feedback": "A norma exige a manifestação da alta administração. Gerente ou analista júnior não têm a alçada para aprovar a política institucional de PLD/FTP."
+        },
+        {
+          "id": "c",
+          "text": "A aprovação da política cabe exclusivamente ao Banco Central do Brasil, antes de a instituição implementá-la.",
+          "correct": false,
+          "feedback": "O BCB regula e fiscaliza, mas não aprova previamente a política. A aprovação interna é responsabilidade da alta administração da própria instituição."
+        },
+        {
+          "id": "d",
+          "text": "A política de PLD/FTP é opcional para corretoras de câmbio que movimentem menos de R$ 500 milhões por ano.",
+          "correct": false,
+          "feedback": "Não existe faixa de dispensa por volume. A política de PLD/FTP é obrigatória para todas as instituições autorizadas, ajustada ao perfil de risco de cada uma."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-17",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-diretor-responsavel",
+      "dialogue": [
+        {
+          "speaker": "Rafael Duarte — Gerente de Riscos e Controles",
+          "text": "Estamos preparando o material que vai pro BC sobre a nossa estrutura de PLD. Quero deixar claro o que o diretor designado responde de verdade. O que cabe a ele?"
+        }
+      ],
+      "question": "As instituições autorizadas devem designar, perante o Banco Central, um diretor responsável pela conformidade com as regras de PLD/FTP. Quais são o papel e as responsabilidades desse diretor?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Responder também pela área de operações comerciais e pelas metas de vendas, para reduzir custos da instituição.",
+          "correct": false,
+          "feedback": "Acumular PLD com metas de vendas gera conflito de interesses, e o ideal é evitá-lo. O responsável por PLD precisa de independência em relação à área comercial."
+        },
+        {
+          "id": "b",
+          "text": "Responder pelo cumprimento das obrigações regulatórias de PLD/FTP, pela coordenação da Avaliação Interna de Risco e pela elaboração do relatório anual de efetividade.",
+          "correct": true,
+          "feedback": "Correto. O diretor designado responde pela governança de PLD/FTP, pela efetividade dos controles e pelos reportes ao BCB e ao COAF, o que inclui a AIR e o relatório anual de efetividade."
+        },
+        {
+          "id": "c",
+          "text": "Ter imunidade penal e administrativa perante o COAF e o Banco Central.",
+          "correct": false,
+          "feedback": "Não há imunidade. O diretor responsável responde administrativa e penalmente por omissões, sejam culposas ou dolosas."
+        },
+        {
+          "id": "d",
+          "text": "Repassar integralmente sua responsabilidade legal a consultorias externas contratadas.",
+          "correct": false,
+          "feedback": "A instituição pode contratar apoio externo, mas a responsabilidade final do diretor designado é indelegável."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-18",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-avaliacao-interna-risco-prazo",
+      "dialogue": [
+        {
+          "speaker": "Tatiane Moura — Coordenadora de Compliance",
+          "text": "A nossa Avaliação Interna de Risco foi concluída há um tempo e eu preciso montar o calendário de revisões. De quanto em quanto tempo ela precisa ser refeita?"
+        }
+      ],
+      "question": "A Avaliação Interna de Risco (AIR) identifica e mensura os riscos de lavagem de dinheiro da instituição. Conforme a Circular BCB nº 3.978/2020, qual é o prazo máximo para a sua revisão?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A cada 6 meses, coincidindo obrigatoriamente com os balanços semestrais.",
+          "correct": false,
+          "feedback": "O prazo regular fixado na norma não é semestral, e a revisão da AIR não está atrelada aos balanços da instituição."
+        },
+        {
+          "id": "b",
+          "text": "A cada 2 anos, devendo ser atualizada também quando houver alterações significativas no perfil de risco da instituição.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 prevê a revisão regular da AIR a cada dois anos, ou antes disso se ocorrer alteração relevante no perfil de risco."
+        },
+        {
+          "id": "c",
+          "text": "A cada 5 anos, e somente se houver mudança no presidente da instituição.",
+          "correct": false,
+          "feedback": "O prazo de 5 anos está incorreto, e a troca de presidente não é a condição que dispara a revisão. O gatilho é o prazo regular ou uma alteração relevante de risco."
+        },
+        {
+          "id": "d",
+          "text": "A cada 10 anos, acompanhando o prazo de guarda de documentos.",
+          "correct": false,
+          "feedback": "Os 10 anos são o prazo de guarda de registros e cadastros, e não o de revisão da AIR. Misturar os dois prazos é um erro comum."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-19",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-relatorio-efetividade",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Nogueira — Analista de Controles Internos",
+          "text": "Fechei o rascunho do Relatório de Efetividade de PLD/FTP e o prazo de 31 de março está chegando. Pra quem eu preciso encaminhar o documento?"
+        }
+      ],
+      "question": "Anualmente, a estrutura de controles internos deve elaborar o Relatório de Efetividade da política de PLD/FTP. Esse relatório deve ser encaminhado, até 31 de março do ano seguinte, para ciência e avaliação de qual instância interna?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aos acionistas minoritários, por meio de publicação em jornal de grande circulação.",
+          "correct": false,
+          "feedback": "O relatório é um documento de governança interna e sigiloso. Ele não é publicado em jornal nem divulgado a acionistas minoritários."
+        },
+        {
+          "id": "b",
+          "text": "Ao Conselho de Administração ou, na sua falta, à Diretoria da instituição.",
+          "correct": true,
+          "feedback": "Correto. O relatório deve ser submetido ao Conselho de Administração ou à Diretoria, para que a alta administração avalie a efetividade dos controles de PLD/FTP."
+        },
+        {
+          "id": "c",
+          "text": "Exclusivamente aos auditores externos independentes.",
+          "correct": false,
+          "feedback": "O destinatário é a alta administração da instituição. Os auditores externos não são a instância que avalia o relatório de efetividade."
+        },
+        {
+          "id": "d",
+          "text": "Ao sindicato dos bancários da região.",
+          "correct": false,
+          "feedback": "Destinatário sem qualquer base normativa. O relatório é interno e sigiloso, e o sindicato não tem papel nessa avaliação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-20",
+      "categories": [
+        "sfn"
+      ],
+      "topicTag": "coaf-plenario-quadro-tecnico",
+      "dialogue": [
+        {
+          "speaker": "Larissa Prado — Analista de Compliance Jr.",
+          "text": "Estou montando uma apresentação para o time sobre como o COAF funciona por dentro. Fiquei em dúvida sobre quem faz o quê entre o Plenário e o corpo técnico. Pode me ajudar a separar?"
+        }
+      ],
+      "question": "A governança interna do COAF tem dois níveis bem definidos: o Plenário e o Quadro Técnico. Qual afirmativa expressa corretamente a separação de papéis no órgão?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O Plenário julga processos administrativos sancionadores contra setores não regulados, enquanto o Quadro Técnico de analistas recebe, em sigilo, as comunicações e as divulga à imprensa quando o caso é relevante.",
+          "correct": false,
+          "feedback": "Incorreta. As comunicações são sigilosas e os RIFs não são divulgados à imprensa; o trecho que muda a resposta é \"as divulga à imprensa\"."
+        },
+        {
+          "id": "b",
+          "text": "O Plenário julga processos administrativos sancionadores contra setores não regulados, enquanto o Quadro Técnico de analistas recebe, em sigilo, as comunicações e elabora os RIFs.",
+          "correct": true,
+          "feedback": "Correto. O Plenário delibera sobre normas e processos punitivos administrativos, e os analistas do Quadro Técnico fazem o trabalho de inteligência, recebendo as comunicações e produzindo os RIFs."
+        },
+        {
+          "id": "c",
+          "text": "O Quadro Técnico julga processos administrativos sancionadores contra setores não regulados, enquanto o Plenário de conselheiros recebe, em sigilo, as comunicações e elabora os RIFs.",
+          "correct": false,
+          "feedback": "Incorreta. Os papéis estão trocados: o Plenário julga, e o Quadro Técnico recebe as comunicações e elabora os RIFs."
+        },
+        {
+          "id": "d",
+          "text": "O Plenário julga processos administrativos sancionadores contra setores não regulados, e o Quadro Técnico de analistas recebe, em sigilo, as comunicações, mas os RIFs são elaborados pelos conselheiros do Plenário.",
+          "correct": false,
+          "feedback": "Incorreta. Os RIFs são elaborados pelo Quadro Técnico, e não pelos conselheiros; o trecho que muda a resposta é \"elaborados pelos conselheiros\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-21",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-conheca-seu-empregado",
+      "dialogue": [
+        {
+          "speaker": "Bruno Siqueira — Analista de Pessoas e Cultura",
+          "text": "No onboarding dos novos colegas o time de compliance pediu um módulo sobre PLD e uma checagem na seleção. Eu queria entender o motivo disso para explicar bem na apresentação."
+        }
+      ],
+      "question": "A regulamentação de PLD/FTP exige procedimentos de seleção, acompanhamento e treinamento de funcionários e colaboradores (conceito de Conheça seu Empregado, ou KYE). Essa exigência visa:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Garantir que os funcionários não se filiem a partidos políticos de oposição.",
+          "correct": false,
+          "feedback": "A finalidade não tem relação com preferência política. O KYE trata de integridade e capacitação para a prevenção à lavagem de dinheiro."
+        },
+        {
+          "id": "b",
+          "text": "Mitigar riscos de cumplicidade interna e de vazamento de informações sigilosas, e garantir um corpo funcional qualificado para identificar indícios de atipicidade.",
+          "correct": true,
+          "feedback": "Correto. O KYE e o treinamento contínuo preservam a integridade interna e dão ao time a capacidade técnica de reconhecer sinais de alerta."
+        },
+        {
+          "id": "c",
+          "text": "Reduzir o pagamento de salários e benefícios trabalhistas.",
+          "correct": false,
+          "feedback": "Objetivo alheio à regulação de conformidade. O KYE não tem finalidade de redução de custos com pessoal."
+        },
+        {
+          "id": "d",
+          "text": "Impedir que funcionários realizem operações financeiras pessoais em qualquer banco.",
+          "correct": false,
+          "feedback": "A norma não proíbe operações financeiras pessoais dos colaboradores. Ela exige seleção, acompanhamento e treinamento."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-22",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-tipping-off-protecao",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lacerda — Analista de Compliance",
+          "text": "Acabei de concluir a análise de um caso de câmbio com fortes indícios de lavagem e vou comunicar ao COAF. O cliente já me ligou duas vezes perguntando da operação. Como eu me comporto daqui pra frente?"
+        }
+      ],
+      "question": "Um analista de compliance de uma corretora de câmbio identifica uma operação com fortes indícios de lavagem de dinheiro e a comunica ao COAF. Sobre os deveres e as garantias aplicáveis ao caso, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O analista deve telefonar imediatamente ao cliente, avisando que o reporte foi feito para que ele providencie esclarecimentos ao COAF.",
+          "correct": false,
+          "feedback": "Revelar o reporte ao cliente é infração grave, conhecida como tipping off. O sigilo da comunicação é um dever legal."
+        },
+        {
+          "id": "b",
+          "text": "A comunicação é feita sob sigilo absoluto, é vedado dar ciência ao cliente (proibição de tipping off), e a comunicação feita de boa-fé não gera responsabilidade civil ou administrativa para o funcionário nem para a instituição.",
+          "correct": true,
+          "feedback": "Correto. O sigilo é dever legal, e a boa-fé no cumprimento do dever regulatório protege a instituição e o colaborador contra retaliações jurídicas."
+        },
+        {
+          "id": "c",
+          "text": "O funcionário responderá pessoalmente por crime de calúnia se o COAF arquivar a comunicação sem constatar ilícito.",
+          "correct": false,
+          "feedback": "O arquivamento pelo COAF não gera responsabilidade pessoal. A comunicação de boa-fé é protegida por lei, mesmo que nenhum ilícito seja constatado."
+        },
+        {
+          "id": "d",
+          "text": "A instituição deve publicar a lista de clientes reportados no seu site oficial de governança.",
+          "correct": false,
+          "feedback": "Publicar clientes reportados é incompatível com o sigilo legal da comunicação e violaria a vedação de dar ciência aos envolvidos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-23",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-auditoria-independente",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Leal — Gerente de Auditoria Interna",
+          "text": "Vou montar o escopo da auditoria da nossa estrutura de PLD/FTP neste ciclo. Antes de fechar, queria alinhar com vocês o que a auditoria faz nesse tema e o que não faz."
+        }
+      ],
+      "question": "As instituições de maior porte ou complexidade devem submeter sua estrutura de PLD/FTP a avaliações periódicas por auditoria interna ou externa independente. Qual é o papel da auditoria nesse contexto?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Substituir a Diretoria nas decisões operacionais de aprovação de cadastro de clientes de alto risco.",
+          "correct": false,
+          "feedback": "A aprovação de cadastro cabe à gestão e à linha de defesa operacional. A auditoria avalia de forma independente e não toma essas decisões."
+        },
+        {
+          "id": "b",
+          "text": "Testar de forma independente a aderência da instituição à legislação, a eficácia dos sistemas de monitoramento e a adequação da Avaliação Interna de Risco.",
+          "correct": true,
+          "feedback": "Correto. A auditoria atua como terceira linha de defesa, testando e validando a eficácia do sistema de PLD/FTP."
+        },
+        {
+          "id": "c",
+          "text": "Elaborar as declarações de imposto de renda dos diretores da instituição.",
+          "correct": false,
+          "feedback": "Atividade fora do escopo da auditoria de PLD/FTP, sem relação com a prevenção à lavagem de dinheiro."
+        },
+        {
+          "id": "d",
+          "text": "Comunicar diretamente ao Ministério Público todas as contas bancárias com saldo zerado.",
+          "correct": false,
+          "feedback": "Conta com saldo zerado não é, por si só, indício de ilícito, e a auditoria não tem a função de comunicar contas ao Ministério Público."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-24",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-sancoes-art-12-lei-9613",
+      "dialogue": [
+        {
+          "speaker": "Priscila Andrade — Analista Jurídica",
+          "text": "Estou preparando um treinamento para a diretoria sobre o que acontece se a gente falhar nos deveres de identificação e comunicação. Quero listar as sanções do art. 12 da Lei 9.613 sem inventar nenhuma."
+        }
+      ],
+      "question": "O art. 12 da Lei nº 9.613/1998 prevê sanções administrativas para pessoas jurídicas e administradores que descumprirem os deveres de identificação e comunicação. Entre as sanções aplicáveis pelo órgão regulador (BCB/COAF), qual alternativa NÃO se inclui?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Advertência.",
+          "correct": false,
+          "feedback": "A advertência é uma sanção administrativa expressamente prevista no art. 12 da Lei nº 9.613/1998."
+        },
+        {
+          "id": "b",
+          "text": "Multa pecuniária variável de até R$ 20.000.000,00.",
+          "correct": false,
+          "feedback": "A multa pecuniária variável, no teto indicado, é sanção administrativa prevista no art. 12 da Lei nº 9.613/1998."
+        },
+        {
+          "id": "c",
+          "text": "Inabilitação temporária, por até 10 anos, para o exercício do cargo de administrador de instituição financeira.",
+          "correct": false,
+          "feedback": "A inabilitação temporária de administradores também consta do rol de sanções administrativas do art. 12 da Lei nº 9.613/1998."
+        },
+        {
+          "id": "d",
+          "text": "Pena de prisão em regime fechado decretada diretamente pelo Conselho Monetário Nacional.",
+          "correct": true,
+          "feedback": "Esta é a exceção, por isso é a alternativa correta. Penas privativas de liberdade dependem de processo penal conduzido pelo Poder Judiciário e nunca são aplicadas por órgãos administrativos como o CMN ou o BCB."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-25",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-declaracao-negativa",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Carvalho — Analista de Monitoramento",
+          "text": "Este ano o nosso monitoramento não chegou a nenhuma suspeita que justificasse reporte ao COAF. Então é só deixar quieto, certo? Ou existe algum procedimento de fechamento?"
+        }
+      ],
+      "question": "Se, durante um ano civil, a instituição financeira não constatar nenhuma operação ou proposta suspeita que justifique comunicação ao COAF, qual é o procedimento de governança exigido pelos órgãos reguladores?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A instituição está dispensada de qualquer manifestação, pois o silêncio presume conformidade.",
+          "correct": false,
+          "feedback": "O silêncio não é admitido. A ausência de comunicações também precisa ser formalmente declarada."
+        },
+        {
+          "id": "b",
+          "text": "A instituição deve prestar a Declaração Negativa (Comunicação de Não Ocorrência) ao órgão regulador no prazo regulamentar, em geral até 10 dias úteis após o fim do ano.",
+          "correct": true,
+          "feedback": "Correto. A declaração negativa atesta que os sistemas de monitoramento operaram e que nenhuma atipicidade foi detectada no período."
+        },
+        {
+          "id": "c",
+          "text": "A instituição deve pagar multa por falta de produtividade em compliance.",
+          "correct": false,
+          "feedback": "Não existe multa por não ter encontrado operações suspeitas. A obrigação é de declarar a não ocorrência, e não de produzir comunicações."
+        },
+        {
+          "id": "d",
+          "text": "O diretor de compliance deve renunciar ao cargo imediatamente.",
+          "correct": false,
+          "feedback": "Alternativa sem qualquer base regulatória. Um ano sem atipicidades não leva à renúncia do diretor."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-26",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "cambio-responsabilidade-finalidade",
+      "dialogue": [
+        {
+          "speaker": "Júlia Mendonça — Analista de Operações de Câmbio",
+          "text": "Um cliente marcou a finalidade da remessa e eu desconfio que o código está errado. Quem responde por essa classificação, ele ou a gente?"
+        }
+      ],
+      "question": "O Novo Marco Legal do Câmbio (Lei nº 14.286/2021) definiu a responsabilidade pela classificação da finalidade das operações de câmbio. De acordo com a lei, qual é a atribuição de papéis correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A responsabilidade legal pela indicação da finalidade é exclusiva do cliente, e cabe à instituição autorizada prestar suporte técnico e as informações ao BCB.",
+          "correct": true,
+          "feedback": "Correto. O art. 4º da Lei nº 14.286/2021 estabelece que a indicação da finalidade é responsabilidade do cliente, enquanto a instituição fornece o suporte técnico orientativo."
+        },
+        {
+          "id": "b",
+          "text": "A responsabilidade legal pela indicação da finalidade é do cliente, e cabe à instituição autorizada prestar suporte técnico, mas o cliente fica isento de responsabilidade por informação falsa.",
+          "correct": false,
+          "feedback": "Incorreta. O cliente responde pela classificação que indica; o trecho que muda a resposta é \"fica isento de responsabilidade por informação falsa\"."
+        },
+        {
+          "id": "c",
+          "text": "A responsabilidade legal pela indicação da finalidade é exclusiva da instituição autorizada, e cabe ao cliente apenas confirmar o código sugerido.",
+          "correct": false,
+          "feedback": "Incorreta. A responsabilidade é do cliente, e a instituição apenas presta suporte técnico."
+        },
+        {
+          "id": "d",
+          "text": "A responsabilidade legal pela indicação da finalidade é exclusiva do cliente, e cabe à instituição autorizada prestar suporte técnico, mas cada finalidade precisa de aprovação prévia do Banco Central.",
+          "correct": false,
+          "feedback": "Incorreta. Não há aprovação prévia do Banco Central para cada finalidade; o trecho que muda a resposta é \"precisa de aprovação prévia\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-27",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "cambio-documentos-redundantes",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Esteves — Analista de Atendimento",
+          "text": "Um cliente reclamou que pedimos de novo uns documentos que ele já tinha mandado no cadastro. Ele citou a lei do novo marco do câmbio. Isso tem alguma base?"
+        }
+      ],
+      "question": "Para desburocratizar e dar eficiência ao mercado de câmbio, o art. 27 da Lei nº 14.286/2021 estabeleceu um direito dos clientes perante as instituições autorizadas. Esse direito consiste em:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Realizar operações de câmbio sem apresentar qualquer documento de identificação em operações acima de US$ 1 milhão.",
+          "correct": false,
+          "feedback": "Proposta sem amparo legal. Não existe dispensa de identificação em função do valor da operação."
+        },
+        {
+          "id": "b",
+          "text": "Impedir que as instituições exijam do cliente dados ou documentos que já estejam em suas próprias bases ou em bases públicas de acesso aberto.",
+          "correct": true,
+          "feedback": "Correto. O art. 27 da Lei nº 14.286/2021 veda a exigência repetida de documentos e informações que a instituição já possua ou que estejam acessíveis em bases públicas."
+        },
+        {
+          "id": "c",
+          "text": "Isenção total do pagamento de tarifas bancárias em remessas financeiras para o exterior.",
+          "correct": false,
+          "feedback": "A lei não cria isenção de tarifas para remessas. O direito tratado no art. 27 é sobre redundância de documentos."
+        },
+        {
+          "id": "d",
+          "text": "Exigir que o banco liquide a operação de câmbio a uma taxa preferencial subsidiada pelo governo.",
+          "correct": false,
+          "feedback": "Não há taxa preferencial subsidiada na lei. A taxa de câmbio é livre e de mercado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-28",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-kyc-cadastro",
+      "dialogue": [
+        {
+          "speaker": "Carolina Bastos — Analista de Onboarding",
+          "text": "Um cliente PJ achou excessivo a gente pedir informações sobre faturamento e quem assina pela empresa. Eu preciso explicar o que o cadastro de KYC tem que cobrir. Qual é o mínimo?"
+        }
+      ],
+      "question": "Os procedimentos de Conheça seu Cliente (KYC) são indispensáveis para iniciar e manter o relacionamento financeiro. Conforme a regulação do Banco Central, as informações cadastrais do cliente devem abranger:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas nome e telefone, sendo proibido pedir dados sobre renda ou patrimônio, em respeito à privacidade.",
+          "correct": false,
+          "feedback": "Renda e capacidade financeira são essenciais para avaliar a compatibilidade das movimentações. Não há proibição de pedir esses dados."
+        },
+        {
+          "id": "b",
+          "text": "A qualificação completa do cliente, incluindo a identificação dos titulares e representantes legais e a verificação da compatibilidade da capacidade financeira com as movimentações realizadas.",
+          "correct": true,
+          "feedback": "Correto. O KYC exige qualificação completa e acompanhamento do perfil socioeconômico, para checar se as movimentações são compatíveis com a capacidade financeira do cliente."
+        },
+        {
+          "id": "c",
+          "text": "Apenas a cópia do título de eleitor atualizado.",
+          "correct": false,
+          "feedback": "Um único documento é insuficiente para a qualificação exigida pelo KYC, que vai além de identificação simples."
+        },
+        {
+          "id": "d",
+          "text": "Informações sigilosas sobre a opção religiosa e a filiação partidária do cliente.",
+          "correct": false,
+          "feedback": "Esses dados são inadequados e não fazem parte do cadastro de PLD/FTP. O KYC busca informações pertinentes à identificação e ao perfil financeiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-29",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-beneficiario-final",
+      "dialogue": [
+        {
+          "speaker": "André Figueiredo — Analista de Cadastro PJ",
+          "text": "Estou analisando um cliente empresa com uma cadeia societária cheia de holdings. O procedimento pede que eu chegue ao beneficiário final, mas fiquei em dúvida sobre quem entra nesse conceito."
+        }
+      ],
+      "question": "Na qualificação de clientes pessoas jurídicas, a legislação de PLD/FTP exige identificar a cadeia de controle até alcançar o Beneficiário Final. Considera-se Beneficiário Final:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O funcionário do departamento de compras da empresa contratante.",
+          "correct": false,
+          "feedback": "Um funcionário de compras não exerce controle nem recebe o benefício econômico final da empresa."
+        },
+        {
+          "id": "b",
+          "text": "A pessoa natural que, em última análise, possui, controla ou influencia significativamente a pessoa jurídica (direta ou indiretamente, com participação superior a 25% do capital) ou em cujo nome a transação é conduzida.",
+          "correct": true,
+          "feedback": "Correto. É a definição de Beneficiário Final: a pessoa natural no topo da cadeia de controle ou influência significativa, com o gatilho geral de participação superior a 25%."
+        },
+        {
+          "id": "c",
+          "text": "Qualquer acionista minoritário com apenas uma ação preferencial sem direito a voto.",
+          "correct": false,
+          "feedback": "Um minoritário com uma ação sem voto não controla nem influencia significativamente a empresa, e fica muito abaixo do patamar de 25%."
+        },
+        {
+          "id": "d",
+          "text": "O auditor externo contratado para revisar as demonstrações contábeis da empresa.",
+          "correct": false,
+          "feedback": "O auditor presta um serviço independente e não possui controle nem benefício econômico final sobre a entidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "ent-30",
+      "categories": [
+        "cambio-pld"
+      ],
+      "topicTag": "pld-pep-prazo",
+      "dialogue": [
+        {
+          "speaker": "Marina Albuquerque — Analista de Risco de Clientes",
+          "text": "Apareceu um cliente que deixou um cargo público importante no ano passado. O sistema ainda sinaliza ele como PEP e o comercial quer saber se o alerta já pode cair. O que eu respondo?"
+        }
+      ],
+      "question": "As Pessoas Expostas Politicamente (PEP) exigem atenção especial na devida diligência. Sobre o enquadramento e o prazo da condição de PEP, assinale a opção correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A condição de PEP termina no exato dia em que a pessoa deixa de exercer a função pública relevante.",
+          "correct": false,
+          "feedback": "Existe um período residual de monitoramento depois que a pessoa deixa o cargo, então a condição não se encerra no mesmo dia."
+        },
+        {
+          "id": "b",
+          "text": "A condição de PEP se estende por 5 anos após a data em que a pessoa deixou a posição pública relevante, e alcança também seus familiares e colaboradores próximos.",
+          "correct": true,
+          "feedback": "Correto. Conforme a Circular BCB nº 3.978/2020, a condição de PEP se estende por 5 anos após o desligamento do cargo e abrange familiares e colaboradores próximos."
+        },
+        {
+          "id": "c",
+          "text": "As instituições financeiras são proibidas de abrir contas para clientes qualificados como PEP.",
+          "correct": false,
+          "feedback": "Não há proibição. É permitido se relacionar com PEPs, desde que com procedimentos reforçados de devida diligência e aprovação de alçada superior."
+        },
+        {
+          "id": "d",
+          "text": "A qualificação de PEP vale apenas para autoridades estrangeiras, e agentes públicos brasileiros ficam isentos de monitoramento.",
+          "correct": false,
+          "feedback": "A qualificação alcança tanto PEPs nacionais quanto estrangeiras. Agentes públicos brasileiros não são isentos."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

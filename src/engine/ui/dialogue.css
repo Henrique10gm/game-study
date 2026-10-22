@@ -1,0 +1,333 @@
+/* DialogueOverlay component styles (01-UI-SPEC.md). Relies on the CSS custom
+   properties declared in tokens.css. */
+
+.dialogue-overlay {
+  position: absolute;
+  left: var(--space-md);
+  right: var(--space-md);
+  bottom: var(--space-md);
+  margin: 0 auto;
+  max-width: 880px;
+  max-height: calc(100% - var(--space-2xl) - var(--space-md));
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-lg);
+  border-radius: 0;
+  box-shadow:
+    0 -4px 0 0 var(--color-accent),
+    0 4px 0 0 var(--color-accent),
+    -4px 0 0 0 var(--color-accent),
+    4px 0 0 0 var(--color-accent),
+    8px 8px 0 0 var(--color-forest);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.dialogue-speaker {
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  color: var(--color-muted);
+}
+
+.dialogue-line {
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line-height);
+  margin: 0;
+}
+
+.dialogue-line-speaker {
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  color: var(--color-muted);
+  margin-right: var(--space-xs);
+}
+
+.dialogue-question {
+  font-size: var(--type-body-size);
+  font-weight: 600;
+  line-height: var(--type-body-line-height);
+  margin: var(--space-sm) 0 0;
+}
+
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.choice-button {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 2px solid var(--color-line);
+  border-radius: 0;
+  min-height: var(--touch-min);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  text-align: left;
+  cursor: pointer;
+}
+
+.choice-button:disabled {
+  cursor: default;
+}
+
+.choice-button--correct {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.choice-button--correct::before {
+  content: "✓ ";
+}
+
+.choice-button--wrong {
+  border-color: var(--color-wrong);
+  border-style: dashed;
+  color: var(--color-wrong);
+}
+
+.choice-button--wrong::before {
+  content: "✕ ";
+}
+
+.feedback-banner {
+  font-size: var(--type-heading-size);
+  font-weight: var(--type-heading-weight);
+  line-height: var(--type-heading-line-height);
+  margin: var(--space-md) 0 0;
+}
+
+.feedback-banner--correct {
+  color: var(--color-accent);
+}
+
+.feedback-banner--wrong {
+  color: var(--color-wrong);
+}
+
+.feedback-text {
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line-height);
+  margin: var(--space-sm) 0 0;
+}
+
+.xp-gain {
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  color: var(--color-accent);
+  margin-top: var(--space-sm);
+}
+
+.btn-continue {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 0;
+  min-height: var(--touch-min);
+  padding: var(--space-sm) var(--space-lg);
+  margin-top: var(--space-md);
+  font-weight: 800;
+  align-self: flex-end;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  cursor: pointer;
+}
+
+.dialogue-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.dialogue-meta .px-tag {
+  flex: none;
+}
+
+.dialogue-meta .px-bar {
+  flex: 1;
+  max-width: 220px;
+  height: 8px;
+}
+
+.dialogue-streak {
+  color: var(--color-accent);
+  font-size: var(--type-label-size);
+  font-weight: 800;
+}
+
+.feedback-banner,
+.dialogue-question {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+.feedback-banner {
+  font-size: 26px;
+}
+
+.dialogue-question {
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.choice-button:not(:disabled):hover,
+.choice-button:not(:disabled):focus-visible {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.dialogue-speaker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Phones and short screens: the question sheet uses the whole width and scrolls. */
+@media (max-width: 640px), (max-height: 520px) {
+  .dialogue-overlay {
+    left: var(--space-sm);
+    right: var(--space-sm);
+    bottom: calc(var(--space-sm) + env(safe-area-inset-bottom, 0px));
+    max-height: calc(100dvh - 56px);
+    padding: var(--space-md);
+  }
+
+  .dialogue-line,
+  .feedback-text {
+    font-size: 15px;
+  }
+
+  .dialogue-question {
+    font-size: 17px;
+  }
+
+  .choice-button {
+    min-height: 48px;
+    font-size: 14px;
+  }
+}
+
+/* Contra o tempo: the countdown bar above the question. */
+.dialogue-timer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.dialogue-timer-bar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.dialogue-timer-fill {
+  width: 100%;
+  height: 100%;
+  background: var(--color-accent);
+}
+
+.dialogue-timer-fill.is-low {
+  background: var(--color-wrong);
+}
+
+.dialogue-timer-label {
+  min-width: 3ch;
+  text-align: right;
+  font-weight: 800;
+  font-size: var(--type-label-size);
+  color: var(--color-accent);
+}
+
+/* Reading order: who is talking, the scenario, then the question, then the options.
+   Subtle: only weight, tone and rhythm change, nothing is added to the screen. */
+.dialogue-speaker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dialogue-line {
+  max-width: 68ch;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+}
+
+.dialogue-question {
+  max-width: 68ch;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-line);
+}
+
+.choice-list {
+  margin-top: var(--space-sm);
+}
+
+/* After answering: the scenario fades back and the feedback reads as one block. */
+.dialogue-overlay.is-answered .dialogue-line,
+.dialogue-overlay.is-answered .dialogue-question {
+  opacity: 0.6;
+}
+
+.feedback-banner {
+  font-size: 22px;
+  margin-top: var(--space-lg);
+}
+
+.feedback-text {
+  max-width: 68ch;
+  line-height: 1.6;
+  margin-top: var(--space-xs);
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-line);
+}
+
+.feedback-banner--correct + .feedback-text {
+  border-left-color: var(--color-accent);
+}
+
+.feedback-banner--wrong + .feedback-text {
+  border-left-color: var(--color-wrong);
+}
+
+/* Keyboard selection: the highlighted answer is unmistakable (arrows move it, Enter confirms). */
+.choice-button:not(:disabled):focus-visible {
+  background: #36302d;
+  box-shadow: inset 6px 0 0 var(--color-accent);
+}
+
+.dialogue-hint {
+  margin: var(--space-sm) 0 0;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.dialogue-overlay.is-answered .dialogue-hint,
+.dialogue-hint:empty {
+  display: none;
+}
+
+/* Touch screens have no arrows to press. */
+@media (hover: none) and (pointer: coarse) {
+  .dialogue-hint {
+    display: none;
+  }
+}

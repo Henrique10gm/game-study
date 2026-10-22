@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "lim-31",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "identificacao-operacoes-especie-r-2000",
+      "dialogue": [
+        {
+          "speaker": "Camila Duarte — Analista de Operações",
+          "text": "O caixa me perguntou o que precisa ficar registrado quando alguém chega com um depósito em dinheiro vivo de valor mais alto. Pode me ajudar a confirmar a regra?"
+        }
+      ],
+      "question": "Em depósitos ou saques em espécie de valor individual acima de R$ 2.000,00, qual exigência de registro a instituição financeira deve cumprir segundo a Circular BCB nº 3.978/2020?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Registrar o nome e o CPF/CNPJ do portador que fizer a movimentação física.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 exige o registro das operações em espécie acima de R$ 2.000,00, com a identificação obrigatória (nome e CPF/CNPJ) do portador do dinheiro."
+        },
+        {
+          "id": "b",
+          "text": "Colher uma cópia autenticada do contrato social do banco depositário.",
+          "correct": false,
+          "feedback": "A norma pede os dados cadastrais do cliente ou do portador do dinheiro, e não documentos institucionais do próprio banco."
+        },
+        {
+          "id": "c",
+          "text": "Enviar um SMS imediato ao COAF antes de receber as cédulas no caixa.",
+          "correct": false,
+          "feedback": "O registro é feito nos sistemas internos da instituição, para trilha de auditoria e monitoramento. Não existe envio prévio de SMS ao COAF."
+        },
+        {
+          "id": "d",
+          "text": "Fazer consulta prévia ao Tribunal de Contas da União (TCU).",
+          "correct": false,
+          "feedback": "O TCU não tem atribuição de fiscalizar individualmente o cadastro de clientes bancários no dia a dia."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-32",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "prazos-monitoramento-analise-suspeicao",
+      "dialogue": [
+        {
+          "speaker": "Rafael Nogueira — Coordenador de Monitoramento",
+          "text": "Um alerta de atipicidade está parado na fila e o time quer saber de quanto tempo dispõe para selecionar e analisar. Qual é o prazo que a norma dá?"
+        }
+      ],
+      "question": "No monitoramento e análise de operações atípicas previstos na Circular BCB nº 3.978/2020, quais são os prazos máximos para a seleção da operação atípica e para a conclusão da análise de suspeição?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 dias para a seleção e mais 10 dias para a análise.",
+          "correct": false,
+          "feedback": "Dez dias úteis é o prazo da Declaração Negativa ao COAF, não o do rito de seleção e análise de operações atípicas."
+        },
+        {
+          "id": "b",
+          "text": "Até 45 dias para monitorar e selecionar a operação, mais até 45 dias para concluir a análise de suspeição e decidir sobre o reporte.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 fixa até 45 dias para o monitoramento e a seleção e até mais 45 dias para concluir a análise (com o dossiê) e decidir sobre a comunicação."
+        },
+        {
+          "id": "c",
+          "text": "Até 120 dias corridos, contados da primeira operação do cliente.",
+          "correct": false,
+          "feedback": "A sistemática do Banco Central trabalha com prazos delimitados de 45 dias mais 45 dias, e não com um prazo único de 120 dias contado da primeira operação."
+        },
+        {
+          "id": "d",
+          "text": "Sem prazo definido, a critério do diretor responsável por compliance.",
+          "correct": false,
+          "feedback": "A regulamentação estabelece prazos obrigatórios, que a diretoria não pode adiar indefinidamente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-33",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "prazo-envio-cos-coaf",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Menezes — Analista de PLD",
+          "text": "Acabei de fechar o dossiê de uma operação e o comitê decidiu comunicar. Estou conferindo a contagem do prazo para transmitir no SISCOAF."
+        }
+      ],
+      "question": "Depois de concluir a análise e decidir que há indícios fundamentados de lavagem de dinheiro ou financiamento do terrorismo, em que prazo a instituição deve transmitir a Comunicação de Operação Suspeita (COS) ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Em até 24 horas contadas do início do monitoramento.",
+          "correct": false,
+          "feedback": "O marco inicial do prazo é a decisão de comunicar, tomada pela área competente, e não o alerta primário ou o início do monitoramento."
+        },
+        {
+          "id": "b",
+          "text": "Até o dia útil seguinte à data da decisão de comunicar a operação.",
+          "correct": true,
+          "feedback": "Correto. Pelo Art. 53 da Circular BCB nº 3.978/2020, a COS deve ser enviada ao COAF, pelo SISCOAF, até o dia útil seguinte àquele em que a instituição decidiu comunicar."
+        },
+        {
+          "id": "c",
+          "text": "Até o último dia útil do mês seguinte à conclusão do dossiê.",
+          "correct": false,
+          "feedback": "A norma exige prontidão: a comunicação sai no dia útil posterior à decisão, e não ao fim do mês seguinte."
+        },
+        {
+          "id": "d",
+          "text": "Em até 30 dias após o envio do Relatório de Efetividade ao Banco Central.",
+          "correct": false,
+          "feedback": "A comunicação ao COAF é tempestiva e individualizada, e não depende de nenhum relatório de efetividade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-34",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "vedacao-tipping-off",
+      "dialogue": [
+        {
+          "speaker": "Tiago Albuquerque — Gerente de Relacionamento",
+          "text": "Um cliente grande com quem tenho muita proximidade foi parar na análise do compliance, e fiquei sabendo que vai ter comunicação. Fiquei tentado a avisar. Isso pega mal?"
+        }
+      ],
+      "question": "Um gerente de relacionamento descobre que o compliance decidiu fazer uma Comunicação de Operação Suspeita ao COAF sobre as movimentações atípicas de um grande cliente. Ele avisa o cliente para que ele prepare a defesa. A atitude do gerente:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É correta, pois está amparada pelo direito do cliente à ampla defesa e ao contraditório.",
+          "correct": false,
+          "feedback": "O direito de defesa do cliente será exercido perante as autoridades competentes em momento oportuno. Durante a fase de inteligência financeira, o aviso prévio é vedado."
+        },
+        {
+          "id": "b",
+          "text": "É ilegal, pois viola a vedação de dar ciência da comunicação ao cliente ou a terceiros (tipping off) e sujeita o gerente a sanções administrativas e penais.",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 9.613/1998 (Art. 11) e a regulamentação do BCB proíbem dar ciência ao cliente ou a terceiros sobre a comunicação ao COAF, para preservar o sigilo da análise de inteligência financeira."
+        },
+        {
+          "id": "c",
+          "text": "É obrigatória, pois o Código de Defesa do Consumidor exige transparência irrestrita nos serviços bancários.",
+          "correct": false,
+          "feedback": "O dever de sigilo sobre as comunicações ao COAF prevalece sobre as regras gerais de consumo, por causa do interesse público no combate ao crime."
+        },
+        {
+          "id": "d",
+          "text": "Só seria irregular se o gerente cobrasse comissão pelo aviso.",
+          "correct": false,
+          "feedback": "Violar o sigilo legal da comunicação já é infração por si só, independentemente de qualquer vantagem financeira."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-35",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "protecao-boa-fe-comunicacoes-coaf",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Cardoso — Analista de Compliance",
+          "text": "Fiz uma comunicação ao COAF que, pelo que soube depois, não deu em nada, e o cliente tinha explicação lícita. Fiquei preocupada com o que pode sobrar para a gente."
+        }
+      ],
+      "question": "Uma instituição financeira fez uma Comunicação de Operação Suspeita ao COAF sobre um cliente com movimentações atípicas. Depois, concluiu-se que o cliente era inocente e a operação tinha justificativa lícita. Sobre a comunicação feita pela instituição, assinale a afirmativa correta:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A instituição responderá civilmente por danos morais perante o cliente por ter prestado informação incorreta.",
+          "correct": false,
+          "feedback": "A lei dá proteção contra responsabilização civil às comunicações feitas de boa-fé, mesmo que depois a suspeita não se confirme."
+        },
+        {
+          "id": "b",
+          "text": "As comunicações feitas de boa-fé no cumprimento do dever regulatório não geram responsabilidade civil ou administrativa para a instituição nem para seus funcionários.",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 9.613/1998 (Art. 11) e a Circular BCB nº 3.978/2020 protegem as pessoas obrigadas e seus prepostos: a comunicação de boa-fé, feita em cumprimento da lei, não gera responsabilização."
+        },
+        {
+          "id": "c",
+          "text": "O analista de compliance deverá ressarcir as despesas judiciais da Polícia Federal.",
+          "correct": false,
+          "feedback": "O analista que age no cumprimento da norma não responde por custos de sucumbência nem pelas despesas da investigação."
+        },
+        {
+          "id": "d",
+          "text": "A licença de funcionamento do banco será suspensa pelo Banco Central por erro de análise.",
+          "correct": false,
+          "feedback": "Comunicar de boa-fé é um dever regulatório. O fato de a suspeita não se confirmar não invalida o cumprimento desse dever nem gera suspensão da licença."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-36",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "declaracao-negativa-coaf",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Santana — Diretor de Compliance",
+          "text": "Fechamos o ano sem nenhuma operação atípica que justificasse comunicação ao COAF. Será que alguma coisa ainda precisa ser feita perto do fim do ano civil?"
+        }
+      ],
+      "question": "Durante todo o ano civil, uma corretora de câmbio de pequeno porte aplicou seus procedimentos de monitoramento, mas não identificou nenhuma operação atípica passível de comunicação ao COAF. Segundo a Circular BCB nº 3.978/2020, qual providência a instituição deve adotar?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enviar a Declaração Negativa, atestando que não houve operações passíveis de comunicação, pelo SISCOAF, em até 30 dias corridos após o encerramento do ano civil.",
+          "correct": false,
+          "feedback": "Incorreta. O prazo é de 10 dias úteis, e não de 30 dias corridos."
+        },
+        {
+          "id": "b",
+          "text": "Enviar a Declaração Negativa, atestando que não houve operações passíveis de comunicação, pelo SISCOAF, em até 10 dias úteis após o encerramento do ano civil.",
+          "correct": true,
+          "feedback": "Correto. O Art. 55 da Circular BCB nº 3.978/2020 exige que a não ocorrência de operações comunicáveis seja declarada pelo SISCOAF em até 10 dias úteis após o fim do ano civil."
+        },
+        {
+          "id": "c",
+          "text": "Enviar a Declaração Negativa, atestando que não houve operações passíveis de comunicação, pelo SISCOAF, em até 10 dias úteis após o encerramento do semestre civil.",
+          "correct": false,
+          "feedback": "Incorreta. A declaração é anual, ao fim do ano civil, e não semestral."
+        },
+        {
+          "id": "d",
+          "text": "Enviar a Declaração Negativa, atestando que não houve operações passíveis de comunicação, diretamente ao Banco Central, por ofício, em até 10 dias úteis após o encerramento do ano civil.",
+          "correct": false,
+          "feedback": "Incorreta. A declaração é feita ao COAF pelo SISCOAF, e não por ofício ao Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-37",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "guarda-cadastro-kyc-transacoes",
+      "dialogue": [
+        {
+          "speaker": "Lucas Pimentel — Analista de Dados",
+          "text": "Estamos limpando a base de contas encerradas e preciso saber por quanto tempo ainda guardamos cadastro e transações de um cliente que saiu em maio de 2024."
+        }
+      ],
+      "question": "Uma instituição financeira encerra o relacionamento com um cliente de conta corrente em 15 de maio de 2024. Segundo o Art. 66 da Circular BCB nº 3.978/2020, por quanto tempo ela deve conservar os dados cadastrais (KYC) e os registros de todas as transações desse cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No mínimo 5 anos, contados da data exata de encerramento da conta.",
+          "correct": false,
+          "feedback": "O prazo de 5 anos da regra anterior (Art. 10 da Lei nº 9.613/1998) foi ampliado pelo BCB para 10 anos, com início no primeiro dia do ano seguinte."
+        },
+        {
+          "id": "b",
+          "text": "No mínimo 10 anos, contados a partir do primeiro dia do ano seguinte ao término do relacionamento ou da realização da operação.",
+          "correct": true,
+          "feedback": "Correto. O Art. 66 da Circular BCB nº 3.978/2020 exige conservar cadastro (KYC) e registros das operações por no mínimo 10 anos, a contar do primeiro dia do ano seguinte ao término do relacionamento ou da transação."
+        },
+        {
+          "id": "c",
+          "text": "2 anos, coincidindo com o prazo de revisão da Avaliação Interna de Risco.",
+          "correct": false,
+          "feedback": "Dois anos é a periodicidade da revisão da AIR, e não o prazo de conservação dos documentos dos clientes."
+        },
+        {
+          "id": "d",
+          "text": "Até o cliente pedir formalmente a exclusão dos dados com base na LGPD.",
+          "correct": false,
+          "feedback": "O dever regulatório de conservar dados bancários e de PLD prevalece sobre pedidos de eliminação feitos com base na LGPD."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-38",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "guarda-politica-air-efetividade",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lacerda — Analista de Governança",
+          "text": "Vou organizar o arquivo de governança de PLD e queria saber por quanto tempo devo manter a política, as avaliações de risco e os relatórios de efetividade."
+        }
+      ],
+      "question": "As instituições autorizadas pelo Banco Central devem conservar os documentos da Política de PLD/FTP, dos relatórios de Avaliação Interna de Risco (AIR) e dos Relatórios de Efetividade por no mínimo:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 anos.",
+          "correct": true,
+          "feedback": "Correto. O Art. 67 da Circular BCB nº 3.978/2020 manda manter à disposição do Banco Central, por no mínimo 5 anos, a política de PLD/FTP, as metodologias de AIR, os manuais e os relatórios de efetividade."
+        },
+        {
+          "id": "b",
+          "text": "10 anos.",
+          "correct": false,
+          "feedback": "Dez anos é o prazo dos dados cadastrais dos clientes e dos registros das operações individuais, e não o da documentação de governança."
+        },
+        {
+          "id": "c",
+          "text": "15 anos.",
+          "correct": false,
+          "feedback": "A norma do BCB não prevê prazo de 15 anos para documentos de governança interna."
+        },
+        {
+          "id": "d",
+          "text": "20 anos.",
+          "correct": false,
+          "feedback": "Vinte anos excede todos os prazos regulatórios previstos para documentos de PLD/FTP no sistema financeiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-39",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "red-flags-cambio-carta-circular-4001",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Ferraz — Operador de Mesa de Câmbio",
+          "text": "Hoje a mesa recebeu vários pedidos diferentes e eu fiquei em dúvida de qual deles deveria subir para análise de suspeição. Qual padrão acende o alerta?"
+        }
+      ],
+      "question": "Segundo a Carta Circular BCB nº 4.001/2020, qual destas situações em uma mesa de câmbio é um sinal de alerta (red flag) que deve ser selecionado para análise de suspeição de PLD/FTP?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Operação de câmbio de uma empresa exportadora tradicional, com taxa alinhada à PTAX do dia.",
+          "correct": false,
+          "feedback": "Operação em taxa de mercado, feita por empresa de perfil compatível, é uma operação regular de rotina."
+        },
+        {
+          "id": "b",
+          "text": "Remessas ao exterior com troca frequente e injustificada de beneficiários, ou destinadas a contas de terceiros sem vínculo comercial comprovado.",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 cita como sinal de alerta as transferências internacionais a terceiros sem relação comercial justificável ou com mudanças constantes e injustificadas de beneficiário no exterior."
+        },
+        {
+          "id": "c",
+          "text": "Pedido de compra de US$ 500,00 em espécie, acompanhado de documento de viagem oficial válido.",
+          "correct": false,
+          "feedback": "Compra de valor baixo, com documentação válida e idônea, atende aos requisitos cadastrais normais e não é sinal de alerta."
+        },
+        {
+          "id": "d",
+          "text": "Apresentação de demonstrações financeiras auditadas por auditoria independente cadastrada na CVM.",
+          "correct": false,
+          "feedback": "Balanços auditados regulares ajudam a mitigar o risco no KYC. Não são sinal de alerta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-40",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "red-flags-mercado-ouro-in-461",
+      "dialogue": [
+        {
+          "speaker": "Daniela Cavalcanti — Analista de Risco",
+          "text": "Chegou uma proposta de um cliente que negocia ouro e quero saber se algum ponto dela merece atenção especial do ponto de vista de PLD. O que a norma aponta como alerta nesse mercado?"
+        }
+      ],
+      "question": "De acordo com a Instrução Normativa BCB nº 461/2024 (que complementou a Carta Circular nº 4.001/2020), qual situação é um sinal de alerta específico para a negociação de ouro ativo financeiro ou instrumento cambial?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Venda de ouro com nota fiscal e Permissão de Lavra Garimpeira (PLG) ativa, com pureza atestada.",
+          "correct": false,
+          "feedback": "Documento fiscal e licença minerária ativa indicam uma operação padrão e regular. Não é sinal de alerta."
+        },
+        {
+          "id": "b",
+          "text": "Proposta de venda de ouro com exigência de pagamento em moeda física (dinheiro vivo) ou sem comprovação de título minerário válido emitido pela ANM.",
+          "correct": true,
+          "feedback": "Correto. A IN BCB nº 461/2024 lista como sinal de alerta no negócio com ouro a proposta de pagamento em espécie, a falta de título minerário válido da ANM e a origem em lavra sem capacidade de produção compatível."
+        },
+        {
+          "id": "c",
+          "text": "Liquidação da compra de ouro por transferência bancária identificada (TED ou PIX) entre contas de mesma titularidade.",
+          "correct": false,
+          "feedback": "Transferência rastreável entre contas no sistema financeiro é o meio regular que ajuda a mitigar riscos. Não é sinal de alerta."
+        },
+        {
+          "id": "d",
+          "text": "Exportação de ouro acompanhada de guia de desembaraço aduaneiro emitida pela Receita Federal.",
+          "correct": false,
+          "feedback": "Exportação com desembaraço aduaneiro regular cumpre os trâmites legais. Não é sinal de alerta."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-41",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "sancoes-lei-9613-teto-multa",
+      "dialogue": [
+        {
+          "speaker": "Renato Vasconcelos — Gerente Jurídico",
+          "text": "Vou apresentar ao comitê o quanto uma falha de PLD pode custar para a instituição. Preciso do teto de multa que a lei prevê para o descumprimento dessas obrigações."
+        }
+      ],
+      "question": "O descumprimento das obrigações de identificação de clientes, manutenção de cadastro, registro de operações e envio de comunicações ao COAF sujeita as instituições às sanções do Art. 12 da Lei nº 9.613/1998. Qual é o teto máximo de multa pecuniária que o órgão regulador pode aplicar?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "R$ 5.000.000,00.",
+          "correct": false,
+          "feedback": "R$ 5 milhões não é o teto fixado na Lei de Lavagem de Dinheiro."
+        },
+        {
+          "id": "b",
+          "text": "R$ 10.000.000,00.",
+          "correct": false,
+          "feedback": "R$ 10 milhões era um limite antigo, superado pela reforma da Lei nº 12.683/2012."
+        },
+        {
+          "id": "c",
+          "text": "R$ 20.000.000,00.",
+          "correct": true,
+          "feedback": "Correto. O Art. 12, II, da Lei nº 9.613/1998 (redação da Lei nº 12.683/2012) prevê multa de até o dobro do valor da operação, até o dobro do lucro real obtido ou até o teto legal de R$ 20.000.000,00."
+        },
+        {
+          "id": "d",
+          "text": "100% do valor do capital social da instituição.",
+          "correct": false,
+          "feedback": "A multa não se mede pelo capital social: o limite é o dobro da operação, o dobro do lucro ou o teto numérico de R$ 20 milhões."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-42",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "inabilitacao-temporaria-administradores",
+      "dialogue": [
+        {
+          "speaker": "Marina Albuquerque — Assessora da Diretoria",
+          "text": "Estou preparando um material para a diretoria sobre as consequências pessoais de uma falha grave de PLD. Falta fechar por quanto tempo um administrador pode ficar inabilitado."
+        }
+      ],
+      "question": "Entre as sanções administrativas aplicáveis aos administradores que descumprirem as normas de PLD/FTP (Art. 12 da Lei nº 9.613/1998), a inabilitação temporária para o exercício do cargo de administrador pode ser aplicada por no máximo:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até 2 anos.",
+          "correct": false,
+          "feedback": "Dois anos fica abaixo do teto de inabilitação previsto em lei."
+        },
+        {
+          "id": "b",
+          "text": "Até 5 anos.",
+          "correct": false,
+          "feedback": "Cinco anos também fica abaixo do teto. A inabilitação pode chegar a 10 anos."
+        },
+        {
+          "id": "c",
+          "text": "Até 10 anos.",
+          "correct": true,
+          "feedback": "Correto. O Art. 12, III, da Lei nº 9.613/1998 prevê a inabilitação temporária para o cargo de conselheiro de administração ou diretor pelo prazo de até 10 anos."
+        },
+        {
+          "id": "d",
+          "text": "Em caráter perpétuo.",
+          "correct": false,
+          "feedback": "A Constituição Federal proíbe penas de caráter perpétuo no Brasil, e a inabilitação prevista em lei é temporária."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-43",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "periodicidade-revisao-air",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Brandão — Analista de Risco",
+          "text": "Estou montando o cronograma anual de compliance e preciso marcar a próxima revisão da Avaliação Interna de Risco. De quanto em quanto tempo ela precisa ser refeita?"
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 exige que as instituições elaborem e mantenham atualizada a Avaliação Interna de Risco (AIR) de PLD/FTP. Qual é o prazo máximo previsto pela norma para a revisão periódica da AIR?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A cada 6 meses.",
+          "correct": false,
+          "feedback": "A periodicidade regular máxima fixada pela norma é bienal, e não semestral."
+        },
+        {
+          "id": "b",
+          "text": "Anualmente.",
+          "correct": false,
+          "feedback": "A obrigação anual é a do Relatório de Efetividade. A AIR tem revisão bienal."
+        },
+        {
+          "id": "c",
+          "text": "A cada 2 anos.",
+          "correct": true,
+          "feedback": "Correto. Pelo Art. 11, § 1º, da Circular BCB nº 3.978/2020, a AIR deve ser documentada, aprovada pelo diretor responsável e revisada no mínimo a cada 2 anos, ou antes, se houver mudança significativa no perfil de risco da instituição."
+        },
+        {
+          "id": "d",
+          "text": "A cada 5 anos.",
+          "correct": false,
+          "feedback": "Cinco anos é o prazo de guarda dos documentos de governança, e excede a periodicidade bienal de revisão da AIR."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-44",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "pep-prazo-condicao-apos-desligamento",
+      "dialogue": [
+        {
+          "speaker": "Aline Moreira — Analista de Cadastro",
+          "text": "Chegou um cliente que deixou um cargo público relevante há algum tempo e estou na dúvida se ainda devo tratá-lo como PEP no cadastro. Como funciona a contagem depois da saída?"
+        }
+      ],
+      "question": "Segundo a Circular BCB nº 3.978/2020, a condição de Pessoa Exposta Politicamente (PEP) abrange agentes públicos em funções relevantes, seus familiares até o segundo grau, cônjuges e estreitos colaboradores. Por quanto tempo, após o desligamento da função pública, a pessoa mantém a condição de PEP?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A condição acaba imediatamente, no dia seguinte ao desligamento do cargo.",
+          "correct": false,
+          "feedback": "O risco reputacional e de influência continua depois da saída do cargo, por isso a norma não permite a desclassificação imediata."
+        },
+        {
+          "id": "b",
+          "text": "A condição se mantém por no mínimo 5 anos, contados da data de desligamento da função.",
+          "correct": true,
+          "feedback": "Correto. O Art. 27 da Circular BCB nº 3.978/2020 determina que a condição de PEP seja mantida por no mínimo 5 anos, a contar da data em que a pessoa deixou a posição de agente público relevante."
+        },
+        {
+          "id": "c",
+          "text": "A condição é vitalícia.",
+          "correct": false,
+          "feedback": "A norma brasileira fixa uma extensão temporária, de prazo objetivo de 5 anos, e não uma condição permanente."
+        },
+        {
+          "id": "d",
+          "text": "A condição dura enquanto o ex-agente público mantiver conta bancária no exterior.",
+          "correct": false,
+          "feedback": "Manter conta no exterior não é o fato que define o prazo de 5 anos de extensão da qualificação como PEP."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "lim-45",
+      "categories": [
+        "limites"
+      ],
+      "topicTag": "beneficiario-final-percentual-maximo",
+      "dialogue": [
+        {
+          "speaker": "Henrique Siqueira — Analista de KYC",
+          "text": "Estamos revisando como definimos o beneficiário final nas empresas que abrem conta. Quero conferir qual é o limite que a norma impõe para o percentual de corte da nossa abordagem baseada em risco."
+        }
+      ],
+      "question": "No KYC de clientes pessoa jurídica, a Circular BCB nº 3.978/2020 exige identificar a pessoa natural que, direta ou indiretamente, controla a empresa ou tem participação societária relevante. Qual é o teto máximo de participação societária que a Abordagem Baseada em Risco da instituição pode adotar como ponto de corte para definir o Beneficiário Final?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Participação superior a 5% do capital social.",
+          "correct": false,
+          "feedback": "A instituição pode adotar percentuais menores, como 5%, para clientes de alto risco, mas o teto da régua não pode passar de 25%."
+        },
+        {
+          "id": "b",
+          "text": "Participação superior a 10% do capital social.",
+          "correct": false,
+          "feedback": "Dez por cento pode ser adotado voluntariamente para dar mais rigor, mas o limite regulatório máximo para o ponto de corte é 25%."
+        },
+        {
+          "id": "c",
+          "text": "Participação superior a 25% do capital social.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 admite que a instituição, na Abordagem Baseada em Risco, defina o percentual de corte, mas ele não pode ser superior a 25% da participação societária."
+        },
+        {
+          "id": "d",
+          "text": "Participação de 51% (controle acionário absoluto).",
+          "correct": false,
+          "feedback": "Restringir o Beneficiário Final ao controle absoluto de 51% descumpre o parâmetro regulatório de até 25% e a recomendação do GAFI."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

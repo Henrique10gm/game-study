@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "pun-16",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "competencia-sancionadora-coaf-setores-sem-regulador",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Albuquerque — Analista de PLD",
+          "text": "Chegou um caso curioso: uma empresa de comércio de pedras e metais preciosos não identificou o beneficiário final numa transação de R$ 2.000.000,00 em espécie. Preciso saber quem cuida da punição."
+        }
+      ],
+      "question": "Como esse tipo de empresa não possui órgão regulador próprio, qual é a autoridade competente para instaurar o processo administrativo sancionador e aplicar as penas do Artigo 12 da Lei nº 9.613/1998?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O Banco Central do Brasil.",
+          "correct": false,
+          "feedback": "O Banco Central supervisiona e pune instituições do setor bancário e cambial, e não um comerciante de metais preciosos."
+        },
+        {
+          "id": "b",
+          "text": "A Comissão de Valores Mobiliários.",
+          "correct": false,
+          "feedback": "A CVM supervisiona o mercado de capitais. Um comerciante de pedras e metais preciosos está fora da sua esfera de supervisão."
+        },
+        {
+          "id": "c",
+          "text": "O Plenário do Conselho de Controle de Atividades Financeiras (COAF).",
+          "correct": true,
+          "feedback": "Correto. Para as pessoas obrigadas do Art. 9º da Lei nº 9.613/1998 que não têm regulador próprio (como joalherias, metais preciosos e factoring), as sanções do Art. 12 são aplicadas pelo Plenário do COAF."
+        },
+        {
+          "id": "d",
+          "text": "O Conselho Monetário Nacional.",
+          "correct": false,
+          "feedback": "O CMN é um órgão normativo: define diretrizes, mas não fiscaliza nem instaura processo sancionador."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-17",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "procedimento-sancionador-contraditorio-ampla-defesa",
+      "dialogue": [
+        {
+          "speaker": "Marcelo Tavares — Coordenador de Compliance",
+          "text": "Estamos revisando o fluxo interno de resposta a apurações de infração. Antes de qualquer sanção do Artigo 12, qual rito formal a lei exige do órgão que pune?"
+        }
+      ],
+      "question": "De acordo com o Artigo 12, § 2º, da Lei nº 9.613/1998, a aplicação das sanções de advertência, multa ou inabilitação pela autoridade administrativa depende de qual procedimento formal prévio em relação ao acusado?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Prisão cautelar em flagrante delito.",
+          "correct": false,
+          "feedback": "Sanção administrativa não depende de prisão. Prisão é medida penal, de competência do Judiciário, e não condição para o processo administrativo."
+        },
+        {
+          "id": "b",
+          "text": "Oportunidade de ampla defesa e contraditório, mediante notificação em processo administrativo.",
+          "correct": true,
+          "feedback": "Correto. O § 2º do Art. 12 da Lei nº 9.613/1998 determina que as sanções sejam aplicadas em procedimento administrativo que assegure contraditório e ampla defesa às pessoas físicas ou jurídicas acusadas."
+        },
+        {
+          "id": "c",
+          "text": "Autorização expressa do Supremo Tribunal Federal.",
+          "correct": false,
+          "feedback": "A lei não exige autorização do STF para que o regulador aplique sanção administrativa."
+        },
+        {
+          "id": "d",
+          "text": "Depósito prévio de 50% do valor da multa máxima.",
+          "correct": false,
+          "feedback": "Não existe exigência de depósito prévio de multa na legislação. O que a lei garante é o direito de defesa antes da sanção."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-18",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "natureza-sancao-administrativa-bcb-pld",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Lacerda — Gerente de Riscos e Controles",
+          "text": "No comitê de PLD, alguém perguntou qual é a natureza das sanções que o Banco Central aplica quando descumprimos a Circular BCB nº 3.978/2020. Vamos alinhar isso."
+        }
+      ],
+      "question": "As sanções administrativas aplicadas pelo Banco Central às instituições autorizadas por descumprimento das normas de PLD/FTP (Circular BCB nº 3.978/2020) possuem qual caráter?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exclusivamente compensatório, para reparar o dano patrimonial sofrido pela União.",
+          "correct": false,
+          "feedback": "A sanção regulatória não tem natureza de indenização do dano. Ela pune a infração às normas de controle e reprime condutas negligentes."
+        },
+        {
+          "id": "b",
+          "text": "Punitivo e preventivo-pedagógico na esfera regulatória bancária, sem afastar eventuais reparações civis ou penas criminais.",
+          "correct": true,
+          "feedback": "Correto. A sanção do BCB pune a infração às normas e tem papel preventivo no SFN. Ela não depende de processo penal nem o substitui, pois as esferas são independentes."
+        },
+        {
+          "id": "c",
+          "text": "Subordinado à prévia condenação, com trânsito em julgado, na Justiça Federal.",
+          "correct": false,
+          "feedback": "O processo administrativo sancionador do BCB é independente da esfera penal e não espera condenação judicial."
+        },
+        {
+          "id": "d",
+          "text": "Cível e substitutivo da pena de reclusão.",
+          "correct": false,
+          "feedback": "A sanção administrativa não substitui a pena criminal. Cada esfera responde por si e podem ser aplicadas em conjunto."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-19",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "pena-crime-lavagem-de-dinheiro",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Ferraz — Analista de Compliance",
+          "text": "Estou montando o material de treinamento de PLD para os novos analistas e preciso fechar a pena do crime de lavagem de dinheiro."
+        }
+      ],
+      "question": "Qual é a pena privativa de liberdade básica cominada ao crime de lavagem de dinheiro do Artigo 1º da Lei nº 9.613/1998 (ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes de infração penal)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção, de 1 a 4 anos, e multa.",
+          "correct": false,
+          "feedback": "Essa é a pena de outro crime, o de falsa identidade em operação de câmbio da Lei nº 7.492/1986. A lavagem é punida com reclusão."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão, de 3 a 10 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O caput do Art. 1º da Lei nº 9.613/1998 fixa para a lavagem de dinheiro a pena de reclusão, de 3 a 10 anos, e multa."
+        },
+        {
+          "id": "c",
+          "text": "Reclusão, de 2 a 6 anos, somente.",
+          "correct": false,
+          "feedback": "Reclusão de 2 a 6 anos é a pena da evasão de divisas, prevista na Lei nº 7.492/1986, e não a da lavagem de dinheiro."
+        },
+        {
+          "id": "d",
+          "text": "Detenção, de 5 a 15 anos, e prestação de serviços à comunidade.",
+          "correct": false,
+          "feedback": "Essa combinação de modalidade, prazos e pena alternativa não existe para o crime de lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-20",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-terceira-geracao-infracao-antecedente",
+      "dialogue": [
+        {
+          "speaker": "Tatiane Moreira — Analista de PLD",
+          "text": "Na integração dos novos colegas surgiu uma dúvida sobre a reforma de 2012 da lei de lavagem: o que mudou em relação à origem dos recursos?"
+        }
+      ],
+      "question": "A Lei nº 12.683/2012 reformou a lei de lavagem de dinheiro e levou o Brasil ao modelo chamado de «3ª geração». Qual foi a principal alteração em relação à infração antecedente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Restringiu os crimes antecedentes exclusivamente ao tráfico internacional de entorpecentes.",
+          "correct": false,
+          "feedback": "Foi o contrário: a reforma ampliou as possibilidades de antecedente, em vez de restringi-las a um único crime."
+        },
+        {
+          "id": "b",
+          "text": "Criou um rol fechado com 8 crimes antecedentes específicos.",
+          "correct": false,
+          "feedback": "A reforma de 2012 acabou com o rol fechado de crimes antecedentes. Um novo rol taxativo contraria a 3ª geração."
+        },
+        {
+          "id": "c",
+          "text": "Eliminou o rol taxativo de crimes antecedentes, permitindo que qualquer infração penal (crime ou contravenção penal) sirva de antecedente da lavagem.",
+          "correct": true,
+          "feedback": "Correto. Na 3ª geração, adotada pela Lei nº 12.683/2012, os bens ocultados podem vir de qualquer infração penal, inclusive uma contravenção penal, como o jogo do bicho."
+        },
+        {
+          "id": "d",
+          "text": "Descriminalizou a lavagem de dinheiro feita por meio de transferências bancárias eletrônicas.",
+          "correct": false,
+          "feedback": "A reforma não descriminalizou nenhuma forma de lavagem. O meio utilizado, inclusive transferência eletrônica, não afasta o crime."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-21",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-causas-aumento-de-pena",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Pimentel — Especialista em Prevenção a Fraudes",
+          "text": "Estamos revisando a matriz de riscos penais ligados à lavagem e preciso lembrar como a pena pode ser agravada quando o crime é praticado de forma mais grave."
+        }
+      ],
+      "question": "O Artigo 1º, § 4º, da Lei nº 9.613/1998 prevê causas especiais de aumento de pena para o crime de lavagem de dinheiro. Em que proporção a pena privativa de liberdade é aumentada?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "De 1/6 a 1/3, se o crime for praticado por menor de idade.",
+          "correct": false,
+          "feedback": "A lei não traz esse aumento baseado na idade do autor. A fração e a hipótese estão incorretas."
+        },
+        {
+          "id": "b",
+          "text": "De 1/3 a 2/3, se os crimes forem praticados de forma reiterada ou por intermédio de organização criminosa.",
+          "correct": true,
+          "feedback": "Correto. O § 4º do Art. 1º da Lei nº 9.613/1998 aumenta a pena de 1/3 (um terço) a 2/3 (dois terços) quando os crimes forem cometidos de forma reiterada ou por intermédio de organização criminosa."
+        },
+        {
+          "id": "c",
+          "text": "Aumenta-se obrigatoriamente ao dobro, se a operação utilizar moeda estrangeira.",
+          "correct": false,
+          "feedback": "O uso de moeda estrangeira não gera, por si só, um aumento obrigatório ao dobro. Essa hipótese não consta do § 4º."
+        },
+        {
+          "id": "d",
+          "text": "Aumenta-se pela metade, se o réu for primário e de bons antecedentes.",
+          "correct": false,
+          "feedback": "Primariedade e bons antecedentes não agravam a pena. Pelo contrário, são circunstâncias favoráveis ao réu."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-22",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-colaboracao-premiada-beneficios",
+      "dialogue": [
+        {
+          "speaker": "Larissa Quintela — Assessora Jurídica",
+          "text": "Num caso hipotético que estamos estudando, o réu quer colaborar espontaneamente com a apuração de lavagem. Me pediram para resumir o que a lei oferece em troca."
+        }
+      ],
+      "question": "A colaboração premiada está prevista no Artigo 1º, § 5º, da Lei nº 9.613/1998. Quais benefícios penais o juiz pode conceder ao réu que colaborar espontaneamente com a apuração do crime de lavagem?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas a redução da multa em 10%, mantendo a pena de prisão integral em regime fechado.",
+          "correct": false,
+          "feedback": "A lei vai além disso: prevê redução da pena privativa de liberdade e regime mais brando, e não apenas um desconto de 10% na multa."
+        },
+        {
+          "id": "b",
+          "text": "Redução da pena de 1/3 a 2/3, início em regime aberto ou semiaberto, e possibilidade de o juiz deixar de aplicá-la ou substituí-la por pena restritiva de direitos.",
+          "correct": true,
+          "feedback": "Correto. O § 5º do Art. 1º da Lei nº 9.613/1998 permite ao juiz, diante de colaboração espontânea que leve à elucidação dos fatos, à identificação dos autores e à localização de bens, reduzir a pena, fixar regime aberto ou semiaberto, substituí-la por restritiva de direitos ou conceder perdão judicial."
+        },
+        {
+          "id": "c",
+          "text": "Imunidade diplomática e perdão de todas as dívidas tributárias perante a Receita Federal.",
+          "correct": false,
+          "feedback": "Colaboração premiada não gera imunidade diplomática nem perdão de dívidas tributárias. Os benefícios são de natureza penal."
+        },
+        {
+          "id": "d",
+          "text": "Extinção automática da punibilidade, sem necessidade de localizar bens ou identificar os demais envolvidos.",
+          "correct": false,
+          "feedback": "Os benefícios dependem de colaboração efetiva, que leve à elucidação dos fatos, à identificação dos autores e à localização dos bens. Não há extinção automática."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-23",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-efeitos-da-condenacao-interdicao",
+      "dialogue": [
+        {
+          "speaker": "Daniela Rezende — Analista de Governança",
+          "text": "Estou preparando um resumo para o comitê sobre o que acontece, além da prisão e da multa, com quem é condenado por lavagem de dinheiro."
+        }
+      ],
+      "question": "Além da pena de reclusão de 3 a 10 anos e da multa, a condenação por lavagem de dinheiro acarreta efeitos previstos no Artigo 7º da Lei nº 9.613/1998. Qual é a interdição de direitos aplicada aos condenados?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Proibição de votar em eleições federais por 30 anos.",
+          "correct": false,
+          "feedback": "A lei de lavagem não prevê esse efeito. A suspensão do direito de voto não faz parte do rol do Art. 7º."
+        },
+        {
+          "id": "b",
+          "text": "Interdição do exercício de cargo ou função pública de qualquer natureza e de diretor ou conselheiro de pessoas jurídicas sujeitas à lei, pelo dobro do tempo da pena privativa de liberdade aplicada.",
+          "correct": true,
+          "feedback": "Correto. O Art. 7º, II, da Lei nº 9.613/1998 prevê a interdição de cargo ou função pública de qualquer natureza e de dirigentes das pessoas jurídicas do Art. 9º, pelo dobro do tempo da pena privativa de liberdade aplicada."
+        },
+        {
+          "id": "c",
+          "text": "Perda definitiva do direito de usar cartões de crédito corporativos por 5 anos.",
+          "correct": false,
+          "feedback": "Esse efeito não existe na lei de lavagem. As interdições do Art. 7º se referem a cargos, funções e dirigentes de entidades sujeitas."
+        },
+        {
+          "id": "d",
+          "text": "Proibição de residir em capitais estaduais por tempo indeterminado.",
+          "correct": false,
+          "feedback": "A lei não prevê restrição de residência como efeito da condenação por lavagem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-24",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-alienacao-antecipada-de-bens",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Nogueira — Analista de Inteligência Financeira",
+          "text": "Li num relatório que o juiz determinou a venda antecipada de bens apreendidos numa investigação de lavagem. Ficou a dúvida sobre qual é o objetivo disso."
+        }
+      ],
+      "question": "O Artigo 4º-A da Lei nº 9.613/1998 prevê a alienação antecipada de bens apreendidos ou submetidos a medidas assecuratórias na investigação de lavagem de dinheiro. Qual é a finalidade desse procedimento determinado pelo juiz?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vender antecipadamente bens sujeitos a deterioração ou depreciação, para preservar seu valor econômico, convertendo o montante arrecadado em depósito judicial remunerado.",
+          "correct": true,
+          "feedback": "Correto. A alienação antecipada evita que bens apreendidos, como veículos de luxo, embarcações e gado, percam valor durante o longo trâmite do processo. O dinheiro fica depositado em conta judicial, rendendo juros até o fim da ação."
+        },
+        {
+          "id": "b",
+          "text": "Doar imediatamente os bens apreendidos a entidades assistenciais, antes da sentença final.",
+          "correct": false,
+          "feedback": "A medida não é doação. Os bens são vendidos e o valor fica depositado em juízo, preservado até a decisão final."
+        },
+        {
+          "id": "c",
+          "text": "Transferir a propriedade de veículos e imóveis aos policiais investigadores, como recompensa de produtividade.",
+          "correct": false,
+          "feedback": "Os bens apreendidos não podem ser transferidos a quem investiga. Isso desvirtua completamente a finalidade da alienação antecipada."
+        },
+        {
+          "id": "d",
+          "text": "Destruir fisicamente todos os bens apreendidos, para evitar a reativação da organização criminosa.",
+          "correct": false,
+          "feedback": "O objetivo é preservar o valor econômico dos bens, e não destruí-los. Destruição não é a finalidade do instituto."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-25",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-competencia-justica-federal",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Prado — Analista de Compliance",
+          "text": "Num caso que estamos acompanhando, a infração antecedente é evasão de divisas. O time quer saber qual Justiça cuida do processo de lavagem que vem junto."
+        }
+      ],
+      "question": "Quando a infração penal antecedente à lavagem de dinheiro for de competência da Justiça Federal (por exemplo, evasão de divisas ou tráfico internacional de drogas), qual autoridade judiciária é competente para processar e julgar o crime de lavagem?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Justiça Estadual do local onde o dinheiro foi depositado.",
+          "correct": false,
+          "feedback": "O local do depósito não define a competência nesse caso. Se o antecedente é da Justiça Federal, a lavagem também será."
+        },
+        {
+          "id": "b",
+          "text": "A Justiça Federal da respectiva circunscrição judiciária.",
+          "correct": true,
+          "feedback": "Correto. Nos termos do Art. 2º, III, da Lei nº 9.613/1998, a lavagem é julgada pela Justiça Federal quando a infração antecedente for de competência federal ou quando praticada contra o sistema financeiro e a ordem econômico-financeira da União."
+        },
+        {
+          "id": "c",
+          "text": "O Tribunal Superior do Trabalho.",
+          "correct": false,
+          "feedback": "O TST é órgão da Justiça do Trabalho e não tem competência para julgar crimes de lavagem de dinheiro."
+        },
+        {
+          "id": "d",
+          "text": "O Conselho de Controle de Atividades Financeiras (COAF).",
+          "correct": false,
+          "feedback": "O COAF é a unidade de inteligência financeira e não julga crimes. Quem julga é o Poder Judiciário."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-26",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-autonomia-do-processo-infracao-antecedente",
+      "dialogue": [
+        {
+          "speaker": "Priscila Barros — Coordenadora de Investigações",
+          "text": "O time perguntou se dá para denunciar alguém por lavagem enquanto o processo do crime de origem ainda nem terminou. Preciso da regra da lei."
+        }
+      ],
+      "question": "Qual é a regra sobre a dependência processual entre o crime de lavagem de dinheiro e o julgamento da infração penal antecedente, conforme o Artigo 2º, § 1º, da Lei nº 9.613/1998?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O processo por lavagem só pode começar após a condenação definitiva, com trânsito em julgado, do crime antecedente.",
+          "correct": false,
+          "feedback": "Essa é uma regra obsoleta e incorreta. A lavagem não precisa esperar o julgamento do crime antecedente."
+        },
+        {
+          "id": "b",
+          "text": "O processo por lavagem é autônomo e independe do processo ou julgamento das infrações antecedentes, bastando indícios suficientes da existência destas.",
+          "correct": true,
+          "feedback": "Correto. A lavagem é crime autônomo (delito de segunda ordem). Conforme o Art. 2º, § 1º, da Lei nº 9.613/1998, bastam indícios suficientes da infração antecedente, sem necessidade de que ela tenha sido julgada ou resultado em condenação."
+        },
+        {
+          "id": "c",
+          "text": "A absolvição do réu no crime antecedente, por falta de provas, extingue automaticamente a denúncia por lavagem.",
+          "correct": false,
+          "feedback": "Não há extinção automática da denúncia por lavagem. Como o processo é autônomo, o desfecho do antecedente não encerra por si só a ação."
+        },
+        {
+          "id": "d",
+          "text": "A denúncia por lavagem exige a confissão formal do acusado quanto ao crime antecedente.",
+          "correct": false,
+          "feedback": "A lei exige apenas indícios suficientes da infração antecedente. Não é necessária confissão do acusado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-27",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "lavagem-consequencias-penais-da-condenacao",
+      "dialogue": [
+        {
+          "speaker": "Henrique Salgado — Analista de Risco Operacional",
+          "text": "Pensa no seguinte caso: um agente financeiro converteu R$ 5.000.000,00 provenientes de fraude em imóveis, sabendo da origem ilícita dos valores."
+        }
+      ],
+      "question": "Além da perda dos bens objeto do crime (Art. 7º, I), qual combinação de penalidades o réu pode sofrer estritamente no âmbito judicial penal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reclusão (3 a 10 anos), multa penal e interdição de cargo ou função pública pelo dobro da pena privativa de liberdade aplicada.",
+          "correct": true,
+          "feedback": "Correto. Reúne as consequências criminais diretas da Lei nº 9.613/1998: a pena de reclusão e a multa do Art. 1º, mais os efeitos secundários do Art. 7º, como a interdição pelo dobro do tempo da pena."
+        },
+        {
+          "id": "b",
+          "text": "Apenas advertência verbal do juiz, sem registro em folha de antecedentes.",
+          "correct": false,
+          "feedback": "Uma advertência verbal não corresponde à gravidade penal da lavagem, crime punido com reclusão."
+        },
+        {
+          "id": "c",
+          "text": "Detenção de 6 meses e prestação de serviços no COAF.",
+          "correct": false,
+          "feedback": "Essa combinação não existe na lei de lavagem. A pena é de reclusão e o COAF não recebe condenados para prestação de serviços."
+        },
+        {
+          "id": "d",
+          "text": "Cassação da carteira de motorista e multa administrativa de R$ 20 milhões, revertida ao Banco Central.",
+          "correct": false,
+          "feedback": "Mistura conceitos: multa administrativa é aplicada por regulador na esfera administrativa, e não pelo juiz criminal, e a carteira de motorista nada tem a ver com o caso."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-28",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "crime-sfn-instituicao-financeira-clandestina-art-16",
+      "dialogue": [
+        {
+          "speaker": "Camila Duarte — Analista de Compliance",
+          "text": "Recebemos uma denúncia de uma empresa que intermedia câmbio e capta recursos sem ter autorização do Banco Central. Quero conferir a pena do crime."
+        }
+      ],
+      "question": "O Artigo 16 da Lei nº 7.492/1986 tipifica o crime de fazer operar, sem autorização ou com autorização obtida mediante declaração falsa, instituição financeira, inclusive de captação de recursos ou intermediação de câmbio. Qual é a pena privativa de liberdade cominada a essa conduta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção, de 1 a 4 anos, e multa.",
+          "correct": false,
+          "feedback": "O prazo está certo, mas o tipo de pena está errado: para operar instituição financeira clandestina a pena é de reclusão, e não de detenção."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão, de 1 a 4 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O Art. 16 da Lei nº 7.492/1986 pune a operação de instituição financeira clandestina com reclusão, de 1 a 4 anos, e multa."
+        },
+        {
+          "id": "c",
+          "text": "Reclusão, de 2 a 6 anos, somente.",
+          "correct": false,
+          "feedback": "Reclusão de 2 a 6 anos é a pena da evasão de divisas, e não a da instituição financeira clandestina, que também é punida com multa."
+        },
+        {
+          "id": "d",
+          "text": "Detenção, de 3 a 10 anos, e multa.",
+          "correct": false,
+          "feedback": "Nem o tipo nem a escala correspondem ao Art. 16, que prevê reclusão de 1 a 4 anos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-29",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "crime-sfn-falsa-identidade-cambio-art-21",
+      "dialogue": [
+        {
+          "speaker": "Leandro Siqueira — Supervisor da Mesa de Câmbio",
+          "text": "Na revisão de ocorrências da mesa, apareceram clientes que se identificaram como outra pessoa para fechar câmbio. Qual a pena prevista para esse tipo de conduta?"
+        }
+      ],
+      "question": "O Artigo 21 da Lei nº 7.492/1986 pune quem atribui a si ou a terceiro falsa identidade para realizar operação de câmbio, ou sonega informação que devia prestar. Qual é o tipo e a escala de pena cominada a esse crime?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção, de 1 a 4 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O Art. 21 da Lei nº 7.492/1986 é uma exceção entre os crimes financeiros da lei: é punido com detenção, de 1 a 4 anos, e multa."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão, de 1 a 4 anos, e multa.",
+          "correct": false,
+          "feedback": "Essa é a pegadinha clássica: o prazo é o mesmo, mas a pena do Art. 21 é de detenção, e não de reclusão."
+        },
+        {
+          "id": "c",
+          "text": "Reclusão, de 2 a 6 anos, e multa.",
+          "correct": false,
+          "feedback": "Reclusão de 2 a 6 anos é a pena da evasão de divisas. A falsa identidade em câmbio tem pena menor e de outra modalidade."
+        },
+        {
+          "id": "d",
+          "text": "Detenção, de 3 a 10 anos, somente.",
+          "correct": false,
+          "feedback": "A escala de 3 a 10 anos não corresponde ao Art. 21, que prevê detenção de 1 a 4 anos, e multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-30",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "crime-sfn-evasao-de-divisas-art-22",
+      "dialogue": [
+        {
+          "speaker": "Aline Cardoso — Analista de Câmbio",
+          "text": "Um parceiro me perguntou até onde vai a pena para quem faz câmbio não autorizado ou mantém depósitos não declarados no exterior. Quero responder certo."
+        }
+      ],
+      "question": "O Artigo 22 da Lei nº 7.492/1986 tipifica a evasão de divisas, que consiste em efetuar operação de câmbio não autorizada com o fim de promover evasão de divisas ou manter depósitos não declarados no exterior. Qual é a pena privativa de liberdade cominada a esse crime?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Detenção, de 1 a 4 anos, e multa.",
+          "correct": false,
+          "feedback": "Detenção de 1 a 4 anos, e multa, é a pena do crime de falsa identidade em operação de câmbio, e não a da evasão de divisas."
+        },
+        {
+          "id": "b",
+          "text": "Reclusão, de 1 a 4 anos, e multa.",
+          "correct": false,
+          "feedback": "Reclusão de 1 a 4 anos, e multa, é a pena de quem opera instituição financeira clandestina. A evasão de divisas é punida com pena maior."
+        },
+        {
+          "id": "c",
+          "text": "Reclusão, de 2 a 6 anos, e multa.",
+          "correct": true,
+          "feedback": "Correto. O Art. 22 da Lei nº 7.492/1986 comina à evasão de divisas reclusão, de 2 a 6 anos, e multa, com piso e teto mais altos que os dos outros dois artigos mais cobrados em câmbio."
+        },
+        {
+          "id": "d",
+          "text": "Reclusão, de 3 a 10 anos, e multa.",
+          "correct": false,
+          "feedback": "Reclusão de 3 a 10 anos, e multa, é a pena da lavagem de dinheiro (Lei nº 9.613/1998), e não a da evasão de divisas."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+/* Pixel-art look for the DOM screens, using only the neutral palette.
+   One UI "pixel" is --px (4px): corners are stepped (no border-radius), edges are
+   drawn with hard box-shadows, and depth is a hard offset shadow in verde floresta.
+   Text keeps the brand fonts (Merriweather); only the chrome is pixelated. */
+
+:root {
+  --px: 4px;
+  --color-forest: #0F352B;
+  --color-moss: #274E13;
+  --color-wrong: #D4CFC8; /* wrong answers: neutral gray plus a mark, never red */
+}
+
+/* Box with stepped corners: edges are drawn OUTSIDE the box at 1 px, corners are left out. */
+.px-box {
+  border: 0;
+  border-radius: 0;
+  box-shadow:
+    0 calc(var(--px) * -1) 0 0 var(--edge, var(--color-line)),
+    0 var(--px) 0 0 var(--edge, var(--color-line)),
+    calc(var(--px) * -1) 0 0 0 var(--edge, var(--color-line)),
+    var(--px) 0 0 0 var(--edge, var(--color-line)),
+    calc(var(--px) * 2) calc(var(--px) * 2) 0 0 var(--color-forest);
+}
+
+.px-box--lime {
+  --edge: var(--color-accent);
+}
+
+/* Segmented progress bar: <div class="px-bar"><span class="on"></span>...</div> */
+.px-bar {
+  display: flex;
+  gap: 2px;
+  height: 10px;
+}
+
+.px-bar > span {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.px-bar > span.on {
+  background: var(--color-accent);
+}
+
+.px-bar > span.gain {
+  background: var(--color-paper);
+}
+
+.px-bar--thin {
+  height: 6px;
+}
+
+.px-bar--paper > span.on {
+  background: var(--color-paper);
+}
+
+/* Small label tag with stepped corners. */
+.px-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  clip-path: polygon(
+    0 2px, 2px 2px, 2px 0, calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px,
+    100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%,
+    2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px)
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ws: wss: https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'none'"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Quest Hall · Salão de Jogos</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+      <div id="ui-root"></div>
+      <div id="boot-loader" class="bl" role="status" aria-live="polite">
+        <div class="bl-stage">
+          <p class="bl-kicker">Quest Hall · Salão de Jogos</p>
+          <div class="bl-run" aria-hidden="true"><div class="bl-hero"></div></div>
+          <div class="bl-ground" aria-hidden="true"></div>
+          <p class="bl-label">Carregando<span class="bl-dots">...</span></p>
+          <div class="bl-tips">
+            <p class="bl-tip" style="--i: 0">Aperte F para jogar em tela cheia. Esc para sair.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 1">Clique cinco vezes na placa do banco. Ela guarda uma frase.</p>
+            <p class="bl-tip" style="--i: 2">Bateu na última vida? Vem uma pergunta de última chance: acertou, continua.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 3">Já tentou o código Konami? ↑ ↑ ↓ ↓ ← → ← → B A</p>
+            <p class="bl-tip" style="--i: 4">Na Corrida, pule com Espaço ou ↑ e agache com ↓.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 5">Dizem que o personagem dá um pulo especial se você clicar nele dez vezes seguidas.</p>
+            <p class="bl-tip" style="--i: 6">No Contra o tempo, perguntas com mais texto dão mais tempo para responder.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 7">O gato do banco adora atenção. Clique nele e ouça o que ele tem a dizer.</p>
+            <p class="bl-tip" style="--i: 8">Cada sala tem o seu Hall da Fama. Escolha um apelido para aparecer na lista.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 9">Digite o nome do CEO no teclado e veja quem aparece.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* "How it works" card shown before a run (pixel style, neutral palette). */
+
+.hiw {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  box-sizing: border-box;
+  background: rgba(26, 22, 21, 0.78);
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.hiw-card {
+  --edge: var(--color-accent);
+  width: 100%;
+  max-width: 520px;
+  box-sizing: border-box;
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hiw-kicker {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.hiw-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.hiw-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.hiw-list li {
+  display: flex;
+  gap: var(--space-md);
+  align-items: baseline;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.hiw-glyph {
+  flex: none;
+  width: 24px;
+  text-align: center;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.hiw-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
+
+.hiw-btn {
+  min-height: var(--touch-min);
+  padding: var(--space-sm) var(--space-lg);
+  border: 0;
+  border-radius: 0;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hiw-btn--ghost {
+  background: transparent;
+  color: var(--color-muted);
+  box-shadow: inset 0 0 0 2px var(--color-line);
+}

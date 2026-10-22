@@ -1,0 +1,589 @@
+{
+  "questions": [
+    {
+      "sceneId": "cam-31",
+      "categories": ["cambio-pld"],
+      "topicTag": "beneficiario-final-participacao-minima",
+      "dialogue": [
+        {
+          "speaker": "Marcelo Tavares — Analista de Cadastro",
+          "text": "Estou fechando o cadastro de uma empresa cliente com vários sócios e uma holding no meio. Preciso saber quem entra como beneficiário final."
+        }
+      ],
+      "question": "As normas de PLD/FTP exigem identificar as pessoas naturais que são Beneficiário Final de pessoas jurídicas clientes no mercado de câmbio. Qual é o critério de participação mínima para essa identificação?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Qualquer funcionário registrado na empresa com mais de 1 ano de casa.",
+          "correct": false,
+          "feedback": "Tempo de casa não define Beneficiário Final. O critério é a participação no capital ou o controle efetivo, não o vínculo de trabalho."
+        },
+        {
+          "id": "b",
+          "text": "A pessoa natural que possua, direta ou indiretamente, mais de 25% do capital societário ou que exerça o controle efetivo da entidade.",
+          "correct": true,
+          "feedback": "Correto. É Beneficiário Final a pessoa natural que detém, direta ou indiretamente, mais de 25% do capital da pessoa jurídica cliente ou que exerce o controle efetivo sobre as decisões da entidade."
+        },
+        {
+          "id": "c",
+          "text": "Apenas os acionistas com mais de 90% das ações com direito a voto.",
+          "correct": false,
+          "feedback": "O percentual de 90% é muito acima do exigido pela norma e deixaria de fora quase todos os beneficiários finais reais. O patamar regulatório é de 25%."
+        },
+        {
+          "id": "d",
+          "text": "Apenas as pessoas físicas com residência fiscal em países do G7.",
+          "correct": false,
+          "feedback": "A residência fiscal não é critério para definir Beneficiário Final. O que conta é a participação societária e o controle efetivo da empresa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-32",
+      "categories": ["cambio-pld"],
+      "topicTag": "enquadramento-pessoa-exposta-politicamente",
+      "dialogue": [
+        {
+          "speaker": "Juliana Prado — Analista de Compliance",
+          "text": "O sistema sinalizou um cliente que foi secretário de governo há uns três anos. Quero confirmar se ele ainda precisa ser tratado como PEP."
+        }
+      ],
+      "question": "Em relação à qualificação de Pessoas Expostas Politicamente (PEP) nas operações de câmbio, segundo as regras do BCB, qual afirmativa está correta?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O status de PEP cessa no exato dia em que a autoridade deixa o cargo público.",
+          "correct": false,
+          "feedback": "A condição de PEP não termina com o desligamento do cargo. Ela se mantém por um período residual de, no mínimo, 5 anos."
+        },
+        {
+          "id": "b",
+          "text": "A condição de PEP se aplica exclusivamente a autoridades estrangeiras, não existindo PEPs brasileiras.",
+          "correct": false,
+          "feedback": "A qualificação abrange também autoridades públicas brasileiras, e não apenas as estrangeiras."
+        },
+        {
+          "id": "c",
+          "text": "É proibido realizar qualquer operação de câmbio para clientes enquadrados como PEP.",
+          "correct": false,
+          "feedback": "Operar com PEP não é proibido. Exige controles reforçados e alçadas de aprovação mais elevadas, não a recusa automática."
+        },
+        {
+          "id": "d",
+          "text": "O enquadramento alcança familiares até o segundo grau, cônjuges, companheiros e colaboradores próximos, e a condição permanece por no mínimo 5 anos após o desligamento do cargo público.",
+          "correct": true,
+          "feedback": "Correto. A qualificação de PEP abrange autoridades relevantes (nacionais e estrangeiras), seus familiares até o 2º grau, cônjuges, companheiros e colaboradores próximos, e persiste por pelo menos 5 anos após a saída da função pública."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-33",
+      "categories": ["cambio-pld"],
+      "topicTag": "especie-r-50-mil-provisionamento",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Castanho — Gerente de Operações",
+          "text": "Um cliente apareceu querendo sacar um valor alto em dinheiro vivo ligado a uma operação de câmbio. Como a gente deve conduzir isso?"
+        }
+      ],
+      "question": "Segundo a Circular BCB nº 3.978/2020, qual procedimento a instituição deve adotar quando um cliente quer sacar ou depositar em espécie, em moeda nacional, valor igual ou superior a R$ 50.000,00 associado a uma operação de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cobrar uma tarifa de 50% sobre o valor total do saque.",
+          "correct": false,
+          "feedback": "A norma não prevê tarifa sobre o valor sacado. É uma sanção descabida e sem amparo regulatório."
+        },
+        {
+          "id": "b",
+          "text": "Apreender o dinheiro físico e depositá-lo em conta judicial do Banco Central.",
+          "correct": false,
+          "feedback": "A instituição não tem poder de apreensão. O procedimento previsto é de provisionamento e de comunicação, não de confisco."
+        },
+        {
+          "id": "c",
+          "text": "Aprovar a operação na hora, sem necessidade de registrar a origem dos recursos.",
+          "correct": false,
+          "feedback": "Dispensar a origem dos recursos seria uma omissão ilegal. Nesses valores a identificação do portador e a origem e o destino do dinheiro são obrigatórias."
+        },
+        {
+          "id": "d",
+          "text": "Exigir provisionamento prévio com no mínimo 3 dias úteis de antecedência e fazer a comunicação automática ao COAF.",
+          "correct": true,
+          "feedback": "Correto. Para movimentações em espécie a partir de R$ 50.000,00, a Circular BCB nº 3.978/2020 exige aviso prévio de no mínimo 3 dias úteis para provisionar o valor, identificação do portador, origem e destino dos recursos e reporte automático ao COAF."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-34",
+      "categories": ["cambio-pld"],
+      "topicTag": "prazos-monitoramento-selecao-analise-45-45",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Nogueira — Coordenadora de PLD",
+          "text": "Vamos revisar o fluxo de tratamento de alertas do time. Quero conferir os prazos que a norma dá para cada etapa antes de redesenharmos."
+        }
+      ],
+      "question": "A Circular BCB nº 3.978/2020 define prazos para o tratamento de operações atípicas. Quais são os prazos máximos para a fase de seleção/monitoramento e para a de análise conclusiva?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "24 horas para monitorar e 1 hora para analisar.",
+          "correct": false,
+          "feedback": "Esses prazos são curtos demais e não existem na norma. O modelo regulatório é de 45 dias para cada fase."
+        },
+        {
+          "id": "b",
+          "text": "5 anos para selecionar e 5 anos para concluir a análise.",
+          "correct": false,
+          "feedback": "Cinco anos remete a outros prazos de PLD, não aos de seleção e análise de alertas, que somam 45 + 45 dias."
+        },
+        {
+          "id": "c",
+          "text": "O processo de análise não tem prazo fixado na norma.",
+          "correct": false,
+          "feedback": "A Circular BCB nº 3.978/2020 fixa prazos objetivos para o rito interno de tratamento de operações atípicas."
+        },
+        {
+          "id": "d",
+          "text": "Até 45 dias para seleção/monitoramento e até 45 dias adicionais para a análise conclusiva da suspeita.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 adota o modelo 45 + 45 dias corridos: até 45 dias para o processamento inicial da operação selecionada e até 45 dias depois para concluir a análise e decidir entre comunicar ao COAF ou arquivar com motivação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-35",
+      "categories": ["cambio-pld"],
+      "topicTag": "comunicacao-coaf-prazo-tipping-off",
+      "dialogue": [
+        {
+          "speaker": "Fernando Albuquerque — Analista de PLD",
+          "text": "Terminei a análise de um caso e concluí que há suspeita de lavagem de dinheiro. O cliente já está ligando para saber do andamento. O que faço agora?"
+        }
+      ],
+      "question": "Depois que a análise confirma a suspeita de lavagem de dinheiro em uma operação de câmbio, qual é o prazo para comunicar ao COAF e qual regra de sigilo se aplica?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A comunicação é feita em até 30 dias úteis, e a corretora deve avisar o cliente por e-mail de que ele foi comunicado.",
+          "correct": false,
+          "feedback": "Avisar o cliente viola a vedação ao tipping off. Além disso, o prazo de 30 dias úteis não existe na norma, que fala em dia útil seguinte à decisão."
+        },
+        {
+          "id": "b",
+          "text": "A comunicação só é enviada se o cliente concordar e assinar um formulário de concordância.",
+          "correct": false,
+          "feedback": "A comunicação ao COAF é um dever da instituição e não depende de concordância do cliente. Pedir assinatura também revelaria a suspeita."
+        },
+        {
+          "id": "c",
+          "text": "A comunicação é feita no prazo de 1 ano, por carta registrada.",
+          "correct": false,
+          "feedback": "Um ano é um prazo absurdamente longo para esse reporte. O prazo previsto é o dia útil seguinte à decisão de comunicar."
+        },
+        {
+          "id": "d",
+          "text": "A comunicação deve ser feita até o dia útil seguinte à decisão de comunicar, sendo vedado dar ciência ao cliente ou a terceiros (proibição de tipping off).",
+          "correct": true,
+          "feedback": "Correto. A comunicação ao COAF deve sair até o dia útil seguinte ao da decisão conclusiva, e o art. 11, § 2º, da Lei nº 9.613/1998 proíbe dar ciência dela ao cliente ou a terceiros."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-36",
+      "categories": ["cambio-pld"],
+      "topicTag": "prazo-guarda-documentos-pld",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Lacerda — Analista de Arquivo e Controles",
+          "text": "Estamos limpando o arquivo de dossiês antigos para liberar espaço. Quero saber por quanto tempo ainda temos que guardar os registros de PLD."
+        }
+      ],
+      "question": "Segundo a Circular BCB nº 3.978/2020, qual é o prazo mínimo de conservação de cadastros, registros de transações e dossiês de PLD/FTP pelas instituições autorizadas a operar em câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mínimo de 1 ano, contado da data da contratação do câmbio.",
+          "correct": false,
+          "feedback": "Um ano é muito abaixo do mínimo exigido. A regra de guarda para PLD/FTP é de 10 anos."
+        },
+        {
+          "id": "b",
+          "text": "Mínimo de 30 anos para notas de corretagem físicas e 6 meses para registros eletrônicos.",
+          "correct": false,
+          "feedback": "A norma não separa o prazo por tipo de suporte desse jeito. A regra geral é de no mínimo 10 anos."
+        },
+        {
+          "id": "c",
+          "text": "Mínimo de 10 anos, contados a partir do primeiro dia do ano seguinte ao da transação ou do encerramento da relação cadastral.",
+          "correct": true,
+          "feedback": "Correto. Pela Circular BCB nº 3.978/2020, cadastros, registros de transações e análises de compliance devem ser guardados por no mínimo 10 anos, contados do 1º dia do ano seguinte à conclusão da transação ou ao término da relação."
+        },
+        {
+          "id": "d",
+          "text": "Podem ser descartados logo depois da emissão da PTAX do dia.",
+          "correct": false,
+          "feedback": "A PTAX é uma taxa de referência divulgada diariamente e não tem relação com o prazo de guarda de documentos de PLD."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-37",
+      "categories": ["cambio-pld"],
+      "topicTag": "fracionamento-smurfing-sinal-alerta",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Ferraz — Analista de Monitoramento",
+          "text": "Apareceu no monitoramento um cliente que fez várias operações pequenas em poucos dias, em agências e correspondentes diferentes, sempre abaixo do limite."
+        }
+      ],
+      "question": "Um cliente faz várias operações de câmbio manual e remessas, todas em valores um pouco abaixo de US$ 3.000,00 ou R$ 10.000,00, em curto espaço de tempo e por diferentes agências e correspondentes. Que sinal de alerta de PLD/FTP essa conduta caracteriza?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Operação normal, incentivada pelo Banco Central para aumentar a liquidez do mercado de varejo.",
+          "correct": false,
+          "feedback": "O Banco Central não incentiva esse padrão. Várias operações logo abaixo dos limites são tratadas como indício de atipicidade."
+        },
+        {
+          "id": "b",
+          "text": "Uso legítimo de um benefício de imunidade tributária concedido a pequenos viajantes.",
+          "correct": false,
+          "feedback": "Não existe imunidade tributária que justifique o padrão. Tratá-lo como legítimo ignora um sinal de alerta clássico."
+        },
+        {
+          "id": "c",
+          "text": "Técnica de fracionamento ou pulverização (smurfing/structuring), usada para driblar limites operacionais, alçadas de aprovação ou gatilhos de identificação e reporte.",
+          "correct": true,
+          "feedback": "Correto. Dividir um valor expressivo em várias operações menores para não atingir os patamares de controle é um sinal de alerta clássico, listado na Carta Circular nº 4.001/2020."
+        },
+        {
+          "id": "d",
+          "text": "Incentivo à compra de papel-moeda estrangeiro dispensado de cadastro bancário.",
+          "correct": false,
+          "feedback": "Não há dispensa de cadastro para esse tipo de compra. A identificação do cliente continua obrigatória."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-38",
+      "categories": ["cambio-pld"],
+      "topicTag": "divergencia-atipica-taxa-cambio",
+      "dialogue": [
+        {
+          "speaker": "Larissa Medeiros — Auditora Interna",
+          "text": "Na revisão da mesa de câmbio encontrei compras de dólar fechadas bem acima da cotação de mercado do mesmo momento, e ninguém soube explicar o motivo."
+        }
+      ],
+      "question": "Uma fiscalização de compliance identifica que uma mesa de câmbio contratou compras de dólares com cotação 30% acima da PTAX praticada no mercado no mesmo momento, sem justificativa econômica razoável. Como esse evento é classificado?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Prática louvável de livre concorrência, que beneficia a corretora e dispensa análise de PLD.",
+          "correct": false,
+          "feedback": "Uma discrepância dessa magnitude sem justificativa não é concorrência. É indício de suspeita que exige análise de PLD."
+        },
+        {
+          "id": "b",
+          "text": "Sinal de alerta (red flag) de atipicidade cambial, que pode indicar ocultação de valores, transferência indevida de riqueza ou pagamento de propina ou comissão não declarada.",
+          "correct": true,
+          "feedback": "Correto. Taxas muito discrepantes das praticadas no mercado no mesmo instante são indício de suspeita (Carta Circular nº 4.001/2020), pois a margem anormal pode simular ganhos ou transferir recursos ilícitos."
+        },
+        {
+          "id": "c",
+          "text": "Operação imune à análise de PLD/FTP, desde que contratada por pessoa jurídica comercial.",
+          "correct": false,
+          "feedback": "Não existe imunidade de PLD por tipo de cliente. Operações de pessoas jurídicas também são monitoradas."
+        },
+        {
+          "id": "d",
+          "text": "Erro exclusivamente de digitação do sistema, que deve ser corrigido sem registro no dossiê do cliente.",
+          "correct": false,
+          "feedback": "Presumir erro de digitação e não registrar nada esconderia um possível indício de ilícito. O evento precisa ser analisado e documentado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-39",
+      "categories": ["cambio-pld"],
+      "topicTag": "laranjas-empresas-fachada-dados-compartilhados",
+      "dialogue": [
+        {
+          "speaker": "Thiago Ramalho — Analista de Prevenção a Fraudes",
+          "text": "Olha esse padrão: um grupo de empresas abertas há poucos meses, todas pedindo remessas altas para o exterior, e os dados de contato parecem repetidos."
+        }
+      ],
+      "question": "Dez empresas recém-criadas, em nome de sócios sem capacidade financeira aparente, contrataram elevadas remessas de câmbio para o exterior usando o mesmo endereço IP e o mesmo e-mail de contato. Esse cenário é um indício clássico de quê?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Atividade regular de um correspondente cambial operando sem licença.",
+          "correct": false,
+          "feedback": "O cenário descreve clientes remetentes, não a atuação de um correspondente cambial. Dados cadastrais em comum não indicam isso."
+        },
+        {
+          "id": "b",
+          "text": "Eficiência administrativa de um grupo familiar, que fica dispensado de identificar individualmente o beneficiário final.",
+          "correct": false,
+          "feedback": "Não há dispensa de identificar o beneficiário final por ser um grupo familiar. Esse argumento tenta normalizar uma fraude cadastral."
+        },
+        {
+          "id": "c",
+          "text": "Uma startup promissora de e-commerce internacional, com direito a dispensa de KYC.",
+          "correct": false,
+          "feedback": "Nenhuma empresa tem direito a dispensa de KYC. Empresas novas sem capacidade financeira exigem ainda mais atenção."
+        },
+        {
+          "id": "d",
+          "text": "Uso de laranjas ou empresas de fachada controladas por um mesmo beneficiário oculto, para lavagem de dinheiro ou evasão de divisas.",
+          "correct": true,
+          "feedback": "Correto. Dados cadastrais coincidentes (IP, e-mail, telefone) entre empresas sem capacidade econômico-financeira compatível apontam o uso de laranjas ou empresas de fachada para simular contratos de câmbio e esconder quem de fato detém os recursos."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-40",
+      "categories": ["cambio-pld"],
+      "topicTag": "superfaturamento-subfaturamento-comercio-exterior",
+      "dialogue": [
+        {
+          "speaker": "Camila Vasconcelos — Analista de Comércio Exterior",
+          "text": "Recebi uma remessa de importação cujo valor parece muito acima do que aquela mercadoria costuma custar. Quero entender como isso se enquadra em PLD."
+        }
+      ],
+      "question": "Em operações de câmbio ligadas ao comércio exterior (importação e exportação), o que caracteriza o superfaturamento ou o subfaturamento de mercadorias?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Variação normal causada pela mudança no preço do frete marítimo internacional, sem efeito em PLD.",
+          "correct": false,
+          "feedback": "Oscilação de frete é uma variação de mercado explicável. O superfaturamento e o subfaturamento envolvem uma discrepância sem justificativa."
+        },
+        {
+          "id": "b",
+          "text": "Isenção tributária concedida pela Receita Federal a bens de luxo.",
+          "correct": false,
+          "feedback": "Isenção tributária é um benefício fiscal legal e não tem relação com a manipulação do valor de mercadorias."
+        },
+        {
+          "id": "c",
+          "text": "Desconto comercial dado pelo fornecedor estrangeiro e aprovado pelo Ministério da Fazenda.",
+          "correct": false,
+          "feedback": "Um desconto comercial regular não é fraude, e o Ministério da Fazenda não aprova descontos de fornecedores. O problema é a discrepância injustificada de valor."
+        },
+        {
+          "id": "d",
+          "text": "Discrepância injustificada entre o valor financeiro da operação de câmbio e o valor real de mercado das mercadorias ou serviços declarados, usada para transferir divisas ilicitamente para fora ou para dentro do país.",
+          "correct": true,
+          "feedback": "Correto. Superfaturar a importação (pagar mais dólares do que a mercadoria vale) ou subfaturar a exportação (declarar menos do que ela vale) é método fraudulento de remessa ilegal de divisas e lavagem de dinheiro, o chamado Trade-Based Money Laundering."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-41",
+      "categories": ["cambio-pld"],
+      "topicTag": "remessa-jurisdicao-alto-risco-gafi",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Siqueira — Gerente de Câmbio",
+          "text": "Chegou um pedido de remessa de valor alto para uma conta em um país que aparece em lista de alerta do GAFI. O cliente quer que saia hoje."
+        }
+      ],
+      "question": "Como a instituição deve tratar um pedido de remessa de câmbio de valor expressivo para conta em jurisdição classificada pelo GAFI/FATF como não cooperante ou de alto risco (lista cinza ou preta)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fazer a transferência imediatamente e conceder desconto na taxa de câmbio.",
+          "correct": false,
+          "feedback": "Pagar na hora e ainda dar desconto ignora o risco elevado. Jurisdições de alto risco exigem controles reforçados antes da liquidação."
+        },
+        {
+          "id": "b",
+          "text": "Apagar o histórico da transação do Sisbacen para evitar represálias internacionais.",
+          "correct": false,
+          "feedback": "Destruir registros é ilegal e vai contra o dever de registro e guarda. Nunca é um tratamento aceitável."
+        },
+        {
+          "id": "c",
+          "text": "Aplicar diligência reforçada (KYC/KYP), apurar a fundamentação econômica e o nexo comercial da operação e, se a atipicidade persistir, comunicar ao COAF.",
+          "correct": true,
+          "feedback": "Correto. Operações com países de alto risco pedem controles reforçados dentro da abordagem baseada em risco: documentação robusta sobre a legitimidade do negócio antes de pagar e comunicação ao COAF se a justificativa for frágil ou atípica."
+        },
+        {
+          "id": "d",
+          "text": "Isentar o cliente do pagamento do Imposto de Renda Retido na Fonte (IRRF).",
+          "correct": false,
+          "feedback": "A instituição não pode conceder isenção de imposto, e isso não trata o risco de PLD da operação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-42",
+      "categories": ["cambio-pld"],
+      "topicTag": "pagamento-por-terceiro-sem-vinculo",
+      "dialogue": [
+        {
+          "speaker": "Aline Bittencourt — Analista de Liquidação",
+          "text": "Na liquidação de um contrato de importação, o dinheiro entrou da conta de uma empresa que não aparece em lugar nenhum da operação."
+        }
+      ],
+      "question": "Um contrato de câmbio de importação da Empresa A é pago no Brasil com recursos da conta da Empresa B, que não tem vínculo societário, contratual ou comercial comprovado com a operação. O que essa situação sinaliza?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Um sinal de alerta de lavagem de dinheiro e de triangulação financeira atípica, pois pagamentos por terceiros desvinculados escondem a origem real dos recursos.",
+          "correct": true,
+          "feedback": "Correto. Liquidar câmbio com recursos de um terceiro estranho à relação comercial é forte indício de dissimulação da origem (red flag) e exige apurar por que ele está pagando a obrigação do cliente."
+        },
+        {
+          "id": "b",
+          "text": "Uma modalidade padrão de pagamento antecipado, autorizada sem necessidade de verificação.",
+          "correct": false,
+          "feedback": "Pagamento antecipado é outra coisa, e nenhuma modalidade dispensa a verificação de um terceiro sem vínculo."
+        },
+        {
+          "id": "c",
+          "text": "Um benefício automático de mútuo comercial previsto no Código Civil, que isenta a corretora de análise.",
+          "correct": false,
+          "feedback": "O Código Civil não isenta a instituição financeira de analisar a operação. Pagamento de terceiro continua exigindo diligência de PLD."
+        },
+        {
+          "id": "d",
+          "text": "Um procedimento obrigatório exigido pelo Banco Central para liquidar o câmbio.",
+          "correct": false,
+          "feedback": "O Banco Central não exige que um terceiro pague a operação. Esse tipo de pagamento é tratado como atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-43",
+      "categories": ["cambio-pld"],
+      "topicTag": "recusa-informacoes-inconsistencia-cadastral",
+      "dialogue": [
+        {
+          "speaker": "Vinícius Duarte — Atendente de Câmbio",
+          "text": "Tenho um cliente no balcão que não quer explicar de onde vem o dinheiro em espécie e ainda me deu um endereço que não existe. Ele insiste em fechar hoje."
+        }
+      ],
+      "question": "Na atualização cadastral para fechar um câmbio, o cliente se recusa a comprovar a origem dos recursos em espécie e informa um endereço comprovadamente falso. Qual é a conduta correta da instituição?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Concluir a venda de dólares em espécie e pedir que o cliente traga os documentos no ano seguinte.",
+          "correct": false,
+          "feedback": "Fechar a operação e deixar a documentação para depois descumpre os deveres básicos de KYC e de PLD."
+        },
+        {
+          "id": "b",
+          "text": "Trocar o nome do cliente no sistema por um nome fictício e concluir a transação.",
+          "correct": false,
+          "feedback": "Alterar dados cadastrais para um nome fictício é fraude e destrói a rastreabilidade da operação."
+        },
+        {
+          "id": "c",
+          "text": "Chamar o Procon para mediar o valor da taxa de câmbio.",
+          "correct": false,
+          "feedback": "O problema aqui não é a taxa de câmbio e o Procon não tem papel nisso. A pendência é de cadastro e de origem dos recursos."
+        },
+        {
+          "id": "d",
+          "text": "Interromper a operação, recusar o atendimento, registrar a tentativa no sistema interno e avaliar a comunicação de suspeita ao COAF.",
+          "correct": true,
+          "feedback": "Correto. A recusa em dar informações cadastrais ou o fornecimento de dados sabidamente falsos é forte indício de tentativa de ocultação (red flag). A instituição recusa a operação e leva o caso à análise conclusiva para eventual comunicação ao COAF."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-44",
+      "categories": ["cambio-pld"],
+      "topicTag": "sinais-alerta-mercado-de-ouro",
+      "dialogue": [
+        {
+          "speaker": "Daniela Pinheiro — Analista de Compliance",
+          "text": "Estamos montando a lista de sinais de alerta para operações com ouro. Preciso separar o que é situação normal do que deve acender o alerta."
+        }
+      ],
+      "question": "Nos termos da IN BCB nº 461/2024 e da Carta Circular nº 4.001/2020, qual situação constitui sinal de alerta específico nas operações com ouro ativo financeiro ou instrumento cambial?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Venda de ouro refinado com certificado emitido por fundição credenciada e liquidação por transferência bancária.",
+          "correct": false,
+          "feedback": "É uma operação regular e documentada: origem certificada e liquidação rastreável por transferência bancária."
+        },
+        {
+          "id": "b",
+          "text": "Importação de barras de ouro purificado devidamente registradas no Banco Central.",
+          "correct": false,
+          "feedback": "Importação com registro regular no Banco Central é uma operação documentada e normal, sem atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Uso de ouro em joalherias artesanais com registro de CNPJ na Receita Federal.",
+          "correct": false,
+          "feedback": "Trata-se de ouro mercadoria de uso comercial, e não do ativo financeiro ou instrumento cambial regulado pelo BCB nessa norma."
+        },
+        {
+          "id": "d",
+          "text": "Proposta de compra de ouro físico com pagamento em dinheiro vivo (espécie) ou sem comprovação de título minerário válido (PLG/ANM) do local de extração.",
+          "correct": true,
+          "feedback": "Correto. A IN BCB nº 461/2024 trata como atipicidades gravíssimas no mercado de ouro ativo financeiro o pagamento em espécie, a ausência ou invalidade do título minerário (PLG emitido pela ANM) e a divergência na origem do metal."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-45",
+      "categories": ["cambio-pld"],
+      "topicTag": "cedulas-danificadas-sinal-alerta",
+      "dialogue": [
+        {
+          "speaker": "Ricardo Fontes — Operador de Balcão de Câmbio",
+          "text": "Chegou um cliente com um monte de dólares em dinheiro vivo, e o estado das notas me deixou desconfiado. Cheiro estranho, tudo mal embalado."
+        }
+      ],
+      "question": "No balcão de câmbio manual, um cliente apresenta US$ 50.000,00 em cédulas de dólar úmidas, mofadas, com odor atípico e embaladas de forma improvisada. Qual é a interpretação normativa desse fato?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Indica que o cliente deve receber um bônus de 10% sobre o valor do câmbio, por fidelidade.",
+          "correct": false,
+          "feedback": "Não existe bônus por esse motivo. O estado das cédulas é um dado de risco, não motivo de benefício."
+        },
+        {
+          "id": "b",
+          "text": "É hipótese de isenção de cadastro por deterioração natural do papel-moeda.",
+          "correct": false,
+          "feedback": "A deterioração das cédulas não gera isenção de cadastro. O cliente deve ser identificado normalmente."
+        },
+        {
+          "id": "c",
+          "text": "Constitui sinal de alerta (red flag) explícito na regulamentação de PLD/FTP, pois o estado e o acondicionamento das cédulas sugerem ocultação em esconderijos subterrâneos, cofres clandestinos ou transporte ilícito.",
+          "correct": true,
+          "feedback": "Correto. A Carta Circular BCB nº 4.001/2020 lista o estado físico das cédulas (úmidas, com odor estranho, mofadas, com marcas de produtos químicos ou em maços desorganizados) como sinal de alerta de origem ilícita ou de ocultação clandestina."
+        },
+        {
+          "id": "d",
+          "text": "É indício de que as notas ficaram guardadas em banco oficial de um país tropical e devem ser trocadas sem qualquer pergunta.",
+          "correct": false,
+          "feedback": "Presumir uma origem inocente e trocar sem perguntar ignora o risco de lavagem de dinheiro. O estado das notas pede diligência."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

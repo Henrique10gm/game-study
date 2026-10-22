@@ -1,0 +1,442 @@
+/* In-world bank menu, neutral identity in pixel style: warm black cards with
+   stepped corners (see pixel.css), kicker in caps at the top left, serif title,
+   rows separated by hairlines, a single lime highlight on the active row. The
+   stage is 960x640 (the game's design size) and is scaled/positioned over the
+   canvas by BankMenu.layout(). */
+
+.bank-stage {
+  position: absolute;
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+.bank-stage[hidden] {
+  display: none;
+}
+
+.bank-logo {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  display: flex;
+  align-items: baseline;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.bank-logo-light {
+  font-weight: 300;
+}
+
+.bank-logo-bold {
+  font-weight: 800;
+}
+
+.bank-panel {
+  position: absolute;
+  left: 252px;
+  top: 32px;
+  width: 436px;
+  max-height: 576px;
+  box-sizing: border-box;
+  padding: 24px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(26, 22, 21, 0.97);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  pointer-events: auto;
+}
+
+.bank-kicker {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.bank-title {
+  margin: 0 0 4px;
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.bank-note {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.bank-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-top: 1px solid var(--color-line);
+}
+
+.bank-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  text-align: left;
+  min-height: 44px;
+  padding: 10px 14px;
+  margin: 0;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--color-line);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.bank-item-label {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.bank-item-meta {
+  flex: none;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+}
+
+.bank-item-bar {
+  flex: 0 0 100%;
+}
+
+.bank-item--secondary {
+  color: var(--color-muted);
+}
+
+/* Active row: solid lime block with squared corners. */
+.bank-item.is-active {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: 600;
+  border-bottom-color: transparent;
+  outline: none;
+  clip-path: polygon(
+    0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
+    4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+  );
+}
+
+.bank-item.is-active .bank-item-meta {
+  color: var(--color-bg);
+}
+
+.bank-item.is-active .px-bar > span {
+  background: rgba(26, 22, 21, 0.2);
+}
+
+.bank-item.is-active .px-bar > span.on {
+  background: var(--color-bg);
+}
+
+.bank-item[aria-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bank-detail {
+  margin: 4px 0 0;
+  min-height: 52px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bank-hint {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--color-muted);
+}
+
+/* "Sua preparação" card, to the right of the list. */
+.bank-card {
+  position: absolute;
+  left: 722px;
+  top: 76px;
+  width: 206px;
+  box-sizing: border-box;
+  padding: 16px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(26, 22, 21, 0.97);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  pointer-events: none;
+}
+
+.bank-pct {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 44px;
+  line-height: 1;
+  color: #fff;
+}
+
+.bank-card .px-bar {
+  align-self: stretch;
+}
+
+.bank-card-line {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.bank-card-sub {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--color-muted);
+}
+
+.bank-card-goal {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bank-level {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-line);
+}
+
+/* "Foco de hoje": left column, under the Hall da Fama. The right column below
+   "Sua preparação" stays free for the cast speech bubbles (they are drawn on the
+   canvas, so any card on top of them hides them). */
+.bank-focus {
+  left: 20px;
+  top: 324px;
+  width: 216px;
+}
+
+.bank-streak {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.15;
+  color: var(--color-accent);
+}
+
+.bank-streak.is-risk {
+  color: #fff;
+}
+
+/* "Tela cheia": left of the wordmark. */
+.bank-fs {
+  position: absolute;
+  top: 20px;
+  right: 168px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-line);
+  color: var(--color-muted);
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.bank-fs:hover,
+.bank-fs:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-accent);
+  color: var(--color-accent);
+  outline: none;
+}
+
+.bank-stage--compact .bank-fs {
+  top: 12px;
+  right: auto;
+  left: 12px;
+}
+
+/* "Segredos 3/10" under the wordmark. */
+.bank-secrets {
+  position: absolute;
+  top: 50px;
+  right: 32px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.bank-secrets[hidden] {
+  display: none;
+}
+
+/* Hall da Fama preview: left of "Escolha a missão", always visible. */
+.bank-hall {
+  position: absolute;
+  left: 20px;
+  top: 76px;
+  width: 216px;
+  box-sizing: border-box;
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(26, 22, 21, 0.97);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  pointer-events: auto;
+}
+
+.bank-hall-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* offsetTop of the rows is measured against the list */
+  max-height: 145px; /* five rows; the rest scrolls */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+.bank-hall-row {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 6px;
+  align-items: baseline;
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 12px;
+}
+
+.bank-hall-pos {
+  font-family: var(--font-serif);
+  color: var(--color-accent);
+}
+
+.bank-hall-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.bank-hall-score {
+  font-weight: 800;
+  color: var(--color-muted);
+}
+
+.bank-hall-row.is-me {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-bottom-color: transparent;
+}
+
+.bank-hall-row.is-me .bank-hall-pos,
+.bank-hall-row.is-me .bank-hall-score {
+  color: var(--color-bg);
+}
+
+.bank-hall-open {
+  align-self: flex-start;
+  margin-top: 2px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.bank-hall-open:hover,
+.bank-hall-open:focus-visible {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  outline: none;
+}
+
+/* Small screens: the menu is a normal scrolling column instead of a scaled stage. */
+.bank-stage--compact {
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 52px 12px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(26, 22, 21, 0.9);
+  pointer-events: auto;
+  transform-origin: top left;
+}
+
+.bank-stage--compact .bank-panel,
+.bank-stage--compact .bank-card,
+.bank-stage--compact .bank-hall {
+  position: static;
+  width: 100%;
+  max-height: none;
+}
+
+.bank-stage--compact .bank-panel {
+  order: 1;
+}
+
+.bank-stage--compact .bank-hall {
+  order: 2;
+}
+
+.bank-stage--compact .bank-card {
+  order: 3;
+}
+
+.bank-stage--compact .bank-focus {
+  order: 4;
+}
+
+.bank-stage--compact .bank-logo {
+  top: 14px;
+  right: 16px;
+}
+
+.bank-stage--compact .bank-item {
+  min-height: 48px;
+}

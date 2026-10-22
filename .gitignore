@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# build output
+dist/
+build/
+
+# secrets / local config
+.env
+.env.local
+.env.*.local
+
+# db data (docker volumes should be named volumes, not bind mounts, but just in case)
+pgdata/
+*.sqlite3
+
+# os
+.DS_Store
+Thumbs.db
+
+# local GSD executor worktrees (isolated agent working copies, never committed)
+.claude/worktrees/
+
+# clasp (id do projeto Apps Script local)
+.clasp.json
+
+# single-file build for Apps Script (generated)
+dist-gas/
+backend/index.html
+
+# CSV gerado para importar na planilha de questões
+dist-sheet/

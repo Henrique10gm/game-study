@@ -1,0 +1,589 @@
+{
+  "questions": [
+    {
+      "sceneId": "cam-16",
+      "categories": ["cambio-pld"],
+      "topicTag": "intervencoes-bc-gestao-reservas-depin-demab",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Lacerda — Analista de Câmbio",
+          "text": "Estou montando um material de onboarding sobre política cambial e preciso citar quem, dentro do Banco Central, executa as intervenções e cuida das reservas."
+        }
+      ],
+      "question": "Quais são os departamentos do Banco Central do Brasil diretamente envolvidos na execução da política cambial e na gestão das Reservas Internacionais do país?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "DEPIN (Departamento de Operações das Reservas Internacionais) e DEMAB (Departamento de Operações do Mercado Aberto).",
+          "correct": true,
+          "feedback": "Correto. O DEPIN gerencia o estoque e a alocação das Reservas Internacionais no exterior, e o DEMAB executa as operações de mercado aberto e as intervenções nos mercados cambial e de derivativos."
+        },
+        {
+          "id": "b",
+          "text": "DECOF (Departamento de Contabilidade) e DEBAN (Departamento de Operações Bancárias de Varejo).",
+          "correct": false,
+          "feedback": "Esses são órgãos de natureza contábil e de operações bancárias, que não executam intervenções cambiais nem gerem as reservas."
+        },
+        {
+          "id": "c",
+          "text": "DENOR (Departamento de Normas) e COAF.",
+          "correct": false,
+          "feedback": "O DENOR cuida de normas e o COAF é a unidade de inteligência financeira. Nenhum dos dois executa intervenções ou administra as reservas internacionais."
+        },
+        {
+          "id": "d",
+          "text": "PROCON e as Secretarias Estaduais de Fazenda.",
+          "correct": false,
+          "feedback": "São órgãos externos ao Banco Central, voltados à defesa do consumidor e à tributação estadual, sem papel na política cambial."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-17",
+      "categories": ["cambio-pld"],
+      "topicTag": "nivelamento-de-posicao-e-ajuste-de-liquidez",
+      "dialogue": [
+        {
+          "speaker": "Marcos Vieira — Operador de Mesa",
+          "text": "Hoje os clientes compraram muito dólar e nossa posição mudou bastante. Me explica por que a mesa vive negociando com outros bancos durante o dia?"
+        }
+      ],
+      "question": "Por que um banco comercial autorizado a operar no mercado de câmbio recorre rotineiramente ao mercado interbancário ao longo do dia?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Para comprar ou vender moeda estrangeira de outros bancos e manter sua posição de câmbio dentro dos limites regulatórios e estratégicos definidos pela diretoria e pelo BCB.",
+          "correct": true,
+          "feedback": "Correto. As compras e vendas dos clientes alteram a posição cambial do banco, e ele a reequilibra no interbancário para não ficar exposto em excesso à oscilação do dólar."
+        },
+        {
+          "id": "b",
+          "text": "Para cancelar as notas fiscais de exportação emitidas pelos seus clientes.",
+          "correct": false,
+          "feedback": "Notas fiscais de exportação são documentos fiscais dos clientes e não têm relação com o ajuste de posição no interbancário."
+        },
+        {
+          "id": "c",
+          "text": "Para reter o imposto de renda dos clientes e repassá-lo diretamente ao COAF.",
+          "correct": false,
+          "feedback": "Mistura conceitos tributários com PLD: o COAF não recebe imposto, e a retenção de tributos não é função do mercado interbancário."
+        },
+        {
+          "id": "d",
+          "text": "Para emitir cartões de crédito internacionais isentos de IOF.",
+          "correct": false,
+          "feedback": "Emissão de cartões é um tema de meios de pagamento, alheio à gestão de posição cambial no interbancário."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-18",
+      "categories": ["cambio-pld"],
+      "topicTag": "registro-de-operacoes-sisbacen-selic-str",
+      "dialogue": [
+        {
+          "speaker": "Larissa Prado — Analista de Back Office",
+          "text": "Um colega novo perguntou por que a gente corre tanto para registrar cada operação de câmbio no sistema do Banco Central no prazo. Quero responder direito."
+        }
+      ],
+      "question": "Todas as operações de câmbio contratadas no mercado brasileiro e as transações interbancárias associadas devem ser registradas em sistema mantido pelo Banco Central. Qual é o principal impacto regulatório do registro tempestivo dessas operações?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Garantir a transparência, a formação correta das estatísticas do Balanço de Pagamentos e permitir a fiscalização contínua do mercado pelo BCB e órgãos de inteligência.",
+          "correct": true,
+          "feedback": "Correto. O registro obrigatório permite controlar o fluxo cambial, apurar com fidedignidade o Balanço de Pagamentos e supervisionar limites e a prevenção a crimes financeiros."
+        },
+        {
+          "id": "b",
+          "text": "Isentar automaticamente as empresas negociantes do pagamento de tributos corporativos.",
+          "correct": false,
+          "feedback": "O registro da operação não tem efeito tributário: não gera isenção de nenhum tributo."
+        },
+        {
+          "id": "c",
+          "text": "Bloquear o envio de recursos para qualquer país pertencente ao G20.",
+          "correct": false,
+          "feedback": "O registro não bloqueia remessas a nenhum grupo de países. Essa consequência não existe na regulamentação."
+        },
+        {
+          "id": "d",
+          "text": "Conceder perdão automático a eventuais ilícitos penais cometidos pelas instituições.",
+          "correct": false,
+          "feedback": "Registrar uma operação não anistia ilícitos. Ao contrário, ela fica visível para a fiscalização."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-19",
+      "categories": ["cambio-pld"],
+      "topicTag": "limites-operacionais-por-tipo-de-instituicao",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Farias — Gerente de Parcerias",
+          "text": "Uma corretora parceira quer fechar uma operação de câmbio grande com um cliente. Preciso saber até onde uma corretora pode ir por operação."
+        }
+      ],
+      "question": "Em conformidade com a Resolução BCB nº 277/2022, qual opção indica corretamente o limite operacional de câmbio das Sociedades Corretoras (SCTVM) e Distribuidoras (SDTVM)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Não possuem limite operacional e podem realizar operações de qualquer montante.",
+          "correct": false,
+          "feedback": "Operações sem limite de valor são restritas aos bancos comerciais e múltiplos com carteira comercial ou de investimento, não às corretoras."
+        },
+        {
+          "id": "b",
+          "text": "Podem realizar operações de câmbio com clientes de até US$ 500.000,00 (quinhentos mil dólares dos EUA) ou o equivalente em outras moedas.",
+          "correct": true,
+          "feedback": "Correto. Pela Resolução BCB nº 277/2022, corretoras e distribuidoras autorizadas têm teto de US$ 500.000,00 (ou equivalente) por operação com clientes."
+        },
+        {
+          "id": "c",
+          "text": "Estão restritas ao limite máximo de US$ 3.000,00 por operação, igual ao dos correspondentes cambiais.",
+          "correct": false,
+          "feedback": "US$ 3.000,00 é o limite geral dos correspondentes cambiais, não das corretoras e distribuidoras."
+        },
+        {
+          "id": "d",
+          "text": "Podem operar apenas com câmbio manual, limitado a US$ 10.000,00 por cliente ao ano.",
+          "correct": false,
+          "feedback": "Essa restrição não existe nas regras vigentes: o limite das corretoras é por operação e elas não ficam restritas ao câmbio manual."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-20",
+      "categories": ["cambio-pld"],
+      "topicTag": "limites-instituicoes-de-pagamento",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Nogueira — Analista de Produto",
+          "text": "Estamos desenhando uma funcionalidade de câmbio para clientes da nossa instituição de pagamento. Qual é o teto por operação que a regra nos dá?"
+        }
+      ],
+      "question": "Qual é o limite operacional máximo autorizado para as Instituições de Pagamento (IPs) ao prestarem serviços de câmbio diretamente aos seus clientes, nos termos da regulamentação do Banco Central?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 100.000,00 (cem mil dólares dos EUA) ou o equivalente em outras moedas, por operação.",
+          "correct": true,
+          "feedback": "Correto. As IPs autorizadas pelo BCB a operar em câmbio podem fazer compra e venda de moeda e transferências internacionais com clientes até US$ 100.000,00 por operação."
+        },
+        {
+          "id": "b",
+          "text": "Até US$ 5.000.000,00, apenas para importação de tecnologia.",
+          "correct": false,
+          "feedback": "Esse valor e essa restrição por finalidade não constam da regulamentação das IPs."
+        },
+        {
+          "id": "c",
+          "text": "Ilimitado, desde que a operação ocorra exclusivamente via aplicativo de celular.",
+          "correct": false,
+          "feedback": "O canal usado não elimina o limite. Não há operação ilimitada para IPs só por ser feita em aplicativo."
+        },
+        {
+          "id": "d",
+          "text": "As Instituições de Pagamento estão proibidas de operar no mercado de câmbio em qualquer hipótese.",
+          "correct": false,
+          "feedback": "Falso: o BCB autoriza expressamente as IPs a atuar em câmbio, dentro do limite regulamentar."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-21",
+      "categories": ["cambio-pld"],
+      "topicTag": "prestadores-de-pagamento-internacional-efx",
+      "dialogue": [
+        {
+          "speaker": "Thiago Ramos — Analista de Compliance",
+          "text": "Um parceiro eFX nos consultou sobre uma transferência internacional para pagar um serviço contratado no exterior. Preciso conferir o teto aplicável."
+        }
+      ],
+      "question": "Qual é o limite de valor por operação aplicável às transferências de eFX para aquisição de bens e serviços ou para transferências unilaterais?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 10.000,00 (dez mil dólares dos EUA) ou o equivalente em outras moedas.",
+          "correct": true,
+          "feedback": "Correto. O eFX autoriza processar pagamentos e transferências internacionais (bens, serviços e remessas de uso pessoal) até US$ 10.000,00, ou equivalente, por operação."
+        },
+        {
+          "id": "b",
+          "text": "Até R$ 1.000,00 para operações nacionais e US$ 1.000.000,00 para operações internacionais.",
+          "correct": false,
+          "feedback": "Esses valores não constam da regulamentação de eFX do BCB."
+        },
+        {
+          "id": "c",
+          "text": "Sem limite para compra de imóveis no exterior.",
+          "correct": false,
+          "feedback": "Não há hipótese de operação sem limite no eFX, nem para aquisição de imóveis no exterior."
+        },
+        {
+          "id": "d",
+          "text": "Até US$ 50,00, para impedir a cobrança de impostos de importação.",
+          "correct": false,
+          "feedback": "O teto não foi desenhado em função de imposto de importação e o valor está muito abaixo do limite real de eFX."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-22",
+      "categories": ["cambio-pld"],
+      "topicTag": "limites-dos-correspondentes-cambiais",
+      "dialogue": [
+        {
+          "speaker": "Fernanda Castro — Coordenadora de Canais",
+          "text": "Vou treinar nossos correspondentes e quero passar certinho os dois limites que eles têm: o geral e o de dinheiro em espécie."
+        }
+      ],
+      "question": "Segundo a Resolução CMN nº 4.935/2021, um correspondente no país contratado para atuar em câmbio está sujeito a dois limites operacionais distintos. Qual alternativa os indica corretamente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Limite geral de até US$ 3.000,00 para operações escriturais ou gerais e limite reduzido de até US$ 1.000,00 para operações liquidadas simultaneamente em moeda física (espécie).",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 4.935/2021 fixa US$ 3.000,00 por operação, reduzido para US$ 1.000,00 quando há entrega ou recebimento de dinheiro físico."
+        },
+        {
+          "id": "b",
+          "text": "Limite geral de US$ 50.000,00 e limite de espécie de US$ 20.000,00.",
+          "correct": false,
+          "feedback": "Os valores estão muito acima dos reais. US$ 50.000,00 não é o limite do correspondente cambial."
+        },
+        {
+          "id": "c",
+          "text": "Limite de R$ 100.000,00 para dólares e R$ 500.000,00 para euros.",
+          "correct": false,
+          "feedback": "Os limites do correspondente são em dólares (ou equivalente) e não variam por moeda, como esta alternativa sugere."
+        },
+        {
+          "id": "d",
+          "text": "Ilimitado em espécie e limitado a US$ 500,00 para ordens de pagamento.",
+          "correct": false,
+          "feedback": "Inverte a lógica da norma: o dinheiro físico é justamente a modalidade com teto reduzido, e não ilimitada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-23",
+      "categories": ["cambio-pld"],
+      "topicTag": "teto-recebimento-pagamento-especie-brasil",
+      "dialogue": [
+        {
+          "speaker": "Daniel Moreira — Atendimento Especializado",
+          "text": "Um cliente insistiu em receber o contravalor de uma operação de câmbio em dinheiro vivo, em reais, e perguntou qual é o teto. Quero confirmar o número."
+        }
+      ],
+      "question": "Qual é o teto máximo permitido em moeda nacional (reais) para o recebimento ou pagamento em dinheiro físico (espécie) nas operações de câmbio no Brasil?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "R$ 10.000,00 (dez mil reais) por operação.",
+          "correct": true,
+          "feedback": "Correto. Para reforçar a segurança e a rastreabilidade (PLD/FTP), a regulamentação cambial fixa R$ 10.000,00 como teto de liquidação em espécie. Valores acima devem ir por TED, PIX ou débito em conta."
+        },
+        {
+          "id": "b",
+          "text": "R$ 50.000,00 por cliente ao mês.",
+          "correct": false,
+          "feedback": "O teto não é mensal por cliente nem tem esse valor. O limite é por operação e muito menor."
+        },
+        {
+          "id": "c",
+          "text": "R$ 1.000.000,00, desde que aprovado pelo COAF.",
+          "correct": false,
+          "feedback": "O COAF não aprova operações em espécie, e não existe teto de R$ 1.000.000,00 nessa hipótese."
+        },
+        {
+          "id": "d",
+          "text": "Não há limite: a instituição pode pagar qualquer valor em dinheiro vivo.",
+          "correct": false,
+          "feedback": "Há limite expresso justamente para dar rastreabilidade às operações e dificultar a lavagem de dinheiro."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-24",
+      "categories": ["cambio-pld"],
+      "topicTag": "vedacoes-aplicaveis-aos-correspondentes-cambiais",
+      "dialogue": [
+        {
+          "speaker": "Camila Rezende — Analista de Riscos de Parceiros",
+          "text": "Estou revisando o checklist de conformidade dos correspondentes cambiais e preciso separar o que eles podem fazer do que é vedado."
+        }
+      ],
+      "question": "Em relação à regulamentação dos correspondentes no país prestadores de serviços de câmbio, qual das condutas abaixo é expressamente PROIBIDA?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Substabelecer o contrato de correspondente a terceiros ou atuar por subcontratação não autorizada, na lógica de franchising.",
+          "correct": true,
+          "feedback": "Correto. A regulamentação do CMN veda o substabelecimento a terceiros e estruturas de franchising ou subcontratação em cascata, para manter a responsabilidade direta da instituição contratante."
+        },
+        {
+          "id": "b",
+          "text": "Utilizar o sistema eletrônico fornecido pela instituição contratante.",
+          "correct": false,
+          "feedback": "É conduta permitida e esperada: o correspondente opera no sistema da instituição contratante."
+        },
+        {
+          "id": "c",
+          "text": "Identificar formalmente o cliente por meio de documento oficial com foto.",
+          "correct": false,
+          "feedback": "A identificação formal do cliente é obrigatória no exercício da atividade, e não proibida."
+        },
+        {
+          "id": "d",
+          "text": "Entregar o comprovante da operação de câmbio diretamente ao cliente.",
+          "correct": false,
+          "feedback": "Entregar o comprovante ao cliente é parte regular e obrigatória do atendimento."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-25",
+      "categories": ["cambio-pld"],
+      "topicTag": "livre-porte-de-valores-em-viagens-internacionais",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Teixeira — Atendimento ao Cliente",
+          "text": "Um cliente vai viajar levando dinheiro em espécie e quer saber até que valor pode sair do país sem precisar apresentar a declaração à Receita."
+        }
+      ],
+      "question": "Qual é o limite legal de valores em espécie (dinheiro físico) que um passageiro pode transportar ao sair do Brasil ou nele entrar sem a necessidade de apresentar a Declaração Eletrônica de Bens do Viajante (e-DBV)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Até US$ 10.000,00 (dez mil dólares dos EUA) ou o equivalente em outras moedas.",
+          "correct": true,
+          "feedback": "Correto. A Lei nº 14.286/2021 atualizou o livre porte para US$ 10.000,00 (ou equivalente). Acima desse montante é obrigatória a transmissão prévia da e-DBV à Receita Federal."
+        },
+        {
+          "id": "b",
+          "text": "Até R$ 10.000,00 fixos, independentemente da cotação do dólar.",
+          "correct": false,
+          "feedback": "Confunde a regra antiga, em reais, com o teto atual, que é expresso em dólares (ou equivalente)."
+        },
+        {
+          "id": "c",
+          "text": "Até US$ 1.000,00 para viagens na América do Sul e US$ 3.000,00 para os demais continentes.",
+          "correct": false,
+          "feedback": "A lei não distingue o limite por destino geográfico. Esses valores e critérios foram inventados."
+        },
+        {
+          "id": "d",
+          "text": "Qualquer valor é isento, desde que transportado em malas despachadas.",
+          "correct": false,
+          "feedback": "O tipo de bagagem não afasta o limite: acima do teto, a declaração é obrigatória em qualquer caso."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-26",
+      "categories": ["cambio-pld"],
+      "topicTag": "nao-repatriacao-de-receitas-de-exportacao",
+      "dialogue": [
+        {
+          "speaker": "Juliana Barros — Gerente de Contas Corporativas",
+          "text": "Uma empresa exportadora cliente perguntou se é obrigada a trazer de volta para o Brasil tudo o que recebe das vendas lá fora. Quero responder com base na lei."
+        }
+      ],
+      "question": "De acordo com o Art. 26 da Lei nº 14.286/2021 (Novo Marco Legal do Câmbio), qual é a faculdade concedida às empresas exportadoras brasileiras em relação aos recursos recebidos no exterior pelas suas vendas?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Podem manter a integralidade dos recursos de suas exportações em contas mantidas em instituições financeiras no exterior, sendo facultativa a repatriação para o Brasil.",
+          "correct": true,
+          "feedback": "Correto. O Art. 26 da Lei nº 14.286/2021 consolida o direito de manter as receitas de exportação em conta de sua titularidade no exterior, usando-as para pagamentos e investimentos ou mantendo-as lá, de forma legal."
+        },
+        {
+          "id": "b",
+          "text": "São obrigadas a repatriar 100% dos recursos em até 5 dias úteis contados do embarque da mercadoria.",
+          "correct": false,
+          "feedback": "Ressuscita uma obrigatoriedade antiga de repatriação, que o Novo Marco Legal tornou facultativa."
+        },
+        {
+          "id": "c",
+          "text": "Devem doar 10% dos dólares arrecadados ao Banco Central para formação de reservas.",
+          "correct": false,
+          "feedback": "Não existe qualquer doação compulsória ao Banco Central. A alternativa descreve um confisco inexistente."
+        },
+        {
+          "id": "d",
+          "text": "Os recursos de exportação mantidos no exterior devem ser convertidos em ouro físico e depositados no Tesouro Nacional.",
+          "correct": false,
+          "feedback": "Não há exigência de conversão em ouro nem de depósito no Tesouro: a lei garante o direito de manter os recursos fora."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-27",
+      "categories": ["cambio-pld"],
+      "topicTag": "compensacao-privada-de-creditos-no-cambio",
+      "dialogue": [
+        {
+          "speaker": "André Figueiredo — Analista Jurídico",
+          "text": "Uma empresa propôs fazer um encontro de contas privado com um parceiro no exterior, sem passar por câmbio. Preciso saber qual é a regra geral para isso."
+        }
+      ],
+      "question": "Em relação à compensação privada de créditos nas operações de câmbio (encontro de contas entre obrigações de residentes e não residentes), qual é a regra geral da legislação brasileira?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "É permitida exclusivamente nas hipóteses autorizadas ou regulamentadas pelo Banco Central do Brasil, permanecendo vedada como regra geral quando não regulamentada.",
+          "correct": true,
+          "feedback": "Correto. A compensação privada só vale nas hipóteses expressamente autorizadas ou regulamentadas pelo BCB (por exemplo, encontros de contas autorizados), mantidas as informações estatísticas e fiscais exigidas."
+        },
+        {
+          "id": "b",
+          "text": "É totalmente livre e dispensa qualquer registro no Sisbacen para qualquer tipo de empresa.",
+          "correct": false,
+          "feedback": "Desconsidera a necessidade de regulamentação e de registro e prestação de informações."
+        },
+        {
+          "id": "c",
+          "text": "É considerada crime de lesa-pátria, punível com prisão perpétua.",
+          "correct": false,
+          "feedback": "Pena desproporcional e inexistente: a prática é regulada, não tipificada dessa forma."
+        },
+        {
+          "id": "d",
+          "text": "Aplica-se apenas a pessoas físicas que negociam moedas em feiras livres.",
+          "correct": false,
+          "feedback": "Restringe de forma absurda o conceito. A compensação envolve obrigações entre residentes e não residentes, sobretudo empresas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-28",
+      "categories": ["cambio-pld"],
+      "topicTag": "abordagem-baseada-em-risco-abr",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Albuquerque — Analista de PLD",
+          "text": "Vou apresentar ao time como estruturamos a abordagem baseada em risco para prevenção à lavagem de dinheiro em câmbio. Qual é o desenho que a norma pede?"
+        }
+      ],
+      "question": "Como deve ser estruturada a Abordagem Baseada em Risco (ABR) para a prevenção à lavagem de dinheiro no mercado de câmbio, segundo a Circular BCB nº 3.978/2020?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A instituição deve avaliar seus riscos em quatro categorias: clientes, produtos e serviços, canais de distribuição e localização geográfica, aplicando controles reforçados nas situações de maior risco.",
+          "correct": true,
+          "feedback": "Correto. A Circular BCB nº 3.978/2020 exige a ABR considerando clientes, produtos e serviços, canais de distribuição e regiões geográficas, graduando KYC e monitoramento de forma proporcional ao risco."
+        },
+        {
+          "id": "b",
+          "text": "Aplicar exatamente os mesmos procedimentos de identificação a todos os clientes, independentemente do perfil ou do montante negociado.",
+          "correct": false,
+          "feedback": "Isso é uma abordagem padronizada rígida (one-size-fits-all), o oposto da ABR, que gradua os controles conforme o risco."
+        },
+        {
+          "id": "c",
+          "text": "Denunciar automaticamente à Polícia Federal todos os clientes que operem câmbio turismo.",
+          "correct": false,
+          "feedback": "Deturpa o objetivo da ABR, que é mitigar e monitorar riscos, e não denunciar clientes em bloco."
+        },
+        {
+          "id": "d",
+          "text": "Isentar as corretoras de câmbio de monitorar clientes que operem via internet.",
+          "correct": false,
+          "feedback": "A ABR não cria isenção de monitoramento por canal. O canal de distribuição é, na verdade, um dos fatores de risco avaliados."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-29",
+      "categories": ["cambio-pld"],
+      "topicTag": "avaliacao-interna-de-risco-air-prazo-de-revisao",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Sampaio — Gerente de Compliance",
+          "text": "Está na hora de planejar o calendário do programa de PLD e preciso lembrar de quanto em quanto tempo a avaliação interna de risco precisa ser revista."
+        }
+      ],
+      "question": "Conforme a regulamentação de PLD/FTP do Banco Central, com qual periodicidade máxima a Avaliação Interna de Risco (AIR) das instituições deve ser revisada?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A cada 2 (dois) anos, no máximo.",
+          "correct": true,
+          "feedback": "Correto. A AIR, instituída pela Circular BCB nº 3.978/2020, deve ser documentada, aprovada pela diretoria e revisada a cada 2 anos no máximo, ou antes, se houver mudanças significativas no perfil de risco."
+        },
+        {
+          "id": "b",
+          "text": "A cada 10 anos, coincidindo com o prazo de guarda de documentos.",
+          "correct": false,
+          "feedback": "Dez anos é o prazo de guarda de registros, assunto diferente. A revisão da AIR é muito mais frequente."
+        },
+        {
+          "id": "c",
+          "text": "Mensalmente, no primeiro dia útil de cada mês.",
+          "correct": false,
+          "feedback": "A norma não exige revisão mensal da AIR; o prazo máximo regulatório é bienal."
+        },
+        {
+          "id": "d",
+          "text": "Apenas quando houver troca do Presidente do Banco Central.",
+          "correct": false,
+          "feedback": "A revisão não depende de mudança na presidência do BCB. Ela segue a periodicidade regulatória e alterações no perfil de risco da instituição."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "cam-30",
+      "categories": ["cambio-pld"],
+      "topicTag": "conheca-seu-cliente-kyc-e-capacidade-financeira",
+      "dialogue": [
+        {
+          "speaker": "Priscila Duarte — Analista de Cadastro",
+          "text": "Um cliente reclamou de tantas perguntas no cadastro de câmbio. Quero explicar a ele, de forma simples, para que serve esse processo de conhecer o cliente."
+        }
+      ],
+      "question": "No processo de \"Conheça seu Cliente\" (KYC) aplicado às operações de câmbio, qual é o principal objetivo da qualificação e do cadastramento do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Verificar a autenticidade das informações prestadas e avaliar a compatibilidade entre a capacidade financeira do cliente e o volume e a frequência de suas operações cambiais.",
+          "correct": true,
+          "feedback": "Correto. O KYC coleta dados confiáveis e define a capacidade financeira e patrimonial do cliente, para que o monitoramento identifique se as operações são compatíveis ou apresentam atipicidades."
+        },
+        {
+          "id": "b",
+          "text": "Garantir que o cliente contrate um seguro de vida com a própria corretora.",
+          "correct": false,
+          "feedback": "Prática abusiva e sem amparo legal: o cadastro não serve para vender seguros."
+        },
+        {
+          "id": "c",
+          "text": "Impedir que o cliente realize mais de duas operações de câmbio na mesma semana.",
+          "correct": false,
+          "feedback": "A norma não impõe limite semanal de operações. Ela exige que o volume e a frequência sejam compatíveis com o perfil do cliente."
+        },
+        {
+          "id": "d",
+          "text": "Obter a senha bancária do cliente para realizar saques automáticos de tributos.",
+          "correct": false,
+          "feedback": "Pedir senha bancária é prática abusiva e indevida, sem relação com o KYC."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

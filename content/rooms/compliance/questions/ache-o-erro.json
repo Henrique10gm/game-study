@@ -1,0 +1,1029 @@
+{
+  "questions": [
+    {
+      "sceneId": "erro-01",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-especie-capacidade",
+      "dialogue": [
+        {
+          "speaker": "Rita Cavalcante — Analista de Monitoramento",
+          "text": "Chegaram quatro alertas de compra de dólar em espécie para viagem. Preciso separar o que foge do padrão."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cliente assalariado, com renda mensal de R$ 6 mil, compra US$ 45 mil em espécie para uma viagem de uma semana.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: o valor é incompatível com a capacidade financeira do cliente e com a natureza declarada da operação, uma viagem curta."
+        },
+        {
+          "id": "b",
+          "text": "Cliente assalariado, com renda mensal de R$ 6 mil, compra US$ 2 mil em espécie para uma viagem de uma semana.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda e com uma viagem curta."
+        },
+        {
+          "id": "c",
+          "text": "Cliente com renda mensal de R$ 30 mil compra US$ 8 mil em espécie para uma viagem de duas semanas com a família.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda e com uma viagem em família."
+        },
+        {
+          "id": "d",
+          "text": "Cliente aposentado, com renda mensal de R$ 9 mil e reserva declarada, compra US$ 5 mil em espécie para uma viagem de dez dias.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda, a reserva declarada e a duração da viagem."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-02",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-mesmo-endereco",
+      "dialogue": [
+        {
+          "speaker": "Tomás Guedes — Analista de Prevenção a Ilícitos",
+          "text": "Quatro conjuntos de compras de moeda em espécie caíram na mesma regra. Vou ver qual realmente destoa."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Três irmãos que moram juntos compram, cada um, US$ 2.800 em espécie para a mesma viagem e informam o mesmo endereço, com vínculo familiar comprovado.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o endereço em comum se explica pelo vínculo familiar comprovado."
+        },
+        {
+          "id": "b",
+          "text": "Três clientes sem relação entre si compram, no mesmo dia, US$ 2.800 cada em espécie e informam o mesmo endereço e o mesmo telefone.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: pessoas sem relação aparente informando o mesmo endereço e telefone é sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Três clientes sem relação entre si compram, em dias diferentes, US$ 2.800 cada em espécie, cada um com seu próprio endereço e telefone.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: não há dados em comum entre os clientes."
+        },
+        {
+          "id": "d",
+          "text": "Um casal compra, cada um, US$ 2.800 em espécie para a lua de mel e informa o mesmo endereço, com certidão de casamento.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o endereço em comum se explica pelo casamento comprovado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-03",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-taxa-mercado",
+      "dialogue": [
+        {
+          "speaker": "Lívia Seixas — Analista da Mesa de Câmbio",
+          "text": "Estou revisando a taxa de quatro vendas de dólar de exportadores. Quero achar a que está dentro do padrão."
+        }
+      ],
+      "question": "Qual das transações abaixo é TÍPICA, isto é, compatível com o perfil e com a atividade do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Empresa exportadora vende US$ 10 mil a uma taxa 9% abaixo da taxa de referência do dia, sem justificativa.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a taxa tem variação significativa em relação à praticada pelo mercado."
+        },
+        {
+          "id": "b",
+          "text": "Empresa exportadora vende US$ 10 mil a uma taxa 12% acima da taxa de referência do dia, sem justificativa.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a taxa tem variação significativa em relação à praticada pelo mercado, também para cima."
+        },
+        {
+          "id": "c",
+          "text": "Empresa exportadora vende US$ 10 mil a uma taxa 0,3% abaixo da taxa de referência do dia, dentro do spread usual do mercado.",
+          "correct": true,
+          "feedback": "Correto. É a transação típica: a taxa está dentro da variação normal do mercado."
+        },
+        {
+          "id": "d",
+          "text": "Empresa exportadora vende US$ 10 mil a uma taxa 8% abaixo da taxa de referência do dia, e o cliente insiste em fechar sem renegociar.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a taxa tem variação significativa em relação à de mercado, e a insistência reforça a atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-04",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-cedulas",
+      "dialogue": [
+        {
+          "speaker": "Ícaro Valente — Analista de Operações de Caixa",
+          "text": "Quatro clientes trouxeram dólares em espécie hoje. Preciso apontar o caso que merece comunicação."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cliente negocia US$ 3 mil em cédulas novas, em maços lacrados de banco.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: as cédulas estão em ordem e em bom estado."
+        },
+        {
+          "id": "b",
+          "text": "Cliente negocia US$ 3 mil em cédulas usadas, porém limpas e organizadas, que sobraram de uma viagem.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o desgaste normal e a origem explicada não indicam atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Cliente negocia US$ 3 mil em cédulas de vários valores, limpas e em bom estado, sacadas em caixa eletrônico no exterior.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é explicada e o estado das cédulas é normal."
+        },
+        {
+          "id": "d",
+          "text": "Cliente negocia US$ 3 mil em cédulas úmidas, com cheiro de mofo e em maços desorganizados, com marcas desconhecidas.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: o estado e a apresentação das cédulas sugerem armazenamento impróprio, sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-05",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-notas-pequenas",
+      "dialogue": [
+        {
+          "speaker": "Aline Furtado — Analista de Mesa de Balcão",
+          "text": "Quatro empresas pediram para trocar dólares em notas pequenas. Vou identificar a que foge da atividade."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Uma loja de roupas sem clientes estrangeiros troca US$ 15 mil em notas de US$ 1.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: trocar grande quantidade de notas pequenas é incomum para um negócio que não recebe esse tipo de valor."
+        },
+        {
+          "id": "b",
+          "text": "Uma agência de turismo receptivo troca US$ 15 mil em notas pequenas recebidas de turistas.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: receber notas pequenas de turistas é normal para a atividade."
+        },
+        {
+          "id": "c",
+          "text": "Um comércio de souvenirs em ponto turístico troca US$ 15 mil em notas pequenas recebidas de visitantes.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a atividade recebe naturalmente notas pequenas de estrangeiros."
+        },
+        {
+          "id": "d",
+          "text": "Um restaurante em área turística troca US$ 15 mil em notas pequenas recebidas de clientes estrangeiros.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a atividade explica o recebimento de notas pequenas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-06",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-pre-pago-capacidade",
+      "dialogue": [
+        {
+          "speaker": "Gabriel Morais — Analista de Cartões",
+          "text": "Quatro cargas de cartão pré-pago internacional aguardam análise. Preciso achar a que não cabe no perfil."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cliente com renda de R$ 4 mil faz uma carga de R$ 3 mil em cartão pré-pago internacional.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda."
+        },
+        {
+          "id": "b",
+          "text": "Cliente com renda de R$ 4 mil faz uma única carga de R$ 120 mil em cartão pré-pago internacional.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: o valor da carga é incompatível com a capacidade financeira e o perfil do cliente."
+        },
+        {
+          "id": "c",
+          "text": "Cliente com renda de R$ 40 mil faz uma carga de R$ 30 mil em cartão pré-pago para uma viagem de trabalho.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda e com a finalidade."
+        },
+        {
+          "id": "d",
+          "text": "Estudante em intercâmbio recebe dos pais, com comprovante, uma carga de R$ 8 mil em cartão pré-pago.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é comprovada e o valor é compatível com o intercâmbio."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-07",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-pre-pago-fontes",
+      "dialogue": [
+        {
+          "speaker": "Sabrina Moura — Analista de Cartões",
+          "text": "Estou conferindo as fontes de recarga de quatro cartões pré-pagos."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O cartão pré-pago é recarregado pelo próprio titular, em duas recargas, a partir da sua conta.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é única e do próprio titular."
+        },
+        {
+          "id": "b",
+          "text": "O cartão pré-pago de um estudante é recarregado pelos pais, com vínculo comprovado.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é conhecida e explicada pelo vínculo familiar."
+        },
+        {
+          "id": "c",
+          "text": "O cartão pré-pago de um cliente é recarregado, no mesmo dia, por cinco pessoas diferentes, sem relação aparente com ele.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: várias fontes de recursos sem relação aparente na recarga do mesmo cartão é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "O cartão pré-pago de um viajante a trabalho é recarregado pela empresa empregadora com a diária da viagem.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é conhecida e explicada pelo vínculo de trabalho."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-08",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-pre-pago-saques",
+      "dialogue": [
+        {
+          "speaker": "Heitor Camargo — Analista de Fraudes",
+          "text": "Quatro cartões pré-pagos tiveram carga seguida de uso. Quero separar o uso normal do suspeito."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O cliente carrega R$ 20 mil no cartão pré-pago e o usa ao longo da viagem em hotéis, passeios e restaurantes.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o uso é compatível com uma viagem."
+        },
+        {
+          "id": "b",
+          "text": "O cliente carrega R$ 5 mil no cartão pré-pago e faz um único saque de R$ 500 ao desembarcar.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o saque é pequeno e esperado em uma viagem."
+        },
+        {
+          "id": "c",
+          "text": "O cliente carrega R$ 20 mil no cartão pré-pago, usa em compras e hotéis e resgata o saldo restante depois da volta.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o uso é compatível e o resgate ocorre depois da viagem."
+        },
+        {
+          "id": "d",
+          "text": "O cliente carrega R$ 20 mil no cartão pré-pago e, minutos depois, faz saques seguidos em caixas eletrônicos até zerar o saldo.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: carga seguida imediatamente de saques em caixas eletrônicos é sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-09",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-cadastro-recusa",
+      "dialogue": [
+        {
+          "speaker": "Cecília Prado — Analista de Cadastro",
+          "text": "Quatro empresas receberam pedido de atualização cadastral. Preciso achar a que se comporta de forma regular."
+        }
+      ],
+      "question": "Qual das transações abaixo é TÍPICA, isto é, compatível com o perfil e com a atividade do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A empresa responde no prazo ao pedido de atualização cadastral e envia contrato social e balanço atualizados.",
+          "correct": true,
+          "feedback": "Correto. É a transação típica: a cliente colabora e fornece os documentos pedidos."
+        },
+        {
+          "id": "b",
+          "text": "A empresa recusa-se a enviar contrato social e balanço atualizados e insiste em continuar operando.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a resistência em fornecer informações para atualização cadastral é sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "A empresa envia contrato social com informações que conflitam com o registro público na Junta Comercial.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: documentos conflitantes com informações públicas são sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "A empresa envia documentos de uma sociedade estrangeira que não podem ser verificados em nenhuma fonte pública.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: informação de difícil verificação é sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-10",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-beneficiario-final",
+      "dialogue": [
+        {
+          "speaker": "Rafaela Duarte — Analista de KYC",
+          "text": "Quatro pedidos de abertura de empresas aguardam identificação do beneficiário final."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A cadeia de sócios da empresa termina em duas pessoas físicas identificadas, com documentos.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o beneficiário final está identificado."
+        },
+        {
+          "id": "b",
+          "text": "A cadeia de sócios da empresa termina em outra empresa sem sócios identificáveis, e não é possível identificar o beneficiário final.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: não conseguir identificar o beneficiário final é sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "A empresa é de capital aberto, e seus acionistas controladores são públicos.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o beneficiário final é conhecido por informação pública."
+        },
+        {
+          "id": "d",
+          "text": "A empresa tem dois sócios, pessoas físicas, que enviaram documentos e comprovante de renda.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: os dois sócios enviaram documentos e comprovante de renda, o que identifica o beneficiário final."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-11",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-mesmo-procurador",
+      "dialogue": [
+        {
+          "speaker": "Davi Cordeiro — Analista de Estruturas",
+          "text": "Quatro empresas abriram conta por meio de procuradores. Quero achar a que levanta suspeita."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Um contador representa, por procuração, duas empresas do mesmo grupo econômico, com relação societária demonstrada.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a representação comum se explica pelo grupo econômico."
+        },
+        {
+          "id": "b",
+          "text": "Um advogado representa uma empresa com procuração específica para a operação.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a procuração é específica e justificada."
+        },
+        {
+          "id": "c",
+          "text": "O mesmo procurador representa seis empresas sem relação societária, todas abertas na mesma semana e sem justificativa.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: o mesmo procurador representando várias empresas sem justificativa razoável é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "O diretor financeiro representa três empresas do mesmo grupo, com relação societária demonstrada.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o diretor financeiro representa empresas que pertencem ao mesmo grupo, com relação societária demonstrada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-12",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-mesmo-ip",
+      "dialogue": [
+        {
+          "speaker": "Murilo Cavalcanti — Analista de Segurança",
+          "text": "Quatro conjuntos de empresas cadastraram contatos digitais iguais. Preciso separar os que têm justificativa."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cinco filiais da mesma empresa usam o domínio corporativo e a mesma rede de acesso.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o compartilhamento se explica por serem da mesma empresa."
+        },
+        {
+          "id": "b",
+          "text": "Duas empresas do mesmo grupo compartilham o e-mail do financeiro, com relação societária demonstrada.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o compartilhamento se explica pelo grupo econômico."
+        },
+        {
+          "id": "c",
+          "text": "Cinco empresas sem relação entre si cadastram e-mails diferentes e acessam por IPs diferentes.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: não há dados em comum entre elas."
+        },
+        {
+          "id": "d",
+          "text": "Cinco empresas sem relação entre si cadastram o mesmo e-mail e acessam a conta pelo mesmo endereço IP.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: dados de contato e de acesso idênticos em empresas sem relação, sem justificativa, são sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-13",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-faturamento",
+      "dialogue": [
+        {
+          "speaker": "Wesley Brandão — Analista de Perfil de Clientes",
+          "text": "Quatro padarias pediram remessas ao exterior. Quero achar a que está compatível com o perfil."
+        }
+      ],
+      "question": "Qual das transações abaixo é TÍPICA, isto é, compatível com o perfil e com a atividade do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Padaria com faturamento declarado de R$ 80 mil por mês, em linha com padarias do mesmo porte, paga US$ 6 mil por um equipamento importado.",
+          "correct": true,
+          "feedback": "Correto. É a transação típica: o faturamento é compatível com o de clientes do mesmo perfil, e o valor cabe nele."
+        },
+        {
+          "id": "b",
+          "text": "Padaria declara faturamento de R$ 4 milhões por mês, 40 vezes o de padarias do mesmo porte, e remete US$ 600 mil.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: o faturamento é incompatível com o padrão de clientes do mesmo perfil."
+        },
+        {
+          "id": "c",
+          "text": "Padaria com faturamento de R$ 80 mil por mês recebe aporte de US$ 300 mil de sócios sem capacidade financeira aparente.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: sócios sem capacidade financeira para o porte da atividade são sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "Padaria declara faturamento que conflita com dados públicos e pede remessa de US$ 50 mil.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: informações conflitantes com dados públicos são sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-14",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-antecipado",
+      "dialogue": [
+        {
+          "speaker": "Luana Peçanha — Analista de Comércio Exterior",
+          "text": "Quatro empresas pediram pagamento antecipado de importação. Preciso achar a que não se sustenta."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Empresa com doze anos de atividade e histórico de importações faz pagamento antecipado de US$ 50 mil, compatível com seu faturamento.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com o faturamento e o histórico."
+        },
+        {
+          "id": "b",
+          "text": "Empresa aberta há dois meses, sem histórico, faz pagamento antecipado de importação de US$ 900 mil, incompatível com sua capacidade.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: empresa sem tradição ou com capacidade incompatível com o valor negociado é sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Empresa nova, com capital integralizado e contrato assinado, paga US$ 20 mil de sinal de importação, compatível com seu porte.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é pequeno para o porte e está amparado em contrato."
+        },
+        {
+          "id": "d",
+          "text": "Empresa com histórico e carta de crédito paga US$ 120 mil, compatível com seu faturamento anual.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com o faturamento e está amparado em carta de crédito."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-15",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-terceiros",
+      "dialogue": [
+        {
+          "speaker": "Priscila Tavares — Analista de Remessas",
+          "text": "Quatro pagamentos de importação estão na fila. Quero achar o que foge do documento da operação."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pagamento ao exportador indicado no contrato e na fatura da operação.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o beneficiário é o do contrato e da fatura."
+        },
+        {
+          "id": "b",
+          "text": "Pagamento a banco intermediário previsto na carta de crédito da operação.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o intermediário está previsto no documento da operação."
+        },
+        {
+          "id": "c",
+          "text": "Pagamento de importação feito a uma empresa de outro país que não é o exportador e não tem relação com a operação.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: pagamento a terceiros não relacionados à importação ou à exportação é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "Pagamento a empresa do mesmo grupo do exportador, com relação comprovada em contrato.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a relação entre os beneficiários está documentada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-16",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-unilateral",
+      "dialogue": [
+        {
+          "speaker": "Elaine Mascarenhas — Analista de Transferências",
+          "text": "Quatro conjuntos de remessas sem contrapartida aguardam análise."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Um cliente envia, todo mês, US$ 1.500 ao filho que estuda no exterior, com comprovante de matrícula.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a transferência é recorrente, mas justificada pelo vínculo e pelo estudo."
+        },
+        {
+          "id": "b",
+          "text": "Um cliente faz uma doação única de US$ 5 mil a uma instituição de caridade no exterior, com recibo.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a doação é única e comprovada."
+        },
+        {
+          "id": "c",
+          "text": "Um cliente envia, a cada seis meses, US$ 3 mil para a manutenção de um familiar residente no exterior, com declaração.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a remessa é periódica, de valor moderado e justificada."
+        },
+        {
+          "id": "d",
+          "text": "Um cliente estudante envia, quase todo dia, US$ 9.500 a vários beneficiários sem vínculo aparente, sem justificativa.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: transferências unilaterais sem justificativa, pela habitualidade, valor ou forma, são sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-17",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-faturamento-falso",
+      "dialogue": [
+        {
+          "speaker": "Rui Montenegro — Analista de Comércio Exterior",
+          "text": "Quatro operações de comércio exterior foram selecionadas. Quero achar a que está regular."
+        }
+      ],
+      "question": "Qual das transações abaixo é TÍPICA, isto é, compatível com o perfil e com a atividade do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exportação de café com fatura compatível com o preço de mercado e embarque registrado na alfândega.",
+          "correct": true,
+          "feedback": "Correto. É a transação típica: a fatura é compatível com o mercado e o embarque está comprovado."
+        },
+        {
+          "id": "b",
+          "text": "Exportação com fatura 40% abaixo do preço de mercado, com sinais de subfaturamento.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: subfaturamento é sinal de atipicidade em operações de comércio exterior."
+        },
+        {
+          "id": "c",
+          "text": "Importação para a qual não é possível obter informações sobre o desembaraço aduaneiro das mercadorias.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a falta de informação sobre o desembaraço é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "Exportação aparentemente fictícia, sem embarque comprovado e de produto que a empresa não produz.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: operações aparentemente fictícias são sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-18",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-credito-reais",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Sampaio — Analista de Conciliação",
+          "text": "Quatro clientes receberam créditos em reais e pediram pagamento ao exterior. Preciso apontar o suspeito."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O cliente recebe créditos em reais de compradores comprovados por notas fiscais e paga o fornecedor no exterior.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: os créditos têm vínculo comercial comprovado."
+        },
+        {
+          "id": "b",
+          "text": "O cliente recebe créditos em reais de três pessoas sem vínculo comercial e, no dia seguinte, paga ao exterior o mesmo total.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: pagamentos ao exterior após créditos em reais de pessoas sem vínculo comercial ou econômico são sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "O cliente recebe um aporte do sócio, registrado em contrato, e paga uma importação com contrato.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem do crédito é o sócio e está documentada."
+        },
+        {
+          "id": "d",
+          "text": "O cliente recebe crédito de sua própria empresa e paga a mensalidade escolar do filho no exterior.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem do crédito é do próprio cliente e a finalidade é explicada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-19",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-fragmentacao",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Aragão — Analista de Limites",
+          "text": "Quatro conjuntos de remessas somam o mesmo valor. Quero achar o que parece fracionamento."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Uma única remessa de US$ 90 mil de empresa, amparada em contrato e fatura.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a operação é única e documentada."
+        },
+        {
+          "id": "b",
+          "text": "Nove remessas de US$ 10 mil de nove clientes diferentes, cada um pagando uma fatura própria com nota fiscal.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: cada remessa tem origem e fatura próprias, sem relação entre os remetentes."
+        },
+        {
+          "id": "c",
+          "text": "Uma remessa de US$ 90 mil é dividida em nove de US$ 10 mil, enviadas no mesmo dia por nove contas ligadas entre si.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: dividir o valor para burlar o limite, com contas ligadas, é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "Três remessas mensais de US$ 30 mil de importações distintas, cada uma com documentos próprios.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: as remessas são espaçadas e documentadas."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-20",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-ied-retorno",
+      "dialogue": [
+        {
+          "speaker": "Otto Lemos — Analista de Investimentos Estrangeiros",
+          "text": "Quatro empresas receberam investimento externo direto. Preciso achar a que remete tudo de volta."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A empresa recebe US$ 1 milhão de investimento, compra máquinas e remete dividendos no ano seguinte, em valor compatível com o lucro.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o investimento foi aplicado e a remessa é compatível com o resultado."
+        },
+        {
+          "id": "b",
+          "text": "A empresa recebe US$ 1 milhão de investimento e o aplica em obras e contratações, sem remessas.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o investimento foi aplicado na atividade."
+        },
+        {
+          "id": "c",
+          "text": "A empresa recebe um aporte e remete juros de empréstimo previstos em contrato, em valor compatível com a dívida.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a remessa tem base contratual e valor compatível."
+        },
+        {
+          "id": "d",
+          "text": "A empresa recebe US$ 1 milhão de investimento externo direto e, dois dias depois, remete quase todo o valor como dividendos.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: receber investimento externo direto e remeter quase imediatamente como lucros e dividendos é sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-21",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-dividendos",
+      "dialogue": [
+        {
+          "speaker": "Cristina Aguiar — Analista Tributária",
+          "text": "Quatro remessas de lucros ao exterior chegaram juntas. Quero achar a que não bate com o resultado."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Remessa de US$ 2 milhões de dividendos por empresa que declarou lucro de US$ 100 mil no ano.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: remessa de lucros em valor incompatível com o resultado é sinal de atipicidade."
+        },
+        {
+          "id": "b",
+          "text": "Remessa de US$ 80 mil de dividendos por empresa com lucro de US$ 100 mil, com tributos recolhidos.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com o lucro."
+        },
+        {
+          "id": "c",
+          "text": "Remessa de US$ 50 mil de lucros conforme balanço aprovado.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor está amparado em balanço."
+        },
+        {
+          "id": "d",
+          "text": "Remessa de US$ 30 mil de dividendos conforme ata de assembleia.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor está amparado em ata e é compatível com o resultado."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-22",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-investimento-pf",
+      "dialogue": [
+        {
+          "speaker": "Danilo Fontes — Analista de Private Banking",
+          "text": "Quatro clientes pessoa física pediram remessas para investimento no exterior. Quero achar a que destoa."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pessoa física com renda de R$ 80 mil por mês e patrimônio declarado remete US$ 40 mil para investimento, com origem comprovada.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o valor é compatível com a renda e a origem é comprovada."
+        },
+        {
+          "id": "b",
+          "text": "Pessoa física com renda de R$ 8 mil por mês remete US$ 700 mil para investimento no exterior, sem comprovar a origem.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: remessa para investimento incompatível com a capacidade financeira é sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Pessoa física com herança comprovada por inventário remete US$ 300 mil para investimento.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é comprovada pela herança."
+        },
+        {
+          "id": "d",
+          "text": "Pessoa física vende um imóvel, com escritura, e remete US$ 150 mil para investimento, com imposto pago.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a origem é comprovada pela venda do imóvel."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-23",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-tributacao-favorecida",
+      "dialogue": [
+        {
+          "speaker": "Verônica Lacerda — Analista de Países de Risco",
+          "text": "Quatro remessas vão para jurisdições diferentes. Preciso achar a que não se justifica."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Remessa para empresa no mesmo país, com contrato de serviço, fatura e fundamentação econômica.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o país não torna a operação atípica quando há contrato e fundamentação econômica."
+        },
+        {
+          "id": "b",
+          "text": "Remessa a fornecedor em país de tributação normal, com contrato e fatura.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a operação é documentada e sem sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Remessa para empresa em país de tributação favorecida, sem contrato, sem fundamentação econômica e sem relação com a atividade do cliente.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: operação com país de tributação favorecida não caracterizada em sua legalidade e fundamentação econômica é sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "Remessa para a subsidiária da empresa, comprovada nas demonstrações financeiras.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: a relação com a subsidiária está documentada."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-24",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-frete",
+      "dialogue": [
+        {
+          "speaker": "Isabela Ferraz — Analista de Fretes",
+          "text": "Quatro pagamentos de frete internacional estão na fila. Preciso achar o que não tem amparo."
+        }
+      ],
+      "question": "Qual das transações abaixo é ATÍPICA e deve ser analisada para uma possível comunicação ao COAF?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pagamento de frete internacional com conhecimento de embarque e fatura da importação.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o frete está amparado em documentos da operação."
+        },
+        {
+          "id": "b",
+          "text": "Pagamento de frete a transportadora indicada no contrato de compra, com fatura.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o beneficiário e o serviço estão no contrato."
+        },
+        {
+          "id": "c",
+          "text": "Pagamento de frete de exportação com conhecimento de embarque emitido no porto.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação típica: o frete está amparado no documento de embarque."
+        },
+        {
+          "id": "d",
+          "text": "Pagamento de frete internacional sem conhecimento de embarque nem qualquer documento que mostre vínculo com operação comercial.",
+          "correct": true,
+          "feedback": "Correto. É a transação atípica: frete sem documentação que evidencie vínculo com operação comercial é sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "erro-25",
+      "categories": [
+        "atipicas"
+      ],
+      "topicTag": "atipica-burla-limite",
+      "dialogue": [
+        {
+          "speaker": "Alícia Frota — Analista de Prevenção",
+          "text": "Quatro clientes fizeram várias operações em espécie. Quero achar o que age de forma regular."
+        }
+      ],
+      "question": "Qual das transações abaixo é TÍPICA, isto é, compatível com o perfil e com a atividade do cliente?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O cliente faz duas compras de US$ 2.000 em espécie, em semanas diferentes, para duas viagens diferentes.",
+          "correct": true,
+          "feedback": "Correto. É a transação típica: as operações são espaçadas e têm finalidades distintas."
+        },
+        {
+          "id": "b",
+          "text": "O cliente faz cinco compras de US$ 2.900 em espécie no mesmo dia, em agências diferentes, para ficar abaixo do limite.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: transações no mesmo dia com valores próximos, para burlar o limite, são sinal de atipicidade."
+        },
+        {
+          "id": "c",
+          "text": "Três clientes com o mesmo procurador compram, em poucos dias, valores idênticos em espécie.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: valores idênticos em curto período, com elementos em comum, são sinal de atipicidade."
+        },
+        {
+          "id": "d",
+          "text": "O cliente compra US$ 2.900 em espécie todos os dias úteis da semana, sem viagem declarada.",
+          "correct": false,
+          "feedback": "Incorreta. É uma transação atípica: a habitualidade sem justificativa é sinal de atipicidade."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

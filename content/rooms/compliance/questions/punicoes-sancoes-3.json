@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "sceneId": "pun-31",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "reclusao-vs-detencao-regime-inicial",
+      "dialogue": [
+        {
+          "speaker": "Beatriz Almeida — Analista de Compliance",
+          "text": "Estou montando um material de treinamento sobre crimes financeiros e preciso explicar para o time por que a lei diferencia reclusão de detenção, já que isso muda a execução da pena."
+        }
+      ],
+      "question": "A distinção entre reclusão e detenção no Direito Penal brasileiro (art. 33 do Código Penal) tem impacto direto na execução da pena. Qual afirmativa descreve corretamente essa diferença para um réu condenado por crime financeiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A reclusão deve ser cumprida obrigatoriamente no exterior, enquanto a detenção é cumprida no Brasil.",
+          "correct": false,
+          "feedback": "Não existe regra que mande cumprir reclusão no exterior. A diferença entre as duas penas está no regime em que o cumprimento pode começar, não no país."
+        },
+        {
+          "id": "b",
+          "text": "A reclusão admite início de cumprimento em regime fechado, semiaberto ou aberto; a detenção nunca pode começar em regime fechado, iniciando em semiaberto ou aberto.",
+          "correct": true,
+          "feedback": "Correto. Pelo art. 33 do Código Penal, a reclusão é reservada a crimes mais graves e admite início direto em regime fechado, enquanto a detenção não pode começar nesse regime."
+        },
+        {
+          "id": "c",
+          "text": "A detenção é aplicável apenas a pessoas jurídicas e a reclusão apenas a pessoas físicas.",
+          "correct": false,
+          "feedback": "Reclusão e detenção são penas privativas de liberdade e se distinguem pela gravidade do crime e pelo regime inicial, não pelo tipo de pessoa."
+        },
+        {
+          "id": "d",
+          "text": "Não há nenhuma diferença prática entre reclusão e detenção desde a reforma penal de 1984.",
+          "correct": false,
+          "feedback": "A diferença continua existindo: a reclusão pode começar em regime fechado e a detenção não. Por isso a distinção aparece tanto nas provas quanto na prática."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-32",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "concurso-material-reclusao-lei-7492",
+      "dialogue": [
+        {
+          "speaker": "Marcelo Tavares — Advogado Interno",
+          "text": "Saiu uma notícia sobre um doleiro que operava uma plataforma clandestina de remessas e ainda mandou US$ 2 milhões ao exterior sem declarar ao Banco Central. Vamos discutir como isso seria punido?"
+        }
+      ],
+      "question": "Um doleiro operou uma plataforma clandestina de remessas ao exterior (art. 16 da Lei nº 7.492/1986) e enviou US$ 2.000.000,00 sem declaração ao Banco Central (art. 22). Ambos os crimes são punidos com reclusão. Se condenado em concurso material, como a pena será tratada pelo Juiz Federal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As penas de reclusão são somadas (1 a 4 anos + 2 a 6 anos), podendo ultrapassar 4 anos e levar ao início do cumprimento em regime fechado ou semiaberto.",
+          "correct": true,
+          "feedback": "Correto. No concurso de crimes o juiz soma as penas de reclusão de cada artigo da Lei nº 7.492/1986. Se a soma superar 4 anos (ou conforme a reincidência), o regime inicial pode ser o fechado."
+        },
+        {
+          "id": "b",
+          "text": "O réu recebe obrigatoriamente apenas uma advertência do Banco Central, por ter atuado no mercado cambial.",
+          "correct": false,
+          "feedback": "A advertência é sanção administrativa do BCB e não substitui a pena criminal aplicada pelo Judiciário pelos crimes dos arts. 16 e 22."
+        },
+        {
+          "id": "c",
+          "text": "A pena de menor valor absorve a maior e o réu é liberado imediatamente.",
+          "correct": false,
+          "feedback": "Não há absorção desse tipo no concurso material. As penas de cada crime são somadas, conforme as regras do Código Penal."
+        },
+        {
+          "id": "d",
+          "text": "O juiz converte a reclusão em doação de cestas básicas por se tratar de crime de colarinho branco.",
+          "correct": false,
+          "feedback": "Não existe conversão automática de reclusão em cestas básicas por causa da natureza do crime. A pena depende das regras do Código Penal e da soma das condenações."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-33",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "falsa-identidade-cambio-art-21",
+      "dialogue": [
+        {
+          "speaker": "Larissa Campos — Analista de Mesa de Câmbio",
+          "text": "Apareceu um caso na mesa: o cliente apresentou documento de outra pessoa para fracionar uma compra de moeda estrangeira em espécie. Preciso saber qual crime isso configura."
+        }
+      ],
+      "question": "Um cliente de uma mesa de câmbio usou o CPF de um terceiro (laranja) para fracionar uma compra de moeda estrangeira em espécie e omitiu sua verdadeira identidade. Qual crime contra o Sistema Financeiro Nacional ele cometeu e qual a sanção penal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Evasão de divisas (art. 22), punida com reclusão de 2 a 6 anos.",
+          "correct": false,
+          "feedback": "Não houve saída de divisas nem depósito não declarado no exterior. O dinheiro ficou no país sob identificação falsa, então não se trata de evasão."
+        },
+        {
+          "id": "b",
+          "text": "Falsa identidade em operação de câmbio (art. 21 da Lei nº 7.492/1986), punida com detenção de 1 a 4 anos e multa.",
+          "correct": true,
+          "feedback": "Correto. Usar dados de terceiros ou falsear a identificação para realizar operação de câmbio é o crime do art. 21 da Lei nº 7.492/1986, punido com detenção de 1 a 4 anos e multa."
+        },
+        {
+          "id": "c",
+          "text": "Operação sem autorização (art. 16), punida com advertência administrativa.",
+          "correct": false,
+          "feedback": "O art. 16 trata de operar instituição financeira sem autorização, o que não é o caso do cliente. Além disso, advertência é sanção administrativa, e não a pena do crime."
+        },
+        {
+          "id": "d",
+          "text": "A conduta é atípica e não configura crime, gerando apenas cobrança de taxa extra de câmbio.",
+          "correct": false,
+          "feedback": "A conduta é típica: o art. 21 da Lei nº 7.492/1986 pune a falsa identidade para realizar operação de câmbio. Não existe a tal taxa extra como consequência."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-34",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "evasao-divisas-deposito-nao-declarado",
+      "dialogue": [
+        {
+          "speaker": "Fernando Ribeiro — Coordenador de Compliance",
+          "text": "Chegou uma consulta de um cliente residente que mantém conta na Suíça e nunca declarou isso ao Banco Central. Ele quer saber se isso é só pendência cadastral."
+        }
+      ],
+      "question": "Um residente no Brasil manteve uma conta bancária na Suíça com saldo de US$ 5.000.000,00 e omitiu totalmente essa informação nas declarações obrigatórias ao Banco Central (CBE). Qual é a tipificação penal e a sanção prevista na Lei nº 7.492/1986?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Infração puramente cadastral, que não configura crime.",
+          "correct": false,
+          "feedback": "Manter depósitos não declarados no exterior não é mera pendência cadastral: a conduta é equiparada ao crime de evasão de divisas."
+        },
+        {
+          "id": "b",
+          "text": "Crime de evasão de divisas (art. 22, parágrafo único), punido com reclusão de 2 a 6 anos e multa.",
+          "correct": true,
+          "feedback": "Correto. Manter no exterior depósitos não declarados à autoridade competente (BCB) é conduta equiparada à evasão de divisas, do art. 22, parágrafo único, da Lei nº 7.492/1986: reclusão de 2 a 6 anos e multa."
+        },
+        {
+          "id": "c",
+          "text": "Crime de falsa identidade em câmbio (art. 21), punido com detenção de 1 a 4 anos.",
+          "correct": false,
+          "feedback": "O art. 21 trata de falsa identidade em operação de câmbio, o que não descreve a omissão de uma conta mantida no exterior."
+        },
+        {
+          "id": "d",
+          "text": "Crime de gestão fraudulenta, punido com reclusão de 3 a 12 anos.",
+          "correct": false,
+          "feedback": "Gestão fraudulenta se refere à administração de instituição financeira, e não à omissão de depósito pessoal no exterior ao Banco Central."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-35",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "art-16-vs-art-21-lei-7492",
+      "dialogue": [
+        {
+          "speaker": "Juliana Prado — Analista de PLD",
+          "text": "Na revisão do treinamento, o time confundiu os arts. 16 e 21 da Lei nº 7.492/1986, porque as duas penas têm o mesmo intervalo de tempo. Precisamos fixar o que muda entre elas."
+        }
+      ],
+      "question": "Compare o art. 21 (falsa identidade em câmbio) com o art. 16 (instituição financeira clandestina) da Lei nº 7.492/1986. Ambos têm o mesmo intervalo de pena (1 a 4 anos e multa). Qual é a diferença essencial entre os dois quanto ao tipo de pena?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O art. 16 prevê detenção e o art. 21 prevê reclusão.",
+          "correct": false,
+          "feedback": "É o contrário: o art. 16 prevê reclusão e o art. 21 prevê detenção. Trocar os dois é a pegadinha clássica."
+        },
+        {
+          "id": "b",
+          "text": "O art. 16 prevê reclusão e o art. 21 prevê detenção.",
+          "correct": true,
+          "feedback": "Correto. Operar instituição financeira clandestina (art. 16) é punido com reclusão de 1 a 4 anos; já a falsa identidade em câmbio (art. 21) é punida com detenção de 1 a 4 anos."
+        },
+        {
+          "id": "c",
+          "text": "O art. 16 é sanção administrativa do BCB e o art. 21 é multa fiscal da Receita Federal.",
+          "correct": false,
+          "feedback": "Os dois artigos tipificam crimes da Lei nº 7.492/1986, com penas privativas de liberdade e multa. Nenhum deles é sanção administrativa ou multa fiscal."
+        },
+        {
+          "id": "d",
+          "text": "Os dois são punidos com reclusão, sem nenhuma diferença jurídica.",
+          "correct": false,
+          "feedback": "Há diferença: apenas o art. 16 prevê reclusão. O art. 21 prevê detenção, e isso muda o regime em que a pena pode começar."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-36",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "correspondente-cambial-esferas-punicao",
+      "dialogue": [
+        {
+          "speaker": "Rodrigo Nunes — Gerente de Parcerias",
+          "text": "Descobrimos que uma empresa parceira vem fazendo câmbio sistematicamente acima do limite de US$ 3.000,00 e sem ser instituição autorizada. O jurídico pediu para mapear quais punições podem vir."
+        }
+      ],
+      "question": "Uma pessoa jurídica atua como correspondente cambial realizando operações de câmbio acima do limite regulamentar de US$ 3.000,00 de forma sistemática, sem ser instituição financeira autorizada. Quais esferas de punição podem ser acionadas ao mesmo tempo?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apenas a rescisão do contrato de correspondente pela instituição contratante.",
+          "correct": false,
+          "feedback": "A rescisão contratual é só uma consequência civil. A conduta também expõe a empresa a punição administrativa do BCB e a responsabilização criminal."
+        },
+        {
+          "id": "b",
+          "text": "Processo Administrativo Sancionador do Banco Central (esfera administrativa) e ação penal do Ministério Público Federal com base no art. 16 da Lei nº 7.492/1986 (esfera criminal).",
+          "correct": true,
+          "feedback": "Correto. Atuar fora dos limites e sem autorização do BCB sujeita o infrator a punição administrativa (multas e cancelamento de registro) e à acusação por operar instituição financeira clandestina (art. 16 da Lei nº 7.492/1986). A esfera civil/contratual também é afetada."
+        },
+        {
+          "id": "c",
+          "text": "Nenhuma punição, pois o correspondente está imune a sanções estatais.",
+          "correct": false,
+          "feedback": "Não existe imunidade. O correspondente que age fora dos limites e sem autorização responde administrativa e criminalmente."
+        },
+        {
+          "id": "d",
+          "text": "Julgamento pelo Plenário do CMN, com aplicação de prisão preventiva.",
+          "correct": false,
+          "feedback": "O CMN é órgão normativo, sem poder sancionador, e prisão preventiva só pode ser decretada pelo Poder Judiciário."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-37",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "sigilo-bancario-quebra-crime-lc-105",
+      "dialogue": [
+        {
+          "speaker": "Patrícia Duarte — Analista de Segurança da Informação",
+          "text": "Um colega me perguntou o que acontece se alguém compartilhar dados financeiros de um cliente sem autorização dele e sem ordem judicial. Quero responder com a base legal certa."
+        }
+      ],
+      "question": "A Lei Complementar nº 105/2001 disciplina o sigilo bancário. A quebra indevida ou o compartilhamento ilegal de informações protegidas por sigilo (sem autorização do cliente ou ordem judicial) constitui qual infração e qual sanção?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mera falta ética, punida com advertência do sindicato da categoria.",
+          "correct": false,
+          "feedback": "A quebra ilegal de sigilo bancário não é só uma questão ética: a lei a tipifica como crime."
+        },
+        {
+          "id": "b",
+          "text": "Crime punido com reclusão de 1 a 4 anos e multa.",
+          "correct": true,
+          "feedback": "Correto. O art. 10 da Lei Complementar nº 105/2001 prevê que a quebra de sigilo fora das hipóteses autorizadas é crime, punido com reclusão de 1 a 4 anos e multa."
+        },
+        {
+          "id": "c",
+          "text": "Infração administrativa punida com multa de R$ 1.000,00 cobrada pelo COAF.",
+          "correct": false,
+          "feedback": "A conduta é crime, e não infração administrativa. O COAF também não cobra multa por quebra de sigilo bancário."
+        },
+        {
+          "id": "d",
+          "text": "Crime punido com detenção de 10 a 20 anos em regime fechado.",
+          "correct": false,
+          "feedback": "A pena é de reclusão de 1 a 4 anos e multa. Detenção de 10 a 20 anos não existe nesse tipo penal."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-38",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "sigilo-bancario-spsav-res-cmn-5280",
+      "dialogue": [
+        {
+          "speaker": "Gustavo Moreira — Especialista em Regulação",
+          "text": "Saiu uma atualização do CMN sobre sigilo bancário e eu preciso saber a quem ela passou a se aplicar para ajustar nossas políticas internas."
+        }
+      ],
+      "question": "A Resolução CMN nº 5.280/2026 estendeu expressamente as obrigações do sigilo bancário (LC nº 105/2001) a qual novo segmento de participantes do mercado financeiro?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Correspondentes imobiliários e lojas de departamento.",
+          "correct": false,
+          "feedback": "Esses segmentos não foram incluídos. A extensão alcançou participantes do mercado financeiro de ativos virtuais."
+        },
+        {
+          "id": "b",
+          "text": "Sociedades prestadoras de serviços de ativos virtuais (SPSAVs, as corretoras de criptoativos).",
+          "correct": true,
+          "feedback": "Correto. A Resolução CMN nº 5.280/2026 equiparou as SPSAVs às instituições financeiras para fins de sigilo bancário, sujeitando seus administradores à pena do art. 10 da LC nº 105/2001 em caso de vazamento ilegal de dados de clientes."
+        },
+        {
+          "id": "c",
+          "text": "Escritórios de advocacia que atuam em consultoria tributária.",
+          "correct": false,
+          "feedback": "Escritórios de advocacia não foram incluídos na extensão do sigilo bancário feita pela resolução."
+        },
+        {
+          "id": "d",
+          "text": "Auditores fiscais da Receita Federal em exercício no exterior.",
+          "correct": false,
+          "feedback": "Auditores fiscais não foram o segmento incluído. A resolução tratou de prestadores de serviços de ativos virtuais."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-39",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "sigilo-bancario-excecoes-legais",
+      "dialogue": [
+        {
+          "speaker": "Camila Barros — Analista de Compliance",
+          "text": "Estamos revisando os fluxos de compartilhamento de dados. Preciso separar o que a lei trata como quebra ilícita do sigilo bancário do que são exceções expressas."
+        }
+      ],
+      "question": "Qual das condutas abaixo NÃO constitui crime de quebra de sigilo bancário, nos termos do art. 1º, § 3º, da Lei Complementar nº 105/2001?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enviar dados cadastrais com extratos bancários detalhados para redes sociais.",
+          "correct": false,
+          "feedback": "Expor extratos detalhados em redes sociais é divulgação ilícita de informação protegida por sigilo, portanto configura quebra."
+        },
+        {
+          "id": "b",
+          "text": "Trocar informações cadastrais entre instituições financeiras para fins de proteção e enviar comunicações de operações atípicas ao COAF.",
+          "correct": true,
+          "feedback": "Correto. O compartilhamento de dados cadastrais entre bancos, o envio de devedores a órgãos de proteção ao crédito e o reporte obrigatório de operações suspeitas ao COAF são exceções legais expressas, que não constituem quebra ilícita de sigilo."
+        },
+        {
+          "id": "c",
+          "text": "Vender bases de dados de correntistas ativos para empresas de telemarketing.",
+          "correct": false,
+          "feedback": "Vender dados de clientes a terceiros não está entre as exceções legais e configura quebra de sigilo."
+        },
+        {
+          "id": "d",
+          "text": "Divulgar na imprensa os saldos bancários de pessoas expostas politicamente sem ordem judicial.",
+          "correct": false,
+          "feedback": "Divulgar saldos sem ordem judicial é quebra de sigilo. A condição de pessoa exposta politicamente não autoriza a divulgação."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-40",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "responsabilidade-cliente-finalidade-cambio",
+      "dialogue": [
+        {
+          "speaker": "Vanessa Lopes — Analista de Câmbio",
+          "text": "Um cliente alegou que marcou a finalidade errada da operação porque o atendente sugeriu. Preciso entender de quem é a responsabilidade pela finalidade informada."
+        }
+      ],
+      "question": "O art. 20 da Lei nº 14.286/2021 (Novo Marco Legal do Câmbio) trata do regime sancionador do Banco Central no mercado cambial. Qual é a responsabilidade legal do cliente ao indicar a classificação da finalidade (natureza) da operação de câmbio?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O cliente é isento de responsabilidade, e a punição por declaração falsa recai exclusivamente sobre o operador do banco.",
+          "correct": false,
+          "feedback": "A responsabilidade pela classificação da finalidade é do cliente. A instituição presta apenas suporte técnico, e o operador não assume sozinho a punição."
+        },
+        {
+          "id": "b",
+          "text": "O cliente responde legalmente pela veracidade das informações e pela correta indicação da finalidade (art. 4º), sujeitando-se às sanções da lei e ao crime do art. 21 da Lei nº 7.492/1986 em caso de falsidade.",
+          "correct": true,
+          "feedback": "Correto. Segundo o art. 4º da Lei nº 14.286/2021, a responsabilidade pela classificação da finalidade e pelas informações verdadeiras é do cliente. Se mentir, responde administrativa e penalmente."
+        },
+        {
+          "id": "c",
+          "text": "O cliente só pode ser punido se a operação ultrapassar US$ 10.000.000,00.",
+          "correct": false,
+          "feedback": "A lei não fixa esse valor mínimo para a responsabilização do cliente: o dever de informar com veracidade vale independentemente do montante."
+        },
+        {
+          "id": "d",
+          "text": "A indicação de finalidade foi extinta pelo Novo Marco de Câmbio.",
+          "correct": false,
+          "feedback": "A indicação de finalidade continua existindo, e o Novo Marco a mantém como responsabilidade do cliente."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-41",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "cbe-anual-multa-banco-central",
+      "dialogue": [
+        {
+          "speaker": "Thiago Cardoso — Analista de Regulatório",
+          "text": "Um cliente com ativos no exterior esqueceu de entregar a declaração anual ao Banco Central. Ele quer saber o que pode acontecer, e eu quero responder com precisão."
+        }
+      ],
+      "question": "Um residente no Brasil tinha US$ 2.000.000,00 em ativos no exterior em 31 de dezembro, mas deixou de entregar a Declaração de Capital Brasileiro no Exterior (CBE anual) ao Banco Central. Qual é a penalidade regulatória aplicável pelo BCB?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Multa administrativa pecuniária aplicada pelo Banco Central, graduada conforme o tempo de atraso ou omissão, sem prejuízo da apuração de eventual crime de evasão se houver má-fé.",
+          "correct": true,
+          "feedback": "Correto. A não apresentação, o atraso ou a prestação de informações falsas ou incompletas na CBE sujeitam o infrator a multas administrativas do BCB (Resolução BCB nº 279/2022). Havendo intuito de ocultação ilícita, pode haver responsabilização por evasão de divisas no Judiciário."
+        },
+        {
+          "id": "b",
+          "text": "Cancelamento automático do CPF do declarante em 24 horas.",
+          "correct": false,
+          "feedback": "O BCB não cancela CPF por falta de entrega da CBE. A penalidade regulatória é a multa administrativa."
+        },
+        {
+          "id": "c",
+          "text": "Prisão em albergue, sem direito a fiança, determinada diretamente pelo Presidente do BCB.",
+          "correct": false,
+          "feedback": "O BCB não prende ninguém: prisão só pode ser decretada pelo Poder Judiciário, no âmbito penal."
+        },
+        {
+          "id": "d",
+          "text": "Perda total do passaporte do cidadão brasileiro.",
+          "correct": false,
+          "feedback": "A omissão da CBE não gera perda de passaporte. A sanção regulatória aplicável é a multa."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-42",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "comunicacao-especie-sancoes-art-12",
+      "dialogue": [
+        {
+          "speaker": "Daniela Freitas — Gerente de PLD",
+          "text": "Na auditoria interna, apontaram falhas nos reportes de operações em espécie e no aviso prévio de saques. Preciso saber a que tipo de punição a instituição fica exposta."
+        }
+      ],
+      "question": "O descumprimento do dever de comunicar operações em espécie de valor igual ou superior a R$ 50.000,00, ou do provisionamento prévio (aviso de 3 dias úteis) previstos na Circular BCB nº 3.978/2020, sujeita a instituição financeira a quais punições administrativas?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sanções do art. 12 da Lei nº 9.613/1998 (advertência, multa de até R$ 20 milhões, inabilitação por até 10 anos), instauradas pelo Banco Central.",
+          "correct": true,
+          "feedback": "Correto. O não envio dos reportes ou o descumprimento das regras de provisionamento de espécie infringe deveres de PLD e atrai o rito sancionador do art. 12 da Lei nº 9.613/1998 perante o BCB."
+        },
+        {
+          "id": "b",
+          "text": "Prisão preventiva imediata do caixa que efetuou o pagamento.",
+          "correct": false,
+          "feedback": "Prisão é sanção penal e só pode ser decretada pelo Judiciário. A falha de reporte gera sanção administrativa à instituição."
+        },
+        {
+          "id": "c",
+          "text": "Cassação da licença do Banco Central, com encerramento automático das atividades em 1 hora.",
+          "correct": false,
+          "feedback": "A cassação é a sanção mais grave e depende de processo administrativo com contraditório. Não é automática nem imediata."
+        },
+        {
+          "id": "d",
+          "text": "Cobrança de imposto de renda extraordinário com alíquota de 50%.",
+          "correct": false,
+          "feedback": "Não existe tributo extraordinário como penalidade por esse descumprimento: as sanções são as administrativas do art. 12 da Lei nº 9.613/1998."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-43",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "tipping-off-dever-de-sigilo",
+      "dialogue": [
+        {
+          "speaker": "Eduardo Pinheiro — Analista de Prevenção à Lavagem",
+          "text": "Um colega do atendimento comentou com o cliente que a operação dele tinha sido comunicada ao COAF. Quero explicar ao time por que isso é um problema sério."
+        }
+      ],
+      "question": "A vedação ao tipping off, prevista no art. 11 da Lei nº 9.613/1998, proíbe instituições financeiras e seus funcionários de dar ciência ao cliente ou a terceiros sobre a comunicação de operação suspeita enviada ao COAF. Qual a consequência de violar esse dever de segredo?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "O funcionário é premiado pelo banco por demonstrar transparência com o correntista.",
+          "correct": false,
+          "feedback": "Revelar a comunicação ao cliente é falta grave, e não conduta premiável. A transparência com o cliente aqui compromete a investigação."
+        },
+        {
+          "id": "b",
+          "text": "A violação acarreta responsabilização administrativa disciplinar e sancionadora grave perante o supervisor (BCB/COAF), além de possível enquadramento como coautoria ou embaraço à investigação.",
+          "correct": true,
+          "feedback": "Correto. Revelar ao cliente que ele foi reportado ao COAF destrói o fator surpresa da apuração e é falta administrativa gravíssima, com possibilidade das sanções do art. 12 e enquadramento em ilícitos penais de embaraço à investigação."
+        },
+        {
+          "id": "c",
+          "text": "O COAF é obrigado a indenizar o cliente comunicado por danos morais.",
+          "correct": false,
+          "feedback": "Não há dever de indenização do COAF ao cliente. Quem responde pela quebra do sigilo é quem o violou."
+        },
+        {
+          "id": "d",
+          "text": "O cliente obtém imunidade penal pelos crimes que praticou.",
+          "correct": false,
+          "feedback": "A violação do segredo por terceiro não dá imunidade ao cliente: os crimes que ele praticou continuam puníveis."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-44",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "protecao-boa-fe-comunicacao-coaf",
+      "dialogue": [
+        {
+          "speaker": "Aline Santana — Analista de Compliance",
+          "text": "Alguns colegas têm receio de comunicar uma operação suspeita ao COAF e depois serem processados pelo cliente. Quero explicar o que a lei diz sobre isso."
+        }
+      ],
+      "question": "O art. 11, § 2º, da Lei nº 9.613/1998 prevê a proteção de boa-fé para instituições e funcionários que comunicam operações suspeitas ao COAF. Em que consiste esse escudo legal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As comunicações feitas de boa-fé não acarretam responsabilidade civil ou administrativa para a instituição ou seus empregados, impedindo que o cliente os processe por danos morais.",
+          "correct": true,
+          "feedback": "Correto. A lei protege a instituição e seus empregados de ações de indenização civil de clientes investigados, desde que a comunicação tenha sido feita de boa-fé, no cumprimento do dever legal."
+        },
+        {
+          "id": "b",
+          "text": "O funcionário que comunica a operação recebe 50% de comissão sobre o valor retido do cliente.",
+          "correct": false,
+          "feedback": "A lei não prevê comissão por comunicação de operação suspeita. A proteção é contra responsabilização, e não um prêmio financeiro."
+        },
+        {
+          "id": "c",
+          "text": "A instituição fica isenta de impostos federais no ano em que fizer a comunicação.",
+          "correct": false,
+          "feedback": "Não há isenção tributária associada à comunicação ao COAF. A proteção é contra responsabilidade civil e administrativa."
+        },
+        {
+          "id": "d",
+          "text": "O COAF assume o pagamento do salário do analista de compliance que enviou o RIF.",
+          "correct": false,
+          "feedback": "O COAF não paga salário de empregados das instituições. O analista continua vinculado ao seu empregador."
+        }
+      ],
+      "xpOnCorrect": 10
+    },
+    {
+      "sceneId": "pun-45",
+      "categories": [
+        "punicoes"
+      ],
+      "topicTag": "correspondente-cambial-limite-omissao-coaf",
+      "dialogue": [
+        {
+          "speaker": "Ricardo Gomes — Gerente de Riscos",
+          "text": "Um correspondente cambial parceiro fechou uma operação em espécie de US$ 5.000,00 e não fez a comunicação atípica ao COAF. Preciso avaliar a quem isso pode render punição."
+        }
+      ],
+      "question": "Um correspondente cambial realizou uma operação de câmbio em espécie de US$ 5.000,00, violando o limite regulamentar de US$ 1.000,00 da Resolução CMN nº 4.935/2021, e omitiu a comunicação atípica ao COAF. Quais punições são aplicáveis?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A instituição contratante pode sofrer PAS do Banco Central por falha de supervisão do correspondente; o correspondente terá o registro cancelado; e o operador pode responder administrativamente perante o BCB e criminalmente se houver dolo de facilitar lavagem de dinheiro.",
+          "correct": true,
+          "feedback": "Correto. O estouro de limite e a omissão de reporte expõem a instituição contratante (falha de supervisão) e o correspondente a sanções administrativas do BCB (multa, rescisão contratual e cancelamento), além de implicações penais se houver conluio doloso."
+        },
+        {
+          "id": "b",
+          "text": "A instituição contratante pode sofrer PAS do Banco Central por falha de supervisão do correspondente; o correspondente terá o registro cancelado; mas o operador não responde administrativa nem criminalmente, mesmo se houver dolo de facilitar lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "Incorreta. O operador responde administrativamente e, havendo dolo, também criminalmente; o trecho que muda a resposta é \"mas o operador não responde\"."
+        },
+        {
+          "id": "c",
+          "text": "A instituição contratante não responde pela conduta do correspondente; o correspondente terá o registro cancelado; e o operador pode responder administrativamente perante o BCB e criminalmente se houver dolo de facilitar lavagem de dinheiro.",
+          "correct": false,
+          "feedback": "Incorreta. A instituição contratante também responde por falha de supervisão do correspondente; o trecho que muda a resposta é \"não responde pela conduta\"."
+        },
+        {
+          "id": "d",
+          "text": "A instituição contratante pode sofrer PAS do Banco Central por falha de supervisão do correspondente; o correspondente terá o registro cancelado; e o operador pode responder criminalmente por lavagem de dinheiro pelo simples descumprimento do limite, ainda que sem dolo.",
+          "correct": false,
+          "feedback": "Incorreta. A responsabilidade criminal por lavagem exige dolo; o trecho que muda a resposta é \"ainda que sem dolo\"."
+        }
+      ],
+      "xpOnCorrect": 10
+    }
+  ]
+}

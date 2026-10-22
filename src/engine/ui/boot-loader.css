@@ -1,0 +1,194 @@
+/* Loading screen: the hero runs while the game loads (and while the server answers),
+   with a tip or an easter-egg hint that changes every few seconds. The markup lives
+   in index.html so it paints before any script runs; boot-loader.ts shows/hides it.
+   Pure CSS animation, no script needed to keep it alive. */
+
+.bl {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  box-sizing: border-box;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.bl.is-done {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bl[hidden] {
+  display: none;
+}
+
+.bl-stage {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.bl-kicker {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* The runner: a 32x32 frame of hero.png blown up 4x, stepping through the walk cycle. */
+.bl-run {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  margin-top: var(--space-md);
+}
+
+.bl-hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  transform: scale(4);
+  transform-origin: top left;
+  background: url('../../assets/hero.png') no-repeat;
+  background-position: -96px 0;
+  image-rendering: pixelated;
+  animation: bl-step 0.48s steps(1, end) infinite;
+}
+
+@keyframes bl-step {
+  0% {
+    background-position: -128px 0;
+  }
+  25% {
+    background-position: -96px 0;
+  }
+  50% {
+    background-position: -160px 0;
+  }
+  75% {
+    background-position: -96px 0;
+  }
+}
+
+/* The ground slides under the hero, so it reads as running. */
+.bl-ground {
+  width: 100%;
+  height: 6px;
+  margin-top: -18px;
+  background: repeating-linear-gradient(90deg, var(--color-muted) 0 28px, transparent 28px 56px);
+  opacity: 0.5;
+  animation: bl-ground 0.6s linear infinite;
+}
+
+@keyframes bl-ground {
+  to {
+    background-position: -56px 0;
+  }
+}
+
+.bl-label {
+  margin: var(--space-sm) 0 0;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.bl-dots {
+  display: inline-block;
+  width: 1.2em;
+  text-align: left;
+  animation: bl-dots 1.2s steps(1, end) infinite;
+}
+
+@keyframes bl-dots {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  33% {
+    clip-path: inset(0 66% 0 0);
+  }
+  66% {
+    clip-path: inset(0 33% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Tips: all stacked in one box, each fading in for its turn (10 tips x 4 s). */
+.bl-tips {
+  position: relative;
+  width: 100%;
+  min-height: 6em;
+  margin-top: var(--space-sm);
+  padding: var(--space-md);
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px var(--color-line);
+}
+
+.bl-tip {
+  position: absolute;
+  inset: var(--space-md);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--color-text);
+  opacity: 0;
+  animation: bl-tip 40s linear infinite;
+  animation-delay: calc(var(--i) * 4s);
+}
+
+.bl-tip::before {
+  content: 'Dica · ';
+  margin-right: 0.4em;
+  color: var(--color-accent);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.bl-tip--egg::before {
+  content: 'Segredo · ';
+}
+
+@keyframes bl-tip {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bl-hero,
+  .bl-ground,
+  .bl-dots {
+    animation: none;
+  }
+}
