@@ -8,7 +8,8 @@ create or replace function public.is_valid_nickname(n text)
 returns boolean
 language sql
 immutable
-as $$
+set search_path = ''
+as $
   select n ~ '^[A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ0-9 ._-]{1,19}$'
 $$;
 

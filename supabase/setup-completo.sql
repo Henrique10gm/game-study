@@ -1,5 +1,6 @@
--- Quest Hall: setup completo do banco (cole TUDO no SQL Editor do Supabase e clique em Run).
--- Arquivo gerado a partir de supabase/migrations/*.sql (a fonte da verdade são as migrations).
+-- Quest Hall: setup completo do banco (para colar no SQL Editor do Supabase).
+-- Gerado a partir de supabase/migrations/*.sql (a fonte da verdade são as migrations).
+-- O projeto já está com tudo isto aplicado; use só para recriar do zero.
 
 -- =============== 20261022000001_schema.sql ===============
 -- Quest Hall: schema base. Toda tabela tem RLS ligada (policies em 20261022000002).
@@ -227,7 +228,8 @@ create policy reports_insert_own on public.reports
 create or replace function public.sessions_keep_max()
 returns trigger
 language plpgsql
-as $$
+set search_path = ''
+as $
 begin
   new.active_seconds := greatest(new.active_seconds, old.active_seconds);
   new.user_id := old.user_id;
@@ -534,7 +536,8 @@ create or replace function public.is_valid_nickname(n text)
 returns boolean
 language sql
 immutable
-as $$
+set search_path = ''
+as $
   select n ~ '^[A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ0-9 ._-]{1,19}$'
 $$;
 
@@ -569,4 +572,14 @@ as $$
 $$;
 
 grant execute on function public.my_progress(text) to authenticated;
+
+-- =============== 20261022000004_revoke_anon_execute.sql ===============
+-- Só quem está logado (authenticated) chama as funções da API; anon e public perdem o EXECUTE.
+revoke execute on all functions in schema public from public, anon;
+grant execute on all functions in schema public to authenticated;
+-- Funções internas (gatilhos) não precisam ser chamáveis pela API.
+revoke execute on function public.handle_new_user() from authenticated;
+revoke execute on function public.sessions_keep_max() from authenticated;
+-- Futuras funções nascem sem EXECUTE para anon/public.
+alter default privileges in schema public revoke execute on functions from public, anon;
 

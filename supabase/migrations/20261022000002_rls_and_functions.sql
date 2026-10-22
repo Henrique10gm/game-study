@@ -81,7 +81,8 @@ create policy reports_insert_own on public.reports
 create or replace function public.sessions_keep_max()
 returns trigger
 language plpgsql
-as $$
+set search_path = ''
+as $
 begin
   new.active_seconds := greatest(new.active_seconds, old.active_seconds);
   new.user_id := old.user_id;
