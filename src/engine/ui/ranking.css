@@ -121,3 +121,17 @@
     display: none;
   }
 }
+
+.rank-group-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin: 0 var(--px);
+}
+
+.rank-group-name {
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}

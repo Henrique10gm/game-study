@@ -23,6 +23,9 @@ import { RunnerScene } from './engine/scenes/RunnerScene';
 import { TimeAttackScene } from './engine/scenes/TimeAttackScene';
 import { hideLoader, showLoader } from './engine/ui/bootLoader';
 import { createStore } from './state/createStore';
+import { GroupService } from './state/GroupService';
+import { captureInviteFromUrl, takePendingInvite } from './state/inviteLink';
+import { SupabaseGameStore } from './state/SupabaseGameStore';
 
 const uiRoot = document.getElementById('ui-root');
 if (!uiRoot) {
@@ -38,6 +41,8 @@ function browserStorage(): Storage | null {
   }
 }
 const storage = browserStorage();
+// An invite link may be opened before signing in: keep the code until the player is in.
+captureInviteFromUrl(storage);
 
 // With Supabase settings the player signs in first (the game only loads after that);
 // without them the game runs offline on this device.
@@ -55,6 +60,23 @@ async function boot(root: HTMLElement): Promise<void> {
     showLoader();
   }
   const store = createStore(client, userId);
+
+  // Cloud play: the ranking is per group, so settle the active group (and any invite) first.
+  let groups: GroupService | undefined;
+  let initialNotice: string | undefined;
+  if (client && userId && store instanceof SupabaseGameStore) {
+    groups = new GroupService(client, store, userId);
+    const invite = takePendingInvite(storage);
+    if (invite) {
+      try {
+        await groups.join(invite);
+        initialNotice = 'Você entrou no grupo pelo convite.';
+      } catch (error) {
+        initialNotice = error instanceof Error ? error.message : undefined;
+      }
+    }
+    await groups.ensureActive();
+  }
 
   const game = new Phaser.Game({
     type: Phaser.AUTO,
@@ -84,7 +106,7 @@ async function boot(root: HTMLElement): Promise<void> {
   // Questions: every room plays with its bundled bank (content/rooms/*).
   const rooms: RoomEntry[] = ROOMS.map(({ def, questions }) => ({ def, content: createLiveContent(questions, null) }));
 
-  const app = new App({ game, uiRoot: root, store, rooms, storage });
+  const app = new App({ game, uiRoot: root, store, rooms, storage, groups, initialNotice });
   void app.start();
 
   // Dev-only handle so browser automation can inspect/drive the scene.

@@ -10,6 +10,7 @@ import type { Leaderboard } from '../../state/records';
 
 export interface RankingData {
   roomTitle?: string; // each room has its own Hall da Fama
+  groupName?: string; // the group the table is about (cloud only)
   board: Leaderboard;
   totalQuestions: number;
   loadError?: string;
@@ -17,6 +18,8 @@ export interface RankingData {
 
 export interface RankingHandlers {
   onBack(): void;
+  /** Opens the groups screen (cloud only; without it there is no group bar). */
+  onGroups?(): void;
   /** Resolves with an error message to show, or null when the nickname was saved. */
   onSaveNickname(nickname: string): Promise<string | null>;
 }
@@ -56,6 +59,7 @@ export class RankingScreen {
       ),
     );
 
+    if (handlers.onGroups) content.appendChild(this.buildGroupBar(data, handlers.onGroups));
     if (data.loadError) content.appendChild(el('p', 'menu-notice', data.loadError, 'ranking-error'));
 
     if (!data.board.available) {
@@ -63,7 +67,9 @@ export class RankingScreen {
         el(
           'p',
           'rank-empty',
-          'O Hall da Fama funciona quando o jogo é aberto pelo link da empresa. Aqui o seu progresso fica só neste navegador.',
+          handlers.onGroups
+            ? 'Escolha ou crie um grupo para ver o ranking. Você compete com quem está no mesmo grupo.'
+            : 'O Hall da Fama precisa de uma conta. Aqui o seu progresso fica só neste navegador.',
           'ranking-unavailable',
         ),
       );
@@ -86,6 +92,18 @@ export class RankingScreen {
 
     this.root.appendChild(screen);
     this.screen = screen;
+  }
+
+  private buildGroupBar(data: RankingData, onGroups: () => void): HTMLElement {
+    const bar = el('div', 'rank-group-bar');
+    bar.appendChild(
+      el('span', 'rank-group-name', data.groupName ? `Grupo: ${data.groupName}` : 'Nenhum grupo escolhido', 'ranking-group'),
+    );
+    const open = el('button', 'menu-btn menu-btn--secondary', data.groupName ? 'Trocar ou gerenciar' : 'Grupos', 'ranking-groups');
+    open.type = 'button';
+    open.addEventListener('click', onGroups);
+    bar.appendChild(open);
+    return bar;
   }
 
   private buildNicknameForm(data: RankingData, handlers: RankingHandlers): HTMLElement {

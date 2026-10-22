@@ -168,7 +168,7 @@ function buildHallCard(view: HallView, onOpen: () => void): HTMLElement {
   card.appendChild(text('p', 'bank-kicker', 'Hall da Fama'));
 
   if (!view.available) {
-    card.appendChild(text('p', 'bank-card-sub', 'Disponível quando o jogo é aberto pelo link da empresa.', 'hall-unavailable'));
+    card.appendChild(text('p', 'bank-card-sub', 'Disponível com uma conta e um grupo (veja a tela de ranking).', 'hall-unavailable'));
     return card;
   }
 

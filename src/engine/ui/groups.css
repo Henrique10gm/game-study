@@ -1,0 +1,100 @@
+/* Groups screen (pixel style, neutral palette). Reuses the ranking form look. */
+
+.grp-content {
+  gap: var(--space-md);
+}
+
+.grp-message {
+  min-height: 1.4em;
+  margin: 0 var(--px);
+  font-size: var(--type-label-size);
+  line-height: 1.4;
+  color: #ff9c9c;
+}
+
+.grp-message.is-ok {
+  color: var(--color-accent);
+}
+
+.grp-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.grp-card {
+  --edge: var(--color-line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  margin: 0 var(--px);
+  background: var(--color-surface);
+}
+
+.grp-card--active {
+  --edge: var(--color-accent);
+}
+
+.grp-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.grp-name {
+  margin: 0;
+  font-size: var(--type-heading-size);
+  font-weight: var(--type-heading-weight);
+  line-height: var(--type-heading-line-height);
+  overflow-wrap: anywhere;
+}
+
+.grp-badge {
+  padding: 2px var(--space-sm);
+  border: 2px solid var(--color-line);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.grp-badge--active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.grp-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.grp-extra:empty {
+  display: none;
+}
+
+.grp-members {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.grp-member {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  padding: var(--space-xs) 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.grp-member-name {
+  flex: 1 1 140px;
+  overflow-wrap: anywhere;
+}

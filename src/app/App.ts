@@ -20,12 +20,14 @@ import type { HubRoomView } from '../engine/scenes/HubScene';
 import type { MenuScene } from '../engine/scenes/MenuScene';
 import { MenuUi } from '../engine/ui/MenuUi';
 import type { ProfileProgress } from '../engine/ui/MenuUi';
+import { GroupsScreen } from '../engine/ui/GroupsScreen';
 import { RankingScreen } from '../engine/ui/RankingScreen';
 import { hideLoader, showLoader } from '../engine/ui/bootLoader';
 import { UpdateNotice } from '../engine/ui/UpdateNotice';
 import { markUpdateSeen, pendingUpdate } from '../engine/updates';
 import { startScreenTimer } from '../engine/screenTime';
 import type { GameStore } from '../state/GameStore';
+import type { GroupsApi } from '../state/GroupService';
 import { LocalGameStore } from '../state/LocalGameStore';
 import { computeStats } from '../state/records';
 import type { NicknameProblem, ProgressSnapshot } from '../state/records';
@@ -43,6 +45,10 @@ export interface AppOptions {
   rooms: RoomEntry[];
   /** Where the "already saw this update" mark lives (null = always show the notice). */
   storage?: Pick<Storage, 'getItem' | 'setItem'> | null;
+  /** Groups of the signed-in player (cloud only): the ranking is per group. */
+  groups?: GroupsApi;
+  /** One-off message for the first screen (e.g. the result of an invite link). */
+  initialNotice?: string;
 }
 
 interface LastRun {
@@ -68,6 +74,8 @@ export class App {
   private readonly storage: Pick<Storage, 'getItem' | 'setItem'> | null;
   private readonly menu: MenuUi;
   private readonly ranking: RankingScreen;
+  private readonly groupsScreen: GroupsScreen;
+  private readonly groups: GroupsApi | null;
   private readonly updateNotice: UpdateNotice;
   private store: GameStore;
   private flow: RunFlow | null = null;
@@ -85,6 +93,9 @@ export class App {
     this.storage = opts.storage ?? null;
     this.menu = new MenuUi(this.uiRoot);
     this.ranking = new RankingScreen(this.uiRoot);
+    this.groupsScreen = new GroupsScreen(this.uiRoot);
+    this.groups = opts.groups ?? null;
+    this.notice = opts.initialNotice;
     this.updateNotice = new UpdateNotice(this.uiRoot);
   }
 
@@ -147,6 +158,7 @@ export class App {
   private stopSceneBeforeNext(): void {
     this.menu.hide();
     this.ranking.hide();
+    this.groupsScreen.hide();
     this.stopRunScenes();
     this.game.scene.stop('MenuScene');
     this.game.scene.stop('HubScene');
@@ -391,7 +403,11 @@ export class App {
   // One line for the end-of-run screen: the position in the room's Hall da Fama, every time.
   private async rankLine(): Promise<string> {
     const board = await this.store.getLeaderboard(this.current.def.id);
-    if (!board.available) return 'Hall da Fama: disponível quando o jogo é aberto pelo link da empresa.';
+    if (!board.available) {
+      return this.groups
+        ? 'Hall da Fama: escolha um grupo na tela de ranking para competir.'
+        : 'Hall da Fama: disponível com uma conta e um grupo.';
+    }
     const { rank, total, nickname } = board.me;
     if (rank === null) return '';
     const of = total ? ` de ${total}` : '';
@@ -413,14 +429,17 @@ export class App {
       loadError = 'Não foi possível carregar o ranking agora.';
       board = { ...board, available: this.store.kind === 'cloud' };
     }
+    const groupName = await this.activeGroupName();
     hideLoader();
 
     this.game.scene.stop('MenuScene');
     this.menu.hide();
+    this.groupsScreen.hide();
     this.ranking.show(
-      { roomTitle: room.def.title, board, totalQuestions: this.allQuestions().length, loadError },
+      { roomTitle: room.def.title, board, totalQuestions: this.allQuestions().length, loadError, groupName },
       {
         onBack: () => void this.showHome(),
+        onGroups: this.groups ? () => void this.showGroups() : undefined,
         onSaveNickname: async (nickname) => {
           try {
             await this.store.setNickname(nickname);
@@ -433,6 +452,21 @@ export class App {
         },
       },
     );
+  }
+
+  private async activeGroupName(): Promise<string | undefined> {
+    if (!this.groups) return undefined;
+    try {
+      return (await this.groups.list()).find((group) => group.active)?.name;
+    } catch {
+      return undefined;
+    }
+  }
+
+  private async showGroups(): Promise<void> {
+    if (!this.groups) return;
+    this.ranking.hide();
+    await this.groupsScreen.show(this.groups, { onBack: () => void this.showRanking() });
   }
 
   private profileProgress(): ProfileProgress | undefined {

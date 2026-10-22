@@ -86,6 +86,23 @@ describe('RankingScreen', () => {
     expect(root.querySelector('[data-testid="nickname-form"]')).toBeNull();
   });
 
+  it('shows the group bar only when the app can open groups, and points to a group when none is chosen', () => {
+    show();
+    expect(root.querySelector('[data-testid="ranking-groups"]')).toBeNull();
+
+    screen.hide();
+    const onGroups = vi.fn();
+    screen.show({ board: board(), totalQuestions: 225, groupName: 'Equipe Azul' }, { onBack, onSaveNickname, onGroups });
+    expect(root.querySelector('[data-testid="ranking-group"]')!.textContent).toBe('Grupo: Equipe Azul');
+    (root.querySelector('[data-testid="ranking-groups"]') as HTMLButtonElement).click();
+    expect(onGroups).toHaveBeenCalledOnce();
+
+    screen.hide();
+    screen.show({ board: board({ available: false, entries: [] }), totalQuestions: 225 }, { onBack, onSaveNickname, onGroups });
+    expect(root.querySelector('[data-testid="ranking-group"]')!.textContent).toBe('Nenhum grupo escolhido');
+    expect(root.querySelector('[data-testid="ranking-unavailable"]')!.textContent).toContain('grupo');
+  });
+
   it('goes back with the button and with Escape, and stops listening after hide', () => {
     show();
     (root.querySelector('[data-testid="ranking-back"]') as HTMLButtonElement).click();
