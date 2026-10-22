@@ -8,7 +8,9 @@ import { App } from './app/App';
 import type { RoomEntry } from './app/App';
 import { GAME_HEIGHT, GAME_WIDTH } from './engine/config';
 import { ROOMS } from './engine/content/rooms';
-import { createLiveContent, refreshQuestionBank } from './engine/content/remoteContent';
+import { createLiveContent } from './engine/content/remoteContent';
+import { mountSignOut, requireSession } from './auth/AuthGate';
+import { createSupabase } from './auth/supabaseClient';
 import { consoleGreeting } from './engine/easterEggs';
 import { bindFullscreenKey } from './engine/ui/fullscreen';
 import { watchOrientation } from './engine/ui/orientationHint';
@@ -19,42 +21,15 @@ import { HubScene } from './engine/scenes/HubScene';
 import { MenuScene } from './engine/scenes/MenuScene';
 import { RunnerScene } from './engine/scenes/RunnerScene';
 import { TimeAttackScene } from './engine/scenes/TimeAttackScene';
-import { createQuestionsFetcher, createStore } from './state/createStore';
+import { hideLoader, showLoader } from './engine/ui/bootLoader';
+import { createStore } from './state/createStore';
 
 const uiRoot = document.getElementById('ui-root');
 if (!uiRoot) {
   throw new Error('main: #ui-root element not found in index.html');
 }
 
-const game = new Phaser.Game({
-  type: Phaser.AUTO,
-  parent: 'game',
-  width: GAME_WIDTH,
-  height: GAME_HEIGHT,
-  pixelArt: true,
-  backgroundColor: '#1A1615',
-  physics: {
-    default: 'arcade',
-    arcade: {
-      debug: false,
-    },
-  },
-  scale: {
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-  },
-  // Only the first scene boots; the App starts MenuScene (the walk in front of the
-  // bank, and the inside of a room), HubScene (the hall) and the run scenes.
-  scene: [BootScene, MenuScene, HubScene, FlappyScene, TimeAttackScene, RunnerScene, PacmanScene],
-});
-
-watchOrientation(uiRoot);
-bindFullscreenKey();
-
-// Questions: each room plays with its bundled bank. A room that opts in
-// (remoteBank in room.json) uses the last bank downloaded from the Google Sheet
-// when there is one; a newer published bank is fetched in the background and
-// used the next time the game opens.
+// Browser storage for the small local marks (e.g. "already saw this update").
 function browserStorage(): Storage | null {
   try {
     return window.localStorage;
@@ -63,19 +38,63 @@ function browserStorage(): Storage | null {
   }
 }
 const storage = browserStorage();
-const questionsFetcher = createQuestionsFetcher();
-const rooms: RoomEntry[] = ROOMS.map(({ def, questions }) => {
-  if (!def.remoteBank) return { def, content: createLiveContent(questions, null) };
-  if (questionsFetcher) void refreshQuestionBank(questionsFetcher, storage, def.categories, questions);
-  return { def, content: createLiveContent(questions, storage, def.categories) };
-});
 
-const app = new App({ game, uiRoot, store: createStore(), rooms, storage });
-void app.start();
+// With Supabase settings the player signs in first (the game only loads after that);
+// without them the game runs offline on this device.
+async function boot(root: HTMLElement): Promise<void> {
+  const client = createSupabase();
+  let userId: string | null = null;
+  if (client) {
+    hideLoader();
+    const session = await requireSession({
+      client,
+      uiRoot: root,
+      turnstileSiteKey: import.meta.env.VITE_TURNSTILE_SITE_KEY,
+    });
+    userId = session.user.id;
+    showLoader();
+  }
+  const store = createStore(client, userId);
 
-// Dev-only handle so browser automation can inspect/drive the scene.
-if (import.meta.env.DEV) {
-  (window as unknown as { __game: Phaser.Game }).__game = game;
+  const game = new Phaser.Game({
+    type: Phaser.AUTO,
+    parent: 'game',
+    width: GAME_WIDTH,
+    height: GAME_HEIGHT,
+    pixelArt: true,
+    backgroundColor: '#1A1615',
+    physics: {
+      default: 'arcade',
+      arcade: {
+        debug: false,
+      },
+    },
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+    // Only the first scene boots; the App starts MenuScene (the walk in front of the
+    // bank, and the inside of a room), HubScene (the hall) and the run scenes.
+    scene: [BootScene, MenuScene, HubScene, FlappyScene, TimeAttackScene, RunnerScene, PacmanScene],
+  });
+
+  watchOrientation(root);
+  bindFullscreenKey();
+
+  // Questions: every room plays with its bundled bank (content/rooms/*).
+  const rooms: RoomEntry[] = ROOMS.map(({ def, questions }) => ({ def, content: createLiveContent(questions, null) }));
+
+  const app = new App({ game, uiRoot: root, store, rooms, storage });
+  void app.start();
+
+  // Dev-only handle so browser automation can inspect/drive the scene.
+  if (import.meta.env.DEV) {
+    (window as unknown as { __game: Phaser.Game }).__game = game;
+  }
+
+  console.log(...consoleGreeting());
+
+  if (client) mountSignOut(client, root);
 }
 
-console.log(...consoleGreeting());
+void boot(uiRoot);

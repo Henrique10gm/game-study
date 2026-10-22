@@ -1,0 +1,137 @@
+/* Sign-in screen (pixel style, neutral palette). Sits above the loader and the game. */
+
+.auth-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.auth-card {
+  --edge: var(--color-line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: min(420px, 100%);
+  margin: auto;
+  padding: var(--space-lg);
+  box-sizing: border-box;
+  background: var(--color-surface);
+}
+
+.auth-kicker {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.auth-title {
+  margin: 0;
+  font-size: var(--type-heading-size);
+  font-weight: var(--type-heading-weight);
+  line-height: var(--type-heading-line-height);
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.auth-label {
+  font-size: var(--type-label-size);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.auth-input {
+  min-height: var(--touch-min);
+  box-sizing: border-box;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-line);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: var(--type-body-size);
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.auth-hint {
+  margin: 0;
+  font-size: var(--type-label-size);
+  line-height: 1.4;
+  color: var(--color-muted);
+}
+
+.auth-message {
+  min-height: 1.4em;
+  margin: 0;
+  font-size: var(--type-label-size);
+  line-height: 1.4;
+  color: #ff9c9c;
+}
+
+.auth-message.is-ok {
+  color: var(--color-accent);
+}
+
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.auth-links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.auth-link {
+  min-height: var(--touch-min);
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth-signout {
+  position: absolute;
+  right: var(--space-sm);
+  bottom: var(--space-sm);
+  z-index: 5;
+  min-height: 32px;
+  padding: 0 var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  border: 2px solid var(--color-line);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.auth-signout:hover,
+.auth-signout:focus-visible {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}

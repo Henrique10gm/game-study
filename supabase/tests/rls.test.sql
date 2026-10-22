@@ -52,7 +52,9 @@ select pg_temp.act_as('00000000-0000-0000-0000-00000000000a');
 
 select pg_temp.ok(public.set_nickname('alice') = 'alice', 'A escolhe apelido');
 select pg_temp.must_fail($$select public.set_nickname('x')$$, 'apelido curto demais');
-select pg_temp.must_fail($$select public.set_nickname('com espaço')$$, 'apelido com espaço');
+select pg_temp.must_fail($$select public.set_nickname('-ab')$$, 'apelido começando por traço');
+select pg_temp.ok(public.set_nickname('ana maria') = 'ana maria', 'apelido com espaço é válido');
+select public.set_nickname('alice');
 
 insert into ctx select 'group', public.create_group('Equipe Azul')::text;
 insert into ctx select 'invite', public.create_invite((select v::uuid from ctx where k = 'group'));
@@ -108,6 +110,9 @@ select pg_temp.must_fail($$select public.set_nickname('ALICE')$$, 'apelido dupli
 select public.set_nickname('bruno');
 
 select public.save_game(pg_temp.sample_game('20000000-0000-0000-0000-000000000001', 'q1', false));
+select pg_temp.ok((public.my_progress('compliance') -> 'statuses' ->> 'q1')::boolean = false, 'my_progress: ultima resposta de B em q1 e errada');
+select pg_temp.ok((public.my_progress('compliance') ->> 'totalXp')::int = 10, 'my_progress: XP so de B');
+select pg_temp.ok(public.my_progress('outra-sala') = '{"statuses": {}, "totalXp": 0}'::jsonb, 'my_progress: sala vazia');
 select pg_temp.ok((select count(*) from public.leaderboard((select v::uuid from ctx where k = 'group'), 'compliance')) = 2, 'ranking com A e B');
 select pg_temp.ok((select mastered from public.leaderboard((select v::uuid from ctx where k = 'group'), 'compliance') where me) = 0, 'B errou q1: 0 dominadas');
 select pg_temp.ok((select nickname from public.leaderboard((select v::uuid from ctx where k = 'group'), 'compliance') where rank = 1) = 'alice', 'A lidera');

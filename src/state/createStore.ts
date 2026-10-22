@@ -1,32 +1,11 @@
 // Picks the store for where the game is running:
-//  1. served by the Apps Script web app (google.script.run exists) -> that script;
-//  2. built with VITE_APPS_SCRIPT_URL -> the script through fetch;
-//  3. otherwise the local (offline) store that keeps progress in this browser.
-import type { QuestionsFetcher } from '../engine/content/remoteContent';
+//  1. built with Supabase settings and a signed-in player -> the cloud store;
+//  2. otherwise the local (offline) store that keeps progress in this browser.
+import type { SupabaseClient } from '@supabase/supabase-js';
 import type { GameStore } from './GameStore';
-import {
-  AppsScriptGameStore,
-  fetchTransport,
-  googleScriptRun,
-  scriptRunTransport,
-  type Transport,
-} from './AppsScriptGameStore';
 import { LocalGameStore } from './LocalGameStore';
+import { SupabaseGameStore } from './SupabaseGameStore';
 
-function scriptTransport(): Transport | null {
-  const run = googleScriptRun();
-  if (run) return scriptRunTransport(run);
-  const url = import.meta.env.VITE_APPS_SCRIPT_URL;
-  return url ? fetchTransport(url) : null;
-}
-
-export function createStore(): GameStore {
-  const transport = scriptTransport();
-  return transport ? new AppsScriptGameStore(transport) : new LocalGameStore();
-}
-
-/** Reaches the published question bank; null when there is no backend (bundle only). */
-export function createQuestionsFetcher(): QuestionsFetcher | null {
-  const transport = scriptTransport();
-  return transport ? (knownVersion) => transport({ action: 'questions', knownVersion }) : null;
+export function createStore(client: SupabaseClient | null, userId: string | null): GameStore {
+  return client && userId ? new SupabaseGameStore(client, userId) : new LocalGameStore();
 }
