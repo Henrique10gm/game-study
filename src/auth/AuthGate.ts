@@ -165,6 +165,13 @@ export class AuthGate {
           'Guardamos seu e-mail, seu apelido e o que você joga (acertos, XP e questões erradas). O e-mail nunca aparece no ranking.',
         ),
       );
+      const policy = el('p', 'auth-hint', 'Ao criar a conta, você concorda com a ');
+      const link = el('a', 'auth-link', 'política de privacidade');
+      link.setAttribute('href', './privacidade.html');
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener');
+      policy.append(link, document.createTextNode('.'));
+      card.appendChild(policy);
     }
 
     const captchaBox = el('div', 'auth-captcha');

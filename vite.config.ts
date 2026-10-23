@@ -19,7 +19,10 @@ export default defineConfig(({ mode }) => ({
       ? { assetsInlineLimit: Number.MAX_SAFE_INTEGER, cssCodeSplit: false, modulePreload: false }
       : {
           // Phaser is big and rarely changes: its own file keeps it cached between releases.
-          rollupOptions: { output: { manualChunks: { phaser: ['phaser'] } } },
+          rollupOptions: {
+            input: { main: 'index.html', privacidade: 'privacidade.html' },
+            output: { manualChunks: { phaser: ['phaser'] } },
+          },
         },
   test: {
     environment: 'jsdom',

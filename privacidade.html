@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ws: wss:; object-src 'none'; base-uri 'none'"
+    />
+    <meta name="description" content="Como o {{BRAND_NAME}} trata os seus dados: o que guardamos, para quê, com quem compartilhamos e como você baixa ou apaga tudo." />
+    <meta name="theme-color" content="#151211" />
+    <script src="./theme-init.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Política de privacidade · {{BRAND_NAME}}</title>
+  </head>
+  <body class="pol-body">
+    <a class="pol-skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="pol-header">
+      <div class="pol-header-inner">
+        <a class="pol-brand" href="./" aria-label="{{BRAND_NAME}}, voltar ao início">{{BRAND_LIGHT}}<b>{{BRAND_BOLD}}</b></a>
+        <a class="pol-back" href="./">← Voltar</a>
+      </div>
+    </header>
+
+    <main id="conteudo" class="pol">
+      <p class="pol-kicker">Política de privacidade</p>
+      <h1>Seus dados, em português claro</h1>
+      <p class="pol-updated">Última atualização: 23 de outubro de 2026</p>
+
+      <section aria-labelledby="pol-resumo">
+        <h2 id="pol-resumo">Em resumo</h2>
+        <ul class="pol-list">
+          <li>Guardamos pouco: e-mail, apelido e o que você joga (partidas, respostas e tempo de uso).</li>
+          <li>O ranking mostra só o seu apelido e números de desempenho, para quem está nos seus grupos. O seu e-mail nunca aparece para ninguém.</li>
+          <li>Não vendemos dados, não temos anúncios e não usamos ferramentas de análise de comportamento.</li>
+          <li>Você baixa uma cópia dos seus dados ou apaga a conta quando quiser, no botão <strong>Conta</strong> dentro do jogo.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="pol-quem">
+        <h2 id="pol-quem">Quem é o responsável</h2>
+        <!-- TODO (dono do projeto): incluir aqui o nome da pessoa ou empresa responsável (e CNPJ, se houver), como pede a LGPD. -->
+        <p>O {{BRAND_NAME}} é um projeto independente. Para qualquer assunto sobre os seus dados, escreva para <a href="mailto:{{BRAND_CONTACT}}">{{BRAND_CONTACT}}</a>.</p>
+      </section>
+
+      <section aria-labelledby="pol-dados">
+        <h2 id="pol-dados">O que guardamos e para quê</h2>
+        <div class="pol-table-wrap">
+          <table class="pol-table">
+            <thead>
+              <tr><th scope="col">Dado</th><th scope="col">Para que serve</th><th scope="col">Quem vê</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">E-mail e senha</th>
+                <td>Criar a conta e entrar. A senha é guardada de forma criptografada pelo serviço de autenticação: nós não vemos a sua senha.</td>
+                <td>Só você (e o serviço de autenticação).</td>
+              </tr>
+              <tr>
+                <th scope="row">Apelido</th>
+                <td>Identificar você no ranking dos seus grupos.</td>
+                <td>Membros dos grupos de que você participa.</td>
+              </tr>
+              <tr>
+                <th scope="row">Partidas e respostas</th>
+                <td>Modo, acertos, XP, quais questões você acertou ou errou e quando. Servem para o seu progresso, a revisão dos erros e o ranking.</td>
+                <td>Só você vê o detalhe. O grupo vê apenas totais: questões dominadas, XP e número de partidas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Tempo de uso</th>
+                <td>Segundos de jogo ativo por sala, para entender como o jogo é usado e melhorá-lo.</td>
+                <td>Só nós. Não aparece para outras pessoas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Grupos</th>
+                <td>Os grupos que você criou ou em que entrou, e o seu papel neles, para montar o ranking e os convites.</td>
+                <td>Membros do mesmo grupo (apelido e papel).</td>
+              </tr>
+              <tr>
+                <th scope="row">Reportes de questão</th>
+                <td>O motivo e o comentário que você escrever ao apontar um erro numa pergunta, para corrigirmos.</td>
+                <td>Só nós.</td>
+              </tr>
+              <tr>
+                <th scope="row">Dados no seu navegador</th>
+                <td>Tema claro ou escuro, a sua sessão, a certificação que você escolheu, a fila de partidas que ainda não foi enviada e pequenos avisos do jogo. Ficam no seu aparelho e não são cookies de rastreamento.</td>
+                <td>Só você.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Podemos usar a verificação anti-robô da Cloudflare (Turnstile) no cadastro e no login. Ela analisa dados técnicos do navegador apenas para distinguir pessoas de robôs.</p>
+      </section>
+
+      <section aria-labelledby="pol-base">
+        <h2 id="pol-base">Por que podemos tratar esses dados</h2>
+        <p>Usamos os dados necessários para prestar o serviço que você pediu ao criar a conta (entrar, jogar, acompanhar o progresso e participar de grupos) e para o nosso legítimo interesse de manter o jogo seguro e de corrigir as perguntas. Se um dia pedirmos algo além disso, pediremos o seu consentimento, e você poderá retirá-lo quando quiser.</p>
+      </section>
+
+      <section aria-labelledby="pol-compartilha">
+        <h2 id="pol-compartilha">Com quem compartilhamos</h2>
+        <p>Não vendemos nem alugamos os seus dados. Usamos dois prestadores para o jogo funcionar, que tratam os dados em nosso nome:</p>
+        <ul class="pol-list">
+          <li><strong>Supabase</strong>: autenticação e banco de dados. Os servidores ficam nos Estados Unidos.</li>
+          <li><strong>Cloudflare</strong>: hospedagem do site e verificação anti-robô.</li>
+        </ul>
+        <p>Como esses serviços estão fora do Brasil, os seus dados podem ser transferidos para o exterior, com as proteções contratuais desses prestadores. Também podemos informar dados a autoridades quando a lei exigir.</p>
+      </section>
+
+      <section aria-labelledby="pol-tempo">
+        <h2 id="pol-tempo">Por quanto tempo guardamos</h2>
+        <p>Enquanto a sua conta existir. Quando você exclui a conta, apagamos a conta e tudo o que está ligado a ela: apelido, partidas, respostas, tempo de uso, reportes e participações em grupos. <strong>Os grupos que você criou também são apagados</strong>, e os outros membros perdem o acesso a eles. Cópias de segurança do prestador de banco de dados podem manter os dados por um período limitado, até serem sobrescritas.</p>
+      </section>
+
+      <section aria-labelledby="pol-direitos">
+        <h2 id="pol-direitos">Os seus direitos</h2>
+        <p>A Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018) garante a você, entre outros direitos:</p>
+        <ul class="pol-list">
+          <li>saber se tratamos dados seus e ter acesso a eles;</li>
+          <li>corrigir dados incompletos ou errados;</li>
+          <li>pedir a eliminação dos dados e a portabilidade;</li>
+          <li>saber com quem compartilhamos os dados;</li>
+          <li>retirar o consentimento, quando ele for a base do tratamento;</li>
+          <li>reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</li>
+        </ul>
+        <p>Dois deles você exerce sozinho, na hora: no jogo, abra <strong>Conta</strong>, e use <strong>Baixar meus dados</strong> (um arquivo JSON com tudo o que guardamos) ou <strong>Excluir minha conta</strong>. Para qualquer outro pedido, escreva para <a href="mailto:{{BRAND_CONTACT}}">{{BRAND_CONTACT}}</a>.</p>
+      </section>
+
+      <section aria-labelledby="pol-seguranca">
+        <h2 id="pol-seguranca">Segurança</h2>
+        <p>A comunicação com o jogo é criptografada (HTTPS). No banco de dados, regras de acesso garantem que cada pessoa só leia os próprios dados, e o ranking só devolve totais, nunca respostas individuais nem e-mails. Nenhum sistema é infalível: se houver um incidente que possa afetar você, avisaremos como a lei determina.</p>
+      </section>
+
+      <section aria-labelledby="pol-menores">
+        <h2 id="pol-menores">Menores de idade</h2>
+        <p>O {{BRAND_NAME}} é voltado a pessoas adultas que se preparam para certificações. Não é direcionado a menores de 18 anos.</p>
+      </section>
+
+      <section aria-labelledby="pol-mudancas">
+        <h2 id="pol-mudancas">Mudanças nesta política</h2>
+        <p>Se mudarmos algo importante, atualizamos a data no topo desta página e avisamos dentro do jogo.</p>
+      </section>
+    </main>
+
+    <footer class="pol-footer">
+      <p>{{BRAND_NAME}} · não somos afiliados, aprovados nem oficiais de nenhuma entidade certificadora.</p>
+    </footer>
+
+    <script type="module" src="/src/landing/policy.ts"></script>
+  </body>
+</html>

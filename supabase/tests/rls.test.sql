@@ -38,10 +38,10 @@ create function pg_temp.sample_game(gid uuid, qid text, good boolean) returns js
 $$;
 
 -- Usuários (o trigger cria os perfis).
-insert into auth.users (id) values
-  ('00000000-0000-0000-0000-00000000000a'),
-  ('00000000-0000-0000-0000-00000000000b'),
-  ('00000000-0000-0000-0000-00000000000c');
+insert into auth.users (id, email) values
+  ('00000000-0000-0000-0000-00000000000a', 'a@exemplo.test'),
+  ('00000000-0000-0000-0000-00000000000b', 'b@exemplo.test'),
+  ('00000000-0000-0000-0000-00000000000c', 'c@exemplo.test');
 
 create temp table ctx (k text primary key, v text);
 grant all on ctx to authenticated;
@@ -156,7 +156,9 @@ select pg_temp.must_fail($$select public.leave_group((select v::uuid from ctx wh
 select public.remove_member((select v::uuid from ctx where k = 'group'), '00000000-0000-0000-0000-00000000000b');
 select pg_temp.ok((select count(*) from public.group_members((select v::uuid from ctx where k = 'group'))) = 1, 'owner removeu B');
 select pg_temp.ok(jsonb_array_length(public.export_my_data() -> 'games') = 1, 'export traz as partidas');
-select pg_temp.ok(not (public.export_my_data()::text like '%@%'), 'export sem e-mail');
+select pg_temp.ok(public.export_my_data() -> 'account' ->> 'email' = 'a@exemplo.test', 'export traz o e-mail da propria pessoa');
+select pg_temp.ok(public.export_my_data()::text not like '%b@exemplo.test%' and public.export_my_data()::text not like '%c@exemplo.test%', 'export nunca traz e-mail de outra pessoa');
+select pg_temp.ok(jsonb_array_length(public.export_my_data() -> 'groups') = 1 and (public.export_my_data() -> 'groups' -> 0 ->> 'name') = 'Equipe Azul', 'export traz o grupo com nome');
 select public.delete_my_account();
 
 reset role;

@@ -24,6 +24,8 @@ import { MenuScene } from './engine/scenes/MenuScene';
 import { RunnerScene } from './engine/scenes/RunnerScene';
 import { TimeAttackScene } from './engine/scenes/TimeAttackScene';
 import { hideLoader, showLoader } from './engine/ui/bootLoader';
+import { AccountScreen } from './engine/ui/AccountScreen';
+import { AccountService } from './state/AccountService';
 import { createStore } from './state/createStore';
 import { GroupService } from './state/GroupService';
 import { captureInviteFromUrl, takePendingInvite } from './state/inviteLink';
@@ -59,6 +61,7 @@ export async function startGame(options: StartGameOptions = {}): Promise<void> {
   mountThemeToggle(root);
   const client = sharedSupabase();
   let userId: string | null = options.session?.user.id ?? null;
+  let email: string | null = options.session?.user.email ?? null;
   if (client && !userId) {
     hideLoader();
     const session = await requireSession({
@@ -67,6 +70,7 @@ export async function startGame(options: StartGameOptions = {}): Promise<void> {
       turnstileSiteKey: import.meta.env.VITE_TURNSTILE_SITE_KEY,
     });
     userId = session.user.id;
+    email = session.user.email ?? null;
   }
   showLoader();
   const store = createStore(client, userId);
@@ -126,5 +130,8 @@ export async function startGame(options: StartGameOptions = {}): Promise<void> {
 
   console.log(...consoleGreeting());
 
-  if (client) mountSignOut(client, root);
+  if (client) {
+    mountSignOut(client, root);
+    new AccountScreen(root, { api: new AccountService(client), email }).mountButton();
+  }
 }

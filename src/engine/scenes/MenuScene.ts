@@ -23,6 +23,7 @@ import type { HallView, HomeData, SizeData } from '../ui/BankMenu';
 import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import { spawnCameo } from './cameoActor';
+import { drawGarageInside } from './garageInside';
 import { drawStreet, seededRandom, STREET, STREET_SEED } from './street';
 import type { HeroView } from './BootScene';
 
@@ -377,36 +378,8 @@ export class MenuScene extends Phaser.Scene {
     const g = this.track(this.add.graphics().setDepth(0));
     const P = scene();
 
-    // Wall with wainscot, windows, vault door, floor, counter and plants.
-    g.fillStyle(P.wall).fillRect(0, 0, GAME_WIDTH, 430);
-    g.fillStyle(P.wainscot).fillRect(0, 300, GAME_WIDTH, 130);
-    g.fillStyle(P.trim).fillRect(0, 296, GAME_WIDTH, 6);
-    for (const wx of [86, 754]) {
-      g.fillStyle(P.frame).fillRect(wx, 70, 120, 150);
-      g.fillStyle(P.pane).fillRect(wx + 8, 78, 104, 134);
-      g.fillStyle(P.frame, 0.18).fillRect(wx + 14, 84, 14, 120);
-      g.fillStyle(P.frame).fillRect(wx + 56, 78, 8, 134);
-    }
-    g.fillStyle(COLORS.grayDark).fillCircle(850, 360, 74);
-    g.fillStyle(COLORS.grayMid).fillCircle(850, 360, 64);
-    g.fillStyle(COLORS.grayDark).fillCircle(850, 360, 26);
-    g.fillStyle(COLORS.paper).fillCircle(850, 360, 12);
-    g.fillStyle(COLORS.paper).fillRect(846, 300, 8, 24).fillRect(846, 396, 8, 24);
-
-    for (let ty = 430; ty < GAME_HEIGHT; ty += 48) {
-      for (let tx = 0; tx < GAME_WIDTH; tx += 48) {
-        const light = ((tx / 48 + (ty - 430) / 48) | 0) % 2 === 0;
-        g.fillStyle(light ? P.floorLight : P.floorDark).fillRect(tx, ty, 48, 48);
-      }
-    }
-    g.fillStyle(P.trim).fillRect(0, 424, GAME_WIDTH, 12);
-    g.fillStyle(P.trim).fillRect(700, 366, 250, 74);
-    g.fillStyle(P.frame).fillRect(692, 356, 266, 14);
-    g.fillStyle(P.frame, 0.14).fillRect(716, 296, 220, 60);
-    for (const px of [40, 650]) {
-      g.fillStyle(COLORS.grayDark).fillRect(px - 16, 392, 32, 36);
-      g.fillStyle(COLORS.moss).fillCircle(px, 372, 24).fillCircle(px - 14, 386, 16).fillCircle(px + 14, 386, 16);
-    }
+    // The study garage: pegboard, window, shelves, whiteboard, lamps, rug and a workbench.
+    drawGarageInside(g, P);
 
     // The coin waiting on the floor (it becomes the player later).
     g.fillStyle(0x000000, 0.22).fillEllipse(COIN_X, COIN_Y + 24, 48, 12);

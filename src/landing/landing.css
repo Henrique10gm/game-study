@@ -751,3 +751,20 @@ html:not(.is-landing) #landing {
 .lp-link:hover {
   background: var(--color-surface-raised);
 }
+
+/* Three short promises under the opening line (the same rhythm as a row of labels). */
+.lp-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  margin: 0 0 var(--space-lg);
+  padding: 0;
+  list-style: none;
+  font-size: var(--type-label-size);
+  font-weight: 800;
+}
+
+.lp-points li::before {
+  content: '✓ ';
+  color: var(--color-accent);
+}

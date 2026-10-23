@@ -8,9 +8,9 @@ export const BRAND = {
   name: 'StudyGarage',
   place: 'Estudo em forma de jogo',
   contact: 'contato@studygarage.com',
-  tagline: 'Repita até dominar. Sem enjoar',
+  tagline: 'Pratique para a sua certificação, jogando',
   description:
-    'Pratique o mesmo tema quantas vezes quiser, em rodadas curtas e divertidas, com revisão dos erros e ranking com o seu grupo.',
+    'Treine o tema da sua certificação em rodadas curtas de jogo, quantas vezes quiser, com explicação dos erros e ranking com o seu grupo.',
 } as const;
 
 /** "quest hall" in lower case: the label a screen reader reads for the wordmark. */
