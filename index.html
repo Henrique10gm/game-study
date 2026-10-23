@@ -7,24 +7,25 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://*.supabase.co; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'"
     />
-    <meta name="description" content="Quest Hall: um salão de jogos de estudo no navegador. Missões curtas, ranking com o seu grupo e a sua preparação sempre à vista." />
+    <meta name="description" content="{{BRAND_NAME}}: {{BRAND_DESCRIPTION}}" />
     <meta name="theme-color" content="#151211" />
     <script src="./theme-init.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quest Hall · Estudar também pode ser um jogo" />
-    <meta property="og:description" content="Missões curtas, ranking com o seu grupo e a sua preparação sempre à vista." />
+    <meta property="og:title" content="{{BRAND_NAME}} · {{BRAND_TAGLINE}}" />
+    <meta property="og:description" content="{{BRAND_DESCRIPTION}}" />
     <meta name="twitter:card" content="summary" />
-    <title>Quest Hall · Estudar também pode ser um jogo</title>
+    <title>{{BRAND_NAME}} · {{BRAND_TAGLINE}}</title>
   </head>
   <body>
     <a class="lp-skip" href="#conteudo">Pular para o conteúdo</a>
     <div id="landing" class="lp">
       <header class="lp-nav" data-nav>
         <div class="lp-nav-inner">
-          <a class="lp-brand" href="#topo" aria-label="Quest Hall, início">quest<b>hall</b></a>
+          <a class="lp-brand" href="#topo" aria-label="{{BRAND_NAME}}, início">{{BRAND_LIGHT}}<b>{{BRAND_BOLD}}</b></a>
           <nav class="lp-links" id="lp-links" aria-label="Principal">
             <a href="#produto">Produto</a>
+            <a href="#certificacoes">Certificações</a>
             <a href="#quem-somos">Quem somos</a>
           </nav>
           <div class="lp-nav-actions">
@@ -39,79 +40,108 @@
         <section class="lp-hero" id="topo" aria-labelledby="lp-h1">
           <canvas class="lp-hero-sky" data-hero-sky width="960" height="510" aria-hidden="true"></canvas>
           <div class="lp-hero-copy px-box">
-            <p class="lp-kicker">Salão de jogos de estudo</p>
-            <h1 id="lp-h1">Estudar também pode ser um jogo.</h1>
-            <p class="lp-lead">Missões curtas, ranking com o seu grupo e a sua preparação sempre à vista.</p>
+            <p class="lp-kicker">Treino de certificação em forma de jogo</p>
+            <h1 id="lp-h1">{{BRAND_TAGLINE}}.</h1>
+            <p class="lp-lead">Missões curtas, perguntas no meio da corrida e a revisão de cada erro. Você escolhe a certificação, entra pela porta e treina.</p>
             <div class="lp-cta">
-              <button type="button" class="lp-btn lp-btn--primary" data-enter data-enter-label>Começar</button>
-              <a class="lp-btn lp-btn--ghost" href="#produto">Ver como funciona</a>
+              <button type="button" class="lp-btn lp-btn--primary" data-enter>Começar pela porta</button>
+              <a class="lp-btn lp-btn--ghost" href="#certificacoes">Escolher certificação</a>
             </div>
+            <p class="lp-fine">Para salvar o seu progresso, você cria uma conta com e-mail e senha.</p>
           </div>
         </section>
 
         <section class="lp-section" id="produto" aria-labelledby="lp-produto">
-          <p class="lp-kicker">Produto</p>
+          <p class="lp-kicker">Como funciona</p>
           <h2 id="lp-produto">Três passos, sem complicação</h2>
           <ol class="lp-steps">
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">1</span>
-              <h3>Escolha uma sala</h3>
-              <p>Cada sala é um tema, com missões, perfil e ranking próprios. Você anda pelo saguão e entra pela porta que quiser.</p>
+              <h3>Escolha a sala</h3>
+              <p>Cada sala é uma certificação, com missões, ranking e progresso próprios. Ande pelo saguão e entre pela porta que quiser.</p>
             </li>
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">2</span>
               <h3>Jogue uma missão</h3>
-              <p>O jogo corre sozinho e, de tempos em tempos, pausa para uma pergunta. Você tem três vidas e uma última chance.</p>
+              <p>O personagem corre sozinho e, de tempos em tempos, o jogo pausa para uma pergunta. Você tem três vidas e, quando elas acabam, ainda ganha uma última chance.</p>
             </li>
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">3</span>
-              <h3>Veja a preparação subir</h3>
-              <p>No fim, uma revisão mostra os erros e o que estudar. Cada questão acertada de novo conta como dominada.</p>
+              <h3>Revise os erros</h3>
+              <p>No fim, a revisão mostra o que você errou. Uma questão só conta como dominada quando a sua última resposta foi certa.</p>
             </li>
           </ol>
         </section>
 
-        <section class="lp-section lp-section--alt" id="modos" aria-labelledby="lp-modos">
+        <section class="lp-section lp-section--alt" id="certificacoes" aria-labelledby="lp-cert">
+          <p class="lp-kicker">Escolha o foco</p>
+          <h2 id="lp-cert">Qual certificação você quer treinar?</h2>
+          <p class="lp-sub">Cada certificação vira uma sala no saguão, com as próprias missões e o próprio ranking. Você pode mudar quando quiser.</p>
+          <div class="lp-certs" role="radiogroup" aria-labelledby="lp-cert" data-certs></div>
+          <p class="lp-cert-status" data-cert-status role="status" aria-live="polite"></p>
+          <p class="lp-fineprint">{{BRAND_NAME}} não é afiliado, aprovado nem oficial de nenhuma entidade certificadora. Os nomes das certificações aparecem só para indicar o tema de estudo, e as perguntas não são o exame oficial nem trechos dele.</p>
+        </section>
+
+        <section class="lp-section" id="modos" aria-labelledby="lp-modos">
           <p class="lp-kicker">Modos de jogo</p>
-          <h2 id="lp-modos">Escolha como estudar</h2>
-          <p class="lp-sub">As mesmas perguntas, quatro jeitos de jogar. Troque quando enjoar.</p>
+          <h2 id="lp-modos">Quatro jeitos de treinar</h2>
+          <p class="lp-sub">As mesmas perguntas em formatos diferentes. Troque quando enjoar.</p>
           <ul class="lp-modes" data-modes></ul>
         </section>
 
-        <section class="lp-section" id="grupos" aria-labelledby="lp-grupos">
-          <p class="lp-kicker">Progresso e grupos</p>
-          <h2 id="lp-grupos">Compita com quem você conhece</h2>
+        <section class="lp-section lp-section--alt" id="grupos" aria-labelledby="lp-grupos">
+          <p class="lp-kicker">Grupos e progresso</p>
+          <h2 id="lp-grupos">Treine com a sua turma</h2>
           <div class="lp-split">
             <div class="lp-card px-box" data-reveal>
               <h3>Ranking por grupo</h3>
-              <p>Crie um grupo para a sua equipe, empresa ou turma e chame o pessoal por um link. O ranking mostra quem domina mais questões.</p>
+              <p>Crie um grupo para a sua equipe ou turma e mande o link de convite. O ranking mostra quem domina mais questões, sempre pelo apelido.</p>
             </div>
             <div class="lp-card px-box" data-reveal>
-              <h3>Sua preparação, sempre à vista</h3>
-              <p>Meta diária, sequência de dias e o nível por tema. Você enxerga o que já sabe e o que ainda falta.</p>
+              <h3>Meta diária</h3>
+              <p>A meta é de 10 questões por dia. A sequência mostra quantos dias seguidos você bateu a meta.</p>
             </div>
             <div class="lp-card px-box" data-reveal>
-              <h3>Privacidade de verdade</h3>
-              <p>Seu e-mail nunca aparece no ranking: só o apelido que você escolher. Você pode exportar ou apagar seus dados quando quiser.</p>
+              <h3>Seu nível e seu progresso</h3>
+              <p>Você vê quantas questões já domina, o seu nível de XP e o progresso em cada assunto da sala.</p>
             </div>
           </div>
         </section>
 
-        <section class="lp-section lp-section--alt" id="quem-somos" aria-labelledby="lp-quem">
+        <section class="lp-section" id="quem-somos" aria-labelledby="lp-quem">
           <p class="lp-kicker">Quem somos</p>
           <h2 id="lp-quem">Um projeto independente de estudo</h2>
           <div class="lp-about">
-            <!-- Texto provisório: ajuste para a história real de quem faz o projeto. -->
-            <p>O Quest Hall nasceu da vontade de estudar sem tédio. É um projeto independente, feito por gente que gosta de aprender e de jogos, e que evolui com o retorno de quem joga.</p>
-            <p>As questões são originais, escritas para o projeto, e cada sala é pensada para treinar de pouco em pouco, no seu ritmo.</p>
+            <!-- TODO (dono do projeto): contar quem faz, desde quando e por que começou; incluir um canal de contato. -->
+            <p>O {{BRAND_NAME}} nasceu da vontade de estudar sem tédio. É um projeto independente, feito por gente que gosta de aprender e de jogos, e que evolui com o retorno de quem joga.</p>
+            <p>Não somos afiliados, aprovados nem oficiais de nenhuma entidade certificadora.</p>
           </div>
         </section>
 
-        <section class="lp-street" id="entrada" aria-label="Entrada do salão" data-street>
+        <section class="lp-section lp-section--alt" id="duvidas" aria-labelledby="lp-duvidas">
+          <p class="lp-kicker">Dúvidas</p>
+          <h2 id="lp-duvidas">Perguntas frequentes</h2>
+          <div class="lp-faq">
+            <details class="lp-faq-item">
+              <summary>As perguntas são as da prova oficial?</summary>
+              <p>Não. São perguntas para você treinar no tema da certificação. Não são o exame oficial nem trechos dele.</p>
+            </details>
+            <details class="lp-faq-item">
+              <summary>Preciso de conta?</summary>
+              <p>Para salvar o progresso e entrar em grupos, sim: e-mail e senha, com confirmação por e-mail. A rua e esta página você vê sem conta.</p>
+            </details>
+            <details class="lp-faq-item">
+              <summary>Meu e-mail aparece para alguém?</summary>
+              <p>Não. O ranking mostra só o apelido que você escolher.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="lp-street" id="entrada" aria-label="Entrada do saguão" data-street>
           <div class="lp-street-sticky">
             <div class="lp-stage" data-stage>
               <canvas class="lp-street-canvas" data-street-canvas width="960" height="640" aria-hidden="true"></canvas>
-              <div class="lp-sign" aria-hidden="true">quest<b>hall</b></div>
+              <div class="lp-sign" aria-hidden="true">{{BRAND_LIGHT}}<b>{{BRAND_BOLD}}</b></div>
               <div class="lp-hero-sprite" data-hero aria-hidden="true"></div>
               <button type="button" class="lp-door" data-enter data-enter-label data-door tabindex="-1" aria-hidden="true">Entrar</button>
             </div>
@@ -121,7 +151,9 @@
       </main>
 
       <footer class="lp-footer">
-        <p>Quest Hall · projeto independente · feito para estudar</p>
+        <p>Usamos o seu e-mail para o login e para os avisos da sua conta. O ranking mostra só o apelido.</p>
+        <p>{{BRAND_NAME}} · projeto independente · feito para estudar</p>
+        <p>Não somos afiliados, aprovados nem oficiais de nenhuma certificadora. Nomes de certificações aparecem só para indicar o tema de estudo.</p>
       </footer>
 
       <div class="lp-fade" data-fade aria-hidden="true"></div>
@@ -132,7 +164,7 @@
       <div id="ui-root"></div>
       <div id="boot-loader" class="bl" role="status" aria-live="polite" hidden>
         <div class="bl-stage">
-          <p class="bl-kicker">Quest Hall · Salão de Jogos</p>
+          <p class="bl-kicker">{{BRAND_NAME}} · {{BRAND_PLACE}}</p>
           <div class="bl-run" aria-hidden="true"><div class="bl-hero"></div></div>
           <div class="bl-ground" aria-hidden="true"></div>
           <p class="bl-label">Carregando<span class="bl-dots">...</span></p>

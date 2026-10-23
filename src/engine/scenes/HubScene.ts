@@ -9,6 +9,7 @@ import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH } from '../confi
 import { CREDITS } from '../credits';
 import { Secrets } from '../secrets';
 import { BankMenu } from '../ui/BankMenu';
+import { brandKicker } from '../../brand';
 import { scene } from '../palette';
 import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
@@ -25,6 +26,8 @@ export interface HubRoomView {
 export interface HubSceneData {
   rooms: HubRoomView[];
   from?: string; // the room the player just left: the character steps out of its door
+  arrive?: 'door'; // the player just came in from the street: the character walks in from the entrance
+  focusRoomId?: string; // the room the player chose to train: its door is marked "Sua sala"
   onEnterRoom(roomId: string): void;
 }
 
@@ -40,6 +43,8 @@ const DOOR_W = 120;
 const DOOR_H = 216;
 const DOOR_TOP = WALL_BOTTOM - DOOR_H;
 const NEAR = 64; // how close to a door the character must be to enter
+const REST_GLOW = 0.06; // glow of a door nobody is standing at
+const FOCUS_GLOW = 0.18; // the player's chosen room glows a little even when far
 const WHITE = '#ffffff';
 const MUTED = '#9e9e9e';
 const LIME = '#DBFFA5';
@@ -107,6 +112,8 @@ export class HubScene extends Phaser.Scene {
     const from = this.targets.find((t) => t.kind === 'room' && t.room.id === this.params.from);
     if (from) {
       this.stepOutOf(from);
+    } else if (this.params.arrive === 'door') {
+      this.walkInFromEntrance();
     } else {
       this.placeHero(480, FLOOR_Y, 'right');
     }
@@ -148,6 +155,24 @@ export class HubScene extends Phaser.Scene {
       onComplete: () => {
         this.moveHero(null);
         done();
+      },
+    });
+  }
+
+  // Coming in from the street (the landing page ended with the hero going through the bank
+  // door): he walks in from the bottom of the hall, seen from behind, like he was leaving us.
+  private walkInFromEntrance(): void {
+    this.locked = true;
+    this.placeHero(480, GAME_HEIGHT + 60, 'back');
+    this.moveHero('back');
+    this.tweens.add({
+      targets: this.hero,
+      y: FLOOR_Y,
+      duration: 1100,
+      ease: 'Sine.easeOut',
+      onComplete: () => {
+        this.faceHero('front');
+        this.locked = false;
       },
     });
   }
@@ -195,7 +220,7 @@ export class HubScene extends Phaser.Scene {
       g.fillStyle(P.ceilingLight, 0.06).fillTriangle(lx - 36, 8, lx + 36, 8, lx, 140);
     }
 
-    this.addText(64, 36, 'QUEST HALL · SALÃO DE JOGOS', {
+    this.addText(64, 36, brandKicker(), {
       fontFamily: FONT_SANS,
       fontSize: '12px',
       fontStyle: '800',
@@ -265,8 +290,16 @@ export class HubScene extends Phaser.Scene {
     g.fillStyle(COLORS.forest).fillRect(x + 3, DOOR_TOP + 6, half - 9, DOOR_H - 6);
     g.fillStyle(COLORS.paper, 0.18).fillRect(x - half + 12, DOOR_TOP + 14, 8, DOOR_H - 22);
     g.fillStyle(accent).fillCircle(x - 9, DOOR_TOP + DOOR_H * 0.55, 3).fillCircle(x + 9, DOOR_TOP + DOOR_H * 0.55, 3);
-    const glow = this.add.rectangle(x, DOOR_TOP + DOOR_H / 2, DOOR_W, DOOR_H, accent, 0.06).setDepth(1);
+    const focus = room.id === this.params.focusRoomId;
+    const glow = this.add.rectangle(x, DOOR_TOP + DOOR_H / 2, DOOR_W, DOOR_H, accent, focus ? FOCUS_GLOW : REST_GLOW).setDepth(1);
     this.plaque(g, x, 164, room.title, room.status, accent);
+    if (focus) {
+      this.add
+        .text(x, DOOR_TOP - 90, 'SUA SALA', { fontFamily: FONT_SANS, fontSize: '12px', fontStyle: '800', color: scene().accentText })
+        .setOrigin(0.5)
+        .setLetterSpacing(2)
+        .setDepth(21);
+    }
     this.targets.push({ kind: 'room', x, room, glow });
   }
 
@@ -464,7 +497,10 @@ export class HubScene extends Phaser.Scene {
       : (this.targets.find((t) => Math.abs(t.x - this.hero.x) <= NEAR) ?? null);
     this.near = close;
     for (const target of this.targets) {
-      if (target.kind === 'room') target.glow?.setAlpha(target === close ? 0.28 : 0.06);
+      if (target.kind === 'room') {
+        const focus = target.room.id === this.params.focusRoomId;
+        target.glow?.setAlpha(target === close ? 0.28 : focus ? FOCUS_GLOW : REST_GLOW);
+      }
     }
     if (!close) {
       this.prompt.setVisible(false);

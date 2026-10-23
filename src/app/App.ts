@@ -27,6 +27,8 @@ import { UpdateNotice } from '../engine/ui/UpdateNotice';
 import { markUpdateSeen, pendingUpdate } from '../engine/updates';
 import { startScreenTimer } from '../engine/screenTime';
 import { THEME_EVENT } from '../engine/theme';
+import { appCorner } from '../engine/ui/corner';
+import { readFocusRoom } from '../state/certFocus';
 import type { GameStore } from '../state/GameStore';
 import type { GroupsApi } from '../state/GroupService';
 import { LocalGameStore } from '../state/LocalGameStore';
@@ -80,6 +82,7 @@ export class App {
   private readonly groupsScreen: GroupsScreen;
   private readonly groups: GroupsApi | null;
   private readonly startAt: 'entrance' | 'hall';
+  private newsChip: HTMLButtonElement | null = null;
   private readonly updateNotice: UpdateNotice;
   private store: GameStore;
   private flow: RunFlow | null = null;
@@ -121,7 +124,7 @@ export class App {
     this.game.events.on('run-finished', (next: RunEnd) => void this.afterRun(next));
 
     startScreenTimer((report) => this.store.recordScreenTime(report), () => this.room?.def.id ?? null);
-    if (this.startAt === 'hall') this.showHub();
+    if (this.startAt === 'hall') this.showHub(undefined, true);
     else this.showEntrance();
     hideLoader();
   }
@@ -134,12 +137,25 @@ export class App {
     }
   }
 
-  // The news card goes over the hall (not the first thing a player sees), once per update.
+  // What is new never covers the first screen: it waits as a small "Novidades" button in the
+  // corner (kept until the player opens it, which marks the update as seen).
   private announceUpdate(): void {
+    if (this.newsChip) return;
     const update = pendingUpdate(this.storage);
     if (!update) return;
-    markUpdateSeen(this.storage, update);
-    void this.updateNotice.show(update);
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'app-corner-btn app-corner-btn--news';
+    chip.dataset.testid = 'news-chip';
+    chip.textContent = '✦ Novidades';
+    chip.addEventListener('click', () => {
+      markUpdateSeen(this.storage, update);
+      chip.remove();
+      this.newsChip = null;
+      void this.updateNotice.show(update);
+    });
+    appCorner(this.uiRoot).prepend(chip);
+    this.newsChip = chip;
   }
 
   // If the cloud is unreachable the game still works, saving on this device.
@@ -197,7 +213,7 @@ export class App {
   }
 
   // The hall: one door per room, plus the rooms under construction.
-  private showHub(from?: string): void {
+  private showHub(from?: string, arriving = false): void {
     this.room = null;
     this.stopSceneBeforeNext();
     this.announceUpdate();
@@ -211,7 +227,14 @@ export class App {
         status: count > 0 ? `${count} questões` : 'Missões em breve',
       };
     });
-    this.game.scene.start('HubScene', { rooms, from, onEnterRoom: (id: string) => void this.showRoom(id) });
+    const focusRoomId = readFocusRoom(this.storage) ?? undefined;
+    this.game.scene.start('HubScene', {
+      rooms,
+      from,
+      arrive: arriving ? 'door' : undefined,
+      focusRoomId,
+      onEnterRoom: (id: string) => void this.showRoom(id),
+    });
   }
 
   private async showRoom(roomId: string): Promise<void> {

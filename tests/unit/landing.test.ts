@@ -4,7 +4,11 @@ import { SCENE } from '../../src/engine/palette';
 import { drawSky, drawStreet, seededRandom, STREET, STREET_SEED } from '../../src/engine/scenes/street';
 import type { Brush } from '../../src/engine/scenes/street';
 import { GAME_STYLES } from '../../src/engine/styles';
+import { applyBrand } from '../../src/brandHtml';
+import { BRAND } from '../../src/brand';
 import { canvasBrush } from '../../src/landing/canvasBrush';
+import { CERTIFICATIONS } from '../../src/landing/certifications';
+import { readFocusRoom } from '../../src/state/certFocus';
 import { shouldSkipLanding } from '../../src/landing/entry';
 import { initLanding } from '../../src/landing/landing';
 import { AT_DOOR, atDoor, cameraShift, clamp01, heroX, HERO_START_X, sectionProgress, WALK_END, WALK_START } from '../../src/landing/scroll';
@@ -175,7 +179,7 @@ describe('canvasBrush', () => {
 });
 
 describe('the landing page', () => {
-  const body = new DOMParser().parseFromString(readFileSync('index.html', 'utf8'), 'text/html').body.innerHTML;
+  const body = new DOMParser().parseFromString(applyBrand(readFileSync('index.html', 'utf8')), 'text/html').body.innerHTML;
 
   function setup(reducedMotion: boolean): void {
     vi.stubEnv('VITE_SUPABASE_URL', '');
@@ -210,10 +214,14 @@ describe('the landing page', () => {
 
   const q = <T extends HTMLElement>(selector: string): T => document.querySelector<T>(selector)!;
 
-  it('has the navbar the page promised: Produto, Quem somos and Entrar', () => {
+  it('has the navbar the page promised: Produto, Certificações, Quem somos and Entrar', () => {
     setup(false);
     const links = [...document.querySelectorAll('.lp-links a')].map((a) => [a.textContent, a.getAttribute('href')]);
-    expect(links).toEqual([['Produto', '#produto'], ['Quem somos', '#quem-somos']]);
+    expect(links).toEqual([
+      ['Produto', '#produto'],
+      ['Certificações', '#certificacoes'],
+      ['Quem somos', '#quem-somos'],
+    ]);
     expect(document.querySelector('#produto')).not.toBeNull();
     expect(document.querySelector('#quem-somos')).not.toBeNull();
     expect(q('[data-nav] [data-enter]').textContent).toBe('Jogar'); // no backend in this test: just play
@@ -246,6 +254,51 @@ describe('the landing page', () => {
     expect(button.getAttribute('aria-label')).toContain('Tema claro');
     button.click();
     expect(document.documentElement.dataset.theme).toBe('night');
+  });
+
+  it('wears the brand from src/brand.ts everywhere: wordmark, sign and footer', () => {
+    setup(false);
+    expect(document.body.innerHTML).not.toContain('{{BRAND');
+    expect(q('.lp-brand').textContent).toBe(BRAND.light + BRAND.bold);
+    expect(q('.lp-sign').textContent).toBe(BRAND.light + BRAND.bold);
+    expect(q('.lp-footer').textContent).toContain(BRAND.name);
+  });
+
+  it('the certification picker offers the available room and announces the ones coming', () => {
+    setup(false);
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-certs] .lp-cert')];
+    expect(cards.map((card) => card.dataset.certId)).toEqual(CERTIFICATIONS.map((c) => c.id));
+    const available = cards.find((card) => card.dataset.certId === 'compliance')!;
+    expect(available.getAttribute('role')).toBe('radio');
+    expect(available.getAttribute('aria-checked')).toBe('false');
+    const soon = cards.find((card) => card.classList.contains('lp-cert--soon'))!;
+    expect(soon.getAttribute('aria-disabled')).toBe('true');
+    expect(soon.getAttribute('role')).toBeNull();
+    expect(soon.textContent).toContain('Em breve');
+  });
+
+  it('choosing a certification marks it, says so, and remembers it for the game hall', () => {
+    window.localStorage.removeItem('qh.focusRoom.v1');
+    setup(false);
+    const card = q('[data-cert-id="compliance"]');
+    card.click();
+    expect(card.getAttribute('aria-checked')).toBe('true');
+    expect(q('[data-cert-status]').textContent).toContain('Seu foco: Compliance e câmbio');
+    expect(readFocusRoom(window.localStorage)).toBe('compliance');
+  });
+
+  it('comes back with the choice already marked', () => {
+    window.localStorage.setItem('qh.focusRoom.v1', 'compliance');
+    setup(false);
+    expect(q('[data-cert-id="compliance"]').getAttribute('aria-checked')).toBe('true');
+    window.localStorage.removeItem('qh.focusRoom.v1');
+  });
+
+  it('does not promise what the product cannot do yet', () => {
+    setup(false);
+    const text = document.body.textContent ?? '';
+    expect(text).not.toMatch(/exportar ou apagar|nível por tema|questões originais/i);
+    expect(text).toMatch(/não é afiliado, aprovado nem oficial/i);
   });
 
   it('the hero starts on the left, away from the door, and the door button is hidden', () => {

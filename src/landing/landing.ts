@@ -10,7 +10,9 @@ import { GAME_STYLES } from '../engine/styles';
 import { drawSky, drawStreet, seededRandom, STREET_SEED } from '../engine/scenes/street';
 import { currentTheme, THEME_EVENT, toggleTheme } from '../engine/theme';
 import { showLoader } from '../engine/ui/bootLoader';
+import { readFocusRoom, saveFocusRoom } from '../state/certFocus';
 import { captureInviteFromUrl } from '../state/inviteLink';
+import { availableCertifications, CERTIFICATIONS } from './certifications';
 import { canvasBrush } from './canvasBrush';
 import { shouldSkipLanding } from './entry';
 import { atDoor, cameraShift, heroX, sectionProgress } from './scroll';
@@ -79,6 +81,60 @@ function fillModes(root: HTMLElement): void {
   });
 }
 
+// The certification picker: the chosen room is remembered here and, in the game, its door
+// is marked "Sua sala". Choosing is optional; the hall is never locked to one room.
+function setupCertifications(root: HTMLElement, storage: Storage | null): void {
+  const box = find<HTMLElement>(root, '[data-certs]');
+  const status = find<HTMLElement>(root, '[data-cert-status]');
+  const known = new Set(availableCertifications().map((certification) => certification.id));
+  const saved = readFocusRoom(storage);
+  let chosen = saved && known.has(saved) ? saved : null;
+  const cards = new Map<string, HTMLElement>();
+
+  const refresh = (announce: boolean): void => {
+    cards.forEach((card, id) => card.setAttribute('aria-checked', String(id === chosen)));
+    const title = CERTIFICATIONS.find((certification) => certification.id === chosen)?.title;
+    status.textContent = title
+      ? `${announce ? 'Anotado. ' : ''}Seu foco: ${title}. No saguão, a porta dessa sala fica em destaque.`
+      : '';
+  };
+
+  for (const certification of CERTIFICATIONS) {
+    const available = certification.status === 'available';
+    const card = document.createElement(available ? 'button' : 'div');
+    card.className = 'lp-cert px-box' + (available ? '' : ' lp-cert--soon');
+    card.dataset.reveal = '';
+    card.dataset.certId = certification.id;
+    const tag = document.createElement('span');
+    tag.className = 'lp-mode-tag' + (available ? '' : ' lp-mode-tag--soon');
+    tag.textContent = available ? 'Disponível agora' : 'Em breve';
+    const title = document.createElement('h3');
+    title.textContent = certification.title;
+    const text = document.createElement('p');
+    text.textContent = certification.blurb;
+    card.append(tag, title, text);
+    if (available) {
+      const button = card as HTMLButtonElement;
+      button.type = 'button';
+      button.setAttribute('role', 'radio');
+      const pick = document.createElement('span');
+      pick.className = 'lp-cert-pick';
+      pick.textContent = 'Treinar esta';
+      card.append(pick);
+      button.addEventListener('click', () => {
+        chosen = certification.id;
+        saveFocusRoom(storage, certification.id);
+        refresh(true);
+      });
+      cards.set(certification.id, card);
+    } else {
+      card.setAttribute('aria-disabled', 'true');
+    }
+    box.appendChild(card);
+  }
+  refresh(false);
+}
+
 function revealOnScroll(root: HTMLElement): void {
   root.classList.add('has-js');
   const cards = [...root.querySelectorAll<HTMLElement>('[data-reveal]')];
@@ -107,6 +163,8 @@ function setupNav(root: HTMLElement): void {
   const menuButton = find<HTMLButtonElement>(root, '[data-menu]');
   const themeButton = find<HTMLButtonElement>(root, '[data-theme-toggle]');
   const produto = find<HTMLElement>(root, '#produto');
+  const certificacoes = find<HTMLElement>(root, '#certificacoes');
+  const modos = find<HTMLElement>(root, '#modos');
   const quem = find<HTMLElement>(root, '#quem-somos');
   const street = find<HTMLElement>(root, '#entrada');
 
@@ -146,6 +204,8 @@ function setupNav(root: HTMLElement): void {
     let current: string | null = null;
     if (y >= street.offsetTop) current = null;
     else if (y >= quem.offsetTop) current = '#quem-somos';
+    else if (y >= modos.offsetTop) current = '#produto';
+    else if (y >= certificacoes.offsetTop) current = '#certificacoes';
     else if (y >= produto.offsetTop) current = '#produto';
     links.querySelectorAll('a').forEach((link) => {
       if (link.getAttribute('href') === current) link.setAttribute('aria-current', 'true');
@@ -311,13 +371,14 @@ export function initLanding(): void {
   const root = find<HTMLElement>(document, '#landing');
   paint(root);
   fillModes(root);
+  setupCertifications(root, storage);
   setupNav(root);
   const street = setupStreet(root);
   revealOnScroll(root);
 
   const label = hasSavedSession() || !hasBackend() ? 'Jogar' : 'Entrar';
   root.querySelectorAll<HTMLElement>('[data-enter-label]').forEach((button) => {
-    button.textContent = button.textContent === 'Começar' ? 'Começar' : label;
+    button.textContent = label;
   });
 
   let busy = false;

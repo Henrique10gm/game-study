@@ -10,6 +10,7 @@ import Phaser from 'phaser';
 import { pickCameo } from '../cast';
 import type { Cameo } from '../cast';
 import { COLORS, FONT_SANS, FONT_SERIF, GAME_HEIGHT, GAME_WIDTH } from '../config';
+import { BRAND, brandKicker } from '../../brand';
 import { scene } from '../palette';
 import { ClickCounter, KONAMI, SequenceMatcher, BOSS_WORD } from '../easterEggs';
 import { Secrets } from '../secrets';
@@ -243,17 +244,17 @@ export class MenuScene extends Phaser.Scene {
       probe.destroy();
       return width;
     };
-    const questWidth = measure('quest', '300');
-    const hallWidth = measure('hall', '800');
+    const questWidth = measure(BRAND.light, '300');
+    const hallWidth = measure(BRAND.bold, '800');
     const x = cx - (questWidth + hallWidth) / 2;
-    this.track(this.add.text(x, y, 'quest', { ...base, fontStyle: '300' }).setOrigin(0, 0.5).setDepth(depth));
+    this.track(this.add.text(x, y, BRAND.light, { ...base, fontStyle: '300' }).setOrigin(0, 0.5).setDepth(depth));
     this.track(
-      this.add.text(x + questWidth, y, 'hall', { ...base, fontStyle: '800' }).setOrigin(0, 0.5).setDepth(depth),
+      this.add.text(x + questWidth, y, BRAND.bold, { ...base, fontStyle: '800' }).setOrigin(0, 0.5).setDepth(depth),
     );
   }
 
   private titleBlock(): void {
-    this.text(64, 44, 'QUEST HALL · TREINAMENTO', {
+    this.text(64, 44, brandKicker('Treinamento'), {
       fontFamily: FONT_SANS,
       fontSize: '12px',
       fontStyle: '800',

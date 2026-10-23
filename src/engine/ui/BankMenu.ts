@@ -6,6 +6,7 @@
 // character on the left stays visible.
 import './bank-menu.css';
 import './pixel.css';
+import { BRAND, BRAND_SPOKEN } from '../../brand';
 import { GAME_HEIGHT, GAME_WIDTH } from '../config';
 import type { SizeOption } from '../modes';
 import type { FocusView } from '../focus';
@@ -98,15 +99,15 @@ export interface HomeHandlers {
 function buildWordmark(): HTMLElement {
   const logo = document.createElement('div');
   logo.className = 'bank-logo';
-  logo.setAttribute('aria-label', 'quest hall');
+  logo.setAttribute('aria-label', BRAND_SPOKEN);
   const part = (className: string, text: string): HTMLElement => {
     const span = document.createElement('span');
     span.className = className;
     span.textContent = text;
     return span;
   };
-  logo.appendChild(part('bank-logo-light', 'quest'));
-  logo.appendChild(part('bank-logo-bold', 'hall'));
+  logo.appendChild(part('bank-logo-light', BRAND.light));
+  logo.appendChild(part('bank-logo-bold', BRAND.bold));
   return logo;
 }
 

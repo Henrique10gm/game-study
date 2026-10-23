@@ -5,6 +5,7 @@
 import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { mountCaptcha } from './turnstile';
 import type { CaptchaHandle } from './turnstile';
+import { BRAND } from '../brand';
 import { appCorner } from '../engine/ui/corner';
 import './auth.css';
 
@@ -128,7 +129,7 @@ export class AuthGate {
       forgot: 'Recuperar senha',
       recovery: 'Nova senha',
     };
-    card.appendChild(el('p', 'auth-kicker', 'Quest Hall · Salão de Jogos'));
+    card.appendChild(el('p', 'auth-kicker', `${BRAND.name} · ${BRAND.place}`));
     card.appendChild(el('h1', 'auth-title', titles[mode]));
 
     const message = el('p', 'auth-message');

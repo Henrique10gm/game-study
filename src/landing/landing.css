@@ -613,3 +613,131 @@ html:not(.is-landing) #landing {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* ------------------------------------------------------- certifications, faq */
+
+.lp-fine {
+  margin: var(--space-md) 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-muted);
+}
+
+.lp-fineprint {
+  margin-top: var(--space-lg);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.lp-certs {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: var(--space-xl);
+}
+
+.lp-cert {
+  --edge: var(--color-line-strong);
+  position: relative;
+  display: block;
+  box-sizing: border-box; /* a div and a button must measure the same */
+  width: 100%;
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 0;
+  font-family: var(--font-family);
+  text-align: left;
+  cursor: pointer;
+}
+
+.lp-cert h3 {
+  font-size: 20px;
+  margin-bottom: var(--space-sm);
+}
+
+.lp-cert p {
+  margin: 0 0 var(--space-md);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.lp-cert:hover {
+  background: var(--color-surface-raised);
+}
+
+.lp-cert[aria-checked='true'] {
+  --edge: var(--color-accent);
+  background: var(--color-surface);
+}
+
+.lp-cert-pick {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: var(--type-label-size);
+  font-weight: 800;
+}
+
+.lp-cert[aria-checked='true'] .lp-cert-pick {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.lp-cert[aria-checked='true'] .lp-cert-pick::before {
+  content: '✓ ';
+}
+
+.lp-cert--soon {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.lp-cert--soon:hover {
+  background: var(--color-bg);
+}
+
+.lp-mode-tag--soon {
+  border-color: var(--color-line-strong);
+  color: var(--color-muted);
+}
+
+.lp-cert-status {
+  min-height: 1.5em;
+  margin-top: var(--space-md);
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.lp-faq {
+  margin-top: var(--space-lg);
+  max-width: 720px;
+}
+
+.lp-faq-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.lp-faq-item summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch-min);
+  padding: var(--space-sm) 0;
+  font-weight: 700;
+  font-size: var(--type-body-size);
+  cursor: pointer;
+}
+
+.lp-faq-item p {
+  margin: 0 0 var(--space-md);
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.lp-footer p + p {
+  margin-top: var(--space-sm);
+}
