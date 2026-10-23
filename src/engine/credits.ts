@@ -13,6 +13,6 @@ export const CREDITS: readonly CreditEntry[] = [
   { name: 'Dr. Aníbal', role: 'jurídico' },
   { name: 'Duda', role: 'contabilidade' },
   { name: 'Zeca', role: 'manutenção' },
-  { name: 'Biscoito', role: 'gato do saguão' },
+  { name: 'Biscoito', role: 'gato da casa' },
   { name: 'Você', role: 'quem joga' },
 ];

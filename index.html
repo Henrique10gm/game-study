@@ -40,35 +40,35 @@
         <section class="lp-hero" id="topo" aria-labelledby="lp-h1">
           <canvas class="lp-hero-sky" data-hero-sky width="960" height="510" aria-hidden="true"></canvas>
           <div class="lp-hero-copy px-box">
-            <p class="lp-kicker">Treino de certificação em forma de jogo</p>
+            <p class="lp-kicker">Prática de certificação em forma de jogo</p>
             <h1 id="lp-h1">{{BRAND_TAGLINE}}.</h1>
-            <p class="lp-lead">Missões curtas, perguntas no meio da corrida e a revisão de cada erro. Você escolhe a certificação, entra pela porta e treina.</p>
+            <p class="lp-lead">Escolha um tema e jogue quantas vezes quiser. A cada rodada o jogo para numa pergunta, você revê o que errou e vai de novo, até a resposta sair no automático.</p>
             <div class="lp-cta">
-              <button type="button" class="lp-btn lp-btn--primary" data-enter>Começar pela porta</button>
+              <button type="button" class="lp-btn lp-btn--primary" data-enter>Jogar agora</button>
               <a class="lp-btn lp-btn--ghost" href="#certificacoes">Escolher certificação</a>
             </div>
-            <p class="lp-fine">Para salvar o seu progresso, você cria uma conta com e-mail e senha.</p>
+            <p class="lp-fine">Sem limite de rodadas. Para salvar o seu progresso, crie uma conta com e-mail e senha.</p>
           </div>
         </section>
 
         <section class="lp-section" id="produto" aria-labelledby="lp-produto">
           <p class="lp-kicker">Como funciona</p>
-          <h2 id="lp-produto">Três passos, sem complicação</h2>
+          <h2 id="lp-produto">Jogue, erre, repita</h2>
           <ol class="lp-steps">
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">1</span>
-              <h3>Escolha a sala</h3>
-              <p>Cada sala é uma certificação, com missões, ranking e progresso próprios. Ande pelo saguão e entre pela porta que quiser.</p>
+              <h3>Escolha o tema</h3>
+              <p>Cada sala é uma certificação, com missões, ranking e progresso próprios. Entre pela porta que quiser, e volte quando quiser.</p>
             </li>
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">2</span>
-              <h3>Jogue uma missão</h3>
-              <p>O personagem corre sozinho e, de tempos em tempos, o jogo pausa para uma pergunta. Você tem três vidas e, quando elas acabam, ainda ganha uma última chance.</p>
+              <h3>Jogue e responda</h3>
+              <p>Você corre, desvia e, de tempos em tempos, o jogo pausa para uma pergunta. São três vidas e, quando elas acabam, ainda tem uma última chance.</p>
             </li>
             <li class="lp-card px-box" data-reveal>
               <span class="lp-step-n" aria-hidden="true">3</span>
-              <h3>Revise os erros</h3>
-              <p>No fim, a revisão mostra o que você errou. Uma questão só conta como dominada quando a sua última resposta foi certa.</p>
+              <h3>Repita até dominar</h3>
+              <p>No fim, a revisão mostra o que você errou e você joga de novo, sem limite de rodadas. Uma questão conta como dominada quando a sua última resposta é certa.</p>
             </li>
           </ol>
         </section>
@@ -76,7 +76,7 @@
         <section class="lp-section lp-section--alt" id="certificacoes" aria-labelledby="lp-cert">
           <p class="lp-kicker">Escolha o foco</p>
           <h2 id="lp-cert">Qual certificação você quer treinar?</h2>
-          <p class="lp-sub">Cada certificação vira uma sala no saguão, com as próprias missões e o próprio ranking. Você pode mudar quando quiser.</p>
+          <p class="lp-sub">Cada certificação vira uma sala na casa, com as próprias missões e o próprio ranking. Você pode mudar quando quiser.</p>
           <div class="lp-certs" role="radiogroup" aria-labelledby="lp-cert" data-certs></div>
           <p class="lp-cert-status" data-cert-status role="status" aria-live="polite"></p>
           <p class="lp-fineprint">{{BRAND_NAME}} não é afiliado, aprovado nem oficial de nenhuma entidade certificadora. Os nomes das certificações aparecem só para indicar o tema de estudo, e as perguntas não são o exame oficial nem trechos dele.</p>
@@ -84,8 +84,8 @@
 
         <section class="lp-section" id="modos" aria-labelledby="lp-modos">
           <p class="lp-kicker">Modos de jogo</p>
-          <h2 id="lp-modos">Quatro jeitos de treinar</h2>
-          <p class="lp-sub">As mesmas perguntas em formatos diferentes. Troque quando enjoar.</p>
+          <h2 id="lp-modos">Quatro jeitos de repetir sem enjoar</h2>
+          <p class="lp-sub">As mesmas perguntas em formatos diferentes. Quando um cansa, troque.</p>
           <ul class="lp-modes" data-modes></ul>
         </section>
 
@@ -122,6 +122,10 @@
           <p class="lp-kicker">Dúvidas</p>
           <h2 id="lp-duvidas">Perguntas frequentes</h2>
           <div class="lp-faq">
+            <details class="lp-faq-item" open>
+              <summary>Tem limite de questões ou de partidas?</summary>
+              <p>Não. Você joga o tema quantas vezes quiser, e a mesma pergunta pode voltar: é repetindo que a resposta fixa. Cada sala tem as perguntas que já estão cadastradas nela.</p>
+            </details>
             <details class="lp-faq-item">
               <summary>As perguntas são as da prova oficial?</summary>
               <p>Não. São perguntas para você treinar no tema da certificação. Não são o exame oficial nem trechos dele.</p>
@@ -137,7 +141,7 @@
           </div>
         </section>
 
-        <section class="lp-street" id="entrada" aria-label="Entrada do saguão" data-street>
+        <section class="lp-street" id="entrada" aria-label="Entrada da casa" data-street>
           <div class="lp-street-sticky">
             <div class="lp-stage" data-stage>
               <canvas class="lp-street-canvas" data-street-canvas width="960" height="640" aria-hidden="true"></canvas>
@@ -170,13 +174,13 @@
           <p class="bl-label">Carregando<span class="bl-dots">...</span></p>
           <div class="bl-tips">
             <p class="bl-tip" style="--i: 0">Aperte F para jogar em tela cheia. Esc para sair.</p>
-            <p class="bl-tip bl-tip--egg" style="--i: 1">Clique cinco vezes na placa do banco. Ela guarda uma frase.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 1">Clique cinco vezes na placa da garagem. Ela guarda uma frase.</p>
             <p class="bl-tip" style="--i: 2">Bateu na última vida? Vem uma pergunta de última chance: acertou, continua.</p>
             <p class="bl-tip bl-tip--egg" style="--i: 3">Já tentou o código Konami? ↑ ↑ ↓ ↓ ← → ← → B A</p>
             <p class="bl-tip" style="--i: 4">Na Corrida, pule com Espaço ou ↑ e agache com ↓.</p>
             <p class="bl-tip bl-tip--egg" style="--i: 5">Dizem que o personagem dá um pulo especial se você clicar nele dez vezes seguidas.</p>
             <p class="bl-tip" style="--i: 6">No Contra o tempo, perguntas com mais texto dão mais tempo para responder.</p>
-            <p class="bl-tip bl-tip--egg" style="--i: 7">O gato do banco adora atenção. Clique nele e ouça o que ele tem a dizer.</p>
+            <p class="bl-tip bl-tip--egg" style="--i: 7">O gato da casa adora atenção. Clique nele e ouça o que ele tem a dizer.</p>
             <p class="bl-tip" style="--i: 8">Cada sala tem o seu Hall da Fama. Escolha um apelido para aparecer na lista.</p>
             <p class="bl-tip bl-tip--egg" style="--i: 9">Digite chefe no teclado e veja quem aparece.</p>
           </div>

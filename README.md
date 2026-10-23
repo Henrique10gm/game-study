@@ -1,4 +1,4 @@
-# Quest Hall
+# StudyGarage
 
 Salão de jogos de estudo no navegador. O personagem anda por um saguão com uma porta por **sala** (tema); cada sala tem missões, perfil e ranking próprios. A cada 5 barreiras o jogo pausa e faz uma questão; 3 vidas; no fim, revisão dos erros.
 

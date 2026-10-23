@@ -55,7 +55,7 @@ describe('brand', () => {
   });
 
   it('the wordmark parts spell the name, and the caps line carries it', () => {
-    expect((BRAND.light + ' ' + BRAND.bold).toLowerCase()).toBe(BRAND.name.toLowerCase());
+    expect((BRAND.light + BRAND.bold).toLowerCase()).toBe(BRAND.name.split(' ').join('').toLowerCase());
     expect(brandKicker()).toBe((BRAND.name + ' · ' + BRAND.place).toUpperCase());
     expect(brandKicker('Treinamento')).toContain('TREINAMENTO');
   });

@@ -1,14 +1,15 @@
 // The name of the product, in ONE place. The wordmark is written in two parts: the first
-// in a light weight, the second in bold ("quest" + "hall"). To rename the product, change
+// in a light weight, the second in bold ("study" + "garage"). To rename the product, change
 // this file (and public/favicon.svg): the game, the landing page and index.html (through
 // the Vite plugin in vite.config.ts, which fills the {{BRAND_*}} marks) all read it.
 export const BRAND = {
-  light: 'quest',
-  bold: 'hall',
-  name: 'Quest Hall',
-  place: 'Salão de Jogos',
-  tagline: 'Estudar para a prova sem cara de prova',
-  description: 'Treino para certificação em forma de jogo. Perguntas curtas, revisão dos erros e ranking com o seu grupo.',
+  light: 'study',
+  bold: 'garage',
+  name: 'StudyGarage',
+  place: 'Estudo em forma de jogo',
+  tagline: 'Repita até dominar. Sem enjoar',
+  description:
+    'Pratique o mesmo tema quantas vezes quiser, em rodadas curtas e divertidas, com revisão dos erros e ranking com o seu grupo.',
 } as const;
 
 /** "quest hall" in lower case: the label a screen reader reads for the wordmark. */

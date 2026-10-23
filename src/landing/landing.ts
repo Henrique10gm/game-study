@@ -95,7 +95,7 @@ function setupCertifications(root: HTMLElement, storage: Storage | null): void {
     cards.forEach((card, id) => card.setAttribute('aria-checked', String(id === chosen)));
     const title = CERTIFICATIONS.find((certification) => certification.id === chosen)?.title;
     status.textContent = title
-      ? `${announce ? 'Anotado. ' : ''}Seu foco: ${title}. No saguão, a porta dessa sala fica em destaque.`
+      ? `${announce ? 'Anotado. ' : ''}Seu foco: ${title}. Na casa, a porta dessa sala fica em destaque.`
       : '';
   };
 

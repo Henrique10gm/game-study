@@ -1,3 +1,4 @@
+import { BRAND, BRAND_SPOKEN } from '../../src/brand';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { BankMenu } from '../../src/engine/ui/BankMenu';
 import type { HomeData } from '../../src/engine/ui/BankMenu';
@@ -45,14 +46,14 @@ describe('BankMenu', () => {
 
   it('stacks the modes and the profile entry, describing the first one', () => {
     const labels = [...root.querySelectorAll('.bank-item-label')].map((b) => b.textContent);
-    expect(labels).toEqual(['Modo A', 'Modo B', 'Modo C', 'Meu crachá', 'Voltar ao salão']);
+    expect(labels).toEqual(['Modo A', 'Modo B', 'Modo C', 'Meu crachá', 'Voltar à casa']);
     expect(detail()).toBe('Descrição A (10 questões)');
   });
 
-  it('spells the wordmark as quest + hall', () => {
+  it('spells the wordmark with the two parts of the brand', () => {
     const logo = root.querySelector('.bank-logo')!;
-    expect(logo.getAttribute('aria-label')).toBe('quest hall');
-    expect(logo.textContent).toBe('questhall');
+    expect(logo.getAttribute('aria-label')).toBe(BRAND_SPOKEN);
+    expect(logo.textContent).toBe(BRAND.light + BRAND.bold);
   });
 
   it('hover shows what each mode is', () => {
@@ -68,8 +69,8 @@ describe('BankMenu', () => {
     expect(onPick).toHaveBeenCalledWith('b');
 
     press('ArrowUp');
-    press('ArrowUp'); // wraps to the last entry, "Voltar ao salão"
-    expect(active()).toBe('Voltar ao salão');
+    press('ArrowUp'); // wraps to the last entry, "Voltar à casa"
+    expect(active()).toBe('Voltar à casa');
     press('ArrowUp');
     expect(active()).toBe('Meu crachá');
     press('Enter');

@@ -1,4 +1,4 @@
-// The street in front of the bank: sky, far city, the bank facade, sidewalk, road and lamp.
+// The street in front of the house: sky, far city, a house with a garage, sidewalk, road and lamp.
 // Drawn from a fixed seed (every visit shows the same city) and from the palette of the
 // theme. It paints through a tiny Brush, so the game (Phaser Graphics) and the landing
 // page (a plain canvas) draw the very same picture without the landing loading Phaser.
@@ -24,9 +24,10 @@ export interface Brush {
 export const STREET = {
   skyBottom: 510, // the sky gradient ends here
   horizon: 500, // sidewalk starts, buildings stand on it
-  feetY: 538, // the hero's feet line in front of the bank
-  doorX: 640,
-  signCenter: { x: 640, y: 234 },
+  feetY: 538, // the hero's feet line in front of the house
+  doorX: 452, // the front door: where the hero goes in
+  signCenter: { x: 755, y: 326 }, // the name plate above the garage door
+  signSize: { width: 168, height: 40 },
   lamp: { x: 321, y: 326 },
 } as const;
 
@@ -82,28 +83,71 @@ export function drawSky(g: Brush, P: ScenePalette, rng: () => number): void {
   }
 }
 
-/** The bank in off-white stone (pediment, columns, door, steps), then sidewalk, road and lamp post. */
+// Colors of the house that do not change with the theme (the street around it does).
+const ROOF = 0x7a3a2e;
+const ROOF_LIGHT = 0x9b4a3a;
+const BRICK = 0xb5654f;
+const GARAGE_WALL = 0xf0e8d6;
+const GARAGE_DOOR = 0xe6e0d2;
+const GARAGE_SLAT = 0xb9b2a4;
+
+/** A house with a garage (the name plate is on the garage), then sidewalk, road and lamp post. */
 export function drawBank(g: Brush, P: ScenePalette): void {
-  g.fillStyle(COLORS.grayNeutral).fillTriangle(390, 172, 890, 172, 640, 92);
-  g.fillStyle(COLORS.paper).fillTriangle(420, 168, 860, 168, 640, 112);
-  g.fillStyle(COLORS.paper).fillRect(390, 172, 500, 30);
-  g.fillStyle(COLORS.grayNeutral).fillRect(390, 196, 500, 6);
-  g.fillStyle(COLORS.paper).fillRect(410, 202, 460, 270);
-  for (let cx = 430; cx <= 830; cx += 80) {
-    if (cx === 590 || cx === 670) continue; // leave room for the door
-    g.fillStyle(COLORS.white).fillRect(cx, 202, 28, 268);
-    g.fillStyle(COLORS.grayNeutral).fillRect(cx + 18, 202, 10, 268);
-    g.fillStyle(COLORS.paper).fillRect(cx - 4, 202, 36, 8).fillRect(cx - 4, 462, 36, 8);
-  }
-  g.fillStyle(COLORS.grayNeutral).fillRect(594, 364, 92, 110);
-  g.fillStyle(COLORS.black).fillRect(600, 370, 80, 104);
-  g.fillStyle(COLORS.forest).fillRect(606, 376, 32, 60).fillRect(642, 376, 32, 60);
-  g.fillStyle(COLORS.paper, 0.4).fillRect(610, 380, 6, 52).fillRect(646, 380, 6, 52);
-  g.fillStyle(COLORS.lime).fillCircle(634, 450, 3).fillCircle(646, 450, 3);
-  g.fillStyle(COLORS.grayNeutral).fillRect(390, 472, 500, 14);
-  g.fillStyle(COLORS.grayMid).fillRect(378, 486, 524, 14);
-  g.fillStyle(COLORS.black).fillRect(556, 214, 168, 40);
-  g.lineStyle(2, COLORS.grayMid).strokeRect(556, 214, 168, 40);
+  const glass = P.isDay ? P.pane : P.windowLit;
+  const glassAlpha = P.isDay ? 1 : 0.9; // by night the windows are lit
+  const grass = P.isDay ? 0x7fb06a : 0x24452e;
+  const bush = P.isDay ? 0x5f9150 : 0x1b3623;
+
+  // Garage (right): low gable roof, wall, door with slats, the name plate on top.
+  g.fillStyle(ROOF).fillTriangle(606, 304, 914, 304, 760, 248);
+  g.fillStyle(ROOF_LIGHT).fillTriangle(606, 304, 760, 304, 760, 248);
+  g.fillStyle(ROOF).fillRect(600, 300, 320, 8);
+  g.fillStyle(GARAGE_WALL).fillRect(620, 308, 280, 164);
+  g.fillStyle(COLORS.grayNeutral).fillRect(649, 356, 222, 116);
+  g.fillStyle(GARAGE_DOOR).fillRect(655, 362, 210, 110);
+  for (let i = 1; i <= 3; i++) g.fillStyle(GARAGE_SLAT).fillRect(655, 362 + i * 27, 210, 3);
+  g.fillStyle(glass, glassAlpha).fillRect(663, 368, 38, 14).fillRect(707, 368, 38, 14).fillRect(751, 368, 38, 14).fillRect(795, 368, 38, 14);
+  g.fillStyle(COLORS.grayMid).fillRect(748, 458, 14, 6);
+  g.fillStyle(COLORS.grayNeutral).fillRect(640, 472, 240, 28);
+
+  // The plate with the name (the text itself is drawn on top by the scene or the page).
+  const plate = STREET.signSize;
+  const px = STREET.signCenter.x - plate.width / 2;
+  const py = STREET.signCenter.y - plate.height / 2;
+  g.fillStyle(COLORS.black).fillRect(px, py, plate.width, plate.height);
+  g.lineStyle(2, COLORS.grayMid).strokeRect(px, py, plate.width, plate.height);
+
+  // House (left): roof, chimney, attic window, wall, front door, window, porch.
+  g.fillStyle(BRICK).fillRect(570, 170, 28, 56);
+  g.fillStyle(COLORS.grayDark).fillRect(566, 164, 36, 8);
+  g.fillStyle(ROOF).fillTriangle(372, 254, 638, 254, 505, 150);
+  g.fillStyle(ROOF_LIGHT).fillTriangle(372, 254, 505, 254, 505, 150);
+  g.fillStyle(ROOF).fillRect(366, 250, 278, 8);
+  g.fillStyle(COLORS.paper).fillRect(390, 258, 230, 214);
+  g.fillStyle(COLORS.grayNeutral).fillRect(485, 196, 40, 40);
+  g.fillStyle(glass, glassAlpha).fillRect(490, 201, 30, 30);
+  g.fillStyle(COLORS.grayNeutral).fillRect(503, 201, 4, 30).fillRect(490, 214, 30, 4);
+
+  g.fillStyle(COLORS.grayNeutral).fillRect(512, 326, 88, 70);
+  g.fillStyle(glass, glassAlpha).fillRect(518, 332, 36, 26).fillRect(558, 332, 36, 26).fillRect(518, 362, 36, 28).fillRect(558, 362, 36, 28);
+  g.fillStyle(COLORS.grayMid).fillRect(506, 396, 100, 6);
+
+  g.fillStyle(COLORS.grayNeutral).fillRect(426, 382, 52, 90);
+  g.fillStyle(COLORS.forest).fillRect(432, 388, 40, 84);
+  g.fillStyle(glass, glassAlpha).fillRect(438, 394, 28, 20);
+  g.fillStyle(COLORS.paper, 0.35).fillRect(438, 420, 6, 46);
+  g.fillStyle(COLORS.lime).fillCircle(464, 434, 3);
+  g.fillStyle(COLORS.grayNeutral).fillRect(410, 472, 84, 12);
+  g.fillStyle(COLORS.grayMid).fillRect(400, 484, 104, 16);
+
+  // Garden: lawn, bushes, a mailbox and a tree.
+  g.fillStyle(grass).fillRect(380, 484, 20, 16).fillRect(504, 484, 136, 16);
+  g.fillStyle(bush).fillCircle(408, 480, 14).fillCircle(520, 482, 12).fillCircle(580, 482, 14);
+  g.fillStyle(COLORS.grayDark).fillRect(358, 462, 4, 38);
+  g.fillStyle(COLORS.grayMid).fillRect(348, 448, 24, 16);
+  g.fillStyle(COLORS.lime).fillRect(366, 444, 4, 10);
+  g.fillStyle(0x6b4a32).fillRect(920, 392, 12, 108);
+  g.fillStyle(bush).fillCircle(926, 376, 34).fillCircle(902, 396, 22).fillCircle(950, 396, 22);
 
   g.fillStyle(P.sidewalk).fillRect(0, STREET.horizon, GAME_WIDTH, 46);
   g.fillStyle(P.curb).fillRect(0, 542, GAME_WIDTH, 5);

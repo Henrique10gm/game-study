@@ -33,7 +33,7 @@ export const UPDATES: readonly GameUpdate[] = [
       'Tela de carregamento nova: o personagem corre enquanto o jogo abre, com dicas e segredos.',
     ],
     also: [
-      'Salão de Jogos: entre no banco e escolha a sala. A Sala de Banking chega em breve.',
+      'A casa: entre pela porta e escolha a sala. A Sala de Banking chega em breve.',
       'Continuar jogando depois de concluir a fase.',
       'Tela cheia com a tecla F.',
     ],
@@ -41,13 +41,13 @@ export const UPDATES: readonly GameUpdate[] = [
   {
     id: '2026-10-06-salao-de-jogos',
     date: '06/10/2026',
-    title: 'O Salão de Jogos abriu',
+    title: 'A casa abriu',
     highlights: [
-      'Agora você entra no banco e escolhe a sala que quer treinar, andando com o personagem pelo salão.',
+      'Agora você entra pela porta e escolhe a sala que quer treinar, andando com o personagem pela casa.',
       'Sala ABT1: tudo o que você já jogava para a ABT1 continua lá, com o seu progresso intacto.',
       'Sala de Banking: a porta já existe. As missões estão sendo escritas e chegam em breve.',
       'Cada sala tem o seu Hall da Fama e o seu crachá. O apelido vale para todas.',
-      'Tem sala em obras no fundo do salão: novas salas vão abrir por ali.',
+      'Tem sala em obras no fundo da casa: novas salas vão abrir por ali.',
     ],
     also: [
       'Continuar jogando depois de concluir a fase.',

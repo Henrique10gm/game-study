@@ -341,8 +341,8 @@ export class BankMenu {
     });
     entries.push({
       testId: 'menu-hall-back',
-      label: 'Voltar ao salão',
-      detail: 'Sair da sala e voltar ao salão de jogos para escolher outra.',
+      label: 'Voltar à casa',
+      detail: 'Sair da sala e voltar à casa para escolher outra.',
       secondary: true,
       onSelect: handlers.onBack,
     });

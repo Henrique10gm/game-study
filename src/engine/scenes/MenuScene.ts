@@ -23,7 +23,7 @@ import type { HallView, HomeData, SizeData } from '../ui/BankMenu';
 import { hasKeyboard } from '../ui/input';
 import { heroIdleFrame } from './BootScene';
 import { spawnCameo } from './cameoActor';
-import { drawStreet, seededRandom, STREET_SEED } from './street';
+import { drawStreet, seededRandom, STREET, STREET_SEED } from './street';
 import type { HeroView } from './BootScene';
 
 export interface MenuSceneData {
@@ -43,7 +43,7 @@ type Phase = 'outside' | 'entering' | 'menu' | 'cutscene';
 const HERO_SCALE = 2.5;
 const WALK_SPEED = 190; // px/s with the arrow keys
 const CUTSCENE_SPEED = 330; // px/s while walking to the coin
-const DOOR_X = 640;
+const DOOR_X = STREET.doorX;
 const STREET_Y = 538; // feet line in front of the bank
 const FLOOR_Y = 592; // feet line inside
 const HERO_INSIDE_X = 120;
@@ -260,7 +260,7 @@ export class MenuScene extends Phaser.Scene {
       fontStyle: '800',
       color: scene().inkMuted,
     }).setLetterSpacing(2);
-    this.text(64, 62, 'Salão de Jogos', {
+    this.text(64, 62, 'Garagem de Estudos', {
       fontFamily: FONT_SERIF,
       fontSize: '38px',
       color: scene().ink,
@@ -276,10 +276,10 @@ export class MenuScene extends Phaser.Scene {
     // The whole street comes from drawStreet (fixed seed, palette of the theme), so the
     // landing page can show the very same picture.
     drawStreet(g, scene(), seededRandom(STREET_SEED));
-    this.addWordmark(640, 234, 20, 2);
+    this.addWordmark(STREET.signCenter.x, STREET.signCenter.y, 20, 2);
 
     this.titleBlock();
-    const hint = this.text(64, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar no salão     Espaço  pular' : '', {
+    const hint = this.text(64, 616, hasKeyboard() ? '← →  andar     ↑ ou Enter  entrar na casa     Espaço  pular' : '', {
       fontFamily: FONT_SANS,
       fontSize: '15px',
       fontStyle: '300',
@@ -289,7 +289,7 @@ export class MenuScene extends Phaser.Scene {
     this.tweens.add({ targets: hint, alpha: 0.5, duration: 900, yoyo: true, repeat: -1 });
 
     // Easter egg: five quick clicks on the sign.
-    const sign = this.track(this.add.zone(640, 234, 168, 40).setInteractive().setDepth(30));
+    const sign = this.track(this.add.zone(STREET.signCenter.x, STREET.signCenter.y, STREET.signSize.width, STREET.signSize.height).setInteractive().setDepth(30));
     sign.on('pointerdown', () => {
       if (this.signClicks.click(this.time.now)) {
         this.discover('sign');
@@ -508,9 +508,9 @@ export class MenuScene extends Phaser.Scene {
 
   // The sign briefly shows a sign-off.
   private signEgg(): void {
-    const cover = this.add.rectangle(640, 234, 164, 36, COLORS.black).setDepth(31);
+    const cover = this.add.rectangle(STREET.signCenter.x, STREET.signCenter.y, STREET.signSize.width - 4, STREET.signSize.height - 4, COLORS.black).setDepth(31);
     const label = this.add
-      .text(640, 234, 'Estude. Jogue. Repita.', { fontFamily: FONT_SERIF, fontSize: '18px', color: '#DBFFA5' })
+      .text(STREET.signCenter.x, STREET.signCenter.y, 'Estude. Jogue. Repita.', { fontFamily: FONT_SERIF, fontSize: '18px', color: '#DBFFA5' })
       .setOrigin(0.5)
       .setDepth(32);
     this.time.delayedCall(2200, () => {

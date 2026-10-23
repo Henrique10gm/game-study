@@ -394,7 +394,7 @@ export class HubScene extends Phaser.Scene {
 
     const lines = [
       text(70, 'OBRA SECRETA · CRÉDITOS', { fontSize: '12px', fontStyle: '800', color: LIME }),
-      text(112, 'Elenco do salão', { fontFamily: FONT_SERIF, fontSize: '36px', color: WHITE }),
+      text(112, 'Elenco da casa', { fontFamily: FONT_SERIF, fontSize: '36px', color: WHITE }),
       text(160, 'Ninguém aqui existe de verdade, mas todo mundo já trabalhou com alguém assim.', {
         fontSize: '15px',
         fontStyle: '300',
@@ -417,7 +417,7 @@ export class HubScene extends Phaser.Scene {
 
     lines.push(
       text(580, 'E obrigado a você, que achou esta sala', { fontSize: '13px', fontStyle: '800', color: LIME }),
-      text(630, 'Esc, Enter ou clique para voltar ao salão', { fontSize: '12px', fontStyle: '300', color: MUTED }),
+      text(630, 'Esc, Enter ou clique para voltar à casa', { fontSize: '12px', fontStyle: '300', color: MUTED }),
     );
     lines.forEach((t, i) => this.tweens.add({ targets: t, alpha: 1, delay: 150 + i * 90, duration: 400 }));
 
