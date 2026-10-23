@@ -7,7 +7,7 @@ export const BRAND = {
   bold: 'garage',
   name: 'StudyGarage',
   place: 'Estudo em forma de jogo',
-  contact: 'contato@studygarage.com',
+  contact: 'contato@studygarage.com.br',
   tagline: 'Pratique para a sua certificação, jogando',
   description:
     'Treine o tema da sua certificação em rodadas curtas de jogo, quantas vezes quiser, com explicação dos erros e ranking com o seu grupo.',
