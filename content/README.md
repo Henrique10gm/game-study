@@ -4,7 +4,7 @@ Todo texto de questão vive em JSON aqui; o motor (`src/`) nunca contém texto d
 
 ## Origem do conteúdo
 
-As questões foram adaptadas dos cadernos do dono do projeto (`questoes_*.docx`): o conteúdo técnico, números, leis e gabarito vêm deles; só foram acrescentados um pequeno contexto de trabalho (`dialogue`) e uma reescrita leve de enunciado/alternativas. Não copie texto de prova literalmente sem decisão explícita do dono do projeto. Dúvidas de conteúdo apontadas na adaptação (gabarito ambíguo, artigos não conferidos) devem ser revisadas por quem é dono do material.
+As questões são originais, escritas para o projeto no tema da certificação. Não copie texto de prova nem de material de terceiros. Dúvidas de conteúdo (gabarito ambíguo, artigo não conferido) devem ser revisadas por quem é dono do material.
 
 ## Sem dados pessoais
 
@@ -46,7 +46,7 @@ Todos os arquivos `content/rooms/compliance/questions/*.json` são carregados ju
 
 | Modo | Regra |
 |---|---|
-| Prova Abt1 | `"exam": true` (45 questões) |
+| Prova Abt1 | `"exam": true` (106 questões: 45 de `prova-abt1.json` e 61 de `simulado-abt1.json`) |
 | Treino Agentes do SFN | `categories` contém `sfn` |
 | Treino Limites transacionais e reportes | contém `limites` |
 | Treino operações no mercado cambial | contém `cambio-pld` |

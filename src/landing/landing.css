@@ -431,11 +431,11 @@ html:not(.is-landing) #landing {
   image-rendering: pixelated;
 }
 
-/* Same sign text as the game: first word light, second bold, centered on the plate at (755, 326) of 960x640. */
+/* Same sign text as the game: first word light, second bold, centered on the plate at (640, 278) of 960x640. */
 .lp-sign {
   position: absolute;
-  left: calc(755 / 960 * 100%);
-  top: calc(326 / 640 * 100%);
+  left: calc(640 / 960 * 100%);
+  top: calc(278 / 640 * 100%);
   transform: translate(-50%, -50%);
   color: #f6f1e4;
   font-size: calc(20 / 960 * 100cqw);
@@ -496,8 +496,8 @@ html:not(.is-landing) #landing {
 
 .lp-door {
   position: absolute;
-  left: calc(452 / 960 * 100%);
-  top: calc(330 / 640 * 100%);
+  left: calc(640 / 960 * 100%);
+  top: calc(190 / 640 * 100%);
   transform: translate(-50%, 8px);
   min-height: var(--touch-min);
   padding: 0 var(--space-lg);
@@ -740,4 +740,14 @@ html:not(.is-landing) #landing {
 
 .lp-footer p + p {
   margin-top: var(--space-sm);
+}
+
+.lp-link {
+  color: var(--color-accent);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.lp-link:hover {
+  background: var(--color-surface-raised);
 }

@@ -283,7 +283,7 @@ describe('the landing page', () => {
     const card = q('[data-cert-id="compliance"]');
     card.click();
     expect(card.getAttribute('aria-checked')).toBe('true');
-    expect(q('[data-cert-status]').textContent).toContain('Seu foco: Compliance e câmbio');
+    expect(q('[data-cert-status]').textContent).toContain('Seu foco: Certificação ABT1');
     expect(readFocusRoom(window.localStorage)).toBe('compliance');
   });
 

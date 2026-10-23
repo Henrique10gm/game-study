@@ -10,6 +10,7 @@ const MARKS: Record<string, string> = {
   '{{BRAND_PLACE}}': BRAND.place,
   '{{BRAND_TAGLINE}}': BRAND.tagline,
   '{{BRAND_DESCRIPTION}}': BRAND.description,
+  '{{BRAND_CONTACT}}': BRAND.contact,
 };
 
 export function applyBrand(html: string): string {

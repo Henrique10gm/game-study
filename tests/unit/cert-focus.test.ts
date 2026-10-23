@@ -67,3 +67,20 @@ describe('brand', () => {
     expect(applyBrand([...used].join(' '))).not.toContain('{{');
   });
 });
+
+describe('what the landing page says matches the game', () => {
+  it('each available certification card has the title and id of a real room', async () => {
+    const { CERTIFICATIONS } = await import('../../src/landing/certifications');
+    for (const card of CERTIFICATIONS.filter((c) => c.status === 'available')) {
+      const room = JSON.parse(readFileSync(`content/rooms/${card.id}/room.json`, 'utf8')) as { id: string; title: string };
+      expect(room.id).toBe(card.id);
+      expect(room.title).toBe(card.title);
+    }
+  });
+
+  it('shows the contact address, as a link, in "Quem somos" and in the footer', () => {
+    const html = applyBrand(readFileSync('index.html', 'utf8'));
+    expect(BRAND.contact).toMatch(/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/);
+    expect(html.split(`mailto:${BRAND.contact}`).length - 1).toBe(2);
+  });
+});

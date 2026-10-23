@@ -11,8 +11,8 @@ export interface Certification {
 export const CERTIFICATIONS: readonly Certification[] = [
   {
     id: 'compliance',
-    title: 'Compliance e câmbio',
-    blurb: 'Treino no tema da certificação ABT1: SFN, limites, câmbio, PLD e punições.',
+    title: 'Certificação ABT1',
+    blurb: 'Compliance e câmbio: SFN, limites, câmbio, PLD e punições.',
     status: 'available',
   },
   {

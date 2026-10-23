@@ -1,4 +1,5 @@
-// The street in front of the house: sky, far city, a house with a garage, sidewalk, road and lamp.
+// The street in front of the garage: sky, far city, a small garage with its door open on a lit
+// study room, sidewalk, road and lamp.
 // Drawn from a fixed seed (every visit shows the same city) and from the palette of the
 // theme. It paints through a tiny Brush, so the game (Phaser Graphics) and the landing
 // page (a plain canvas) draw the very same picture without the landing loading Phaser.
@@ -24,9 +25,9 @@ export interface Brush {
 export const STREET = {
   skyBottom: 510, // the sky gradient ends here
   horizon: 500, // sidewalk starts, buildings stand on it
-  feetY: 538, // the hero's feet line in front of the house
-  doorX: 452, // the front door: where the hero goes in
-  signCenter: { x: 755, y: 326 }, // the name plate above the garage door
+  feetY: 538, // the hero's feet line in front of the garage
+  doorX: 640, // the middle of the open garage door: where the hero goes in
+  signCenter: { x: 640, y: 278 }, // the name plate above the door
   signSize: { width: 168, height: 40 },
   lamp: { x: 321, y: 326 },
 } as const;
@@ -83,32 +84,45 @@ export function drawSky(g: Brush, P: ScenePalette, rng: () => number): void {
   }
 }
 
-// Colors of the house that do not change with the theme (the street around it does).
-const ROOF = 0x7a3a2e;
-const ROOF_LIGHT = 0x9b4a3a;
-const BRICK = 0xb5654f;
-const GARAGE_WALL = 0xf0e8d6;
-const GARAGE_DOOR = 0xe6e0d2;
-const GARAGE_SLAT = 0xb9b2a4;
+// The garage walls and roof take the theme's mood; the lit room inside is the same warm
+// amber by day and by night: it is where the game is.
+const DOOR_LEFT = 480;
+const DOOR_RIGHT = 800;
+const DOOR_TOP = 312;
+const FLOOR_TOP = 440;
+const GARAGE_BOTTOM = 470;
+const SHUTTER = 0xe6e0d2;
+const SHUTTER_LINE = 0xb9b2a4;
+const ROOM_TOP = 0xf6b84a;
+const ROOM_BOTTOM = 0xe08a2e;
+const ROOM_FLOOR = 0xb86a22;
+const SILHOUETTE = 0x3b2418;
+const WOOD = 0x5a3a24;
+const PAPER_WARM = 0xfff3c4;
 
-/** A house with a garage (the name plate is on the garage), then sidewalk, road and lamp post. */
+/** A small garage with its door open on a lit study room, then sidewalk, road and lamp post. */
 export function drawBank(g: Brush, P: ScenePalette): void {
-  const glass = P.isDay ? P.pane : P.windowLit;
-  const glassAlpha = P.isDay ? 1 : 0.9; // by night the windows are lit
-  const grass = P.isDay ? 0x7fb06a : 0x24452e;
+  const roof = P.isDay ? 0x3f5a54 : 0x2e4f48;
+  const roofEdge = P.isDay ? 0x2a3f3a : 0x4d8276;
+  const wall = P.isDay ? 0xefe6d0 : 0x34554d;
+  const wallShade = P.isDay ? 0xdcd2b8 : 0x294640;
+  const trim = P.isDay ? 0xa9bba2 : 0x1b332d;
   const bush = P.isDay ? 0x5f9150 : 0x1b3623;
+  const grass = P.isDay ? 0x7fb06a : 0x24452e;
 
-  // Garage (right): low gable roof, wall, door with slats, the name plate on top.
-  g.fillStyle(ROOF).fillTriangle(606, 304, 914, 304, 760, 248);
-  g.fillStyle(ROOF_LIGHT).fillTriangle(606, 304, 760, 304, 760, 248);
-  g.fillStyle(ROOF).fillRect(600, 300, 320, 8);
-  g.fillStyle(GARAGE_WALL).fillRect(620, 308, 280, 164);
-  g.fillStyle(COLORS.grayNeutral).fillRect(649, 356, 222, 116);
-  g.fillStyle(GARAGE_DOOR).fillRect(655, 362, 210, 110);
-  for (let i = 1; i <= 3; i++) g.fillStyle(GARAGE_SLAT).fillRect(655, 362 + i * 27, 210, 3);
-  g.fillStyle(glass, glassAlpha).fillRect(663, 368, 38, 14).fillRect(707, 368, 38, 14).fillRect(751, 368, 38, 14).fillRect(795, 368, 38, 14);
-  g.fillStyle(COLORS.grayMid).fillRect(748, 458, 14, 6);
-  g.fillStyle(COLORS.grayNeutral).fillRect(640, 472, 240, 28);
+  // Roof: low gable with a light edge so it reads against the sky.
+  g.fillStyle(roof).fillTriangle(392, 258, 888, 258, 640, 176);
+  g.lineStyle(3, roofEdge).strokeRect(392, 256, 496, 4);
+  g.fillStyle(roofEdge, 0.5).fillTriangle(392, 258, 640, 258, 640, 176);
+  g.fillStyle(roof).fillRect(386, 254, 508, 10);
+
+  // Walls, with a shaded band under the eave and a plinth.
+  g.fillStyle(wall).fillRect(410, 264, 460, 206);
+  g.fillStyle(wallShade).fillRect(410, 264, 460, 8);
+  g.fillStyle(trim).fillRect(404, 466, 472, 8);
+  g.fillStyle(trim).fillRect(466, DOOR_TOP - 8, DOOR_RIGHT - DOOR_LEFT + 28, 8);
+  g.fillStyle(trim).fillRect(DOOR_LEFT - 14, DOOR_TOP, 14, GARAGE_BOTTOM - DOOR_TOP);
+  g.fillStyle(trim).fillRect(DOOR_RIGHT, DOOR_TOP, 14, GARAGE_BOTTOM - DOOR_TOP);
 
   // The plate with the name (the text itself is drawn on top by the scene or the page).
   const plate = STREET.signSize;
@@ -117,37 +131,51 @@ export function drawBank(g: Brush, P: ScenePalette): void {
   g.fillStyle(COLORS.black).fillRect(px, py, plate.width, plate.height);
   g.lineStyle(2, COLORS.grayMid).strokeRect(px, py, plate.width, plate.height);
 
-  // House (left): roof, chimney, attic window, wall, front door, window, porch.
-  g.fillStyle(BRICK).fillRect(570, 170, 28, 56);
-  g.fillStyle(COLORS.grayDark).fillRect(566, 164, 36, 8);
-  g.fillStyle(ROOF).fillTriangle(372, 254, 638, 254, 505, 150);
-  g.fillStyle(ROOF_LIGHT).fillTriangle(372, 254, 505, 254, 505, 150);
-  g.fillStyle(ROOF).fillRect(366, 250, 278, 8);
-  g.fillStyle(COLORS.paper).fillRect(390, 258, 230, 214);
-  g.fillStyle(COLORS.grayNeutral).fillRect(485, 196, 40, 40);
-  g.fillStyle(glass, glassAlpha).fillRect(490, 201, 30, 30);
-  g.fillStyle(COLORS.grayNeutral).fillRect(503, 201, 4, 30).fillRect(490, 214, 30, 4);
+  // The lit room: warm wall, floor, a hanging lamp, shelves, a board, the study table.
+  const rows = 8;
+  const rowHeight = Math.ceil((FLOOR_TOP - DOOR_TOP) / rows);
+  for (let i = 0; i < rows; i++) {
+    g.fillStyle(mix(ROOM_TOP, ROOM_BOTTOM, i / (rows - 1))).fillRect(DOOR_LEFT, DOOR_TOP + i * rowHeight, DOOR_RIGHT - DOOR_LEFT, rowHeight);
+  }
+  g.fillStyle(ROOM_FLOOR).fillRect(DOOR_LEFT, FLOOR_TOP, DOOR_RIGHT - DOOR_LEFT, GARAGE_BOTTOM - FLOOR_TOP);
+  g.fillStyle(WOOD, 0.35).fillRect(DOOR_LEFT, FLOOR_TOP, DOOR_RIGHT - DOOR_LEFT, 3);
 
-  g.fillStyle(COLORS.grayNeutral).fillRect(512, 326, 88, 70);
-  g.fillStyle(glass, glassAlpha).fillRect(518, 332, 36, 26).fillRect(558, 332, 36, 26).fillRect(518, 362, 36, 28).fillRect(558, 362, 36, 28);
-  g.fillStyle(COLORS.grayMid).fillRect(506, 396, 100, 6);
+  g.fillStyle(SILHOUETTE).fillRect(639, DOOR_TOP + 18, 2, 22);
+  g.fillStyle(PAPER_WARM, 0.22).fillCircle(640, DOOR_TOP + 50, 46);
+  g.fillStyle(PAPER_WARM, 0.35).fillCircle(640, DOOR_TOP + 50, 28);
+  g.fillStyle(PAPER_WARM).fillCircle(640, DOOR_TOP + 50, 9);
 
-  g.fillStyle(COLORS.grayNeutral).fillRect(426, 382, 52, 90);
-  g.fillStyle(COLORS.forest).fillRect(432, 388, 40, 84);
-  g.fillStyle(glass, glassAlpha).fillRect(438, 394, 28, 20);
-  g.fillStyle(COLORS.paper, 0.35).fillRect(438, 420, 6, 46);
-  g.fillStyle(COLORS.lime).fillCircle(464, 434, 3);
-  g.fillStyle(COLORS.grayNeutral).fillRect(410, 472, 84, 12);
-  g.fillStyle(COLORS.grayMid).fillRect(400, 484, 104, 16);
+  g.fillStyle(WOOD).fillRect(492, 378, 70, 5);
+  g.fillStyle(0x8a5a34).fillRect(496, 360, 18, 18).fillRect(518, 366, 14, 12).fillRect(536, 362, 20, 16);
+  g.fillStyle(PAPER_WARM).fillRect(738, 346, 52, 38);
+  g.fillStyle(0xd9c27a).fillRect(744, 354, 40, 3).fillRect(744, 362, 30, 3).fillRect(744, 370, 36, 3);
 
-  // Garden: lawn, bushes, a mailbox and a tree.
-  g.fillStyle(grass).fillRect(380, 484, 20, 16).fillRect(504, 484, 136, 16);
-  g.fillStyle(bush).fillCircle(408, 480, 14).fillCircle(520, 482, 12).fillCircle(580, 482, 14);
+  // Three people around the table (silhouettes), the table with two laptops and the coin.
+  for (const x of [566, 640, 714]) {
+    g.fillStyle(SILHOUETTE).fillCircle(x, 392, 9);
+    g.fillRect(x - 10, 400, 20, 30);
+  }
+  g.fillStyle(WOOD).fillRect(548, 418, 184, 9);
+  g.fillStyle(0x3d2616).fillRect(556, 427, 7, 28).fillRect(717, 427, 7, 28);
+  for (const x of [584, 676]) {
+    g.fillStyle(0x2b2b2b).fillRect(x, 402, 30, 16);
+    g.fillStyle(PAPER_WARM).fillRect(x + 3, 404, 24, 11);
+  }
+  g.fillStyle(COLORS.lime).fillCircle(640, 412, 5);
+
+  // The rolled-up door: a band of slats at the top of the opening.
+  g.fillStyle(SHUTTER).fillRect(DOOR_LEFT, DOOR_TOP, DOOR_RIGHT - DOOR_LEFT, 18);
+  for (let i = 1; i <= 2; i++) g.fillStyle(SHUTTER_LINE).fillRect(DOOR_LEFT, DOOR_TOP + i * 6, DOOR_RIGHT - DOOR_LEFT, 2);
+
+  // Concrete in front of the door, bushes, a mailbox and a tree.
+  g.fillStyle(COLORS.grayNeutral).fillRect(DOOR_LEFT - 20, GARAGE_BOTTOM, DOOR_RIGHT - DOOR_LEFT + 40, 30);
+  g.fillStyle(grass).fillRect(380, 484, 100, 16).fillRect(820, 484, 100, 16);
+  g.fillStyle(bush).fillCircle(424, 478, 16).fillCircle(396, 484, 12).fillCircle(848, 478, 16).fillCircle(878, 484, 12);
   g.fillStyle(COLORS.grayDark).fillRect(358, 462, 4, 38);
   g.fillStyle(COLORS.grayMid).fillRect(348, 448, 24, 16);
   g.fillStyle(COLORS.lime).fillRect(366, 444, 4, 10);
-  g.fillStyle(0x6b4a32).fillRect(920, 392, 12, 108);
-  g.fillStyle(bush).fillCircle(926, 376, 34).fillCircle(902, 396, 22).fillCircle(950, 396, 22);
+  g.fillStyle(0x6b4a32).fillRect(924, 396, 12, 104);
+  g.fillStyle(bush).fillCircle(930, 380, 32).fillCircle(908, 398, 22).fillCircle(952, 398, 22);
 
   g.fillStyle(P.sidewalk).fillRect(0, STREET.horizon, GAME_WIDTH, 46);
   g.fillStyle(P.curb).fillRect(0, 542, GAME_WIDTH, 5);

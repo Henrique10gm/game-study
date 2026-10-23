@@ -7,6 +7,7 @@ export const BRAND = {
   bold: 'garage',
   name: 'StudyGarage',
   place: 'Estudo em forma de jogo',
+  contact: 'contato@studygarage.com',
   tagline: 'Repita até dominar. Sem enjoar',
   description:
     'Pratique o mesmo tema quantas vezes quiser, em rodadas curtas e divertidas, com revisão dos erros e ranking com o seu grupo.',
