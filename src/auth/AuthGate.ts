@@ -17,6 +17,8 @@ export interface AuthGateOptions {
   uiRoot: HTMLElement;
   /** Cloudflare Turnstile site key; omit to run without the anti-bot check. */
   turnstileSiteKey?: string;
+  /** Show the form over a scene (the landing street) instead of on a solid screen. */
+  overlay?: boolean;
 }
 
 interface AuthErrorLike {
@@ -58,18 +60,20 @@ export class AuthGate {
   private captcha: CaptchaHandle | null = null;
   private resolve: ((session: Session) => void) | null = null;
   private recovering = false;
+  private subscription: { unsubscribe(): void } | null = null;
 
   constructor(private readonly opts: AuthGateOptions) {
     this.root = el('div', 'auth-screen');
     this.root.setAttribute('role', 'dialog');
     this.root.setAttribute('aria-label', 'Entrar');
+    if (opts.overlay) this.root.classList.add('is-overlay');
   }
 
   run(): Promise<Session> {
     return new Promise<Session>((resolve) => {
       this.resolve = resolve;
       const { client } = this.opts;
-      client.auth.onAuthStateChange((event, session) => {
+      const { data: listener } = client.auth.onAuthStateChange((event, session) => {
         if (event === 'PASSWORD_RECOVERY') {
           this.recovering = true;
           this.show('recovery');
@@ -77,6 +81,7 @@ export class AuthGate {
           this.finish(session);
         }
       });
+      this.subscription = listener?.subscription ?? null;
       void client.auth.getSession().then(({ data }) => {
         if (this.recovering) return;
         if (data.session) this.finish(data.session);
@@ -85,7 +90,19 @@ export class AuthGate {
     });
   }
 
+  /** Closes the form without a session (the promise from run() simply never resolves). */
+  cancel(): void {
+    this.subscription?.unsubscribe();
+    this.subscription = null;
+    this.captcha?.destroy();
+    this.captcha = null;
+    this.resolve = null;
+    this.root.remove();
+  }
+
   private finish(session: Session): void {
+    this.subscription?.unsubscribe();
+    this.subscription = null;
     this.captcha?.destroy();
     this.captcha = null;
     this.root.remove();

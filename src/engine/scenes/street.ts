@@ -1,7 +1,7 @@
 // The street in front of the bank: sky, far city, the bank facade, sidewalk, road and lamp.
 // Drawn from a fixed seed (every visit shows the same city) and from the palette of the
-// theme, so the game and the landing page can draw the very same picture.
-import Phaser from 'phaser';
+// theme. It paints through a tiny Brush, so the game (Phaser Graphics) and the landing
+// page (a plain canvas) draw the very same picture without the landing loading Phaser.
 import { COLORS, GAME_WIDTH } from '../config';
 import { seededRandom } from '../seed';
 import type { ScenePalette } from '../palette';
@@ -10,26 +10,49 @@ export const STREET_SEED = 20261022;
 
 export { seededRandom };
 
-/** Where things are (shared with the scene that walks the hero along this street). */
+/** The few drawing calls the street needs. Phaser's Graphics already has all of them. */
+export interface Brush {
+  fillStyle(color: number, alpha?: number): Brush;
+  fillRect(x: number, y: number, width: number, height: number): Brush;
+  fillTriangle(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number): Brush;
+  fillCircle(x: number, y: number, radius: number): Brush;
+  lineStyle(width: number, color: number, alpha?: number): Brush;
+  strokeRect(x: number, y: number, width: number, height: number): Brush;
+}
+
+/** Where things are (shared with whoever walks a hero along this street). */
 export const STREET = {
   skyBottom: 510, // the sky gradient ends here
   horizon: 500, // sidewalk starts, buildings stand on it
+  feetY: 538, // the hero's feet line in front of the bank
   doorX: 640,
   signCenter: { x: 640, y: 234 },
   lamp: { x: 321, y: 326 },
 } as const;
 
-export function drawStreet(g: Phaser.GameObjects.Graphics, P: ScenePalette, rng: () => number): void {
+function mix(from: number, to: number, t: number): number {
+  const channel = (shift: number): number => {
+    const a = (from >> shift) & 0xff;
+    const b = (to >> shift) & 0xff;
+    return Math.round(a + (b - a) * t);
+  };
+  return (channel(16) << 16) | (channel(8) << 8) | channel(0);
+}
+
+/** The whole picture: sky and far city, then the bank, sidewalk and road. */
+export function drawStreet(brush: Brush, P: ScenePalette, rng: () => number): void {
+  drawSky(brush, P, rng);
+  drawBank(brush, P);
+}
+
+/** Sky (gradient, then stars by night or sun and clouds by day) and the far city. */
+export function drawSky(g: Brush, P: ScenePalette, rng: () => number): void {
   const between = (min: number, max: number): number => min + Math.floor(rng() * (max - min + 1));
 
-  // Sky: a soft gradient, then stars (night) or the sun and clouds (day).
   const bands = 16;
   const bandHeight = Math.ceil(STREET.skyBottom / bands);
-  const top = Phaser.Display.Color.ValueToColor(P.skyTop);
-  const bottom = Phaser.Display.Color.ValueToColor(P.skyBottom);
   for (let i = 0; i < bands; i++) {
-    const c = Phaser.Display.Color.Interpolate.ColorWithColor(top, bottom, bands - 1, i);
-    g.fillStyle(Phaser.Display.Color.GetColor(c.r, c.g, c.b)).fillRect(0, i * bandHeight, GAME_WIDTH, bandHeight);
+    g.fillStyle(mix(P.skyTop, P.skyBottom, i / (bands - 1))).fillRect(0, i * bandHeight, GAME_WIDTH, bandHeight);
   }
   if (P.isDay) {
     drawSun(g, P, 820, 104);
@@ -41,7 +64,6 @@ export function drawStreet(g: Phaser.GameObjects.Graphics, P: ScenePalette, rng:
     for (let i = 0; i < 40; i++) g.fillRect(between(0, GAME_WIDTH), between(0, 230), 2, 2);
   }
 
-  // Far city.
   let sx = 0;
   let index = 0;
   while (sx < GAME_WIDTH) {
@@ -58,8 +80,10 @@ export function drawStreet(g: Phaser.GameObjects.Graphics, P: ScenePalette, rng:
     sx += w;
     index++;
   }
+}
 
-  // Bank facade in off-white stone: pediment, entablature, columns, door, steps.
+/** The bank in off-white stone (pediment, columns, door, steps), then sidewalk, road and lamp post. */
+export function drawBank(g: Brush, P: ScenePalette): void {
   g.fillStyle(COLORS.grayNeutral).fillTriangle(390, 172, 890, 172, 640, 92);
   g.fillStyle(COLORS.paper).fillTriangle(420, 168, 860, 168, 640, 112);
   g.fillStyle(COLORS.paper).fillRect(390, 172, 500, 30);
@@ -81,7 +105,6 @@ export function drawStreet(g: Phaser.GameObjects.Graphics, P: ScenePalette, rng:
   g.fillStyle(COLORS.black).fillRect(556, 214, 168, 40);
   g.lineStyle(2, COLORS.grayMid).strokeRect(556, 214, 168, 40);
 
-  // Sidewalk, road, lamp post.
   g.fillStyle(P.sidewalk).fillRect(0, STREET.horizon, GAME_WIDTH, 46);
   g.fillStyle(P.curb).fillRect(0, 542, GAME_WIDTH, 5);
   g.fillStyle(P.road).fillRect(0, 547, GAME_WIDTH, 93);
@@ -93,7 +116,7 @@ export function drawStreet(g: Phaser.GameObjects.Graphics, P: ScenePalette, rng:
 }
 
 // The sun: a stepped disc (blocks of 8 px) with a pale halo, like the moon of the run scenes.
-function drawSun(g: Phaser.GameObjects.Graphics, P: ScenePalette, cx: number, cy: number): void {
+function drawSun(g: Brush, P: ScenePalette, cx: number, cy: number): void {
   g.fillStyle(P.sun, 0.25).fillCircle(cx, cy, 70);
   g.fillStyle(P.sun, 0.35).fillCircle(cx, cy, 54);
   const r = 4;
@@ -104,8 +127,8 @@ function drawSun(g: Phaser.GameObjects.Graphics, P: ScenePalette, cx: number, cy
   }
 }
 
-// A pixel cloud: three stacked rows of blocks, flat at the bottom.
-function drawCloud(g: Phaser.GameObjects.Graphics, P: ScenePalette, x: number, y: number, size: number): void {
+// A pixel cloud: stacked rows of blocks, flat at the bottom.
+function drawCloud(g: Brush, P: ScenePalette, x: number, y: number, size: number): void {
   const u = Math.round(8 * size);
   g.fillStyle(P.cloud, 0.92);
   g.fillRect(x, y + u * 2, u * 9, u);

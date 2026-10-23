@@ -50,6 +50,8 @@ export interface AppOptions {
   groups?: GroupsApi;
   /** One-off message for the first screen (e.g. the result of an invite link). */
   initialNotice?: string;
+  /** First screen: in front of the bank (default) or the hall (the visitor just walked in from the landing page). */
+  startAt?: 'entrance' | 'hall';
 }
 
 interface LastRun {
@@ -77,6 +79,7 @@ export class App {
   private readonly ranking: RankingScreen;
   private readonly groupsScreen: GroupsScreen;
   private readonly groups: GroupsApi | null;
+  private readonly startAt: 'entrance' | 'hall';
   private readonly updateNotice: UpdateNotice;
   private store: GameStore;
   private flow: RunFlow | null = null;
@@ -96,6 +99,7 @@ export class App {
     this.ranking = new RankingScreen(this.uiRoot);
     this.groupsScreen = new GroupsScreen(this.uiRoot);
     this.groups = opts.groups ?? null;
+    this.startAt = opts.startAt ?? 'entrance';
     window.addEventListener(THEME_EVENT, () => this.redrawForTheme());
     this.notice = opts.initialNotice;
     this.updateNotice = new UpdateNotice(this.uiRoot);
@@ -117,7 +121,8 @@ export class App {
     this.game.events.on('run-finished', (next: RunEnd) => void this.afterRun(next));
 
     startScreenTimer((report) => this.store.recordScreenTime(report), () => this.room?.def.id ?? null);
-    this.showEntrance();
+    if (this.startAt === 'hall') this.showHub();
+    else this.showEntrance();
     hideLoader();
   }
 

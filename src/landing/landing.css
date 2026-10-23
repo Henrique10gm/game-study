@@ -1,0 +1,615 @@
+/* Landing page: navbar, text sections and the street that ends at the bank door.
+   Colors come from tokens.css, so day and night work here too. */
+
+html.is-landing,
+html.is-landing body {
+  height: auto;
+  overscroll-behavior: auto;
+}
+
+/* While the landing is up the game waits, laid out (so Phaser can measure it) but invisible. */
+html.is-landing #app {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html:not(.is-landing) #landing {
+  display: none;
+}
+
+.lp {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.lp-skip {
+  position: absolute;
+  left: var(--space-md);
+  top: -64px;
+  z-index: 100;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.lp-skip:focus {
+  top: var(--space-sm);
+}
+
+/* ------------------------------------------------------------------ buttons */
+
+.lp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch-min);
+  padding: var(--space-sm) var(--space-lg);
+  border: 2px solid var(--color-accent);
+  border-radius: 0;
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lp-btn:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+.lp-btn--ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-line-strong);
+}
+
+.lp-btn--ghost:hover {
+  background: var(--color-surface-raised);
+  border-color: var(--color-text);
+}
+
+.lp-btn--small {
+  min-height: 40px;
+  padding: 0 var(--space-lg);
+}
+
+.lp-iconbtn {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-line-strong);
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lp-iconbtn:hover {
+  background: var(--color-surface-raised);
+}
+
+/* ------------------------------------------------------------------- navbar */
+
+.lp-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.lp-nav.is-solid {
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom-color: var(--color-line);
+}
+
+.lp-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  max-width: 1120px;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  box-sizing: border-box;
+}
+
+.lp-brand {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.lp-brand b {
+  font-weight: 800;
+}
+
+.lp-links {
+  display: flex;
+  gap: var(--space-lg);
+  margin-right: auto;
+}
+
+.lp-links a {
+  padding: var(--space-sm) 0;
+  color: var(--color-text);
+  font-size: var(--type-label-size);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.lp-links a:hover,
+.lp-links a[aria-current='true'] {
+  border-bottom-color: var(--color-accent);
+}
+
+.lp-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.lp-menubtn {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .lp-menubtn {
+    display: inline-block;
+  }
+
+  .lp-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-line);
+    display: none;
+  }
+
+  .lp-links.is-open {
+    display: flex;
+  }
+
+  .lp-links a {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: var(--type-body-size);
+  }
+}
+
+/* --------------------------------------------------------------------- hero */
+
+.lp-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 96px var(--space-md) 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lp-hero-sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  image-rendering: pixelated;
+}
+
+.lp-hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 140px;
+  background: linear-gradient(to bottom, transparent, var(--color-bg));
+}
+
+.lp-hero-copy {
+  --edge: var(--color-line-strong);
+  position: relative;
+  z-index: 1;
+  width: min(640px, 100%);
+  margin: 0 auto 0 max(0px, calc((100vw - 1120px) / 2));
+  padding: var(--space-xl);
+  box-sizing: border-box;
+  background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+}
+
+.lp-kicker {
+  margin: 0 0 var(--space-sm);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.lp h1,
+.lp h2,
+.lp h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.lp h1 {
+  font-size: clamp(32px, 6vw, 52px);
+}
+
+.lp-lead {
+  margin: var(--space-md) 0 var(--space-lg);
+  font-size: clamp(17px, 2.4vw, 20px);
+  line-height: 1.5;
+}
+
+.lp-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+/* ----------------------------------------------------------------- sections */
+
+.lp-section {
+  padding: 96px var(--space-md);
+}
+
+.lp-section--alt {
+  background: var(--color-surface);
+}
+
+/* (.lp .lp-section: beats the margin reset of .lp h2) */
+.lp .lp-section > * {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-section h2 {
+  font-size: clamp(26px, 4vw, 38px);
+}
+
+.lp-sub {
+  margin-top: var(--space-md);
+  margin-bottom: 0;
+  font-size: var(--type-body-size);
+  color: var(--color-muted);
+}
+
+.lp-steps,
+.lp-modes,
+.lp-split {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin-top: var(--space-xl);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.lp-card {
+  --edge: var(--color-line-strong);
+  position: relative;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+}
+
+.lp-section--alt .lp-card {
+  background: var(--color-bg);
+}
+
+.lp-card h3 {
+  font-size: 20px;
+  margin-bottom: var(--space-sm);
+}
+
+.lp-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.lp-step-n {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: var(--space-md);
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  font-weight: 800;
+}
+
+.lp-mode-tag {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  padding: 2px var(--space-sm);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lp-about {
+  margin-top: var(--space-lg);
+  max-width: 680px;
+}
+
+.lp-about p {
+  margin: 0 0 var(--space-md);
+  font-size: var(--type-body-size);
+  line-height: 1.65;
+}
+
+/* Cards slide in as they arrive (only when motion is welcome). */
+@media (prefers-reduced-motion: no-preference) {
+  .lp.has-js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .lp.has-js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------- street */
+
+/* The section is taller than the screen; the stage stays put while the page scrolls past it,
+   and how far you are along decides how far the hero has walked. */
+.lp-street {
+  position: relative;
+  height: 320vh;
+  height: 320dvh;
+  background: var(--color-bg);
+}
+
+.lp-street-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.lp-stage {
+  /* the same 960x640 picture as the game, as wide as the screen allows (never under 640px),
+     leaving room for the navbar on top */
+  --stage-w: max(min(100vw, calc((100dvh - 96px) * 1.5)), 640px);
+  --cam: 0px;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 32px);
+  width: var(--stage-w);
+  aspect-ratio: 3 / 2;
+  transform: translate(calc(-50% + var(--cam)), -50%);
+  container-type: inline-size;
+}
+
+.lp-street-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+/* Same sign text as the game: "quest" light, "hall" bold, centered at (640, 234) of 960x640. */
+.lp-sign {
+  position: absolute;
+  left: calc(640 / 960 * 100%);
+  top: calc(234 / 640 * 100%);
+  transform: translate(-50%, -50%);
+  color: #f6f1e4;
+  font-size: calc(20 / 960 * 100cqw);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.lp-sign b {
+  font-weight: 800;
+}
+
+/* The hero: 32px frames of hero.png (left, right, front, back x idle + 2 steps), drawn at 2.5x. */
+.lp-hero-sprite {
+  --hx: 90;
+  --frame-x: 27.2727%;
+  position: absolute;
+  left: calc((var(--hx) - 40) / 960 * 100%);
+  top: calc((538 - 80) / 640 * 100%);
+  width: calc(80 / 960 * 100%);
+  aspect-ratio: 1;
+  background: url('../assets/hero.png') var(--frame-x) 0 / 1200% 100% no-repeat;
+  image-rendering: pixelated;
+  transition: transform 0.55s ease, opacity 0.55s ease;
+}
+
+.lp-hero-sprite.is-walking-right {
+  animation: lp-walk-right 0.48s steps(1, end) infinite;
+}
+
+.lp-hero-sprite.is-walking-left {
+  animation: lp-walk-left 0.48s steps(1, end) infinite;
+}
+
+.lp-hero-sprite.is-facing-door {
+  --frame-x: 81.8182%;
+}
+
+.lp-hero-sprite.is-entering {
+  transform: translateY(calc(-30 / 80 * 100%)) scale(0.75);
+  opacity: 0;
+}
+
+@keyframes lp-walk-right {
+  0% { background-position: 36.3636% 0; }
+  25% { background-position: 27.2727% 0; }
+  50% { background-position: 45.4545% 0; }
+  75% { background-position: 27.2727% 0; }
+}
+
+@keyframes lp-walk-left {
+  0% { background-position: 9.0909% 0; }
+  25% { background-position: 0% 0; }
+  50% { background-position: 18.1818% 0; }
+  75% { background-position: 0% 0; }
+}
+
+.lp-door {
+  position: absolute;
+  left: calc(640 / 960 * 100%);
+  top: calc(318 / 640 * 100%);
+  transform: translate(-50%, 8px);
+  min-height: var(--touch-min);
+  padding: 0 var(--space-lg);
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  border: 2px solid var(--color-bg);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lp-door.is-ready {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.lp-door:hover {
+  background: var(--color-accent-hover);
+}
+
+.lp-street-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--space-lg);
+  margin: 0;
+  text-align: center;
+  font-size: var(--type-label-size);
+  font-weight: 700;
+  color: var(--color-text);
+  text-shadow: 0 1px 6px color-mix(in srgb, var(--color-bg) 80%, transparent);
+  transition: opacity 0.3s ease;
+}
+
+.lp-street-hint.is-hidden {
+  opacity: 0;
+}
+
+/* No scroll-driven walk when motion is not welcome: the hero is already at the door. */
+@media (prefers-reduced-motion: reduce) {
+  .lp-street {
+    height: auto;
+  }
+
+  .lp-street-sticky {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .lp-hero-sprite,
+  .lp-door {
+    transition: none;
+  }
+}
+
+/* ----------------------------------------------------------- footer, overlays */
+
+.lp-footer {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-muted);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-line);
+}
+
+.lp-footer p {
+  margin: 0;
+}
+
+.lp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+}
+
+.lp-overlay-back {
+  position: fixed;
+  left: var(--space-md);
+  bottom: var(--space-md);
+  z-index: 65;
+  min-height: 40px;
+  padding: 0 var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 2px solid var(--color-line-strong);
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Black cover for the moment the hero walks through the door and the game takes over. */
+.lp-fade {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: var(--color-bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.lp-fade.is-on {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="is-landing">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -11,13 +11,126 @@
     <meta name="theme-color" content="#151211" />
     <script src="./theme-init.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Quest Hall · Salão de Jogos</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Quest Hall · Estudar também pode ser um jogo" />
+    <meta property="og:description" content="Missões curtas, ranking com o seu grupo e a sua preparação sempre à vista." />
+    <meta name="twitter:card" content="summary" />
+    <title>Quest Hall · Estudar também pode ser um jogo</title>
   </head>
   <body>
+    <a class="lp-skip" href="#conteudo">Pular para o conteúdo</a>
+    <div id="landing" class="lp">
+      <header class="lp-nav" data-nav>
+        <div class="lp-nav-inner">
+          <a class="lp-brand" href="#topo" aria-label="Quest Hall, início">quest<b>hall</b></a>
+          <nav class="lp-links" id="lp-links" aria-label="Principal">
+            <a href="#produto">Produto</a>
+            <a href="#quem-somos">Quem somos</a>
+          </nav>
+          <div class="lp-nav-actions">
+            <button type="button" class="lp-iconbtn" data-theme-toggle aria-label="Mudar o tema" aria-pressed="false">☾</button>
+            <button type="button" class="lp-btn lp-btn--primary lp-btn--small" data-enter data-enter-label>Entrar</button>
+            <button type="button" class="lp-iconbtn lp-menubtn" data-menu aria-expanded="false" aria-controls="lp-links" aria-label="Abrir o menu">☰</button>
+          </div>
+        </div>
+      </header>
+
+      <main id="conteudo">
+        <section class="lp-hero" id="topo" aria-labelledby="lp-h1">
+          <canvas class="lp-hero-sky" data-hero-sky width="960" height="510" aria-hidden="true"></canvas>
+          <div class="lp-hero-copy px-box">
+            <p class="lp-kicker">Salão de jogos de estudo</p>
+            <h1 id="lp-h1">Estudar também pode ser um jogo.</h1>
+            <p class="lp-lead">Missões curtas, ranking com o seu grupo e a sua preparação sempre à vista.</p>
+            <div class="lp-cta">
+              <button type="button" class="lp-btn lp-btn--primary" data-enter data-enter-label>Começar</button>
+              <a class="lp-btn lp-btn--ghost" href="#produto">Ver como funciona</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="lp-section" id="produto" aria-labelledby="lp-produto">
+          <p class="lp-kicker">Produto</p>
+          <h2 id="lp-produto">Três passos, sem complicação</h2>
+          <ol class="lp-steps">
+            <li class="lp-card px-box" data-reveal>
+              <span class="lp-step-n" aria-hidden="true">1</span>
+              <h3>Escolha uma sala</h3>
+              <p>Cada sala é um tema, com missões, perfil e ranking próprios. Você anda pelo saguão e entra pela porta que quiser.</p>
+            </li>
+            <li class="lp-card px-box" data-reveal>
+              <span class="lp-step-n" aria-hidden="true">2</span>
+              <h3>Jogue uma missão</h3>
+              <p>O jogo corre sozinho e, de tempos em tempos, pausa para uma pergunta. Você tem três vidas e uma última chance.</p>
+            </li>
+            <li class="lp-card px-box" data-reveal>
+              <span class="lp-step-n" aria-hidden="true">3</span>
+              <h3>Veja a preparação subir</h3>
+              <p>No fim, uma revisão mostra os erros e o que estudar. Cada questão acertada de novo conta como dominada.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="lp-section lp-section--alt" id="modos" aria-labelledby="lp-modos">
+          <p class="lp-kicker">Modos de jogo</p>
+          <h2 id="lp-modos">Escolha como estudar</h2>
+          <p class="lp-sub">As mesmas perguntas, quatro jeitos de jogar. Troque quando enjoar.</p>
+          <ul class="lp-modes" data-modes></ul>
+        </section>
+
+        <section class="lp-section" id="grupos" aria-labelledby="lp-grupos">
+          <p class="lp-kicker">Progresso e grupos</p>
+          <h2 id="lp-grupos">Compita com quem você conhece</h2>
+          <div class="lp-split">
+            <div class="lp-card px-box" data-reveal>
+              <h3>Ranking por grupo</h3>
+              <p>Crie um grupo para a sua equipe, empresa ou turma e chame o pessoal por um link. O ranking mostra quem domina mais questões.</p>
+            </div>
+            <div class="lp-card px-box" data-reveal>
+              <h3>Sua preparação, sempre à vista</h3>
+              <p>Meta diária, sequência de dias e o nível por tema. Você enxerga o que já sabe e o que ainda falta.</p>
+            </div>
+            <div class="lp-card px-box" data-reveal>
+              <h3>Privacidade de verdade</h3>
+              <p>Seu e-mail nunca aparece no ranking: só o apelido que você escolher. Você pode exportar ou apagar seus dados quando quiser.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="lp-section lp-section--alt" id="quem-somos" aria-labelledby="lp-quem">
+          <p class="lp-kicker">Quem somos</p>
+          <h2 id="lp-quem">Um projeto independente de estudo</h2>
+          <div class="lp-about">
+            <!-- Texto provisório: ajuste para a história real de quem faz o projeto. -->
+            <p>O Quest Hall nasceu da vontade de estudar sem tédio. É um projeto independente, feito por gente que gosta de aprender e de jogos, e que evolui com o retorno de quem joga.</p>
+            <p>As questões são originais, escritas para o projeto, e cada sala é pensada para treinar de pouco em pouco, no seu ritmo.</p>
+          </div>
+        </section>
+
+        <section class="lp-street" id="entrada" aria-label="Entrada do salão" data-street>
+          <div class="lp-street-sticky">
+            <div class="lp-stage" data-stage>
+              <canvas class="lp-street-canvas" data-street-canvas width="960" height="640" aria-hidden="true"></canvas>
+              <div class="lp-sign" aria-hidden="true">quest<b>hall</b></div>
+              <div class="lp-hero-sprite" data-hero aria-hidden="true"></div>
+              <button type="button" class="lp-door" data-enter data-enter-label data-door tabindex="-1" aria-hidden="true">Entrar</button>
+            </div>
+            <p class="lp-street-hint" data-street-hint>Role para caminhar até a porta</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="lp-footer">
+        <p>Quest Hall · projeto independente · feito para estudar</p>
+      </footer>
+
+      <div class="lp-fade" data-fade aria-hidden="true"></div>
+    </div>
+
     <div id="app">
       <div id="game"></div>
       <div id="ui-root"></div>
-      <div id="boot-loader" class="bl" role="status" aria-live="polite">
+      <div id="boot-loader" class="bl" role="status" aria-live="polite" hidden>
         <div class="bl-stage">
           <p class="bl-kicker">Quest Hall · Salão de Jogos</p>
           <div class="bl-run" aria-hidden="true"><div class="bl-hero"></div></div>

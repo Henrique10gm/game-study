@@ -114,3 +114,10 @@
   cursor: pointer;
 }
 
+
+/* Over the landing street: the scene stays visible behind a soft veil. */
+.auth-screen.is-overlay {
+  position: fixed;
+  background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+  backdrop-filter: blur(2px);
+}

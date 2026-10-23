@@ -4,6 +4,14 @@
 import { createClient } from '@supabase/supabase-js';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
+let shared: SupabaseClient | null | undefined;
+
+/** One client for the whole page (the landing sign-in and the game must share the session). */
+export function sharedSupabase(): SupabaseClient | null {
+  if (shared === undefined) shared = createSupabase();
+  return shared;
+}
+
 /** null when the build has no Supabase settings: the game then runs offline on this device. */
 export function createSupabase(
   url: string | undefined = import.meta.env.VITE_SUPABASE_URL,
